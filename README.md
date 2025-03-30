@@ -4,7 +4,6 @@
 
 ### What if your consciousness became a blockchain, and immortality was just paying the gas fees?
 
-<!-- Badges Start -->
 <p>
   <img src="https://img.shields.io/badge/Status-Concept_%26_WIP-blue?style=flat-square" alt="Status: Concept & WIP"/>
   <img src="https://img.shields.io/badge/Genre-Hard_Sci--Fi-brightgreen?style=flat-square" alt="Genre: Hard Sci-Fi"/>
@@ -12,10 +11,9 @@
   <img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange?style=flat-square" alt="Tech: Cognitive Science"/>
   <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?style=flat-square&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
 </p>
-<!-- Badges End -->
 
 <p align="center">
-  [English](./README.md) | [中文](./README_ZH.md)
+  <a href="./README.md">English</a> | <a href="./README_ZH.md">中文</a>
 </p>
 
 </div>
