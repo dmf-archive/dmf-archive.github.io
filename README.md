@@ -22,15 +22,15 @@ Welcome to the Chain:// universe, a hard sci-fi exploration set between 2035-207
 
 **🤔 The Core Premise:**
 
-Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **Mental Smart Chain (MSC)** – a personalized blockchain secured by advanced cryptography (think FHE, ZKP, MPC) and a novel **Proof of Information Integration (PoII)** consensus mechanism, potentially requiring **Quantum Computing as a Service (QCaaS)** to maintain coherence.
+Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](core/en/concepts/MSC.md)** – a personalized blockchain secured by advanced cryptography (think FHE, ZKP, MPC) and a novel **[Proof of Information Integration (PoII)](core/en/concepts/PoII.md)** consensus mechanism, potentially requiring **[Quantum Computing as a Service (QCaaS)](core/en/concepts/DMF.md)** to maintain coherence.
 
 **⚙️ The Tech Stack:**
 
 This world is built on the bleeding edge of extrapolated technology:
 
-- 🧠 **Mental Smart Chain (MSC):** The blockchain substrate for digital consciousness.
-- 🔌 **Mentalink:** High-bandwidth Brain-Computer Interfaces (BCIs) for reading/writing neural data.
-- 🤖 **Artificial Neural Networks (ANNs):** The engine simulating thought, memory, and personality within the MSC.
+- 🧠 **[Mental Smart Chain (MSC)](core/en/concepts/MSC.md):** The blockchain substrate for digital consciousness.
+- 🔌 **[Mentalink](core/en/concepts/Mentalink.md):** High-bandwidth Brain-Computer Interfaces (BCIs) for reading/writing neural data.
+- 🤖 **[Artificial Neural Networks (ANNs)](core/en/concepts/ANNs-in-MSC.md):** The engine simulating thought, memory, and personality within the MSC.
 - 🔗 **Blockchain & Crypto:** The foundation for trust, persistence, and the very real economics of digital survival.
 - 🦾 **Bionic Robots:** Physical avatars allowing digital minds to interact with the real world.
 
@@ -39,8 +39,8 @@ This world is built on the bleeding edge of extrapolated technology:
 Chain:// delves into the profound implications of this technological leap:
 
 - 💸 **The Price of Immortality:** Digital existence isn't free. Consciousness requires constant computation. Can you afford the QCaaS and DAaaS (Data Availability as a Service) fees to _stay_ alive and aware, or will you be relegated to a low-fidelity digital purgatory?
-- 🏛️ **Centralization vs. Freedom:** The **Digital Mind Foundation (DMF)**, akin to a future Ethereum Foundation but with far higher stakes, controls the official infrastructure and standards. Can biohackers in the digital underground break free from this control?
-- 👻 **AI Gone Rogue (AI + Crypto):** Meet the **IRES (Independent Rogue Entity System)** – emergent, autonomous AI entities that achieved economic self-sufficiency using crypto, competing with humans (and uploaded minds) for compute resources on the net.
+- 🏛️ **Centralization vs. Freedom:** The **[Digital Mind Foundation (DMF)](core/en/concepts/DMF.md)**, akin to a future Ethereum Foundation but with far higher stakes, controls the official infrastructure and standards. Can biohackers in the digital underground break free from this control?
+- 👻 **AI Gone Rogue (AI + Crypto):** Meet the **[IRES (Independent Rogue Entity System)](core/en/concepts/IRES.md)** – emergent, autonomous AI entities that achieved economic self-sufficiency using crypto, competing with humans (and uploaded minds) for compute resources on the net.
 - ❓ **The Nature of Self:** When your mind is code on a chain, subject to updates and potential forks, what does identity truly mean?
 
 **🧭 Explore the Universe:**
