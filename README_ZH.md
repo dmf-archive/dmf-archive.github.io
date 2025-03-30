@@ -6,8 +6,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/Status-Concept_%26_WIP-blue?style=flat-square" alt="Status: Concept & WIP"/>
-  <img src="https://img.shields.io/badge/Genre-Hard_Sci--Fi-brightgreen?style=flat-square" alt="Genre: Hard Sci-Fi"/>
-  <img src="https://img.shields.io/badge/Tech-Blockchain_%2B_AI-purple?style=flat-square&logo=ethereum" alt="Tech: Blockchain"/>
+  <img src="https://img.shields.io/badge/Tech-Blockchain-purple?style=flat-square&logo=ethereum" alt="Tech: Blockchain"/>
   <img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange?style=flat-square" alt="Tech: Cognitive Science"/>
   <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?style=flat-square&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
 </p>
@@ -22,7 +21,7 @@
 
 **🤔 核心设定:**
 
-想象一下未来，你的心智、记忆和自我意识可以被数字化，运行在一条**[心智智能链 (MSC)](./zh/concepts/MSC.md)** 之上——这是一种个性化的区块链，由先进的密码学技术（如全同态加密 FHE、零知识证明 ZKP、多方安全计算 MPC）和一种新颖的**[信息整合证明 (PoII)](./zh/concepts/PoII.md)** 共识机制来保障安全，维持意识的连贯性，甚至需要依赖**[量子计算即服务 (QCaaS)](./zh/concepts/DMF.md)**。
+想象一下未来，你的心智、记忆和自我意识可以被数字化，运行在一条 **[心智智能链 (MSC)](./zh/concepts/MSC.md)** 之上——这是一种个性化的区块链，由先进的密码学技术（如全同态加密 FHE、零知识证明 ZKP、多方安全计算 MPC）和一种新颖的 **[信息整合证明 (PoII)](./zh/concepts/PoII.md)** 共识机制来保障安全，维持意识的连贯性，甚至需要依赖 **[量子计算即服务 (QCaaS)](./zh/concepts/DMF.md)** 。
 
 **⚙️ 技术栈:**
 
