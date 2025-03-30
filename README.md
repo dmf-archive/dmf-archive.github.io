@@ -14,6 +14,10 @@
 </p>
 <!-- Badges End -->
 
+<p align="center">
+  [English](./README.md) | [中文](./README_ZH.md)
+</p>
+
 </div>
 
 Welcome to the Chain:// universe, a hard sci-fi exploration set between 2035-2070, where cognitive science, AI, and blockchain converge to redefine existence itself.
@@ -52,7 +56,7 @@ Dive deeper into the code, the lore, and the existential questions posed by Chai
 
 ---
 
-*For the Chinese version, see [README_ZH.md](./README_ZH.md) (Link placeholder)*
+*For the Chinese version, see [README_ZH.md](./README_ZH.md)*
 
 ## License
 

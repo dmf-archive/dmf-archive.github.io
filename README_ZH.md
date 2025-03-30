@@ -14,6 +14,10 @@
 </p>
 <!-- Badges End -->
 
+<p align="center">
+  [English](./README.md) | [中文](./README_ZH.md)
+</p>
+
 </div>
 
 欢迎来到 Chain:// 宇宙。这是一个设定在 2035-2070 年间的硬科幻探索项目，认知科学、人工智能与区块链在此交汇，重新定义“存在”本身。
