@@ -54,8 +54,6 @@ Dive deeper into the code, the lore, and the existential questions posed by Chai
 
 ---
 
-*For the Chinese version, see [README_ZH.md](./README_ZH.md)*
-
 ## License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
