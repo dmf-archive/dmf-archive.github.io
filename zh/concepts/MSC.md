@@ -13,6 +13,6 @@ MSC (Mental Smart Chain) 是 Chain:// 世界的核心概念，是一种将人类
    - 分层安全模型: 用户可根据任务敏感度和预算选择 FHE/TEE/明文计算，成本与安全挂钩。
 4. **并行链架构:** 模拟大脑多区域协同，将不同思维功能（感知、记忆、决策等）分配到独立子链/分片，提升效率和可扩展性。
 5. PoII 作为共识机制  
-   [PoII (Proof of Information Integration)](poii-proof-of-information-integration.md)
+   [PoII (Proof of Information Integration)](PoII.md)
 
 **核心内容:** MSC 的核心是庞大、复杂、动态变化的 **ANNs (人工神经网络)** 的状态，由区块链提供安全、可信、持久化的存储、管理和验证框架。

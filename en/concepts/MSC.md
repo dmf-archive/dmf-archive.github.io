@@ -14,6 +14,6 @@ MSC (Mental Smart Chain) is the core concept in the Chain:// world, a system tha
     *   Layered Security Model: Users can choose FHE/TEE/plaintext computation based on task sensitivity and budget, linking cost to security.
 4.  **Parallel Chain Architecture:** Simulates the collaboration of multiple brain regions by assigning different cognitive functions (perception, memory, decision-making, etc.) to independent sub-chains/shards, improving efficiency and scalability.
 5.  PoII as Consensus Mechanism
-    [PoII (Proof of Information Integration)](poii-proof-of-information-integration.md)
+    [PoII (Proof of Information Integration)](PoII.md)
 
 **Core Content:** The core of MSC is the state of vast, complex, and dynamically changing **ANNs (Artificial Neural Networks)**, with the blockchain providing a secure, trustworthy, and persistent framework for storage, management, and verification.
