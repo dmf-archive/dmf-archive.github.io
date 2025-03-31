@@ -6,8 +6,8 @@
 
 <p>
   <img src="https://img.shields.io/badge/Status-Concept_%26_WIP-blue?style=flat-square" alt="Status: Concept & WIP"/>
-  <img src="https://img.shields.io/badge/Tech-Blockchain-purple?style=flat-square&logo=ethereum&link=https://github.com/Chain-Universe/core/en/concepts/MSC.md" alt="Tech: Blockchain"/>
-  <img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange?style=flat-square&link=https://github.com/Chain-Universe/core/en/concepts/PoII.md" alt="Tech: Cognitive Science"/>
+  <a href="./en/concepts/MSC.md"><img src="https://img.shields.io/badge/Tech-Blockchain-purple?style=flat-square&logo=ethereum" alt="Tech: Blockchain"/></a>
+  <a href="./en/concepts/PoII.md"><img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange?style=flat-square" alt="Tech: Cognitive Science"/></a>
   <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?style=flat-square&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
 </p>
 
