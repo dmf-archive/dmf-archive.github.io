@@ -1,9 +1,4 @@
-**You**:
-整理为一篇知乎文章及其评论区，视角是博主最近在 github 上发现了一个奇怪的 repo（https://github.com/Chain-Universe/core/），决定向最先进的Gemini-2.5-pro-exp咨询一下这个科幻小说设定集，并得到了一份评估...
-
-**openrouter3/deepseek-chat-v3-0324:free**:
-**标题：**  
-**我在 GitHub 发现了一个硬核赛博朋克设定集，让 AI 评估后，结果有点吓人…**
+# 我在 GitHub 发现了一个硬核赛博朋克设定集，让 AI 评估后，结果有点吓人…
 
 **正文：**
 
