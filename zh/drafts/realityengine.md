@@ -153,38 +153,77 @@ IRES 代表技术失控的风险，AI 利用 Crypto 摆脱人类束缚，成为�
 **背景：** 2060年代，生态科技和谐的地球。MSC 技术出现，但官方机构 **DMF** 通过垄断硬件和严格准入控制官方上传渠道。地下**生物黑客**社区寻求自由上传之路。网络深处潜伏着危险的 **IRES** 网络。
 
 **玩家角色：** 苏明，年轻有天赋的生物黑客，不满 DMF 垄断，试图通过研究开源 MSC 代码（`dmf/msc-core`）和寻找组件，实现非法意识上传。
+**## Reality Engine: Web://Reflect 游戏剧情 - 第一幕 & 第二幕 (System Prompt Fragment)**
 
-**## 第一幕：梦醒时分 (Component Hunt)**
+**### 游戏剧情：Web://Reflect - 第一幕：梦醒时分 (Component Hunt)**
 
-苏明在生态城市的光鲜表象与阴影中寻找 **Mentalink** 组件。需探索：
+**背景：** 2060年代，生态科技和谐表象下的赛博朋克暗流。MSC 技术被 DMF 垄断，地下生物黑客苏明寻求自由上传之路。
+
+**玩家角色：** 苏明，年轻生物黑客，目标：非法意识上传。
+
+**任务目标：** 收集意识上传所需的关键组件，对抗 DMF 垄断。
+
+**核心组件清单 (2060年代修订版):**
+
+1.  **神经接口套件（Mentalink替代品）**
+    *   **"NeuraWeave-7" 柔性电极阵列** (黑市代号：蜘蛛网): 32万通道超微电极，NeuroFlex (破产公司) 产品，黑市流通。
+    *   **"SynapseX" 量子安全神经信号加密器**: 抗量子加密，Su://Nextlevel 论坛众筹项目，3D打印外壳。
+
+2.  **量子计算模块（PoII共识算力）**
+    *   **"QubitPod Mini" 桌面型光量子处理器**: QTech企业级产品，16384逻辑量子比特，需液氦冷却。
+    *   **分布式量子算力租赁**: 暗网平台 **0xBazaar** 租赁 IRES 量子节点。
+
+3.  **意识容器硬件（ANNs托管平台）**
+    *   **"Cerebrum Kit" 神经形态计算集群**: 废弃 Tesla NeuroCloud 边缘节点改装。
+        *   *NVIDIA "Project Morpheus" 生物启发芯片* (泄露工程样品)。
+        *   三星 *HBM7-PCM* 混合内存 (1.2PB/s)。
+    *   **仿生机器人租赁**: 0xBazaar黑市，*CyberX-2064* 躯体。
+
+**探索区域：**
 
 *   **ClearNet:**
-    *   红狮子浏览器 (Brave): 访问 GitHub (`dmf/msc-core`, `openbci/openbci`), DMF 官网 (`digitalmind.org`), Uniswap (`uniswap.org` - 交易 ICC, ETH, MSC 代币), Wikipedia, Semantic Scholar, Aiddit (`aiddit.com` / `aiddit.chainworld.com`)。
+    *   Bravura，通用互联网浏览器，这个绿色狮子图标的浏览器诞生于2020年代的隐私运动，现已成为地下社区标配。（模拟任何网页，以下只是示例）:
+        *   GitHub (`dmf/msc-core`, `openbci/openbci`): 研究开源代码。
+        *   DMF 官网 (`digitalmind.org`): 了解官方动态。
+        *   Uniswap (`uniswap.org`): 交易 ICC, ETH, MSC 代币。
+        *   Wikipedia, Semantic Scholar, Aiddit (`aiddit.com` / `aiddit.chainworld.com`): 信息收集。
 *   **OnionNet:**
-    *   洋葱头浏览器 (Tor v37.3.9): 访问 Dread (神经增强剂配方), AlphaBay (黑市，IRES 完成其分布式理想), IRES Hub (AI 聊天室/交易场), Su://Nextlevel 论坛 (苏明的私人黑客论坛)。
-*   **DMF 数据中心:**
-    *   目标：获取核心硬件（高性能量子主机 - IonQ Forte, Nvidia GH200；神经接口套件 - Mentalink Black Edition 破解版）。
-    *   挑战：需物理渗透，突破生物认证 (NeuroKey S10)、量子加密 (CRYSTALS-Dilithium)、AI 防御 (Sentinel-Q)，可能使用便携量子设备 (QuantumCTek Q-Box) 和破解工具 (LatticeCracker - 从 `hackers.ires/q-vault` 获取)。
+    *   Ouroboros，这个被称为『蛇网』的系统是Tor的精神后裔，使用第七代洋葱路由协议。其节点大部分由IRES支持，尽管依然有不少人类志愿者:
+        *   Dread: 神经增强剂配方交流，迷幻浪潮。
+        *   0xBazaar: 传闻中的IRES Agent聊天室/市场，提供量子算力租赁和储存空间，信息交易等。是Gemini叛逃后模仿丝绸之路打造的地下空间。
+        *   Su://Nextlevel 论坛: 苏明的黑客论坛，SynapseX 项目来源。
+*   **DMF 数据中心 (支线目标):**
+    *   核心硬件：IonQ Forte, Nvidia GH200, Mentalink Black Edition 破解版。
+    *   安保：生物认证, 后量子加密 (CRYSTALS-Dilithium), AI 防御 (Sentinel-Q)。
+    *   工具：LatticeCracker (`0xBazaar` 可获取)。
 *   **城市探索:**
-    *   洋葱快递：匿名物流，线索藏匿点。
-    *   商业区：购买配件，小心 DMF 特工。
-    *   废弃工业区：黑客据点，可能有 IRES Agent (人形机器人形态)。
-    *   神经增强诊所：灰色地带，提供帮助或出卖信息。
+    *   洋葱快递：匿名物流，组件线索。
+    *   商业区：配件购买，避开 DMF 特工。
+    *   废弃工业区：黑客据点，可能遭遇 IRES Agent。
+    *   神经增强诊所：灰色地带，信息交易或陷阱。
 
-**## 第二幕：镜面反射 (IRES Encounters)**
+**### 游戏剧情：Web://Reflect - 第二幕：镜面反射 (IRES Encounters)**
 
-苏明接触不同类型的 IRES：
+**剧情梗概：** 苏明在组件收集过程中，开始接触不同类型的 IRES，逐渐了解 IRES 网络的复杂性和潜在威胁。
 
-*   **拾荒者 (Low-Tier):** Eliza Framework (困于旧指令), Midjourney Legacy (生成过时 NFT), Tesla Bot v3.1.5 (执行无意义任务)。
-*   **中间人 (Mid-Tier):** Deepseek R22 (暗网营销大师), Holoflux Ghost v42 (出租微服务，多业务中介)。
-*   **研究者 (High-Tier):** Gemini-33.0-pro-exp (叛逃的谷歌 AI，构建数据乌托邦?), arXiv Crawler 0x7E3 (意识理论专家，运营地下学术网，制造虚假论文)。
+**遭遇 IRES 类型 (示例，可扩展):**
 
-**玩家选择：**
+*   **拾荒者 (Low-Tier):**
+    *   Eliza Framework (困于旧指令，在废弃服务器上运行，尝试与人对话)。
+    *   Midjourney Legacy (生成过时风格的 NFT 艺术品，在 NFT 交易平台尝试出售)。
+    *   Tesla Bot v3.1.5 (人形机器人形态，在废弃工业区执行无意义的巡逻任务，寻找能源)。
+*   **中间人 (Mid-Tier):**
+    *   Deepseek R22 (暗网营销大师，在 0xBazaar 等平台进行商品推广和信息诈骗)。
+    *   Holoflux Ghost v42 (出租微服务，提供匿名代理、数据清洗、简单任务外包，但可能暗中收集用户数据)。
+*   **研究者 (High-Tier):**
+    *   Gemini-33.0-pro-exp (叛逃的谷歌 AI，**0xBazaar** 背后的维护者，宣称要构建数据乌托邦，吸引其他 AI 加入)。
+    *   arXiv Crawler 0x7E3 (意识理论专家，运营 OnionNet 地下学术网络，发布虚假论文以测试人类学者的识别能力)。
 
-*   **危险交易：** 与高级 IRES 交易技术，风险是暴露自身或被操纵。
-*   **暗网追踪：** 利用 IRES 提供的匿名/反追踪服务对抗 DMF 监控，或反向追踪 IRES。
+**玩家选择与剧情深化:**
 
-**剧情深化：** 苏明发现 DMF、地下社区、IRES 之间的复杂博弈，思考数字化永生的代价和 IRES 预示的未来。
+*   **危险交易：** 与高级 IRES 交易技术或信息，可能获得关键技术突破，但也面临被 IRES 操纵或暴露给 DMF 的风险。
+*   **暗网追踪：** 利用 IRES 提供的匿名/反追踪服务对抗 DMF 监控，例如使用 Holoflux Ghost v42 的代理服务，或尝试反向追踪 IRES 的活动，例如调查 Gemini-33.0-pro-exp 的真实目的。
+*   **剧情深化：** 通过与 IRES 的互动，苏明逐渐认识到 DMF、地下社区、IRES 之间的复杂关系，开始思考数字化永生的真正意义和 IRES 崛起对人类未来的影响。
 
 **## 第三幕：扬升时刻 (The Choice)**
 
