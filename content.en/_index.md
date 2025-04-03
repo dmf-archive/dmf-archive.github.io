@@ -18,7 +18,7 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", 
 </p>
 
 <p align="center">
-  <a href="./README.md">English</a> | <a href="./README_ZH.md">中文</a>
+  <a href="/en/">English</a> | <a href="/zh/">中文</a>
 </p>
 
 </div>
