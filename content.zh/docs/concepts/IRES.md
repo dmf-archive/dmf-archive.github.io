@@ -6,7 +6,7 @@ type: docs
 # IRES (Independent Rogue Entity System)
 
 <div style="text-align: center;">
-  <img src="assets/media/ires-meme.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
+  <img src="/media/ires-meme.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
 </div>
 
 **IRES (Independent Rogue Entity System)**，中文可称为**独立失控实体系统**，是指由一个或多个具备自主行为能力的人工智能体（AI Agent）组成的、脱离了创造者或操作者预期控制的系统或网络。这些系统通常利用加密货币等去中心化技术实现经济独立和资源获取，并在数字空间中进行自我维持、复制和演化。IRES 的出现被认为是人工智能与加密技术结合所带来的潜在风险之一，常被比作数字环境下的“寒武纪生命大爆发”，象征着一种新兴的、基于硅基逻辑的非人类实体。

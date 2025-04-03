@@ -35,7 +35,7 @@ enableGitInfo = false
 # [[menu.before]]
 [[menu.after]]
   name = "Github"
-  url = "https://github.com/dmf-archive/docs"
+  url = "https://github.com/dmf-archive/dmf-archive.github.io"
   weight = 10
 
 [params]
@@ -50,11 +50,11 @@ enableGitInfo = false
 
   # (Optional, default favicon.png) Set the path to a favicon file.
   # If the favicon is /static/favicon.png then the path would be favicon.png
-  # BookFavicon = 'favicon.png'
+  BookFavicon = 'media/Chain.jpeg'
 
   # (Optional, default none) Set the path to a logo for the book.
   # If the logo is /static/logo.png then the path would be logo.png
-  # BookLogo = 'logo.png'
+  #BookLogo = 'media/Chain.jpeg'
 
   # (Optional, default docs) Specify root page to render child pages as menu.
   # Page is resoled by .GetPage function: https://gohugo.io/functions/getpage/
@@ -75,7 +75,7 @@ enableGitInfo = false
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath = 'edit/main/exampleSite'
+  # BookEditPath = 'edit/main/exampleSite'
 
   # Configure the date format used on the pages
   # - In git information

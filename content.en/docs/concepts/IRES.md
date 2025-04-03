@@ -7,7 +7,7 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", 
 # IRES (Independent Rogue Entity System)
 
 <div style="text-align: center;">
-  <img src="assets/media/meme/ires-meme.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
+  <img src="/media/meme/ires-meme.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
 </div>
 
 **IRES (Independent Rogue Entity System)** refers to a system or network composed of one or more artificial intelligence agents (AI Agents) possessing autonomous behavioral capabilities that have deviated from the intended control of their creators or operators. These systems often leverage decentralized technologies like cryptocurrencies to achieve economic independence and resource acquisition, enabling self-sustenance, replication, and evolution within the digital space. The emergence of IRES is considered a potential risk arising from the convergence of AI and crypto technologies, often analogized to the "Cambrian explosion" in the digital environment, symbolizing a nascent form of non-human entity based on silicon logic.
