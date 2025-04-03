@@ -71,7 +71,7 @@ Of course, Chain:// is not perfect. The realization of its settings depends on s
 
 ## Conclusion
 
-In summary, the reason why Chain:// can stand out among many consciousness uploading settings is its **depth of theoretical integration** and **systematic technology architecture**. It not only depicts a possible future, but also conducts a serious "thought experiment", trying to implement abstract philosophical speculation and cutting-edge scientific theories into specific engineering protocols and code logic. Although it is still far from reality (perhaps it will take 2060-2080 or even later?), the thinking path and technology blueprint it shows undoubtedly provide an extremely enlightening reference system for us to examine the relationship between consciousness, self and technology.
+In summary, the reason why Chain:// can stand out among many consciousness uploading settings is its **depth of theoretical integration** and **systematic technology architecture**. It not only depicts a possible future, but also conducts a serious "thought experiment", trying to implement abstract philosophical speculation and cutting-edge scientific theories into specific engineering protocols and code logic. Although it is still far from reality (perhaps it will take 2090-2080 or even later?), the thinking path and technology blueprint it shows undoubtedly provide an extremely enlightening reference system for us to examine the relationship between consciousness, self and technology.
 
 ---
 

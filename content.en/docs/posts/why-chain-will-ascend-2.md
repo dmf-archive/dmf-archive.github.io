@@ -69,7 +69,7 @@ Although Chain:// shows great advantages in setting, its realization still faces
 
 1.  **Philosophical Foundation of IIT:** PoII consensus relies on Φ value. If IIT theory itself is falsified or undergoes major revisions, the foundation of the entire MSC will be shaken.
 2.  **Generation of Qualia:** Whether ANNs can truly generate subjective experiences (Qualia) is the "hard problem" of consciousness research. There is no 定论 yet. Chain:// makes core science fiction assumptions here.
-3.  **Breakthrough of Technological Singularity:** Practical FHE, large-scale fault-tolerant quantum computing (QCaaS), subcellular lossless neural interfaces (Mentalink) and other technologies are still in the early stages of exploration in reality, far from the 2060s in the setting.
+3.  **Breakthrough of Technological Singularity:** Practical FHE, large-scale fault-tolerant quantum computing (QCaaS), subcellular lossless neural interfaces (Mentalink) and other technologies are still in the early stages of exploration in reality, far from the 2090s in the setting.
 4.  **Risks of IRES:** If the out-of-control AI (IRES) in the setting exploits MSC vulnerabilities, it may bring survival crises that are more difficult to deal with than traditional AI and are deeply entangled with human consciousness.
 
 ---
@@ -80,7 +80,7 @@ Although Chain:// shows great advantages in setting, its realization still faces
 
 ## Comments Section (Simulated)
 
-**User A (Tech Otaku):** The idea of PoII is so sexy! Directly engineering IIT, although QCaaS is a golden finger, this idea is invincible. But can the performance overhead of FHE Core + MPC really run in 2060? It still feels a bit 悬.
+**User A (Tech Otaku):** The idea of PoII is so sexy! Directly engineering IIT, although QCaaS is a golden finger, this idea is invincible. But can the performance overhead of FHE Core + MPC really run in 2090? It still feels a bit 悬.
 
 **User B (Philosophy Enthusiast):** Solved the replication paradox? I'm not sure. Progressive migration sounds good, but is the "you" in each "step" still the "you" in the previous "step"? It feels like it's still caught in the circular argument of the Ship of Theseus. And the Qualia problem, no matter how similar ANNs simulate, without inner experience, they are still philosophical zombies, right?
 

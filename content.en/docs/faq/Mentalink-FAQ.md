@@ -40,7 +40,7 @@ Welcome to the Mentalink FAQ. This revolutionary Brain-Computer Interface (BCI) 
   - **Goal:** Fully integrate Mentalink into the Digital Mind Foundation (DMF)-led ecosystem, strengthening security and access control.
   - **Technology:** Hardware-level security modules deeply integrated with the DMF authentication system, mandatory firmware updates to comply with DMF standards, possibly introducing more complex TEE (Trusted Execution Environments) to isolate critical operations.
   - **Capability:** Became the "authentication key" for accessing **official DMF-controlled QCaaS and DAaaS**. Security further enhanced, but also meant users were locked into the DMF ecosystem, making independent or unofficial connections extremely difficult.
-- **v10.x and Later Versions (Approx. 2060s - Su Ming's Era): Mature Technology & Market Stratification**
+- **v10.x and Later Versions (Approx. 2090s - Su Ming's Era): Mature Technology & Market Stratification**
   - **Goal:** Make incremental improvements on a mature technology platform, such as energy efficiency, miniaturization, user experience, and offer different tiers of products based on market demand.
   - **Technology:** Latest sensor technology, continuously optimized AI algorithms, more efficient energy harvesting or wireless charging technology.
   - **Capability:** Mentalink became a **mature technology**, with QCaaS and DAaaS being fundamental infrastructure for society (but dominated by DMF). v10+ represents the current technological peak, but core bandwidth bottlenecks and cognitive mismatch risks persist. DMF maintains its monopoly through firmware, authentication, and control over infrastructure. Older or cracked versions attempting to bypass DMF control might circulate on the black market (like the "Black Edition" Su Ming seeks).
@@ -66,4 +66,4 @@ Welcome to the Mentalink FAQ. This revolutionary Brain-Computer Interface (BCI) 
 - **Identity:** Who am "I"? The biological brain, the on-chain data, or a combination? This raises profound philosophical and legal questions.
 - **Control:** Do users truly have full control over their digital minds, especially when relying on DMF-controlled QCaaS and DAaaS infrastructure?
 
-These issues have accompanied MSC technology since its inception and became sharper and more widespread in the 2060s.
+These issues have accompanied MSC technology since its inception and became sharper and more widespread in the 2090s.
