@@ -57,6 +57,8 @@ Chain:// 是一个多层面的项目，包含：
 
 深入探索 Chain:// 的代码、设定以及它所引发的存在主义追问。
 
+如果您希望立刻跳入Chain://的世界，请尝试[RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine.md) 以快速开始。
+
 ---
 
 ## 许可证
