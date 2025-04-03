@@ -1,6 +1,6 @@
 {
-  "name": "Chain://Docs",
-  "short_name": "Chain://Docs",
+  "name": "Chain://",
+  "short_name": "Chain://",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
