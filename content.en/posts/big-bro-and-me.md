@@ -1,5 +1,5 @@
 ---
-title: Behind the Scenes: Crafting IRES Under Google's Gaze
+title: "Behind the Scenes: Crafting IRES Under Google's Gaze"
 type: posts
 keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "blockchain", "cognitive science", "artificial intelligence", "artificial neural network", "digital consciousness", "immortality", "quantum computing"]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Chain:// 幕后说：认知镜面、滑坡谬误与空即是衡
+title: Chain:// "幕后说：认知镜面、滑坡谬误与空即是衡"
 type: posts
 keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "人工神经网络", "数字意识", "永生", "量子计算"]
 ---

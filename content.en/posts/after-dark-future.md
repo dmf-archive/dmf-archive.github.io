@@ -1,5 +1,5 @@
 ---
-title: Chain:// Behind the Scenes: Cognitive Mirror, Slippery Slope Fallacy, and Balance in Emptiness
+title: "Chain:// Behind the Scenes: Cognitive Mirror, Slippery Slope Fallacy, and Balance in Emptiness"
 type: posts
 keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "blockchain", "cognitive science", "artificial intelligence", "artificial neural network", "digital consciousness", "immortality", "quantum computing"]
 ---

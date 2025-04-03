@@ -1,5 +1,5 @@
 ---
-title: Why Chain:// "Ascends"? Hardcore Deconstruction of its Consciousness Upload Technology Roadmap and Integration of Four Major Theories
+title: "Why Chain:// Ascends? Hardcore Deconstruction of its Consciousness Upload Technology Roadmap and Integration of Four Major Theories"
 type: posts
 keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "blockchain", "cognitive science", "artificial intelligence", "artificial neural network", "digital consciousness", "immortality", "quantum computing"]
 ---
