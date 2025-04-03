@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Mental Smart Chain (MSC)
+  #
+
+MSC (Mental Smart Chain) is the core concept in the Chain:// world, a system that quantifies human mental activities and records them on a blockchain. It&rsquo;s not just memory storage but an attempt to simulate the &ldquo;self&rdquo; as a dynamic information integration process (inspired by GWT and IIT).
+Key Features:
+
+Private Chain Architecture &amp; Biological Trust Origin: Each MSC is a user-controlled private chain. The root of trust originates from the biological brain&rsquo;s initial anchoring of consciousness data via the Mentalink Brain-Computer Interface.
+Progressive Migration &amp; On-Chain Immortality: Consciousness activities gradually migrate from the biological brain to the chain. Ultimately, by encoding neural signals as &ldquo;intention transactions,&rdquo; complete attention transfer is achieved, leading to theoretical &ldquo;on-chain immortality.&rdquo;
+Security and Privacy Core (FHE &#43; MPC Architecture):
+
+FHE (Fully Homomorphic Encryption) as &ldquo;Security Flint&rdquo; / Trust Anchor: FHE is not used for all computations but to protect the most core and sensitive parts of MSC. This FHE &ldquo;black box&rdquo; is responsible for:
+
+Core Key Management: Absolutely secure private key storage and usage.
+Minimized Core State Maintenance: Maintaining basic &ldquo;self&rdquo; existence identifiers and continuity markers.
+Secure Coordination: Participating in and verifying MPC computations as a trusted party, managing ANNs instance pointers and metadata.
+Proof of Existence: Its stable operation itself is a zero-knowledge proof to the outside world, indicating that the MSC instance is &ldquo;alive&rdquo; and basically integrated, without exposing internal thoughts.
+
+
+MPC (Secure Multi-Party Computation) for Secure Computation Outsourcing: The vast majority of computationally intensive tasks (complex ANNs reasoning/training, partial pre-computation of PoII, advanced thought simulation) are securely outsourced to a distributed computing network through MPC protocols. The FHE core, as a participant, provides encrypted input/state, ensuring computational process and core privacy, effectively solving the performance bottleneck of FHE.
+ZKP (Zero-Knowledge Proofs): Used to verify the validity of external computations (such as PoII calculation results provided by QCaaS, and the correctness of MPC computations) while protecting privacy.
+TEE (Trusted Execution Environment): Serves as a hardware-level security option for nodes in a distributed network, which can work with MPC.
+Layered Security Model: Users can choose FHE core processing, MPC network computing, TEE nodes, or (at their own risk) plaintext computing based on task sensitivity.
+
+
+Parallel Chain Architecture: Simulates the collaboration of multiple brain regions by assigning different cognitive functions (perception, memory, decision-making, etc.) to independent sub-chains/shards, improving efficiency and scalability.
+PoII as Consensus Mechanism
+
+  PoII (Proof of Information Integration)
+
+Core Content: The core of MSC is the state of vast, complex, and dynamically changing ANNs (Artificial Neural Networks), with the blockchain providing a secure, trustworthy, and persistent framework for storage, management, and verification.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/concepts/MSC/">
+  <meta property="og:site_name" content="Chain://Docs">
+  <meta property="og:title" content="Mental Smart Chain (MSC)">
+  <meta property="og:description" content="Mental Smart Chain (MSC)#MSC (Mental Smart Chain) is the core concept in the Chain:// world, a system that quantifies human mental activities and records them on a blockchain. It’s not just memory storage but an attempt to simulate the “self” as a dynamic information integration process (inspired by GWT and IIT).
+Key Features:
+Private Chain Architecture &amp; Biological Trust Origin: Each MSC is a user-controlled private chain. The root of trust originates from the biological brain’s initial anchoring of consciousness data via the Mentalink Brain-Computer Interface. Progressive Migration &amp; On-Chain Immortality: Consciousness activities gradually migrate from the biological brain to the chain. Ultimately, by encoding neural signals as “intention transactions,” complete attention transfer is achieved, leading to theoretical “on-chain immortality.” Security and Privacy Core (FHE &#43; MPC Architecture): FHE (Fully Homomorphic Encryption) as “Security Flint” / Trust Anchor: FHE is not used for all computations but to protect the most core and sensitive parts of MSC. This FHE “black box” is responsible for: Core Key Management: Absolutely secure private key storage and usage. Minimized Core State Maintenance: Maintaining basic “self” existence identifiers and continuity markers. Secure Coordination: Participating in and verifying MPC computations as a trusted party, managing ANNs instance pointers and metadata. Proof of Existence: Its stable operation itself is a zero-knowledge proof to the outside world, indicating that the MSC instance is “alive” and basically integrated, without exposing internal thoughts. MPC (Secure Multi-Party Computation) for Secure Computation Outsourcing: The vast majority of computationally intensive tasks (complex ANNs reasoning/training, partial pre-computation of PoII, advanced thought simulation) are securely outsourced to a distributed computing network through MPC protocols. The FHE core, as a participant, provides encrypted input/state, ensuring computational process and core privacy, effectively solving the performance bottleneck of FHE. ZKP (Zero-Knowledge Proofs): Used to verify the validity of external computations (such as PoII calculation results provided by QCaaS, and the correctness of MPC computations) while protecting privacy. TEE (Trusted Execution Environment): Serves as a hardware-level security option for nodes in a distributed network, which can work with MPC. Layered Security Model: Users can choose FHE core processing, MPC network computing, TEE nodes, or (at their own risk) plaintext computing based on task sensitivity. Parallel Chain Architecture: Simulates the collaboration of multiple brain regions by assigning different cognitive functions (perception, memory, decision-making, etc.) to independent sub-chains/shards, improving efficiency and scalability. PoII as Consensus Mechanism PoII (Proof of Information Integration) Core Content: The core of MSC is the state of vast, complex, and dynamically changing ANNs (Artificial Neural Networks), with the blockchain providing a secure, trustworthy, and persistent framework for storage, management, and verification.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Mental Smart Chain (MSC) | Chain://Docs</title>
+<link rel="icon" href="/media/Chain.jpeg" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/concepts/MSC/">
+  <link rel="alternate" hreflang="zh" href="http://localhost:1313/zh/docs/concepts/MSC/" title="Mental Smart Chain (MSC)">
+<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.241d67bf65042e548c8ff513c56b7c69898142b84796bf3ff377627a265e9399.js" integrity="sha256-JB1nv2UELlSMj/UTxWt8aYmBQrhHlr8/83dieiZek5k=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Chain://Docs</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/zh/docs/concepts/MSC/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Core Concepts</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/ANNs-in-MSC/" class="">Artificial Neural Networks (ANNs) - The Consciousness Simulation Engine</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/DMF/" class="">DMF (Digital Mind Foundation)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/IRES/" class="">IRES (Independent Rogue Entity System)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/MSC/" class="active">Mental Smart Chain (MSC)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/Mentalink/" class="">Mentalink - The Restricted Bidirectional Bridge</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/concepts/PoII/" class="">PoII (Proof of Information Integration)</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>FAQ</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/faq/Mentalink-FAQ/" class="">Mentalink FAQ: The Bridge Connecting Consciousness</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/dmf-archive/dmf-archive.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Mental Smart Chain (MSC)</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#mental-smart-chain-msc">Mental Smart Chain (MSC)</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="mental-smart-chain-msc">
+  Mental Smart Chain (MSC)
+  <a class="anchor" href="#mental-smart-chain-msc">#</a>
+</h1>
+<p>MSC (Mental Smart Chain) is the core concept in the Chain:// world, a system that quantifies human mental activities and records them on a blockchain. It&rsquo;s not just memory storage but an attempt to simulate the &ldquo;self&rdquo; as a dynamic information integration process (inspired by GWT and IIT).</p>
+<p><strong>Key Features:</strong></p>
+<ol>
+<li><strong>Private Chain Architecture &amp; Biological Trust Origin:</strong> Each MSC is a user-controlled private chain. The root of trust originates from the biological brain&rsquo;s initial anchoring of consciousness data via the <strong>Mentalink</strong> Brain-Computer Interface.</li>
+<li><strong>Progressive Migration &amp; On-Chain Immortality:</strong> Consciousness activities gradually migrate from the biological brain to the chain. Ultimately, by encoding neural signals as &ldquo;intention transactions,&rdquo; complete attention transfer is achieved, leading to theoretical &ldquo;on-chain immortality.&rdquo;</li>
+<li><strong>Security and Privacy Core (FHE + MPC Architecture):</strong>
+<ul>
+<li><strong>FHE (Fully Homomorphic Encryption) as &ldquo;Security Flint&rdquo; / Trust Anchor:</strong> <strong>FHE is not used for all computations but to protect the most core and sensitive parts of MSC.</strong> This FHE &ldquo;black box&rdquo; is responsible for:
+<ul>
+<li><strong>Core Key Management:</strong> Absolutely secure private key storage and usage.</li>
+<li><strong>Minimized Core State Maintenance:</strong> Maintaining basic &ldquo;self&rdquo; existence identifiers and continuity markers.</li>
+<li><strong>Secure Coordination:</strong> Participating in and verifying MPC computations as a trusted party, managing ANNs instance pointers and metadata.</li>
+<li><strong>Proof of Existence:</strong> <strong>Its stable operation itself is a zero-knowledge proof to the outside world, indicating that the MSC instance is &ldquo;alive&rdquo; and basically integrated, without exposing internal thoughts.</strong></li>
+</ul>
+</li>
+<li><strong>MPC (Secure Multi-Party Computation) for Secure Computation Outsourcing:</strong> <strong>The vast majority of computationally intensive tasks (complex ANNs reasoning/training, partial pre-computation of PoII, advanced thought simulation) are securely outsourced to a distributed computing network through MPC protocols.</strong> The FHE core, as a participant, provides encrypted input/state, ensuring computational process and core privacy, <strong>effectively solving the performance bottleneck of FHE.</strong></li>
+<li>ZKP (Zero-Knowledge Proofs): Used to <strong>verify the validity of external computations (such as PoII calculation results provided by QCaaS, and the correctness of MPC computations)</strong> while protecting privacy.</li>
+<li>TEE (Trusted Execution Environment): Serves as <strong>a hardware-level security option</strong> for nodes in a distributed network, which can work with MPC.</li>
+<li>Layered Security Model: Users can choose FHE core processing, MPC network computing, TEE nodes, or (at their own risk) plaintext computing based on task sensitivity.</li>
+</ul>
+</li>
+<li><strong>Parallel Chain Architecture:</strong> Simulates the collaboration of multiple brain regions by assigning different cognitive functions (perception, memory, decision-making, etc.) to independent sub-chains/shards, improving efficiency and scalability.</li>
+<li>PoII as Consensus Mechanism
+
+  <a href="/docs/concepts/PoII/">PoII (Proof of Information Integration)</a></li>
+</ol>
+<p><strong>Core Content:</strong> The core of MSC is the state of vast, complex, and dynamically changing <strong>ANNs (Artificial Neural Networks)</strong>, with the blockchain providing a secure, trustworthy, and persistent framework for storage, management, and verification.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#mental-smart-chain-msc">Mental Smart Chain (MSC)</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

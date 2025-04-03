@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Mental Smart Chain (MSC)
+  #
+
+MSC (Mental Smart Chain) 是 Chain:// 世界的核心概念，是一种将人类心智活动量化并记录在区块链上的系统。它不仅是记忆存储，更是模拟“自我”作为动态信息整合过程（受 GWT 和 IIT 启发）的尝试。
+关键特征:
+
+私有链架构 &amp; 生物信任起源: 每个 MSC 是用户控制的私有链。信任根源于生物大脑通过 Mentalink 脑机接口初始锚定的意识数据。
+渐进式迁移 &amp; 链上永生: 意识活动从生物大脑逐步迁移至链上，最终通过将神经信号编码为“意图交易”实现注意力完全转移，达成理论上的“链上永生”。
+安全与隐私核心 (FHE &#43; MPC 架构):
+
+全同态加密 (FHE) 作为“安全打火石”/信任锚点: FHE 不用于执行所有计算，而是保护 MSC 最核心、最敏感的部分。 这个 FHE &ldquo;黑匣子&rdquo; 负责：
+
+核心密钥管理: 绝对安全的私钥存储与使用。
+最小化核心状态维护: 维持基本的“自我”存在标识和连续性标记。
+安全协调: 作为可信方参与和验证 MPC 计算，管理 ANNs 实例指针和元数据。
+存在性证明: 其稳定运行本身就是对外部的一种零知识证明，表明该 MSC 实例“存活”且基本整合，但不暴露内部思想。
+
+
+多方安全计算 (MPC) 用于安全计算外包: 绝大部分计算密集型任务（复杂的 ANNs 推理/训练、部分 PoII 前计算、高级思维模拟）通过 MPC 协议安全地外包给分布式计算网络。 FHE 核心作为参与方提供加密输入/状态，确保计算过程和核心隐私，有效解决了 FHE 的性能瓶颈。
+零知识证明 (ZKP): 用于**验证外部计算（如 QCaaS 提供的 PoII 计算结果、MPC 计算的正确性）**的有效性，同时保护隐私。
+可信执行环境 (TEE): 作为分布式网络中节点的一种硬件级安全选项，可与 MPC 协同工作。
+分层安全模型： 用户可根据任务敏感度选择 FHE 核心处理、MPC 网络计算、TEE 节点或（风险自负）明文计算。
+
+
+并行链架构: 模拟大脑多区域协同，将不同思维功能（感知、记忆、决策等）分配到独立子链/分片，提升效率和可扩展性。
+PoII 作为共识机制
+
+  PoII (Proof of Information Integration)
+
+核心内容: MSC 的核心是庞大、复杂、动态变化的 ANNs (人工神经网络) 的状态，由区块链提供安全、可信、持久化的存储、管理和验证框架。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/zh/docs/concepts/MSC/">
+  <meta property="og:site_name" content="Chain://Docs">
+  <meta property="og:title" content="Mental Smart Chain (MSC)">
+  <meta property="og:description" content="Mental Smart Chain (MSC)#MSC (Mental Smart Chain) 是 Chain:// 世界的核心概念，是一种将人类心智活动量化并记录在区块链上的系统。它不仅是记忆存储，更是模拟“自我”作为动态信息整合过程（受 GWT 和 IIT 启发）的尝试。
+关键特征:
+私有链架构 &amp; 生物信任起源: 每个 MSC 是用户控制的私有链。信任根源于生物大脑通过 Mentalink 脑机接口初始锚定的意识数据。 渐进式迁移 &amp; 链上永生: 意识活动从生物大脑逐步迁移至链上，最终通过将神经信号编码为“意图交易”实现注意力完全转移，达成理论上的“链上永生”。 安全与隐私核心 (FHE &#43; MPC 架构): 全同态加密 (FHE) 作为“安全打火石”/信任锚点: FHE 不用于执行所有计算，而是保护 MSC 最核心、最敏感的部分。 这个 FHE “黑匣子” 负责： 核心密钥管理: 绝对安全的私钥存储与使用。 最小化核心状态维护: 维持基本的“自我”存在标识和连续性标记。 安全协调: 作为可信方参与和验证 MPC 计算，管理 ANNs 实例指针和元数据。 存在性证明: 其稳定运行本身就是对外部的一种零知识证明，表明该 MSC 实例“存活”且基本整合，但不暴露内部思想。 多方安全计算 (MPC) 用于安全计算外包: 绝大部分计算密集型任务（复杂的 ANNs 推理/训练、部分 PoII 前计算、高级思维模拟）通过 MPC 协议安全地外包给分布式计算网络。 FHE 核心作为参与方提供加密输入/状态，确保计算过程和核心隐私，有效解决了 FHE 的性能瓶颈。 零知识证明 (ZKP): 用于**验证外部计算（如 QCaaS 提供的 PoII 计算结果、MPC 计算的正确性）**的有效性，同时保护隐私。 可信执行环境 (TEE): 作为分布式网络中节点的一种硬件级安全选项，可与 MPC 协同工作。 分层安全模型： 用户可根据任务敏感度选择 FHE 核心处理、MPC 网络计算、TEE 节点或（风险自负）明文计算。 并行链架构: 模拟大脑多区域协同，将不同思维功能（感知、记忆、决策等）分配到独立子链/分片，提升效率和可扩展性。 PoII 作为共识机制
+PoII (Proof of Information Integration) 核心内容: MSC 的核心是庞大、复杂、动态变化的 ANNs (人工神经网络) 的状态，由区块链提供安全、可信、持久化的存储、管理和验证框架。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>Mental Smart Chain (MSC) | Chain://Docs</title>
+<link rel="icon" href="/media/Chain.jpeg" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/zh/docs/concepts/MSC/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/docs/concepts/MSC/" title="Mental Smart Chain (MSC)">
+<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.365dcfffbf90caa503efc0862bd5ff35180b7afe41919c979e61963a5cfe707c.js" integrity="sha256-Nl3P/7&#43;QyqUD78CGK9X/NRgLev5BkZyXnmGWOlz&#43;cHw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/zh/"><span>Chain://Docs</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Chinese
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/docs/concepts/MSC/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>核心设定</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/DMF/" class="">DMF (Digital Mind Foundation)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/IRES/" class="">IRES (Independent Rogue Entity System)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/MSC/" class="active">Mental Smart Chain (MSC)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/Mentalink/" class="">Mentalink - 受限的双向桥梁</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/PoII/" class="">PoII (Proof of Information Integration)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/ANNs-in-MSC/" class="">人工神经网络 (ANNs) - 意识模拟引擎</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>FAQ</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/faq/Mentalink-FAQ/" class="">Mentalink FAQ：连接意识的桥梁</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/dmf-archive/dmf-archive.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Mental Smart Chain (MSC)</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#mental-smart-chain-msc">Mental Smart Chain (MSC)</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="mental-smart-chain-msc">
+  Mental Smart Chain (MSC)
+  <a class="anchor" href="#mental-smart-chain-msc">#</a>
+</h1>
+<p>MSC (Mental Smart Chain) 是 Chain:// 世界的核心概念，是一种将人类心智活动量化并记录在区块链上的系统。它不仅是记忆存储，更是模拟“自我”作为动态信息整合过程（受 GWT 和 IIT 启发）的尝试。<br>
+<strong>关键特征:</strong></p>
+<ol>
+<li><strong>私有链架构 &amp; 生物信任起源:</strong> 每个 MSC 是用户控制的私有链。信任根源于生物大脑通过 <strong>Mentalink</strong> 脑机接口初始锚定的意识数据。</li>
+<li><strong>渐进式迁移 &amp; 链上永生:</strong> 意识活动从生物大脑逐步迁移至链上，最终通过将神经信号编码为“意图交易”实现注意力完全转移，达成理论上的“链上永生”。</li>
+<li><strong>安全与隐私核心 (FHE + MPC 架构):</strong>
+<ul>
+<li><strong>全同态加密 (FHE) 作为“安全打火石”/信任锚点:</strong> <strong>FHE 不用于执行所有计算，而是保护 MSC 最核心、最敏感的部分。</strong> 这个 FHE &ldquo;黑匣子&rdquo; 负责：
+<ul>
+<li><strong>核心密钥管理:</strong> 绝对安全的私钥存储与使用。</li>
+<li><strong>最小化核心状态维护:</strong> 维持基本的“自我”存在标识和连续性标记。</li>
+<li><strong>安全协调:</strong> 作为可信方参与和验证 MPC 计算，管理 ANNs 实例指针和元数据。</li>
+<li><strong>存在性证明:</strong> <strong>其稳定运行本身就是对外部的一种零知识证明，表明该 MSC 实例“存活”且基本整合，但不暴露内部思想。</strong></li>
+</ul>
+</li>
+<li><strong>多方安全计算 (MPC) 用于安全计算外包:</strong> <strong>绝大部分计算密集型任务（复杂的 ANNs 推理/训练、部分 PoII 前计算、高级思维模拟）通过 MPC 协议安全地外包给分布式计算网络。</strong> FHE 核心作为参与方提供加密输入/状态，确保计算过程和核心隐私，<strong>有效解决了 FHE 的性能瓶颈</strong>。</li>
+<li><strong>零知识证明 (ZKP):</strong> 用于**验证外部计算（如 QCaaS 提供的 PoII 计算结果、MPC 计算的正确性）**的有效性，同时保护隐私。</li>
+<li><strong>可信执行环境 (TEE):</strong> 作为分布式网络中节点的<strong>一种硬件级安全选项</strong>，可与 MPC 协同工作。</li>
+<li><strong>分层安全模型：</strong> 用户可根据任务敏感度选择 FHE 核心处理、MPC 网络计算、TEE 节点或（风险自负）明文计算。</li>
+</ul>
+</li>
+<li><strong>并行链架构:</strong> 模拟大脑多区域协同，将不同思维功能（感知、记忆、决策等）分配到独立子链/分片，提升效率和可扩展性。</li>
+<li>PoII 作为共识机制<br>
+
+  <a href="/zh/docs/concepts/PoII/">PoII (Proof of Information Integration)</a></li>
+</ol>
+<p><strong>核心内容:</strong> MSC 的核心是庞大、复杂、动态变化的 <strong>ANNs (人工神经网络)</strong> 的状态，由区块链提供安全、可信、持久化的存储、管理和验证框架。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#mental-smart-chain-msc">Mental Smart Chain (MSC)</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

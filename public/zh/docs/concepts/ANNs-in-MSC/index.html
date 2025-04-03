@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  人工神经网络 (ANNs) - 意识模拟引擎
+  #
+
+MSC 建立在心智可计算性 (Computability of Mind) 假设之上，认为心智活动本质上是复杂的信息处理过程，理论上可用计算模型模拟。人工神经网络 (ANNs) 是实现这一目标的关键工具。
+ANNs 在 MSC 中的作用:
+
+意识内容的表征与嵌入: 感知、记忆、情感、人格等被表示为 ANNs 中的高维向量 (Embeddings) 或激活模式。复杂的记忆或概念对应庞大多模态 ANN 复合体的权重组合或激活模式。
+思维过程的模拟与关联: 思考、推理、联想、决策等被模拟为信息在 ANNs (如 RNNs, Transformers, CNNs, Bayesian Networks) 中的流动、变换与相互作用。关联性通过节点间连接实现。
+学习、适应与重组: ANNs 通过学习算法（监督、无监督、强化学习等）持续调整权重和结构，使数字意识能够学习、成长、演化和重组，保持动态性，实现“活着”和发展。
+
+MSC 的核心内容即是这些庞大、复杂、动态变化的 ANNs 的状态（权重、激活、拓扑）。 区块链（结合 FHE, MPC, ZKP, TEE 等加密技术）为这些核心数据提供安全、可信、持久化的存储、管理、验证框架，并支持安全的链下计算与版本控制。ANNs 使得模拟心智的丰富性、复杂性和动态性成为可能。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/zh/docs/concepts/ANNs-in-MSC/">
+  <meta property="og:site_name" content="Chain://Docs">
+  <meta property="og:title" content="人工神经网络 (ANNs) - 意识模拟引擎">
+  <meta property="og:description" content="人工神经网络 (ANNs) - 意识模拟引擎#MSC 建立在心智可计算性 (Computability of Mind) 假设之上，认为心智活动本质上是复杂的信息处理过程，理论上可用计算模型模拟。人工神经网络 (ANNs) 是实现这一目标的关键工具。
+ANNs 在 MSC 中的作用:
+意识内容的表征与嵌入: 感知、记忆、情感、人格等被表示为 ANNs 中的高维向量 (Embeddings) 或激活模式。复杂的记忆或概念对应庞大多模态 ANN 复合体的权重组合或激活模式。 思维过程的模拟与关联: 思考、推理、联想、决策等被模拟为信息在 ANNs (如 RNNs, Transformers, CNNs, Bayesian Networks) 中的流动、变换与相互作用。关联性通过节点间连接实现。 学习、适应与重组: ANNs 通过学习算法（监督、无监督、强化学习等）持续调整权重和结构，使数字意识能够学习、成长、演化和重组，保持动态性，实现“活着”和发展。 MSC 的核心内容即是这些庞大、复杂、动态变化的 ANNs 的状态（权重、激活、拓扑）。 区块链（结合 FHE, MPC, ZKP, TEE 等加密技术）为这些核心数据提供安全、可信、持久化的存储、管理、验证框架，并支持安全的链下计算与版本控制。ANNs 使得模拟心智的丰富性、复杂性和动态性成为可能。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+<title>人工神经网络 (ANNs) - 意识模拟引擎 | Chain://Docs</title>
+<link rel="icon" href="/media/Chain.jpeg" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/zh/docs/concepts/ANNs-in-MSC/">
+  <link rel="alternate" hreflang="en" href="http://localhost:1313/docs/concepts/ANNs-in-MSC/" title="Artificial Neural Networks (ANNs) - The Consciousness Simulation Engine">
+<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.365dcfffbf90caa503efc0862bd5ff35180b7afe41919c979e61963a5cfe707c.js" integrity="sha256-Nl3P/7&#43;QyqUD78CGK9X/NRgLev5BkZyXnmGWOlz&#43;cHw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/zh/"><span>Chain://Docs</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Chinese
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/docs/concepts/ANNs-in-MSC/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>核心设定</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/DMF/" class="">DMF (Digital Mind Foundation)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/IRES/" class="">IRES (Independent Rogue Entity System)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/MSC/" class="">Mental Smart Chain (MSC)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/Mentalink/" class="">Mentalink - 受限的双向桥梁</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/PoII/" class="">PoII (Proof of Information Integration)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/concepts/ANNs-in-MSC/" class="active">人工神经网络 (ANNs) - 意识模拟引擎</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>FAQ</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/zh/docs/faq/Mentalink-FAQ/" class="">Mentalink FAQ：连接意识的桥梁</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/dmf-archive/dmf-archive.github.io"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>人工神经网络 (ANNs) - 意识模拟引擎</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#人工神经网络-anns---意识模拟引擎">人工神经网络 (ANNs) - 意识模拟引擎</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="人工神经网络-anns---意识模拟引擎">
+  人工神经网络 (ANNs) - 意识模拟引擎
+  <a class="anchor" href="#%e4%ba%ba%e5%b7%a5%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c-anns---%e6%84%8f%e8%af%86%e6%a8%a1%e6%8b%9f%e5%bc%95%e6%93%8e">#</a>
+</h1>
+<p>MSC 建立在<strong>心智可计算性 (Computability of Mind)</strong> 假设之上，认为心智活动本质上是复杂的信息处理过程，理论上可用计算模型模拟。<strong>人工神经网络 (ANNs)</strong> 是实现这一目标的关键工具。<br>
+<strong>ANNs 在 MSC 中的作用:</strong></p>
+<ol>
+<li><strong>意识内容的表征与嵌入:</strong> 感知、记忆、情感、人格等被表示为 ANNs 中的高维向量 (Embeddings) 或激活模式。复杂的记忆或概念对应庞大多模态 ANN 复合体的权重组合或激活模式。</li>
+<li><strong>思维过程的模拟与关联:</strong> 思考、推理、联想、决策等被模拟为信息在 ANNs (如 RNNs, Transformers, CNNs, Bayesian Networks) 中的流动、变换与相互作用。关联性通过节点间连接实现。</li>
+<li><strong>学习、适应与重组:</strong> ANNs 通过学习算法（监督、无监督、强化学习等）持续调整权重和结构，使数字意识能够学习、成长、演化和重组，保持动态性，实现“活着”和发展。</li>
+</ol>
+<p><strong>MSC 的核心内容即是这些庞大、复杂、动态变化的 ANNs 的状态（权重、激活、拓扑）。</strong> 区块链（结合 FHE, MPC, ZKP, TEE 等加密技术）为这些核心数据提供安全、可信、持久化的存储、管理、验证框架，并支持安全的链下计算与版本控制。ANNs 使得模拟心智的丰富性、复杂性和动态性成为可能。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#人工神经网络-anns---意识模拟引擎">人工神经网络 (ANNs) - 意识模拟引擎</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

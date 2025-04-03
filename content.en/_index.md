@@ -1,3 +1,9 @@
+---
+title: Introduction Chain://
+type: docs
+keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", "Cognitive Science", "AI", "Artificial Neural Networks", "Digital Consciousness", "Immortality", "Quantum Computing"]
+---
+
 <div align="center">
 
 # 🧠 Chain://
@@ -12,7 +18,7 @@
 </p>
 
 <p align="center">
-  <a href="./README.md">English</a> | <a href="./README_ZH.md">中文</a>
+  <a href="/en/">English</a> | <a href="/zh/">中文</a>
 </p>
 
 </div>

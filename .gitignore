@@ -1,0 +1,22 @@
+/public/
+
+/resources/
+
+/themes/*/exampleSite/
+
+hugo.lock.json
+
+.DS_Store
+Thumbs.db
+
+*.log
+
+*.swp         # Vim swap files
+*.swo         # Vim swap files
+*~            # Emacs and other editor backup files
+*.tmp         # Temporary files
+*.bak         # Backup files
+._*           # macOS hidden files
+.cache/       # Generic cache directory (you might want to keep specific caches)
+.vscode/      # VS Code specific files and settings (if you don't want to share workspace settings)
+.idea/        # IntelliJ IDEA specific files and settings (if you don't want to share project settings)

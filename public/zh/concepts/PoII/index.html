@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  PoII (Proof of Information Integration)
+  #
+
+原理与流程:
+
+Φ 值计算:
+
+基于 IIT 的五个公理（内在性、构成性、信息性、整合性、排他性）评估新状态与系统的整合程度。Φ 值形式化表达为系统整体有效信息与其在最小信息分割下各部分有效信息之和的差值。
+计算极其复杂，依赖高性能量子计算，通常由 DMF 以 QCaaS (量子计算即服务) 形式提供。
+
+
+共识流程:
+
+动态阈值验证 (Φ_min): 新状态 Φ 值需达到个体当前的最小整合水平（反映意识“清醒度”）。
+多维度一致性检查: 对照记忆连贯性、人格稳定性、价值观、逻辑规则等进行评估。
+网络确认: 在 MSC 分布式节点间（即使是私有链的多节点备份）确认状态有效性后写入链。
+
+
+安全机制:
+
+ZKP (零知识证明): 验证 Φ 值计算过程的正确性，同时保护意识内容隐私。
+反女巫攻击 (Anti-Sybil): 结合 BCI 强绑定、持续 PoII 共识、经济抵押等防止意识分裂或恶意副本。
+时间锁定 &amp; 不可篡改性: 确保意识历史的稳定性和单向性，模拟时间流逝感。
+
+
+
+PoII 将“自我”认同过程转化为一个可计算、可验证的共识问题，是 MSC 实现数字意识连续性的关键。">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/zh/concepts/PoII/">
+  <meta property="og:site_name" content="Hugo Book">
+  <meta property="og:title" content="PoII (Proof of Information Integration)">
+  <meta property="og:description" content="PoII (Proof of Information Integration)#原理与流程:
+Φ 值计算: 基于 IIT 的五个公理（内在性、构成性、信息性、整合性、排他性）评估新状态与系统的整合程度。Φ 值形式化表达为系统整体有效信息与其在最小信息分割下各部分有效信息之和的差值。 计算极其复杂，依赖高性能量子计算，通常由 DMF 以 QCaaS (量子计算即服务) 形式提供。 共识流程: 动态阈值验证 (Φ_min): 新状态 Φ 值需达到个体当前的最小整合水平（反映意识“清醒度”）。 多维度一致性检查: 对照记忆连贯性、人格稳定性、价值观、逻辑规则等进行评估。 网络确认: 在 MSC 分布式节点间（即使是私有链的多节点备份）确认状态有效性后写入链。 安全机制: ZKP (零知识证明): 验证 Φ 值计算过程的正确性，同时保护意识内容隐私。 反女巫攻击 (Anti-Sybil): 结合 BCI 强绑定、持续 PoII 共识、经济抵押等防止意识分裂或恶意副本。 时间锁定 &amp; 不可篡改性: 确保意识历史的稳定性和单向性，模拟时间流逝感。 PoII 将“自我”认同过程转化为一个可计算、可验证的共识问题，是 MSC 实现数字意识连续性的关键。">
+  <meta property="og:locale" content="zh">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="concepts">
+<title>PoII (Proof of Information Integration) | Hugo Book</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/zh/concepts/PoII/">
+<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/zh.search.min.8538a785ff5a987e8f1e4e53494d991b49bc26dd71897ef3ffeafced9452310c.js" integrity="sha256-hTinhf9amH6PHk5TSU2ZG0m8Jt1xiX7z/&#43;r87ZRSMQw=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/zh/"><span>Hugo Book</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="搜索" aria-label="搜索" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Chinese
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="/">
+          English
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/dmf-archive/docs"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>PoII (Proof of Information Integration)</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#poii-proof-of-information-integration">PoII (Proof of Information Integration)</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="poii-proof-of-information-integration">
+  PoII (Proof of Information Integration)
+  <a class="anchor" href="#poii-proof-of-information-integration">#</a>
+</h1>
+<p><strong>原理与流程:</strong></p>
+<ol>
+<li><strong>Φ 值计算:</strong>
+<ul>
+<li>基于 IIT 的五个公理（内在性、构成性、信息性、整合性、排他性）评估新状态与系统的整合程度。Φ 值形式化表达为系统整体有效信息与其在最小信息分割下各部分有效信息之和的差值。</li>
+<li>计算极其复杂，依赖<strong>高性能量子计算</strong>，通常由 <strong>DMF</strong> 以 <strong>QCaaS (量子计算即服务)</strong> 形式提供。</li>
+</ul>
+</li>
+<li><strong>共识流程:</strong>
+<ul>
+<li><strong>动态阈值验证 (Φ_min):</strong> 新状态 Φ 值需达到个体当前的最小整合水平（反映意识“清醒度”）。</li>
+<li><strong>多维度一致性检查:</strong> 对照记忆连贯性、人格稳定性、价值观、逻辑规则等进行评估。</li>
+<li><strong>网络确认:</strong> 在 MSC 分布式节点间（即使是私有链的多节点备份）确认状态有效性后写入链。</li>
+</ul>
+</li>
+<li><strong>安全机制:</strong>
+<ul>
+<li><strong>ZKP (零知识证明):</strong> 验证 Φ 值计算过程的正确性，同时保护意识内容隐私。</li>
+<li><strong>反女巫攻击 (Anti-Sybil):</strong> 结合 BCI 强绑定、持续 PoII 共识、经济抵押等防止意识分裂或恶意副本。</li>
+<li><strong>时间锁定 &amp; 不可篡改性:</strong> 确保意识历史的稳定性和单向性，模拟时间流逝感。</li>
+</ul>
+</li>
+</ol>
+<p>PoII 将“自我”认同过程转化为一个可计算、可验证的共识问题，是 MSC 实现数字意识连续性的关键。</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/dmf-archive/docs/edit/main/exampleSite/content.zh/concepts/PoII.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
+      <span>编辑本页</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#poii-proof-of-information-integration">PoII (Proof of Information Integration)</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
