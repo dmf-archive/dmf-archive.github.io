@@ -6,11 +6,11 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", 
 
 # Mental Smart Chain (MSC)
 
-MSC (Mental Smart Chain) is the core concept in the Chain:// world, a system that quantifies human mental activities and records them on a blockchain. It is not just memory storage, but also an attempt to simulate "self" as a dynamic information integration process (inspired by GWT and IIT).
+MSC (Mental Smart Chain) is the core concept in the Chain:// world, a system that quantifies human mental activities and records them on a blockchain. It's not merely memory storage but a groundbreaking attempt to simulate "self" as a dynamic, continuous information integration process, drawing inspiration from leading consciousness theories.
 
 **Integration of Consciousness Theories:**
 
-MSC aims to simulate "self" as a dynamic information integration process, successfully integrating four major consciousness theories in academia:
+Unlike many science fiction concepts that touch upon singular aspects of consciousness, MSC uniquely aims to simulate "self" by holistically integrating key elements from four major academic consciousness theories, achieving a level of theoretical completeness rarely seen:
 
 1.  **Global Workspace Theory (GWT):** Simulates the competition for consciousness focus through MSC's "mental memory pool" and "block packing" mechanism.
 2.  **Integrated Information Theory (IIT):** Quantifies the Φ value of consciousness states through the PoII consensus mechanism.
@@ -24,7 +24,7 @@ In the MSC architecture:
 - ANNs transcribes other off-chain infrastructures (such as Mentalink and bionic robot agents) to build a perception generation mechanism, consistent with PCT
 - Self-monitoring and metacognition are achieved through the "FHE core", executed by MPC and other off-chain facilities, consistent with HOT
 
-MSC regards "self" as a continuous consensus process based on information prediction, integration, and higher-order interpretation, rather than a static entity.
+MSC regards "self" as a continuous consensus process based on information prediction, integration, and higher-order interpretation, rather than a static entity. This dynamic approach, underpinned by blockchain's temporal nature, addresses philosophical challenges like the "Ship of Theseus" paradox concerning identity continuity.
 
 **Key Features:**
 
@@ -41,7 +41,9 @@ MSC regards "self" as a continuous consensus process based on information predic
    - **Trusted Execution Environment (TEE):** Serves as **a hardware-level security option** for nodes in a distributed network, which can work in conjunction with MPC.
    - **Layered Security Model:** Users can choose FHE core processing, MPC network computing, TEE nodes, or (at their own risk) plaintext computing based on the task's sensitivity.
 4. **Parallel Chain Architecture:** Simulates the collaboration of multiple brain regions, allocating different thinking functions (perception, memory, decision-making, etc.) to independent sub-chains/shards to improve efficiency and scalability.
-5. PoII as a Consensus Mechanism
-    [PoII (Proof of Information Integration)](PoII.md)
+5. **PoII as a Consensus Mechanism:** [PoII (Proof of Information Integration)](PoII.md) not only quantifies consciousness integration (Φ value) but crucially acts as an anti-Sybil mechanism, preventing illicit consciousness duplication or splitting – a common vulnerability in simpler upload concepts.
+6. **Economic Sustainability:** The MSC ecosystem often incorporates tokenomics (e.g., MSC tokens) to incentivize node participation and resource provision (like QCaaS), creating a self-sustaining digital existence model.
 
-**Core Content:** The core of MSC is the state of vast, complex, and dynamically changing **ANNs (Artificial Neural Networks)**, with blockchain providing a secure, trustworthy, persistent storage, management, and verification framework.
+*(Note: While MSC presents a robust theoretical framework, its implementation within the Chain:// universe acknowledges potential real-world academic debates surrounding the true nature of Φ value, the emergence of qualia in ANNs, and the practical performance of technologies like FHE.)*
+
+**Core Content:** The core of MSC is the state of vast, complex, and dynamically changing **ANNs (Artificial Neural Networks)**, with blockchain providing a secure, trustworthy, persistent storage, management, and verification framework for this dynamic digital self.
