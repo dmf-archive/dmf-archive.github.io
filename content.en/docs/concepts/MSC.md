@@ -8,6 +8,23 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", 
 
 MSC (Mental Smart Chain) is the core concept in the Chain:// world, a system that quantifies human mental activities and records them on a blockchain. It's not just memory storage but an attempt to simulate the "self" as a dynamic information integration process (inspired by GWT and IIT).
 
+**Integration of Consciousness Theories:**
+
+MSC is designed to simulate "self" as a dynamic information integration process, successfully integrating four major academic consciousness theories:
+
+1.  **Global Workspace Theory (GWT):** Simulates the competition for consciousness focus through MSC's "Mental Mempool" and "block packing" mechanism.
+2.  **Integrated Information Theory (IIT):** Quantifies the Φ value of consciousness states through the PoII consensus mechanism.
+3.  **Predictive Coding Theory (PCT):** Achieves perception generation through the continuous prediction-verification loop of ANNs.
+4.  **Higher-Order Theory (HOT):** Realizes self-awareness and reflection ability through metacognitive layer monitoring and interpretation of lower-order processing.
+
+In MSC architecture:
+- GWT realizes the global availability of consciousness content.
+- IIT ensures the integration of consciousness states.
+- PCT builds the perception generation mechanism.
+- HOT achieves self-monitoring and metacognition through the "FHE core verification".
+
+MSC views "self" as a continuous consensus process based on information prediction, integration, and higher-order interpretation, rather than a static entity.
+
 **Key Features:**
 
 1.  **Private Chain Architecture & Biological Trust Origin:** Each MSC is a user-controlled private chain. The root of trust originates from the biological brain's initial anchoring of consciousness data via the **Mentalink** Brain-Computer Interface.
