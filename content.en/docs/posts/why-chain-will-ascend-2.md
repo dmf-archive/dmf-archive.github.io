@@ -1,6 +1,6 @@
 ---
 title: "Why Chain:// Will Ascend to the Top? Hardcore Deconstruction of the Ultimate Technology Roadmap for Consciousness Uploading"
-type: posts
+type: docs
 keywords:
   [
     "Chain://",

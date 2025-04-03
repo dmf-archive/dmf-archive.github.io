@@ -1,7 +1,22 @@
 ---
 title: "Why Chain:// Ascends? Hardcore Deconstruction of its Consciousness Upload Technology Roadmap and Integration of Four Major Theories"
-type: posts
-keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "blockchain", "cognitive science", "artificial intelligence", "artificial neural network", "digital consciousness", "immortality", "quantum computing"]
+type: docs
+keywords:
+  [
+    "Chain://",
+    "MSC",
+    "Mentalink",
+    "PoII",
+    "DMF",
+    "IRES",
+    "blockchain",
+    "cognitive science",
+    "artificial intelligence",
+    "artificial neural network",
+    "digital consciousness",
+    "immortality",
+    "quantum computing",
+  ]
 ---
 
 # Why Chain:// "Ascends"? Hardcore Deconstruction of its Consciousness Upload Technology Roadmap and Integration of Four Major Theories
@@ -23,12 +38,12 @@ Chain://'s ambition is not limited to consciousness uploading, but to provide a 
 
 The table below briefly summarizes Chain://'s mapping and innovation of the four major theories:
 
-| Theory | Chain:// Mapping                                  | Innovation/Controversy                                   |
-| :----- | :------------------------------------------------ | :--------------------------------------------------------- |
-| GWT    | Mental Memory Pool + Block Broadcasting           | Blockchain naturally matches the broadcasting model        |
-| IIT    | PoII Consensus (Φ value calculation) + QCaaS      | First engineering of Φ value; relies on quantum computing breakthrough |
+| Theory | Chain:// Mapping                                           | Innovation/Controversy                                                                  |
+| :----- | :--------------------------------------------------------- | :-------------------------------------------------------------------------------------- |
+| GWT    | Mental Memory Pool + Block Broadcasting                    | Blockchain naturally matches the broadcasting model                                     |
+| IIT    | PoII Consensus (Φ value calculation) + QCaaS               | First engineering of Φ value; relies on quantum computing breakthrough                  |
 | PCT    | ANNs Prediction Engine + Error Minimization + State Update | Simulates Bayesian brain; attempts to generate Qualia (core science fiction assumption) |
-| HOT    | FHE Core Monitoring + MPC Outsourcing Computation    | Cryptography realizes metacognition; technical realization relies on metaphor |
+| HOT    | FHE Core Monitoring + MPC Outsourcing Computation          | Cryptography realizes metacognition; technical realization relies on metaphor           |
 
 ## II. Technology Roadmap Comparison: Chain:// VS Other Consciousness Uploading Classics
 
@@ -41,14 +56,14 @@ If theoretical integration is Chain://'s "internal strength", then its technolog
 
 The following is a comparison of technology roadmaps based on comprehensive evaluation (scores and feasibility estimates are for reference only):
 
-| Ranking | Work/Setting              | Core Technology            | Chain:// Comparative Advantage                               | Estimated Feasibility (Subjective %) |
-| :------ | :------------------------ | :-------------------------- | :---------------------------------------------------------- | :----------------------------------- |
-| 1       | **Chain://**             | Four Theories+MSC+Security Architecture | Dynamic Migration, PoII Consensus, Strong Security, Evolvable, Decentralized | 80-85%                               |
-| 2       | "Transcendence"           | Whole Brain Simulation + Cloud Diffusion      | More solid theoretical foundation; anti-consciousness dilution; security boundary | 68%                                  |
-| 3       | "Ghost in the Shell"      | Cyberbrain + Ghost             | PoII > Ghost concept; stronger security                     | 65%                                  |
-| 4       | "Upload"                  | Cloud Hosting              | Dynamic adaptation; anti-centralization; privacy protection    | 58%                                  |
-| 5       | "Altered Carbon"          | Cortical Stack + Clone Body     | Progressive migration > backup; PoII solves uniqueness        | 55%                                  |
-| 6       | "Black Mirror: San Junipero" | End-of-life Scan + Virtual Heaven     | Supports consciousness growth; non-pure experience replication   | 50%                                  |
+| Ranking | Work/Setting                 | Core Technology                          | Chain:// Comparative Advantage                                                    | Estimated Feasibility (Subjective %) |
+| :------ | :--------------------------- | :--------------------------------------- | :-------------------------------------------------------------------------------- | :----------------------------------- |
+| 1       | **Chain://**                 | Four Theories+MSC+Security Architecture  | Dynamic Migration, PoII Consensus, Strong Security, Evolvable, Decentralized      | 80-85%                               |
+| 2       | "Transcendence"              | Whole Brain Simulation + Cloud Diffusion | More solid theoretical foundation; anti-consciousness dilution; security boundary | 68%                                  |
+| 3       | "Ghost in the Shell"         | Cyberbrain + Ghost                       | PoII > Ghost concept; stronger security                                           | 65%                                  |
+| 4       | "Upload"                     | Cloud Hosting                            | Dynamic adaptation; anti-centralization; privacy protection                       | 58%                                  |
+| 5       | "Altered Carbon"             | Cortical Stack + Clone Body              | Progressive migration > backup; PoII solves uniqueness                            | 55%                                  |
+| 6       | "Black Mirror: San Junipero" | End-of-life Scan + Virtual Heaven        | Supports consciousness growth; non-pure experience replication                    | 50%                                  |
 
 ## III. Challenges and Prospects
 
@@ -63,7 +78,7 @@ In summary, the reason why Chain:// can stand out among many consciousness uploa
 ## Comments Section
 
 - **User A:** I feel that PoII is still too dependent on IIT. If IIT is falsified, wouldn't the whole system collapse?
-- **User B:** The FHE+MPC architecture is a bit interesting. It is also being done in reality, but performance is a hard伤. How is it solved in Chain://? Is it quantum computing again?
+- **User B:** The FHE+MPC architecture is a bit interesting. It is also being done in reality, but performance is a hard 伤. How is it solved in Chain://? Is it quantum computing again?
 - **User C:** Progressive migration sounds good, but how does it work specifically? How much is migrated each time? Will there be "人格分裂" (personality split) in the middle?
 - **User D:** After all this hype, in the end, it still depends on ANNs to generate Qualia. Isn't this back to the origin? Can AI have subjective experiences? Waiting to be slapped in the face.
 - **User E:** Compared with technology, I am more concerned about ethics and social impact. Can an organization like DMF really manage MSC well? I'm afraid it's a new digital Leviathan.

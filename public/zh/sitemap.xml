@@ -38,40 +38,40 @@
                 href="http://localhost:1313/zh/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/posts/after-dark-future/</loc>
+    <loc>http://localhost:1313/zh/docs/posts/after-dark-future/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/after-dark-future/"
+                href="http://localhost:1313/docs/posts/after-dark-future/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/posts/after-dark-future/"
+                href="http://localhost:1313/zh/docs/posts/after-dark-future/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/posts/why-chain-will-ascend/</loc>
+    <loc>http://localhost:1313/zh/docs/posts/why-chain-will-ascend/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/why-chain-will-ascend/"
+                href="http://localhost:1313/docs/posts/why-chain-will-ascend/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/posts/why-chain-will-ascend/"
+                href="http://localhost:1313/zh/docs/posts/why-chain-will-ascend/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/posts/why-chain-will-ascend-2/</loc>
+    <loc>http://localhost:1313/zh/docs/posts/why-chain-will-ascend-2/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/why-chain-will-ascend-2/"
+                href="http://localhost:1313/docs/posts/why-chain-will-ascend-2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/posts/why-chain-will-ascend-2/"
+                href="http://localhost:1313/zh/docs/posts/why-chain-will-ascend-2/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh/docs/concepts/DMF/</loc>
@@ -146,16 +146,16 @@
                 href="http://localhost:1313/zh/docs/faq/Mentalink-FAQ/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/posts/</loc>
+    <loc>http://localhost:1313/zh/docs/posts/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/"
+                href="http://localhost:1313/docs/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/posts/"
+                href="http://localhost:1313/zh/docs/posts/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh/docs/concepts/PoII/</loc>
@@ -194,16 +194,16 @@
                 href="http://localhost:1313/zh/"
                 />
   </url><url>
-    <loc>http://localhost:1313/zh/posts/big-bro-and-me/</loc>
+    <loc>http://localhost:1313/zh/docs/posts/big-bro-and-me/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/posts/big-bro-and-me/"
+                href="http://localhost:1313/docs/posts/big-bro-and-me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="http://localhost:1313/zh/posts/big-bro-and-me/"
+                href="http://localhost:1313/zh/docs/posts/big-bro-and-me/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh/docs/concepts/ANNs-in-MSC/</loc>

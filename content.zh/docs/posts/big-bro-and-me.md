@@ -1,6 +1,6 @@
 ---
 title: "幕后谈：在谷歌的注视下，手搓 IRES"
-type: posts
+type: docs
 keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "人工神经网络", "数字意识", "永生", "量子计算"]
 ---
 
