@@ -23,7 +23,7 @@ keywords:
 
 > 使用 Deepseek-V3-0324 生成的伪知乎专栏风格
 
-行，都坐吧，别客气。既然你们对《Chain://》这堆破事儿怎么来的这么感兴趣，我就一次性说个明白。省得你们老去翻那些零零散碎、自相矛盾的聊天记录。
+行，都坐吧，别客气。既然你们对《Chain://》这堆破事儿怎么来的这么感兴趣，我就一次性说个明白。省得你们老去翻那些零零散碎、自相矛盾的[聊天记录](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/deep-dark-fantasy/chain-dark-future-setting.md)。
 
 ## 缘起：一个认知科学叛徒的 Crypto 投机
 
