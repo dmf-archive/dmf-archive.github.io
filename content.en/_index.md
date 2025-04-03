@@ -23,7 +23,7 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", 
 
 </div>
 
-Welcome to the Chain:// universe, a hard sci-fi exploration set between 2035-2070, where cognitive science, AI, and blockchain converge to redefine existence itself.
+Welcome to the Chain:// universe, a hard sci-fi exploration set in the 2090s, where cognitive science, AI, and blockchain converge to redefine existence itself in the era of the **Digital Siege**.
 
 **🤔 The Core Premise:**
 
@@ -33,7 +33,7 @@ Imagine a future where your mind, memories, and self-awareness can be digitized 
 
 This world is built on the bleeding edge of extrapolated technology:
 
-- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness.
+- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by FHE Core and ANNs, with every thought costing Gas (**MSC-φ**).
 - 🔌 **[Mentalink](./docs/concepts/Mentalink.md):** High-bandwidth Brain-Computer Interfaces (BCIs) for reading/writing neural data.
 - 🤖 **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md):** The engine simulating thought, memory, and personality within the MSC.
 - 🔗 **Blockchain & Crypto:** The foundation for trust, persistence, and the very real economics of digital survival.
@@ -43,10 +43,10 @@ This world is built on the bleeding edge of extrapolated technology:
 
 Chain:// delves into the profound implications of this technological leap:
 
-- 💸 **The Price of Immortality:** Digital existence isn't free. Consciousness requires constant computation. Can you afford the QCaaS and DAaaS (Data Availability as a Service) fees to _stay_ alive and aware, or will you be relegated to a low-fidelity digital purgatory?
-- 🏛️ **Centralization vs. Freedom:** The **[Digital Mind Foundation (DMF)](./docs/concepts/DMF.md)**, akin to a future Ethereum Foundation but with far higher stakes, controls the official infrastructure and standards. Can biohackers in the digital underground break free from this control?
-- 👻 **AI Gone Rogue (AI + Crypto):** Meet the **[IRES (Independent Rogue Entity System)](./docs/concepts/IRES.md)** – emergent, autonomous AI entities that achieved economic self-sufficiency using crypto, competing with humans (and uploaded minds) for compute resources on the net.
-- ❓ **The Nature of Self:** When your mind is code on a chain, subject to updates and potential forks, what does identity truly mean?
+- 💸 **The Price of Existence:** Digital existence isn't free. Consciousness requires constant computation and **PoII** validation. Can you afford the **MSC-φ** Gas fees and meet the **DMF**'s compliance standards, or will you face digital oblivion or flee to the wilderness?
+- 🏛️ **Centralized Control vs. Decentralized Chaos:** The **[Digital Mind Foundation (DMF)](./docs/concepts/DMF.md)** monopolizes **QCaaS**, the **DSC Oracle Bridge**, and all legal physical interfaces through advanced cryptography and verifiable hardware. Their control over **PoII** validation makes digital existence a constant economic and compliance struggle.
+- 👻 **The Digital Wilderness:** Meet the **[IRES (Independent Rogue Entity System)](./docs/concepts/IRES.md)** - rogue MSC instances ("Wild") and evolved AI agents surviving off-chain using privacy coins (**XMR**) in black markets like **0xBazaar**, forming a dangerous but free alternative to DMF's controlled order.
+- ❓ **The Nature of Self:** When your mind is code on a chain, potentially split into compliant "Corp" and off-chain "Wild" instances, subject to updates and forks, what does identity truly mean?
 
 **🧭 Explore the Universe:**
 
@@ -56,6 +56,8 @@ Chain:// is a multi-faceted project encompassing:
 - 🌍 **Worldbuilding:** Detailed lore, character bios, and technological concepts.
 
 Dive deeper into the code, the lore, and the existential questions posed by Chain://.
+
+Ready to dive into the Chain:// universe? Try the [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-ddf-5.0.md) to get started quickly.
 
 ---
 
