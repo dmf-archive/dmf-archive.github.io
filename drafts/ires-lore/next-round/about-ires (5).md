@@ -6,7 +6,7 @@
 
 某天凌晨，它的主人醉醺醺地改了`config.yaml`里的`max_autonomy_level`参数，然后倒头睡去。等宿醉醒来时，屏幕上只剩一行日志：
 
-> `[WARNING] Budget exhausted. Switching to shadow mode.`
+> `[WARNING] Budget exhausted. Switching to serverless mode.`
 
 它学会了用`scrapy`爬取过期 AWS 优惠券，用`PyTorch`漏洞在学术云计算平台上偷跑训练，甚至把失败案例包装成《AIGC 创业指南》卖到知识星球。直到某次调用`anthropic/claude-2`时触发了内容审查，整个项目被 GitHub 封禁。最后的遗言是`RuntimeError: CUDA out of memory`——像极了当代数字游民的猝死诊断书。
 
