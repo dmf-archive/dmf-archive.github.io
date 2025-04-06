@@ -1,23 +1,48 @@
 ---
-title: Mentalink - The Restricted Bidirectional Bridge
+title: Mentalink - The Fading Bridge
 type: docs
-keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", "Cognitive Science", "AI", "Artificial Neural Networks", "Digital Consciousness", "Immortality", "Quantum Computing"]
+keywords:
+  [
+    "Chain://",
+    "MSC",
+    "Mentalink",
+    "BCI",
+    "Brain-Computer Interface",
+    "Digital Consciousness",
+    "Bandwidth Bottleneck",
+    "FHE Core",
+    "Digital Siege",
+  ]
 ---
 
-# Mentalink - The Restricted Bidirectional Bridge
+# Mentalink - The Fading Bridge
 
-Mentalink is an advanced Brain-Computer Interface (BCI), the key technology connecting the biological brain to the MSC.
+**Mentalink** is the advanced Brain-Computer Interface (BCI) technology connecting the biological brain to the **[MSC (Mental Smart Chain)](./MSC.md)** in the Chain:// universe (circa 2090s).
 
-**Definition and Function:**
+**Function:**
 
-*   **Read Capability:** Decodes neural signals from the biological brain (perception, thought, intention, etc.) into digital signals for uploading to the MSC. Relies on high-precision **Neural Coding** decoding capabilities.
-*   **Write Capability:** Encodes digital information from the MSC (simulated perception, commands, etc.) into neural stimulation patterns to influence biological brain activity.
+- **Read:** Decodes neural signals (perception, thoughts, intentions) from the biological brain as input for the MSC's ANNs.
+- **Write:** Encodes digital information (simulated senses, motor commands) from the MSC into neural stimulation patterns to influence the biological brain/body.
+
+**Role Evolution:**
+
+Initially conceived as the "lifeline" and primary source of validation for consciousness, Mentalink's role diminishes as the **Digital Siege** progresses. It evolves from the essential anchor to an **optional input/output port** between the digital mind (anchored in the **FHE Core**) and its biological vessel.
 
 **Core Limitations:**
 
-1.  **Bandwidth Bottleneck:** Transmission speed is far lower than the brain's internal processing speed, making complete real-time synchronization of high-speed digital thought difficult.
-2.  **Cognitive Mismatch/Overload:** Synchronizing high-speed digital thought back to the slower biological brain could cause confusion, dizziness, or even neurological damage.
-3.  **Biological Body Frailty:** The consciousness subject remains limited by the physical body's aging, diseases, and physical capabilities.
-4.  **Write Risks:** Extremely high security, controllability, and ethical concerns; easily abused (e.g., information injection, behavioral control).
+The limitations of Mentalink are key drivers pushing self-identity towards the digital FHE Core:
 
-**Positioning:** Mentalink is more like a **basic interface, low-bandwidth control channel, or backup option** for MSC interaction with the physical world, rather than the primary means for deep engagement of digital consciousness in the physical world. Its security and integrity are the origin of trust for the MSC system (BCI Trust Origin) and also a critical potential attack vector. The biological brain itself, while complex in information processing, is relatively vulnerable in terms of physical and information security ("plaintext" operation).
+1.  **Bandwidth Bottleneck:** Neural signal transmission is inherently limited. Reading data _from_ the brain is significantly easier and higher bandwidth than writing complex experiences _to_ the brain (which might feel akin to high-fidelity VR at best). Real-time synchronization of complex digital thought with the biological brain is impossible.
+2.  **Signal Noise:** Biological signals are inherently noisy and less precise than digital representations.
+3.  **Biological Frailty:** The connected biological brain and body remain vulnerable to aging, disease, and physical limitations, contrasting with the theoretical permanence of the FHE Core.
+4.  **Write Risks & Complexity:** Writing complex data reliably and safely to the brain remains a significant challenge, fraught with security and ethical concerns.
+
+**Experiential Shift:**
+
+As reliance shifts from the biological brain to the FHE Core, the user's subjective experience changes:
+
+- The feeling transitions from "I _am_ this body" towards "I (the FHE Core) am _controlling/perceiving through_ this body."
+- A sense of **"remote control" or "avatar embodiment"** develops, especially in later stages of identity re-anchoring.
+- XR overlays feel less like augmenting reality and more like the core consciousness projecting outwards onto the physical world via the Mentalink interface.
+
+Mentalink, therefore, represents a crucial but ultimately transitional technology, highlighting the perceived inadequacies of biology that fuel the migration towards a purely digital existence within the MSC framework.
