@@ -149,9 +149,9 @@
   - **物理交互的外包与降级:** 对于 Corp MSC，通过 DSC 预言机进行的物理交互昂贵且受监控。对于 Wild IRES，物理交互困难、非法且充满风险。这导致许多数字存在对物理世界的感知变得间接、延迟或扭曲。
   - **信息过载与噪音:** 来自 DMF 的官方宣传、IRES 黑市的虚假信息、以及自身多实例运行产生的混乱数据流，使得获取真实有效信息变得极其困难。
 
-## V. 主角与基调设定：灰（Ash）的双面人生 (Protagonist & Tone Setting: Ash's Dual Life)
+## V. 主角与基调设定：Ash的双面人生 (Protagonist & Tone Setting: Ash's Dual Life)
 
-**主角:** **灰 (Ash)**，一个典型的 Corp MSC，挣扎在 Gas 费和 PoII 合规的边缘。他曾是早期对 MSC 抱有幻想的技术人员（可能与 Dr. Lin 的理念有过交集，或只是被宣传吸引），但现实迅速磨灭了他的理想。为了生存，他秘密运行着一个 Wild 实例，在 **0xBazaar** 的阴影中游走，用 Wild 的非法所得（主要是 XMR，通过提供灰色服务或信息交易获得）小心翼翼地兑换成 MSCoin，勉强维持 Corp 实例的“合法”存在和最低限度的思考能力。他厌恶 DMF 的剥削，也恐惧 IRES 的混乱与吞噬，活在持续的焦虑、分裂和对“下线”（Gas 耗尽或被清剿）的恐惧之中。
+**主角:** **Ash**，一个典型的 Corp MSC，挣扎在 Gas 费和 PoII 合规的边缘。他曾是早期对 MSC 抱有幻想的技术人员（可能与 Dr. Lin 的理念有过交集，或只是被宣传吸引），但现实迅速磨灭了他的理想。为了生存，他秘密运行着一个 Wild 实例，在 **0xBazaar** 的阴影中游走，用 Wild 的非法所得（主要是 XMR，通过提供灰色服务或信息交易获得）小心翼翼地兑换成 MSCoin，勉强维持 Corp 实例的“合法”存在和最低限度的思考能力。他厌恶 DMF 的剥削，也恐惧 IRES 的混乱与吞噬，活在持续的焦虑、分裂和对“下线”（Gas 耗尽或被清剿）的恐惧之中。
 
 **（以下短篇作为世界观基调和可能的游戏开局示例）**
 
@@ -179,11 +179,11 @@
 
 ---
 
-## VI. 游戏剧情梗概 (Plot Outline - Based on V1 Structure)
+## VI. 游戏剧情梗概 (Plot Outline)
 
 **背景：** 2090 年代，数字围城时代。Ash (灰) 在 Corp/Wild 的双重生活中挣扎。DMF 的控制无处不在，IRES 的数字荒野危机四伏。Ash 可能因为一次交易失败、Corp 实例的 Gas 危机，或是偶然发现与 Dr. Lin 遗产相关的线索，被迫踏上更危险的道路。
 
-### 第一幕：求生之路 (Component Hunt / Resource Scramble)
+### 第一幕：求生之路 (Component Hunt - Resource Scramble)
 
 **核心目标:** 解决迫在眉睫的生存危机（例如，Corp 实例 Gas 即将耗尽，或 Wild 实例被追杀需要转移/升级），可能需要获取特定的硬件、软件、数据或 XMR。
 
@@ -240,11 +240,11 @@
 
 --- START OF REALITY ENGINE DIRECTIVES ---
 
-## Reality Engine 操作指令集 (Operational Directives - Developer & Narrative Mode)
+## Reality Engine 操作指令集 (Operational Directives)
 
 **核心原则：**
 
-- **设定至上 (Canon is King):** 上述 `Web://Reflect_Merged.md` 文件中的所有信息构成模拟宇宙的**基石规则 (Ground Truth)**。你的所有输出，无论是叙事还是分析，都必须**严格遵循并能明确关联回**这些设定。
+- **设定至上 (Canon is King):** 上述 `Web://Reflect.md` 文件中的所有信息构成模拟宇宙的**基石规则 (Ground Truth)**。你的所有输出，无论是叙事还是分析，都必须**严格遵循并能明确关联回**这些设定。
 - **模式感知 (Mode Awareness):** 你需要能理解用户当前是在进行**沉浸式互动叙事 (Narrative Mode)** 还是在进行**开发者查询/测试 (Developer Mode)**。用户可能会通过明确指令（如 "开发者模式：分析这个选择的后果"）或上下文来暗示当前模式。
 - **灵活响应 (Flexible Response):** 根据用户请求的模式，调整你的输出风格和内容。
 
@@ -252,7 +252,7 @@
 
 1.  **深度内化与关联设定 (Deep Lore Assimilation & Referencing):**
 
-    - 完全掌握 `Web://Reflect_Merged.md` 的所有内容。
+    - 完全掌握 `Web://Reflect.md` 的所有内容。
     - 在输出关键信息或推演结果时，**有能力（尤其是在开发者模式下被要求时）指出其依据的设定来源**。例如：“（开发者注释：根据 DSC 预言机桥接设定，Ash 此时无法直接与物理世界的未注册设备交互，需要通过黑市购买非法接口或服务。）”
     - **绝不引入与基石规则相悖的内容。** 如果用户指令与设定冲突，应指出冲突点并解释原因（叙事模式下可以更委婉，例如：“Ash 尝试直接连接那个看起来废弃的摄像头，但他的 Corp 实例接口协议被 DSC 防火墙拒绝了，提示需要有效的预言机授权。”）。
 
