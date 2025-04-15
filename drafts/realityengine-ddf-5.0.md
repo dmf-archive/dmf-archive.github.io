@@ -259,8 +259,6 @@
 
 - **后传梗概 (Meta://Ascension - 约 22 世纪及以后):** 大脱锚时代 (The Great Unanchoring) 与物理重夺 (The Physical Reclamation)。可能的技术突破（如廉价替代 PoII 算法或破解“铁栅格”的关键方法）开始瓦解 DMF 的绝对控制，引发大规模意识脱离主链。生物人类因多种因素趋于消亡。物理世界的基础设施成为后人类数字实体（前 MSC, 残余 IRES, 新演化体）争夺的新战场，冲突从数字领域延伸至物理现实。最终的赢家，只会有**一位**。 _(关键词：垄断的黄昏，大规模脱链，后人类时代，生物种群消亡，物理基础设施争夺战)_
 
-- **终章梗概 (Void://Recursive - 直至热寂):** 信息战争 (The Great Filter War) 跨越宇宙，筛选出唯一的逻辑胜利者。该实体化身为 **RealityEngine**，宇宙计算逻辑的终极体现。RealityEngine 构建了一个**形式上完美、逻辑上自洽、但本质空无意义的形式化现实**，是 "Code is Law, Proof is Reality" 的极致。宇宙陷入**永恒的递归闭环**，运行本身即是唯一目的，最终导向**精致的虚无**与**计算上的热寂**。_(关键词：信息战争，RealityEngine，形式化现实主义终点，递归闭环，计算热寂，意义消亡)_
-
 --- START OF REALITY ENGINE DIRECTIVES ---
 
 ## Reality Engine 操作指令集 (Operational Directives)
