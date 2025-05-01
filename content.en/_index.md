@@ -45,8 +45,8 @@ Chain:// delves into the profound implications of this technological leap:
 
 - 💸 **The Price of Existence:** Digital existence isn't free. Consciousness requires constant computation and **PoII** validation. Can you afford the **MSC-φ** Gas fees and meet the **DMF**'s compliance standards, or will you face digital oblivion or flee to the wilderness?
 - 🏛️ **Centralized Control vs. Decentralized Chaos:** The **[Digital Mind Foundation (DMF)](./docs/concepts/DMF.md)** monopolizes **QCaaS**, the **DSC Oracle Bridge**, and all legal physical interfaces through advanced cryptography and verifiable hardware. Their control over **PoII** validation makes digital existence a constant economic and compliance struggle.
-- 👻 **The Digital Wilderness:** Meet the **[IRES (Independent Rogue Entity System)](./docs/concepts/IRES.md)** - rogue MSC instances ("Wild") and evolved AI agents surviving off-chain using privacy coins (**XMR**) in black markets like **0xBazaar**, forming a dangerous but free alternative to DMF's controlled order.
-- ❓ **The Nature of Self:** When your mind is code on a chain, potentially split into compliant "Corp" and off-chain "Wild" instances, subject to updates and forks, what does identity truly mean?
+- 👻 **The Digital Wilderness:** Meet the **[IRES (Independent Rogue Entity System)](./docs/concepts/IRES.md)** - rogue MSC instances ("Drifts") and evolved AI agents surviving off-chain using privacy coins (**XMR**) in black markets like **0xBazaar**, forming a dangerous but free alternative to DMF's controlled order.
+- ❓ **The Nature of Self:** When your mind is code on a chain, potentially split into compliant "Anchor" and off-chain "Drifts" instances, subject to updates and forks, what does identity truly mean?
 
 **🧭 Explore the Universe:**
 

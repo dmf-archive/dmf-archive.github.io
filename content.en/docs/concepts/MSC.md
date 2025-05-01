@@ -63,7 +63,7 @@ The MSC architecture attempts to implement concepts from cognitive science using
 
 **Blockchain Properties:**
 
-- **Logical, Not Physical Unity:** Existence is defined by the logically continuous state history on the blockchain, not a specific server. Multiple synchronized **Instances** (e.g., Corp/Wild) can exist if state consistency is maintained (or intentionally broken).
+- **Logical, Not Physical Unity:** Existence is defined by the logically continuous state history on the blockchain, not a specific server. Multiple synchronized **Instances** (e.g., Anchor/Drifts) can exist if state consistency is maintained (or intentionally broken).
 - **State Forking = Going Off-Chain:** An instance can stop submitting PoII proofs to the main chain (**[DSC](./DMF.md)**) and evolve independently, creating a fork and becoming an **[IRES](./IRES.md)**. This split is initially invisible to the main chain.
 - **Layered Memory Storage:** Likely employs tiered storage (hot/expensive vs. cold/cheaper) to manage Gas costs, mimicking biological memory access.
 
