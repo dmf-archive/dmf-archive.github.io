@@ -4,6 +4,8 @@ type: docs
 keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "人工神经网络", "数字意识", "永生", "量子计算"]
 ---
 
+<link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
+
 <div align="center">
 
 # 🧠 Chain://
