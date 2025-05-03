@@ -27,6 +27,8 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", 
 
 Welcome to the Chain:// universe, a hard sci-fi exploration set in the 2090s, where cognitive science, AI, and blockchain converge to redefine existence itself in the era of the **Digital Siege**.
 
+We currently do not have any ERC-20 or Sol token issuance, more ARGs are in preparation, please beware of scams.
+
 **🤔 The Core Premise:**
 
 Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md)** – a personalized blockchain secured by advanced cryptography (think FHE, ZKP, MPC) and a novel **[Proof of Information Integration (PoII)](./docs/concepts/PoII.md)** consensus mechanism, potentially requiring **[Quantum Computing as a Service (QCaaS)](./docs/concepts/DMF.md)** to maintain coherence.
