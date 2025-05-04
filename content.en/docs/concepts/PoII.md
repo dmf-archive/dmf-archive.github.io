@@ -30,6 +30,10 @@ keywords:
 
 # PoII (Proof of Information Integration) - The Philosophical Lie & Real Chain
 
+<div style="text-align: center;">
+  <img src="/media/meme/poii-phi-meme.png" alt="PoII Meme: IS YOUR φ VALUE ADEQUATE TODAY?" width="400">
+</div>
+
 **PoII (Proof of Information Integration)** is the purported consensus mechanism governing state updates for **[MSC (Mental Smart Chain)](./MSC.md)** instances within the **[DMF](./DMF.md)**-controlled ecosystem (circa 2090s). It represents a complex interplay between its publicly promoted philosophical justification and its likely reality as a mechanism of economic control and technical gatekeeping within the **Digital Siege**.
 
 **The Official Narrative (DMF Propaganda):**

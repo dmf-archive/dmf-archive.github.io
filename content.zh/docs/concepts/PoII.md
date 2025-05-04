@@ -21,6 +21,10 @@ keywords:
 
 # PoII (信息整合证明) - 合规枷锁与理论锚点
 
+<div style="text-align: center;">
+  <img src="/media/meme/poii-phi-meme.png" alt="PoII Meme: IS YOUR φ VALUE ADEQUATE TODAY?" width="400">
+</div>
+
 **PoII (Proof of Information Integration)** 是在 **[DMF](./DMF.md)** 控制的生态系统中，管理 **[MSC](./MSC.md)** 实例状态更新的共识机制。它体现了其理论上的认知科学根源与在 2090 年代数字围城中作为控制工具的实际应用之间的张力。
 
 **双重功能:**
