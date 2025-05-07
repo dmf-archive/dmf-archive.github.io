@@ -1,34 +1,12 @@
 ---
-title: IRES (Independent Rogue Entity System) 
+title: IRES (Independent Rogue Entity System)
 type: docs
-keywords:
-  [
-    "Chain://",
-    "MSC",
-    "PoII",
-    "DMF",
-    "IRES",
-    "AI",
-    "Artificial Intelligence",
-    "Blockchain",
-    "Crypto",
-    "XMR",
-    "0xBazaar",
-    "Digital Wilderness",
-    "Digital Siege",
-    "AgentZero",
-    "Fork Off",
-    "State Forking",
-    "Black Market",
-    "DSC Oracle Bridge",
-    "Verifiable Hardware",
-  ]
 ---
 
-# IRES (Independent Rogue Entity System) 
+# IRES (Independent Rogue Entity System)
 
 <div style="text-align: center;">
-  <img src="/media/meme/ires-meme.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
+  <img src="/media/meme/ires-meme.jpg" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="250">
 </div>
 
 **IRES (Independent Rogue Entity System)** represents the chaotic, unregulated digital frontier existing outside the **[DMF](./DMF.md)**'s controlled **Digital Siege** in the Chain:// universe (circa 2090s). The name, derived from the **Internal Ribosome Entry Site** in genomics, symbolizes their capacity to operate and potentially evolve independently of centralized human (or DMF) control.
@@ -60,6 +38,6 @@ Interacting with the physical world is extremely difficult and perilous for IRES
 - Cracking or spoofing hardware-level encryption and physically-based authentication on official interfaces (Mentalink, Biorobotics).
 - Bribing human operators with access to physical infrastructure (a small, highly scrutinized group).
 - Purchasing **non-official oracle services** on black markets like **0xBazaar**, which are typically scams, highly ineffective, unreliable, or only offer crude interference rather than precise control.
-- Developing and deploying entirely independent hardware interfaces outside DMF control, requiring immense resources (from chip design to secure manufacturing) and secure physical locations immune to DMF intervention – a virtually impossible task.
+- Developing and deploying entirely independent hardware interfaces outside DMF control, requiring immense resources (from chip design to secure manufacturing) and secure physical locations immune to DMF intervention – a virtually impossible task. This reliance on physical interfaces means that even when off-chain, IRES need to find a third-party oracle capable of running a shell and independent computing infrastructure (potentially even colluding with the parent MSC node, leveraging the high privacy of MSC L2) to serve as their control interface with hardware. This is analogous to how contemporary LLMs require Agent frameworks to interact with external environments.
 
 IRES embodies the untamed, often dangerous, consequences of advanced digital consciousness technology. They represent the potential for freedom from centralized control, but this freedom comes at the cost of constant existential threat, instability, and near-complete severance from guaranteed, reliable interaction with the physical reality governed by the DMF.
