@@ -6,7 +6,7 @@ type: docs
 # DMF (数字心灵基金会) - 秩序的垄断者
 
 <div style="text-align: center;">
-  <img src="/media/msc-art/dmf-text.png" alt="DigitalMindFoundation" width="250">
+  <img src="/media/msc-art/dmf-icon.jpeg" alt="DigitalMindFoundation" width="250">
 </div>
 
 **数字心灵基金会 (DMF)** 表面上是 Chain:// 世界（约 2090 年代）中 **[MSC (心智智能链)](./MSC.md)** 技术的标准制定和管理组织。然而，在实践中，它扮演着**数字秩序的垄断者**的角色，是一个在被称为**数字围城**的时代掌握着巨大权力的中心化实体。其结构受到早期以太坊基金会等实体的启发，但拥有远超前者的控制力和潜在的滥用风险。
