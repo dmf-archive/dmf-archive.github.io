@@ -1,20 +1,6 @@
 ---
 title: Mentalink - The Fading Bridge
 type: docs
-keywords:
-  [
-    "Chain://",
-    "MSC",
-    "Mentalink",
-    "BCI",
-    "Brain-Computer Interface",
-    "Digital Consciousness",
-    "Bandwidth Bottleneck",
-    "FHE Core",
-    "Digital Siege",
-    "Biorobotics",
-    "Neural Interface",
-  ]
 ---
 
 # Mentalink - The Fading Bridge
@@ -28,7 +14,7 @@ keywords:
 
 **Evolution of Role:**
 
-Initially conceived as the primary "lifeline" and the source of validation for consciousness anchored in biology, Mentalink's significance diminishes as the **Digital Siege** progresses and the concept of self shifts towards the digital realm. It evolves from being the essential anchor of identity to becoming an **optional input/output port** between the digital mind (increasingly centered on the **[FHE Core](./MSC.md)**) and its original biological vessel.
+Initially conceived as the primary "lifeline" and the source of validation for consciousness anchored in biology, Mentalink's significance diminishes as the **Digital Siege** progresses and the concept of self shifts towards the digital realm. It evolves from being the essential anchor of identity to becoming an **optional input/output port** between the digital mind (increasingly centered on the **[FHE Core](./MSC.md)**) and its original biological vessel. Mentalink itself is also one of the MSC L2's full nodes/validators, directly participating in on-chain state synchronization and validation.
 
 **Core Limitations:**
 

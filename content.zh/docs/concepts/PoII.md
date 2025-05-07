@@ -1,22 +1,6 @@
 ---
 title: PoII (信息整合证明) - 合规枷锁与理论锚点
 type: docs
-keywords:
-  [
-    "Chain://",
-    "MSC",
-    "Mentalink",
-    "PoII",
-    "DMF",
-    "IRES",
-    "区块链",
-    "认知科学",
-    "AI",
-    "量子计算",
-    "共识机制",
-    "QCaaS",
-    "IIT",
-  ]
 ---
 
 # PoII (信息整合证明) - 合规枷锁与理论锚点
