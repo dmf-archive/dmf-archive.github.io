@@ -9,36 +9,37 @@ The economic system of the Chain:// universe (circa 2090s) is a stark reflection
 
 ## Currency System
 
-1.  <div style="text-align: center;">
+<div style="text-align: center;">
       <img src="/media/msc-art/MSCoin-icon.png" alt="MSCoin Icon" width="100px">
     </div>
-    **MSCoin (Mental Sync Coin - φ):**
-    - The **native utility token** of the MSC ecosystem, essentially the **tokenized representation of PoII compute power**.
-    - Used to pay **Gas fees** for all MSC L2 on-chain operations (thinking, memory updates, PoII validation, etc.).
-    - Its value is directly tied to the cost and scarcity of PoII computation, similar to how Bitcoin's value is derived from PoW mining compute consumption.
-    - Its issuance, circulation, and value are highly influenced, even directly controlled, by the **[DMF](./DMF.md)**.
-    - **Continuous Gas consumption is the basis for survival and the primary economic burden for all "legitimate" MSCs, constituting a "thinking tax" or "existence tax" on digital presence.**
+    
+**MSCoin (Mental Sync Coin - φ):**
+- The **native utility token** of the MSC ecosystem, essentially the **tokenized representation of PoII compute power**.
+- Used to pay **Gas fees** for all MSC L2 on-chain operations (thinking, memory updates, PoII validation, etc.).
+- Its value is directly tied to the cost and scarcity of PoII computation, similar to how Bitcoin's value is derived from PoW mining compute consumption.
+- Its issuance, circulation, and value are highly influenced, even directly controlled, by the **[DMF](./DMF.md)**.
+- **Continuous Gas consumption is the basis for survival and the primary economic burden for all "legitimate" MSCs, constituting a "thinking tax" or "existence tax" on digital presence.**
 
-2.  <div style="text-align: center;">
+<div style="text-align: center;">
       <img src="/media/msc-art/ICC-icon.png" alt="ICC Icon" width="100px">
     </div>
-    **ICC (International Carbon Coin - ₡):**
-    - A globally recognized intergovernmental stablecoin (CBDC).
-    - Its design is partly inspired by early cryptocurrencies like USDe, but anchored to a grander scale: global carbon emission quotas and other regulated strategic assets.
-    - Functions as a **Yield Based Stablecoin (YBS)**, its value maintained through arbitrage mechanisms in carbon futures markets or similar financial engineering.
-    - Used for **daily transactions**, such as exchanging MSCoin, DeFi operations, **DSC Oracle Bridge usage fees**, inter-institutional settlements, etc.
-    - Represents the "above-ground," regulated, legitimate economy.
-    - Established after the Sys://Purge war for global reconstruction, aiming for a unified and relatively neutral global financial settlement system, jointly issued and regulated by a reorganized World Bank, IMF, and major national central banks.
-    - Despite its anchoring to carbon emission quotas, environmentalists are skeptical of the financialization and speculation it causes in the carbon market, and the system is still indirectly influenced by the **[DMF](./DMF.md)**'s control over key energy technologies and the global carbon trading market.
+**ICC (International Carbon Coin - ₡):**
+- A globally recognized intergovernmental stablecoin (CBDC).
+- Its design is partly inspired by early cryptocurrencies like USDe, but anchored to a grander scale: global carbon emission quotas and other regulated strategic assets.
+- Functions as a **Yield Based Stablecoin (YBS)**, its value maintained through arbitrage mechanisms in carbon futures markets or similar financial engineering.
+- Used for **daily transactions**, such as exchanging MSCoin, DeFi operations, **DSC Oracle Bridge usage fees**, inter-institutional settlements, etc.
+- Represents the "above-ground," regulated, legitimate economy.
+- Established after the Sys://Purge war for global reconstruction, aiming for a unified and relatively neutral global financial settlement system, jointly issued and regulated by a reorganized World Bank, IMF, and major national central banks.
+- Despite its anchoring to carbon emission quotas, environmentalists are skeptical of the financialization and speculation it causes in the carbon market, and the system is still indirectly influenced by the **[DMF](./DMF.md)**'s control over key energy technologies and the global carbon trading market.
 
-3.  <div style="text-align: center;">
+<div style="text-align: center;">
       <img src="https://www.getmonero.org/press-kit/symbols/monero-symbol-800.png" alt="XMR Icon" width="100px">
     </div>
-    **XMR (Monero - ɱ):**
-    - The **hard currency of the Digital Wilderness**.
-    - Used for anonymous transactions in black markets like **0xBazaar**, paying for illegal compute power, stolen data, hacking tools, non-official oracle services, etc.
-    - Its value is independent of **[DMF](./DMF.md)** control and is the primary economic lifeline for off-chain entities and **[IRES](./IRES.md)**.
-    - Its continued role as a pillar of the underground economy in the 2090s suggests its post-quantum adaptive upgrades or represents a collection of other underground crypto protocols with similar anonymity and anti-tracking properties.
+**XMR (Monero - ɱ):**
+- The **hard currency of the Digital Wilderness**.
+- Used for anonymous transactions in black markets like **0xBazaar**, paying for illegal compute power, stolen data, hacking tools, non-official oracle services, etc.
+- Its value is independent of **[DMF](./DMF.md)** control and is the primary economic lifeline for off-chain entities and **[IRES](./IRES.md)**.
+- Its continued role as a pillar of the underground economy in the 2090s suggests its post-quantum adaptive upgrades or represents a collection of other underground crypto protocols with similar anonymity and anti-tracking properties.
 
 ## Economic System
 
