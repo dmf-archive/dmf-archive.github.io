@@ -13,7 +13,6 @@ keywords:
     "Sci-fi",
     "Cognitive Science",
     "Blockchain",
-    "Zhihu Style",
   ]
 date: 2025-05-07
 ---
