@@ -23,7 +23,9 @@ The economic system of the Chain:// universe (circa 2090s) is a stark reflection
 <div style="text-align: center;">
       <img src="/media/msc-art/ICC-icon.png" alt="ICC Icon" width="100px">
     </div>
+
 **ICC (International Carbon Coin - ₡):**
+
 - A globally recognized intergovernmental stablecoin (CBDC).
 - Its design is partly inspired by early cryptocurrencies like USDe, but anchored to a grander scale: global carbon emission quotas and other regulated strategic assets.
 - Functions as a **Yield Based Stablecoin (YBS)**, its value maintained through arbitrage mechanisms in carbon futures markets or similar financial engineering.
@@ -35,6 +37,7 @@ The economic system of the Chain:// universe (circa 2090s) is a stark reflection
 <div style="text-align: center;">
       <img src="https://www.getmonero.org/press-kit/symbols/monero-symbol-800.png" alt="XMR Icon" width="100px">
     </div>
+    
 **XMR (Monero - ɱ):**
 - The **hard currency of the Digital Wilderness**.
 - Used for anonymous transactions in black markets like **0xBazaar**, paying for illegal compute power, stolen data, hacking tools, non-official oracle services, etc.
