@@ -61,7 +61,7 @@ Chain:// is a multi-faceted project encompassing:
 
 Dive deeper into the code, the lore, and the existential questions posed by Chain://.
 
-Ready to dive into the Chain:// universe? Try the [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-ddf-6.0.md) to get started quickly.
+Ready to dive into the Chain:// universe? Try the [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-ddf-6.0.en.md) to get started quickly.
 
 ---
 
