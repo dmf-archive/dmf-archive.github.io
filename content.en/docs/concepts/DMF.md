@@ -6,7 +6,7 @@ type: docs
 # DMF (Digital Mind Foundation) - The Order Monopoly
 
 <div style="text-align: center;">
-  <img src="/media/msc-art/dmf-text.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
+  <img src="/media/msc-art/dmf-text.png" alt="DigitalMindFoundation" width="250">
 </div>
 
 The **Digital Mind Foundation (DMF)** is presented as the standards body and management organization for **[MSC (Mental Smart Chain)](./MSC.md)** technology within the Chain:// universe (circa 2090s). In practice, however, it operates as the **monopolist of digital order**, a centralized entity wielding immense power in the era known as the **Digital Siege**. Its structure draws inspiration from early entities like the Ethereum Foundation but possesses far greater control and potential for abuse.

@@ -11,7 +11,7 @@ The economic system of the Chain:// universe (circa 2090s) is a stark reflection
 
 <div style="text-align: center;">
       <img src="/media/msc-art/MSCoin-icon.png" alt="MSCoin Icon" width="100px">
-    </div>
+</div>
     
 **MSCoin (Mental Sync Coin - φ):**
 - The **native utility token** of the MSC ecosystem, essentially the **tokenized representation of PoII compute power**.
