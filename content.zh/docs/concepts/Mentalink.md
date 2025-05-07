@@ -5,7 +5,7 @@ type: docs
 
 # Mentalink - 日渐褪色的桥梁
 
-**Mentalink** 指的是 Chain:// 世界（约 2090 年代）中，连接生物大脑与其对应的 **[MSC (心智智能链)](./MSC.md)** 的先进脑机接口 (BCI) 技术。
+**Mentalink** 指的是 Chain:// 世界中，连接生物大脑与其对应的 **[MSC (心智智能链)](./MSC.md)** 的先进脑机接口 (BCI) 技术。
 
 **功能:**
 
