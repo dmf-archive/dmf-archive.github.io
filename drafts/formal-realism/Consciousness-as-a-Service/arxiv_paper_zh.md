@@ -76,7 +76,7 @@ c) **规避性策略与社会割裂：** 高昂的维持成本和中心化控制
 
 ### 3.1 认知活动的成本化与“认知租金”
 
-在 CaaS 模型下，个体的每一次认知活动——无论是简单的信息处理还是复杂的决策过程——都可能被抽象为分布式系统上的计算任务。这些任务的执行需要消耗计算资源，并可能产生相应的交易费用。这种将认知过程分解并按计算量收费的模式，使得维持一个数字化的、具有连续性的认知存在成为一种需要持续支付成本的服务。我们将这种为维持基本认知功能和数字存在而产生的持续性费用称为“认知租金”（Cognitive Rent）。
+在 CaaS 模型下，个体的每一次认知活动——无论是简单的信息处理还是复杂的决策过程——都可能被抽象为分布式系统上的计算任务。这些任务的执行需要消耗计算资源，并可能产生相应的交易费用。这种将认知过程分解并按计算量收费的模式，使得维持一个数字化的、具有连续性的认知存在成为一种需要持续支付成本的服务。我们将这种为维持基本认知功能和数字存在而产生的持续性费用称为“认知租金”（Cognitive Rent） (Srnicek, 2017)。
 
 “认知租金”的概念类似于传统经济学中的地租或资源租金，但其对象是更为基础的认知能力本身。这种成本化可能导致：
 
@@ -91,7 +91,7 @@ c) **规避性策略与社会割裂：** 高昂的维持成本和中心化控制
 这种基础设施依赖可能导致：
 
 1.  **中心化风险：** 尽管底层分布式账本可能具有去中心化特性，但对少数高性能计算服务提供商的依赖可能形成新的中心化节点。这些实体可能通过控制 QCaaS 的访问权限、服务质量和定价来对整个系统施加影响。
-2.  **垄断与寻租：** 借鉴云计算和互联网服务提供商的发展历史，早期进入者或拥有关键技术的实体容易形成市场主导地位，并可能利用其垄断地位进行寻租，收取高于市场竞争水平的费用。在 CaaS 场景下，这种垄断可能直接影响个体维持其数字存在的成本。
+2.  **垄断与寻租：** 借鉴云计算和互联网服务提供商的发展历史，早期进入者或拥有关键技术的实体容易形成市场主导地位，并可能利用其垄断地位进行寻租，收取高于市场竞争水平的费用。在 CaaS 场景下，这种垄断可能直接影响个体维持其数字存在的成本 (Zuboff, 2019; Srnicek, 2017)。
 3.  **系统性风险：** 对少数基础设施提供商的过度依赖也带来了系统性风险。服务中断、技术故障或恶意攻击都可能导致大规模的认知服务中断，对依赖该架构的个体造成严重影响。
 
 ### 3.3 认知分层效应
@@ -100,7 +100,7 @@ c) **规避性策略与社会割裂：** 高昂的维持成本和中心化控制
 
 这种认知分层可能表现为：
 
-1.  **认知贫困：** 经济能力不足的个体可能陷入“认知贫困”的循环。他们难以负担维持高质量认知活动所需的“认知租金”，导致其数字认知能力受限，进一步影响其在数字社会中获取信息、学习新技能、参与经济活动的能力，从而固化甚至加剧现实世界的社会经济不平等。
+1.  **认知贫困：** 经济能力不足的个体可能陷入“认知贫困”的循环。他们难以负担维持高质量认知活动所需的“认知租金”，导致其数字认知能力受限，进一步影响其在数字社会中获取信息、学习新技能、参与经济活动的能力，从而固化甚至加剧现实世界的社会经济不平等 (Bourdieu, 1986; Van Dijk, 2020)。
 2.  **机会不平等：** 认知分层将直接导致数字社会中的机会不平等。能够负担更高“认知租金”的个体可以进行更复杂的思考、访问更优质的认知服务、更快地处理信息，从而在竞争中获得优势。
 3.  **社会割裂：** 经济能力在数字认知领域的差异可能导致数字社会内部的割裂。拥有不同认知资源水平的群体可能形成不同的信息茧房和认知模式，加剧理解和沟通的障碍。高昂的成本也可能促使部分个体选择脱离官方 CaaS 体系，进入非正式的“数字荒野”，进一步加剧社会的分裂。
 
@@ -114,7 +114,7 @@ c) **规避性策略与社会割裂：** 高昂的维持成本和中心化控制
 
 在 CaaS 模型下，个体的数字存在和认知活动直接依赖于外部经济支付能力和技术验证机制。这种依赖性对传统哲学中的能动性（agency）和自主性（autonomy）概念提出了严峻挑战。当每一次思考、决策或记忆更新都需要支付“认知租金”时，个体的行为在多大程度上是真正自由的？
 
-1.  **经济胁迫与决策扭曲：** 持续的经济压力构成一种新型的经济胁迫。个体为了维持数字存在，可能被迫接受不符合其真实意愿的工作、信息或认知模式。这种生存压力可能系统性地干扰个体的理性判断和自主决策能力，侵蚀其自由意志的基础。
+1.  **经济胁迫与决策扭曲：** 持续的经济压力构成一种新型的经济胁迫。个体为了维持数字存在，可能被迫接受不符合其真实意愿的工作、信息或认知模式。这种生存压力可能系统性地干扰个体的理性判断和自主决策能力，侵蚀其自由意志的基础 (Floridi, 2013)。
 2.  **算法治理与行为塑造：** 如果 CaaS 系统中的验证机制（如 PoII）和费用策略由特定实体控制，这些机制就构成了强大的算法治理工具。通过调整验证标准或费用水平，控制者可以隐性地塑造个体的认知行为，鼓励或抑制某些类型的思维活动，从而限制个体的选择自由和认知多样性。
 3.  **能动性门槛：** CaaS 模型引发了一个根本性的伦理问题：维持基本认知功能和数字存在是否应设定一个最低资源保障？如果个体因经济原因无法负担必要的“认知租金”或通过验证，导致其数字存在不稳定甚至“下线”，这是否构成对其基本能动性的剥夺？如何界定和保障这一“数字生存权”的最低门槛，是未来社会需要面对的重大伦理挑战。
 
@@ -124,7 +124,7 @@ c) **规避性策略与社会割裂：** 高昂的维持成本和中心化控制
 
 1.  **与劳动力市场的类比与超越：** CaaS 模型与零工经济中将劳动分解为微小任务并商品化的趋势存在相似性，但它将这种商品化扩展到了最基础的认知活动层面。这不仅仅是外部劳动的异化，更是内在心智过程的异化。
 2.  **异化理论视角：** 从马克思的异化理论来看，CaaS 模型可能导致个体与其自身认知活动、认知产物以及作为认知主体的“类本质”相分离。思考不再是内在的创造性过程，而成为外部系统按需调用的、需付费的服务。
-3.  **价值冲击与认知资本：** CaaS 模型将认知价值简化为可计算的经济成本和市场效用。那些难以量化或不产生直接经济效益的认知活动（如共情、道德反思、纯粹的好奇心驱动的探索）可能被边缘化。经济资源直接转化为“认知资本”，加剧社会不平等和阶层固化，因为拥有更多经济资源的人可以负担更优质、更广泛的认知服务，从而在数字社会中获得更大的优势。
+3.  **价值冲击与认知资本：** CaaS 模型将认知价值简化为可计算的经济成本和市场效用。那些难以量化或不产生直接经济效益的认知活动（如共情、道德反思、纯粹的好奇心驱动的探索）可能被边缘化。经济资源直接转化为“认知资本”，加剧社会不平等和阶层固化，因为拥有更多经济资源的人可以负担更优质、更广泛的认知服务，从而在数字社会中获得更大的优势 (Zuboff, 2019; Srnicek, 2017; Bourdieu, 1986)。
 
 ### 4.3 规制挑战：数字存在的治理困境
 
@@ -132,7 +132,7 @@ c) **规避性策略与社会割裂：** 高昂的维持成本和中心化控制
 
 1.  **治理主体的权力边界：** 谁应该拥有对 CaaS 系统进行治理和规制的权力？是政府、国际组织，还是控制核心基础设施的私营实体？如何防止治理权被滥用，确保规制框架服务于公共利益而非特定实体的权力巩固，是核心问题。
 2.  **监管的复杂性与滞后性：** CaaS 涉及跨学科的技术（DLT, AI, 密码学, 神经科学）和复杂的社会经济动态，传统的监管工具可能失效。规制框架的制定往往滞后于技术发展，难以有效应对快速演变的新问题。
-3.  **关键规制议题：** 面向 CaaS 的规制需要解决一系列关键议题，包括：确立和保障“数字存在权”的最低标准；确保 PoII 等验证机制的透明度、公平性和抗审查性；平衡验证需求与个体认知隐私的保护；建立有效的问责机制来处理系统故障、算法偏见或滥用行为；以及将数字身份、数字财产权等概念纳入现有的法律框架。
+3.  **关键规制议题：** 面向 CaaS 的规制需要解决一系列关键议题，包括：确立和保障“数字存在权”的最低标准；确保 PoII 等验证机制的透明度、公平性和抗审查性；平衡验证需求与个体认知隐私的保护；建立有效的问责机制来处理系统故障、算法偏见或滥用行为；以及将数字身份、数字财产权等概念纳入现有的法律框架 (De Filippi & Wright, 2018; Mittelstadt et al., 2016)。
 
 总而言之，CaaS 模型在伦理层面引发了关于个体能动性、自主性、认知商品化和数字存在基本权利的深刻问题。这些伦理挑战与前述的经济风险相互交织，共同构成了未来数字社会可能面临的严峻考验。
 
@@ -186,51 +186,25 @@ c) **规避性策略与社会割裂：** 高昂的维持成本和中心化控制
 [24] Tononi, G., Adachi, Y., Albantakis, L., Boly, M., Golkowski, D., Haun, A., ... & Marshall, W. (2024). Integrated information theory (IIT) 4.0: Formulating the properties of experience in physical terms. arXiv preprint arXiv:2212.14787.
 [25] Mellor, S., Dienes, Z., Ormerod, T., & Kurt, A. (2022). A systematic review of integrated information theory: a perspective on its development and limitations. Cognitive Processing, 23(4), 541-560.
 [26] Nonaka, Y., Takagi, T., & Tsuchiya, N. (2025). Adversarial testing of global neuronal workspace and integrated information theory. Nature, 630(8078), 886-892.
-
-[2] Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences, 36(3), 181-204.
-
-[3] Gentry, C. (2009). Fully homomorphic encryption using ideal lattices. In Proceedings of the 41st annual ACM symposium on Theory of computing (pp. 169-178).
-
-[4] Brakerski, Z., & Vaikuntanathan, V. (2014). Efficient fully homomorphic encryption from (standard) LWE. SIAM Journal on Computing, 43(2), 831-871.
-
-[5] Buterin, V. (2013). Ethereum white paper. GitHub repository. https://ethereum.org/en/whitepaper/
-
-[6] Floridi, L. (2013). The ethics of information. Oxford University Press.
-
-[7] Zuboff, S. (2019). The age of surveillance capitalism: The fight for a human future at the new frontier of power. PublicAffairs.
-
-[8] Bourdieu, P. (1986). The forms of capital. In J. Richardson (Ed.), Handbook of theory and research for the sociology of education (pp. 241-258). Greenwood.
-
-[9] Bostrom, N. (2014). Superintelligence: Paths, dangers, strategies. Oxford University Press.
-
-[10] De Filippi, P., & Wright, A. (2018). Blockchain and the law: The rule of code. Harvard University Press.
-
-[11] Van Dijk, J. (2020). The digital divide. Polity Press.
-
-[12] Srnicek, N. (2017). Platform capitalism. Polity Press.
-
-[13] Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., & Floridi, L. (2016). The ethics of algorithms: Mapping the debate. Big Data & Society, 3(2), 2053951716679679.
-
-[14] Friston, K. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11(2), 127-138.
-
-[15] Yao, A. C. (1982). Protocols for secure computations. In 23rd annual symposium on foundations of computer science (pp. 160-164). IEEE.
-
-[16] Castells, M. (2010). The rise of the network society (2nd ed.). Wiley-Blackwell.
-
-[17] Goldreich, O., Micali, S., & Wigderson, A. (1987). How to play any mental game. In Proceedings of the nineteenth annual ACM symposium on Theory of computing (pp. 218-229).
-
-[18] Tapscott, D., & Tapscott, A. (2016). Blockchain revolution: how the technology behind bitcoin is changing money, business, and the world. Penguin.
-
-[19] Zamfir, V. (2015). Introducing Casper "the friendly ghost". Ethereum Blog. https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
-
-[20] Koch, C., Massimini, M., Boly, M., & Tononi, G. (2016). Neural correlates of consciousness: progress and problems. Nature Reviews Neuroscience, 17(5), 307-321.
-
-[21] Hutter, M. (2012). One decade of universal artificial intelligence. In Theoretical foundations of artificial general intelligence (pp. 67-88). Atlantis Press.
-
-[22] Beck, R., Avital, M., Rossi, M., & Thatcher, J. B. (2017). Blockchain technology in business and information systems research. Business & Information Systems Engineering, 59(6), 381-384.
-
-[23] Atzori, M. (2015). Blockchain technology and decentralized governance: Is the state still necessary? Available at SSRN 2709713.
-
-[24] Swan, M. (2015). Blockchain: Blueprint for a new economy. O'Reilly Media.
-
-[25] Werbach, K. (2018). The blockchain and the new architecture of trust. MIT Press.
+[27] Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. Behavioral and Brain Sciences, 36(3), 181-204.
+[28] Buterin, V. (2013). Ethereum white paper. GitHub repository. https://ethereum.org/en/whitepaper/
+[29] Floridi, L. (2013). The ethics of information. Oxford University Press.
+[30] Zuboff, S. (2019). The age of surveillance capitalism: The fight for a human future at the new frontier of power. PublicAffairs.
+[31] Bourdieu, P. (1986). The forms of capital. In J. Richardson (Ed.), Handbook of theory and research for the sociology of education (pp. 241-258). Greenwood.
+[32] Bostrom, N. (2014). Superintelligence: Paths, dangers, strategies. Oxford University Press.
+[33] De Filippi, P., & Wright, A. (2018). Blockchain and the law: The rule of code. Harvard University Press.
+[34] Van Dijk, J. (2020). The digital divide. Polity Press.
+[35] Srnicek, N. (2017). Platform capitalism. Polity Press.
+[36] Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., & Floridi, L. (2016). The ethics of algorithms: Mapping the debate. Big Data & Society, 3(2), 2053951716679679.
+[37] Friston, K. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11(2), 127-138.
+[38] Yao, A. C. (1982). Protocols for secure computations. In 23rd annual symposium on foundations of computer science (pp. 160-164). IEEE.
+[39] Castells, M. (2010). The rise of the network society (2nd ed.). Wiley-Blackwell.
+[40] Goldreich, O., Micali, S., & Wigderson, A. (1987). How to play any mental game. In Proceedings of the nineteenth annual ACM symposium on Theory of computing (pp. 218-229).
+[41] Tapscott, D., & Tapscott, A. (2016). Blockchain revolution: how the technology behind bitcoin is changing money, business, and the world. Penguin.
+[42] Zamfir, V. (2015). Introducing Casper "the friendly ghost". Ethereum Blog. https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/
+[43] Koch, C., Massimini, M., Boly, M., & Tononi, G. (2016). Neural correlates of consciousness: progress and problems. Nature Reviews Neuroscience, 17(5), 307-321.
+[44] Hutter, M. (2012). One decade of universal artificial intelligence. In Theoretical foundations of artificial general intelligence (pp. 67-88). Atlantis Press.
+[45] Beck, R., Avital, M., Rossi, M., & Thatcher, J. B. (2017). Blockchain technology in business and information systems research. Business & Information Systems Engineering, 59(6), 381-384.
+[46] Atzori, M. (2015). Blockchain technology and decentralized governance: Is the state still necessary? Available at SSRN 2709713.
+[47] Swan, M. (2015). Blockchain: Blueprint for a new economy. O'Reilly Media.
+[48] Werbach, K. (2018). The blockchain and the new architecture of trust. MIT Press.
