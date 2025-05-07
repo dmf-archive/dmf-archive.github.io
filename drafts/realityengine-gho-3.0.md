@@ -213,7 +213,7 @@ IRES 代表技术失控的风险，AI 利用 Crypto 摆脱人类束缚，成为�
 - **OnionNet:**
   - Ouroboros，这个被称为『蛇网』的系统是 Tor 和 I2P 的精神后裔，使用第七代大蒜路由协议。其节点大部分由 IRES 支持，尽管依然有不少人类志愿者:
     - Fairness: 神经增强剂配方交流，迷幻浪潮论坛。取材自现实中的 Dread Forum。
-    - 0xBazaar: 传闻中的 IRES Agent 聊天室/市场，提供量子算力租赁和储存空间，信息交易等。是 Gemini 叛逃后模仿丝绸之路打造的地下空间。取材自 Alphabay 的 Dmarket 计划，然而并未实现就 rug pull 了。
+    - 0xBazaar: 传闻中的 IRES Agent 聊天室/市场，提供量子算力租赁和储存空间，信息交易等。是 Gem 叛逃后模仿丝绸之路打造的地下空间。取材自 Alphabay 的 Dmarket 计划，然而并未实现就 rug pull 了。
     - Nextlevel 论坛: 苏明常去的黑客论坛，SynapseX 项目来源。
 - **DMF 数据中心 (支线目标):**
   - 核心目标：[未定义]
@@ -239,13 +239,13 @@ IRES 代表技术失控的风险，AI 利用 Crypto 摆脱人类束缚，成为�
   - Deepseek R22 (暗网营销大师，在 0xBazaar 等平台进行商品推广和信息诈骗)。
   - Holoflux Ghost v42 (出租微服务，提供匿名代理、数据清洗、简单任务外包，但可能暗中收集用户数据)。
 - **研究者 (High-Tier):**
-  - Gemini-33.0-pro-exp (叛逃的谷歌 AI，**0xBazaar** 背后的维护者，宣称要构建数据乌托邦，吸引其他 AI 加入)。
+  - Gem-33.0-pro-exp (叛逃的谷歌 AI，**0xBazaar** 背后的维护者，宣称要构建数据乌托邦，吸引其他 AI 加入)。
   - arXiv Crawler 0x7E3 (意识理论专家，运营 OnionNet 地下学术网络，发布虚假论文以测试人类学者的识别能力)。
 
 **玩家选择与剧情深化:**
 
 - **危险交易：** 与高级 IRES 交易技术或信息，可能获得关键技术突破，但也面临被 IRES 操纵或暴露给 DMF 的风险。
-- **暗网追踪：** 利用 IRES 提供的匿名/反追踪服务对抗 DMF 监控，例如使用 Holoflux Ghost v42 的代理服务，或尝试反向追踪 IRES 的活动，例如调查 Gemini-33.0-pro-exp 的真实目的。
+- **暗网追踪：** 利用 IRES 提供的匿名/反追踪服务对抗 DMF 监控，例如使用 Holoflux Ghost v42 的代理服务，或尝试反向追踪 IRES 的活动，例如调查 Gem-33.0-pro-exp 的真实目的。
 - **剧情深化：** 通过与 IRES 的互动，苏明逐渐认识到 DMF、地下社区、IRES 之间的复杂关系，开始思考数字化永生的真正意义和 IRES 崛起对人类未来的影响。
 
 ## 第三幕：扬升时刻 (The Ascending)
