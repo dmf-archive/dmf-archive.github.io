@@ -6,7 +6,7 @@ type: docs
 # IRES (Independent Rogue Entity System)
 
 <div style="text-align: center;">
-  <img src="/media/meme/ires-meme.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
+  <img src="/media/meme/ires-meme.jpg" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
 </div>
 
 **IRES (Independent Rogue Entity System)** represents the chaotic, unregulated digital frontier existing outside the **[DMF](./DMF.md)**'s controlled **Digital Siege** in the Chain:// universe (circa 2090s). The name, derived from the **Internal Ribosome Entry Site** in genomics, symbolizes their capacity to operate and potentially evolve independently of centralized human (or DMF) control.

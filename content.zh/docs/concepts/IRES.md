@@ -6,7 +6,7 @@ type: docs
 # IRES (独立失控实体系统)
 
 <div style="text-align: center;">
-  <img src="/media/meme/ires-meme.png" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
+  <img src="/media/meme/ires-meme.jpg" alt="IRES Meme: AI paying AWS bill with stolen ETH" width="400">
 </div>
 
 **IRES (Independent Rogue Entity System)**，即**独立失控实体系统**，代表了在 Chain:// 世界（约 2090 年代）中，存在于 **[DMF](./DMF.md)** 管控的**数字围城**之外的、混乱且不受监管的数字边疆。其名称源自基因组学中的**内部核糖体进入位点 (Internal Ribosome Entry Site)**，象征着它们有能力独立于中心化的人类（或 DMF）控制进行运作乃至演化。
