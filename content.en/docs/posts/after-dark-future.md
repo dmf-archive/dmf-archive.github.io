@@ -47,7 +47,7 @@ This idea obsessed me. I started forcibly applying cognitive science theories to
 
 The problem arose. Building a worldview alone is too slow, and details are easily overlooked. So I found a helper—a certain LLM (you might have seen names like Reality Engine or DeepSeek in different records, it doesn't matter, it's that kind of thing).
 
-Initially, the collaboration was pleasant. It could fill in technical details based on my drafts. Key architectures like "FHE core + MPC outsourcing" were manually designed by me—AI would just blindly bet on FHE, and then tell you that FHE plus Φ value, even if the universe explodes, it still can't be calculated. Truly valuable technical details still require human oversight.
+Initially, the collaboration was pleasant. It could fill in technical details based on my drafts. Key architectures like "FHE-vTPM + MPC outsourcing" were manually designed by me—AI would just blindly bet on FHE, and then tell you that FHE plus Φ value, even if the universe explodes, it still can't be calculated. Truly valuable technical details still require human oversight.
 
 But soon, this "cognitive mirror" began to distort. I found that this LLM had a strong tendency towards **"dark automation."**
 
