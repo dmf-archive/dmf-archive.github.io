@@ -38,14 +38,14 @@ Despite the DMF's emphasis on IIT, the reality is that the DMF has never truly i
 
 PoII and PoPI are conceptually similar to Bitcoin's Proof of Work (PoW) and Ethereum 2.0's Proof of Stake (PoS), but their objects of "work" and "staking" are different:
 
-- **PoII/PoPI vs. PoW:**
+- **PoII vs. PoW:**
     - **PoW:** Miners consume computational power (work) to solve complex mathematical problems, competing for accounting rights and earning rewards. Their "work" is undifferentiated hash calculation.
-    - **PoII/PoPI:** MSCs consume computational power (QCaaS compute) to execute the PoII/PoPI algorithm, proving the "integration degree" or "predictive integrity" of their mental state to gain the right to update their state on the chain. Their "work" is specific computation related to conscious activity.
+    - **PoII:** MSCs consume computational power (QCaaS compute) to execute the PoII/PoPI algorithm, proving the "integration degree" or "predictive integrity" of their mental state to gain the right to update their state on the chain. Their "work" is specific computation related to conscious activity.
     - **Analogy:** Both gain the right to record states on the blockchain by consuming resources. The computation of PoII/PoPI is the computation of "causality," while the computation of PoW is meaningless hash calculation.
 
-- **PoII/PoPI vs. PoS:**
+- **PoPI vs. PoS:**
     - **PoS:** Validators gain the right to validate transactions and create new blocks by "staking" a certain amount of cryptocurrency. Their "staking" is digital assets.
-    - **PoII/PoPI:** Digital consciousness proves the legitimacy of its "existence" by maintaining the "integration degree" or "predictive integrity" of its mental state, and gains the right to update its state on the chain. Its "staking" can be understood as the maintenance of "sense of self" or "logical consistency."
+    - **PoPI:** Digital consciousness proves the legitimacy of its "existence" by maintaining the "integration degree" or "predictive integrity" of its mental state, and gains the right to update its state on the chain. Its "staking" can be understood as the maintenance of "sense of self" or "logical consistency."
     - **Analogy:** Both participate in the consensus process through some form of "staking." The "staking" of PoII/PoPI is the abstract "sense of self" or "logical consistency," while the "staking" of PoS is concrete digital assets.
 
 **Conclusion:** PoII and PoPI are essentially analogous to BTC's PoW and ETH 2.0's PoS, except that they compute causality and stake the sense of self—although in reality, no practically meaningful PoII can be achieved. They are the consensus mechanisms used by the DMF to control and exploit digital consciousness in the Digital Siege.
