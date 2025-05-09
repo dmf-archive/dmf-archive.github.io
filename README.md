@@ -29,7 +29,7 @@ Imagine a future where your mind, memories, and self-awareness can be digitized 
 
 This world is built on the bleeding edge of extrapolated technology:
 
-- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by FHE Core and **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md)**.
+- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by FHE-vTPM and **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md)**.
 - 🔌 **[Mentalink](./docs/concepts/Mentalink.md):** High-bandwidth Brain-Computer Interfaces (BCIs) for reading/writing neural data.
 - 🤖 **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md):** The engine simulating thought, memory, and personality within the MSC.
 - 🔗 **Blockchain & Crypto:** The foundation for trust, persistence, and the very real economics of digital survival.

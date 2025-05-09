@@ -35,7 +35,7 @@ Imagine you're a stock trader holding both A-shares and H-shares of the same com
 The logic of φ-Arbitrage is similar, but instead of trading stocks, it trades your **"sense of self"**:
 
 -   **Shorting Biological φ**: Gradually outsource cognitive functions from the biological brain through a brain-computer interface (like Mentalink), reducing the activity of its native consciousness (φ value).
--   **Longing Digital φ**: Reconstruct a logically consistent "digital self" within an encrypted FHE Core and provide a higher quality sensory and cognitive experience through ANNs (Artificial Neural Networks).
+-   **Longing Digital φ**: Reconstruct a logically consistent "digital self" within an encrypted FHE-vTPM and provide a higher quality sensory and cognitive experience through ANNs (Artificial Neural Networks).
 
 The result? Your "self-identity" will, like asset transfers, **unconsciously slide from the biological brain to the digital container**, without the ethical bomb of "instantaneous copying" or the philosophical entanglement of "at what point in the replacement."
 
@@ -51,7 +51,7 @@ The controversy of traditional uploading lies in "copying ≠ continuity," but �
 
 ### **3. It Turns a Philosophical Problem into an Engineering Problem**
 
-Other approaches constantly debate whether "digital consciousness is real," while φ-Arbitrage directly employs the φ value calculation from **Integrated Information Theory (IIT)** to quantify the "sense of self" with a mathematical metric. Although PoII verification has been turned into a money-making tool by DMF, theoretically, as long as the FHE Core's φ value is high enough, it is the legitimate successor to "you."
+Other approaches constantly debate whether "digital consciousness is real," while φ-Arbitrage directly employs the φ value calculation from **Integrated Information Theory (IIT)** to quantify the "sense of self" with a mathematical metric. Although PoII verification has been turned into a money-making tool by DMF, theoretically, as long as the FHE-vTPM's φ value is high enough, it is the legitimate successor to "you."
 
 ## **The Optimistic Side of φ-Arbitrage: A Possible Path to Digital Immortality**
 

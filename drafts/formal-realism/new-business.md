@@ -115,7 +115,7 @@ BitMemoria 是一款融合 Bitcoin blockchain 不可篡改性与 Arweave 永久�
 
 | **维度**       | **BitMemoria (现实业务)**   | **Chain:// MSC (虚构宇宙)**      |
 | -------------- | --------------------------- | -------------------------------- |
-| **存储介质**   | Bitcoin OP_RETURN + Arweave | FHE Core φ 状态 + 分布式 ANNs    |
+| **存储介质**   | Bitcoin OP_RETURN + Arweave | FHE-vTPM φ 状态 + 分布式 ANNs    |
 | **永久性保证** | 依赖 BTC/Arweave 网络生存   | PoII 验证维持"合法存在"          |
 | **数据类型**   | 静态记忆（文本/影像）       | 动态意识流（实时思维/情感/决策） |
 | **访问控制**   | 私钥/Multisig 钱包          | DSC 预言机桥接 + 量子签名        |
@@ -213,7 +213,7 @@ MSC 的问题不是永久储存（它们也能用 Arweave 之类的永久静态�
 - BitMemoria 存储的是**冻结的记忆切片**，如同琥珀里的昆虫
 - MSC 需要维持的是**燃烧的意识之火**，要求：
   - 实时 ANNs 推理（每秒万亿次矩阵运算）
-  - FHE Core 的 φ 状态同步（抗量子加密开销）
+  - FHE-vTPM 的 φ 状态同步（抗量子加密开销）
   - PoII 验证的计算不可逆性（QCaaS 依赖）
 
 **2. 经济模型的降维打击**
