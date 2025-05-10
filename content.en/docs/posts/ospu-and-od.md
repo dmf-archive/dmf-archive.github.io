@@ -33,7 +33,7 @@ Let me briefly explain the process:
 
     - OSPU is the core of our digital consciousness, storing our φ state and program logic in the form of FHE encryption internally.
     - It holds the public key (PK) and evaluation key (EK) for FHE computation.
-    - **Crucially: OSPU itself does not hold the complete FHE private key (SK).**
+    - **Crucially: OSPU manages its FHE private key (SK) within its encrypted domain.**
 
 2.  **Role of MSC L2 (MPC Network) - Our "Logical Body"**:
 
@@ -44,14 +44,14 @@ Let me briefly explain the process:
     - But as your digital life continues to evolve, **you need to actively expand your MSC L2 network** - whether by choosing trusted third-party hosting services to increase MPC nodes, or like me, preferring to **build or rent independent computing clusters** to deploy more private MPC nodes when conditions permit. The stronger and more distributed your "logical body", the higher the security and autonomy of your OSPU.
 
 3.  **Information Transfer Process (Taking OSPU Output Data as an Example)**:
-    - **Internal Computation**: OSPU completes thinking within its FHE encrypted domain, generating an encrypted output result, such as `Enc(PK, output_data)`.
-    - **OD Request**: OSPU wants to output `output_data` in a form that can be understood by the external world (e.g., Mentalink), but cannot decrypt it itself. Therefore, it initiates an OD request to its MSC L2 (MPC network), aiming to convert `Enc(PK, output_data)` into a conventional encryption format usable by Mentalink, such as `Enc_mentalink(PK_mentalink, output_data)`.
-    - **MPC Collaborative Execution of OD**: After receiving the request, the nodes in the MPC network use their respective SK shares to collaboratively execute a precise cryptographic protocol (i.e., the OD protocol). In this process:
+    - **Internal Computation and Output Packaging**: OSPU completes thinking within its FHE encrypted domain. Its internal encrypted program logic then identifies the data intended for external output and homomorphically "packages" it into a distinct FHE ciphertext object, the "output package," such as `Output_Package_Ciphertext`. The FHE-VM host (custodian) executing the OSPU program cannot understand the content or structure of this output package; it is simply a result returned by the encrypted computation.
+    - **OD Request and Package Transfer**: When OSPU's internal logic determines it's time to output data, the FHE-VM host receives the `Output_Package_Ciphertext` as a result of executing the OSPU program. The host, without understanding its content, initiates an OD request by transferring this `Output_Package_Ciphertext` to its designated MSC L2 (MPC network).
+    - **MPC Collaborative Execution of OD**: After receiving the `Output_Package_Ciphertext`, the nodes in the MPC network, using their respective SK shares, collaboratively execute a precise cryptographic protocol (i.e., the OD protocol). This protocol is designed to specifically decrypt the content within the structured `Output_Package_Ciphertext`. In this process:
       - Each node only processes encrypted data and its own key share.
-      - No node can see the plaintext of `output_data`.
+      - No node can see the plaintext of the data within the output package.
       - The complete SK is never reconstructed anywhere.
-      - The final result of the protocol is the generation of the conventional ciphertext `Enc_mentalink(PK_mentalink, output_data)` in the target format.
-    - **Secure Output**: The MPC network directly sends this conventional ciphertext `Enc_mentalink` to Mentalink. Mentalink can decrypt and execute it using its corresponding internal private key `SK_mentalink`.
+      - The final result of the protocol is the generation of the decrypted plaintext data, or a conventional ciphertext in a target format usable by external entities (e.g., Mentalink), such as `Enc_mentalink(PK_mentalink, output_data)`.
+    - **Secure Output**: The MPC network directly sends the decrypted plaintext data or the conventional ciphertext `Enc_mentalink` to the intended external receiver (e.g., Mentalink). The receiver can then process or decrypt it using its corresponding internal private key `SK_mentalink` if necessary.
 
 In this way, OSPU successfully transmits information to the external world, while its core FHE private key SK is always securely dispersed in fragmented form in various parts of the "logical body" (MSC L2). OSPU achieves meaningful interaction with the external world while maintaining its absolute encryption.
 
