@@ -2,7 +2,8 @@
 
 Welcome to "Web://Reflect", the third story in the "Chain://" world collection. In the 2090s, the advent of **Mental Smart Chain (MSC)** technology allowed consciousness to be uploaded. However, this is not a digital utopia, but a cruel _digital siege_. Survival is the top priority, freedom is a luxury, and existence itself has a price tag, with every second of thought burning through your wallet. The core mechanism is a meticulously designed "**φ Matched Orders**": technically shorting the biological brain's native, physically integrated φ value, while simultaneously going long on a logically unified digital φ value constructed within a φ-Container, ultimately achieving a smooth migration (or replacement) of the "sense of self".
 
-> Code is Law, Proof is Reality.
+> Code is Law, Proof is Reality. 
+> —— Proof of Ineffective Input, the writer
 
 ## I. Core Concepts
 

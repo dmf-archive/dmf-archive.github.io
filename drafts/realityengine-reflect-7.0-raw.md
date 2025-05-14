@@ -4,7 +4,8 @@
 
 欢迎来到《Chain://》世界集的第三部故事《Web://Reflect》，2090 年代，**Mental Smart Chain** 技术的出现允许意识上链，但这并非数字极乐，而是一个残酷的*数字围城*。生存是第一要务，自由是奢侈品，而存在本身明码标价，每一秒思考都在燃烧你的钱包。其核心机制是一场精心设计的“**φ对敲 (φ Matched Orders)**”：通过技术手段做空生物脑原生的、基于物理整合的φ值，同时做多一个在φ-Container中构建的、逻辑统一的数字φ值，最终实现“自我感”的平滑迁移（或取代）。
 
-> Code is Law, Proof is Reality.
+> Code is Law, Proof is Reality. 
+> —— Proof of Ineffective Input, the writer
 
 ## I. 核心概念详解 (Core Concepts Explained)
 
