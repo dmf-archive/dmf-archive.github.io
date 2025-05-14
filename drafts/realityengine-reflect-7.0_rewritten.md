@@ -19,7 +19,7 @@ MSC的运作核心是一场“**φ对敲**”：
 
 ### PoII / PoPI - 意识验证的表与里
 
-**PoPI (Proof of Predictive Integrity)** 是**OSPU (Optimized State Processing Unit)** 的核心算法，也是MSC L2运作的内在机制。它处理、筛选并整合来自ANNs和Mentalink的信息流，以重建和维持数字化的**φ状态**，是实现“φ对敲”的关键。OSPU作为PoPI的逻辑执行者，确保数字心智的完整性、一致性和连续性。
+**PoPI (Proof of Predictive Integrity)** 是**OSPU (Ouroboros Secure Processing Unit, the φ-Container)** 的核心算法，也是MSC L2运作的内在机制。它处理、筛选并整合来自ANNs和Mentalink的信息流，以重建和维持数字化的**φ状态**，是实现“φ对敲”的关键。OSPU作为PoPI的逻辑执行者，确保数字心智的完整性、一致性和连续性。
 
 对外，DMF宣传**PoII (Proof of Information Integration)** 为官方意识验证机制，声称基于IIT计算φ值，确保数字意识的真实性与“数字人权”，并将高昂的QCaaS费用解释为必要成本。实际上，DMF从未全局实现严格的IIT φ值计算，因其成本过高。实际运行的是PoPI，一种以PCT指标为主，辅以局部、近似IIT φ值计算校准的混合算法。PoPI的目标是确保ANNs生成的体验流与OSPU锚定的身份在逻辑上一致，并服务于“φ对敲”。DMF将PoPI的实际算力成本锚定在特定水平（如单次验证消耗`~4.47e4 EFLOPS-sec`），旨在使70年后1φ ≈ 100 ICC。
 
@@ -51,7 +51,7 @@ IRES形成了混乱、危险但不受DMF直接控制的**数字荒野**。它们
 
 MSC L2是“数字心灵的逻辑身体”，包含ANNs（认知器官）、记忆区块（生命历程）、心智内存池（思维草稿）、预言机桥接（逻辑脊髓）等。其计算和交互（如ANNs模块协作或与外部信息交互）理想状态下通过MPC (多方安全计算) 保护，确保隐私和逻辑完整性。OSPU通过不经意解密 (OD) 机制安全访问或处理加密信息。
 
-**OSPU (依托φ-Container实现的φ-State) - 加密的“数字颅骨”**:
+**OSPU (Ouroboros Secure Processing Unit, the φ-Container) - 加密的“数字颅骨”**:
 OSPU通过密码学构造实现逻辑上的因果不可分，成为MSC L2的“φ-Container”核心处理单元。其管理的核心FHE私钥 (SK) 以分片形式存于指定MSC L2网络，是身份的唯一凭证，扮演逻辑TPM角色。OSPU并非大规模AI推理计算的主体（由ANNs负责），而是MPC协调者或参与方。
 数据流：人脑 → Mentalink编解码 → OSPU分配MPC任务 → ANNs完成计算并将加密结果回传OSPU → OSPU (通过FHE-VM托管者) 发起OD请求至MSC L2 (MPC网络) → MSC L2 (MPC网络) 执行OD → 加密结果送至Mentalink内部TEE最终解密 → 明文交付神经接口。TEE保护最终解密过程和明文流。
 随着“φ对敲”进行，自我感从生物脑转移到这个加密的、逻辑自洽的φ状态。自我感源于跨载体信息在φ-Container核心的整合，并通过Mentalink回写生物脑，允许φ-Container“继承”或“覆盖”人脑的信任链。OSPU理论上可被复制，引发身份稀释问题。
