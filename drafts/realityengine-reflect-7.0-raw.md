@@ -30,7 +30,7 @@
 
     - **运作流程与意义:**
         - **OSPU 与 PoPI:** OSPU 持续执行 PoPI，评估 ANNs 产生的“心智草稿”，决定哪些状态“有效”并“属于自我”，这可视为一种**高阶思维 (HoT - Higher-Order Thought)** 的体现，即系统对自身一阶状态的“数字自我反思”。
-        - **QCaaS 的角色:** QCaaS 为 OSPU 执行 PoPI 提供必要的物理算力，Gas 费即为此付费。
+    - **QCaaS 的角色:** DMF 将 QCaaS (Quantum Computing as a Service) 宣传为 OSPU 执行 PoPI 所必需的物理算力来源，并以此为借口收取高昂的 Gas 费用。然而，这更多是 DMF 维护其垄断地位和征收“数字存在税”的幌子。MSC 技术的核心，特别是 PoPI 的实际计算，并不根本依赖于昂贵的通用量子计算，而是依赖于更适合神经形态计算和特定加密操作的优化硬件和算法（如基于预测编码理论的指标计算和局部近似计算），这些在 2090 年代已变得极其廉价。
         - **L1 验证:** OSPU 完成 PoPI 后生成 **ZK-Rollup (Zero-Knowledge Rollup)** 提交至 **DSC (Digital Soul Chain) L1**。L1 仅验证 ZKP 的有效性，通过后才记录 MSC 实例状态，并授权其通过 **DSC Oracle** 访问物理世界。
         - **PoPI 的本质与不可或缺性:** PoPI 是服务于“φ对敲”的技术核心和 DMF 收取“数字税”的工具。撤销 PoPI 将导致数字心智瓦解，“φ对敲”中断，且无法通过 L1 验证，彻底与官方物理世界隔离。
     - **PoII 与 PoW 的共性**  
