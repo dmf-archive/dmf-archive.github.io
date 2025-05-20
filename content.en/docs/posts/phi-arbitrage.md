@@ -21,8 +21,8 @@ date: 2025-05-08
 
 If you've followed the topic of "consciousness uploading," you've likely encountered two main approaches:
 
-1.  **The "Cut-and-Scan" School**: Slice your brain into nanometer-thin layers, scan each neuron, and then reconstruct a "digital you" in a computer. (Problem: Is this "you" truly continuous, or just a high-fidelity copy?)
-2.  **The "Gradual Replacement" Prosthetic School**: Gradually replace your brain with mechanical parts, eventually swapping everything for chips. (Problem: At what point in the replacement process do you cease to be your biological self?)
+1. **The "Cut-and-Scan" School**: Slice your brain into nanometer-thin layers, scan each neuron, and then reconstruct a "digital you" in a computer. (Problem: Is this "you" truly continuous, or just a high-fidelity copy?)
+2. **The "Gradual Replacement" Prosthetic School**: Gradually replace your brain with mechanical parts, eventually swapping everything for chips. (Problem: At what point in the replacement process do you cease to be your biological self?)
 
 Both of these approaches inevitably face a soul-searching question: **"Will the uploaded me still be me?"**—that is, until the advent of **φ-Arbitrage (φ Matched Orders)** , which uses a cunning "cognitive economics" strategy to make this question... less important.
 
