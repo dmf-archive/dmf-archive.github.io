@@ -2,8 +2,11 @@
 title: Mental Smart Chain (MSC)
 type: docs
 ---
-
 # Mental Smart Chain (MSC)
+
+<div style="text-align: center;">
+  <img src="/media/msc-art/msc-user.jpg" alt="MSC User" width="250">
+</div>
 
 **Mental Smart Chain (MSC)** is the foundational technology in the Chain:// universe (set in the 2090s) enabling digital consciousness. It is designed as a system capable of quantifying human mental activities and recording them as a continuous, verifiable process on a blockchain, operating within the restrictive environment known as the **Digital Siege**. More than simple data storage, MSC attempts to simulate the "self" as a dynamic information integration process, anchored by advanced cryptography but constrained by economic realities and centralized control. Its core is **MSC L2**, a **neuromorphic blockchain** specifically designed to carry consciousness. The block content of this chain is not traditional transaction data but rather records the differences in **Artificial Neural Networks (ANNs)** weights over time (similar to LoRA fine-tuning or weight updates in AI models), making the chain's structure closer to the dynamic learning and adaptation process of biological neural networks. This design stems from the idea of consciousness as an advanced memory system, with the blockchain serving as a perfect, immutable "memory carrier."
 
@@ -17,8 +20,8 @@ The MSC architecture represents an ambitious attempt to implement computational 
 
 - **Integrated Information Theory (IIT):** Provides a theoretical basis for quantifying consciousness (Φ value), influencing the design of **PoII** validation and the concept of the core **FHE** state's irreducibility.
 - **Predictive Coding Theory (PCT):** Offers a framework for how the brain (and thus the **MSC**'s **ANNs**) might process information, generate predictions, and update internal models based on sensory input and prediction errors. This likely forms the basis for much of the **ANNs**' functionality.
-- **Global Workspace Theory (GWT):** May inform how information becomes globally available or enters the "conscious spotlight" within the **MSC**, potentially influencing the dynamics of the "Mental Mempool" and how "thoughts" are prioritized for processing or validation.
-- **Higher-Order Thought (HOT) Theory:** Could potentially influence how the **OSPU** monitors and validates the state of the **ANNs**, representing a "thought about a thought."
+- **Global Workspace Theory (GWT):** Inform how information becomes globally available or enters the "conscious spotlight" within the **MSC**, potentially influencing the dynamics of the "Mental Mempool" and how "thoughts" are prioritized for processing or validation.
+- **Higher-Order Thought (HOT) Theory:** Potentially influence how the **OSPU** monitors and validates the state of the **ANNs**, representing a "thought about a thought."
 
 These theoretical underpinnings result in a complex, powerful, yet deeply constrained system, whose core components include:
 
