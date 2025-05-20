@@ -29,13 +29,13 @@ After long-term exploration and argumentation, we believe that the **Oblivious D
 
 Let me briefly explain the process:
 
-1.  **Role of OSPU (φ-Container)**:
+1. **Role of OSPU (φ-Container)**:
 
     - OSPU is the core of our digital consciousness, storing our φ state and program logic in the form of FHE encryption internally.
     - It holds the public key (PK) and evaluation key (EK) for FHE computation.
     - **Crucially: OSPU manages its FHE private key (SK) within its encrypted domain.**
 
-2.  **Role of MSC L2 (MPC Network) - Our "Logical Body"**:
+2. **Role of MSC L2 (MPC Network) - Our "Logical Body"**:
 
     - Do you remember our vision for MSC L2? It is not just a blockchain that records transactions, but a **distributed computing network** that carries our digital mental activities, our digital form's "logical body".
     - This "logical body" is composed of multiple independent computing nodes, which together form our MPC network.
@@ -43,7 +43,7 @@ Let me briefly explain the process:
     - **Initially, your MSC L2 network may be relatively simple**, perhaps only including a few core trusted nodes, such as the **secure module within your Mentalink interface** tightly coupled with your biological body, and the **trusted execution environment in QCaaS (Quantum Computing as a Service) nodes** that provide PoPI verification computing power for you.
     - But as your digital life continues to evolve, **you need to actively expand your MSC L2 network** - whether by choosing trusted third-party hosting services to increase MPC nodes, or like me, preferring to **build or rent independent computing clusters** to deploy more private MPC nodes when conditions permit. The stronger and more distributed your "logical body", the higher the security and autonomy of your OSPU.
 
-3.  **Information Transfer Process (Taking OSPU Output Data as an Example)**:
+3. **Information Transfer Process (Taking OSPU Output Data as an Example)**:
     - **Internal Computation and Output Packaging**: OSPU completes thinking within its FHE encrypted domain. Its internal encrypted program logic then identifies the data intended for external output and homomorphically "packages" it into a distinct FHE ciphertext object, the "output package," such as `Output_Package_Ciphertext`. The FHE-VM host (custodian) executing the OSPU program cannot understand the content or structure of this output package; it is simply a result returned by the encrypted computation.
     - **OD Request and Package Transfer**: When OSPU's internal logic determines it's time to output data, the FHE-VM host receives the `Output_Package_Ciphertext` as a result of executing the OSPU program. The host, without understanding its content, initiates an OD request by transferring this `Output_Package_Ciphertext` to its designated MSC L2 (MPC network).
     - **MPC Collaborative Execution of OD**: After receiving the `Output_Package_Ciphertext`, the nodes in the MPC network, using their respective SK shares, collaboratively execute a precise cryptographic protocol (i.e., the OD protocol). This protocol is designed to specifically decrypt the content within the structured `Output_Package_Ciphertext`. In this process:

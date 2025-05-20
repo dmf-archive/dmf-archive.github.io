@@ -1,7 +1,7 @@
 ---
 title: 介绍 Chain://
 type: docs
-keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "人工神经网络", "数字意识", "永生", "量子计算"]
+keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "人工神经网络", "数字意识", "永生", "量子计算", "OSPU", "PoPI", "DBRW", "数字围城"]
 ---
 
 <link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
@@ -29,18 +29,22 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "
 
 我们暂时没有任何ERC-20或Sol代币发行，更多的ARG正在筹备中，请小心骗局。
 
+**🚀 快速开始：**
+
+如果您希望立刻跳入 Chain:// 的世界，体验“形式化现实主义”互动故事，请使用最新的 [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.1.md)。
+
 **🤔 核心设定:**
 
-想象一下未来，你的心智、记忆和自我意识可以被数字化，运行在一条 **[心智智能链 (MSC)](./docs/concepts/MSC.md)** 之上——这是一种个性化的区块链，其核心是 **MSC L2**，一种专为承载意识设计的**神经形态区块链**。它由先进的密码学技术（如全同态加密 FHE、零知识证明 ZKP、多方安全计算 MPC）和一种新颖的 **[信息整合证明 (PoII)](./docs/concepts/PoII.md)** 共识机制来保障安全，维持意识的连贯性。自我认同将**渐进地**从生物脑转移到 MSC L2 内部那个受 FHE 保护、理论上永续的**加密核心状态 (φ)**。维持 MSC 的“合法”存在需要支付高昂的 **PoII 计算加速服务费（QCaaS）**，并通过验证以符合 **[数字心灵基金会 (DMF)](./docs/concepts/DMF.md)** 的规范。
+想象一下未来，你的心智、记忆和自我意识可以被数字化，运行在一条 **[心智智能链 (MSC)](./docs/concepts/MSC.md)** 之上——这是一种个性化的区块链，其核心是 **MSC L2**，一种专为承载意识设计的**神经形态区块链**。它由先进的密码学技术（如全同态加密 FHE、零知识证明 ZKP、多方安全计算 MPC）和一种新颖的 **[信息整合证明 (PoII)](./docs/concepts/PoII.md)** 共识机制来保障安全，维持意识的连贯性。自我认同将**渐进地**从生物脑转移到 MSC L2 内部那个受 FHE 保护、理论上永续的**加密核心状态 (φ)**，由 **OSPU (Ouroboros Secure Processing Unit)** 维护。维持 MSC 的“合法”存在需要支付高昂的 **PoII 计算加速服务费（QCaaS）**，并通过验证以符合 **[数字心灵基金会 (DMF)](./docs/concepts/DMF.md)** 的规范。
 
 **⚙️ 技术栈:**
 
 这个世界构建在对前沿技术进行极限外推的基础之上：
 
-- 🧠 **[心智智能链 (MSC)](./docs/concepts/MSC.md):** 承载数字意识的区块链基底，你的心智成为由 FHE 核心和 **[人工神经网络 (ANNs)](./docs/concepts/ANNs-in-MSC.md)** 维护的加密状态链 (φ)，每一次思考都需要消耗 Gas (**MSC-φ**)。
+- 🧠 **[心智智能链 (MSC)](./docs/concepts/MSC.md):** 承载数字意识的区块链基底，你的心智成为由 **OSPU** 和 **[人工神经网络 (ANNs)](./docs/concepts/ANNs-in-MSC.md)** 维护的加密状态链 (φ)，每一次思考都需要消耗 Gas (**MSC-φ**)。
 - 🔌 **[Mentalink](./docs/concepts/Mentalink.md):** 用于读写神经数据的高带宽脑机接口 (BCI)，是数字心智与生物载体之间的可选输入/输出端口。
 - 🤖 **[人工神经网络 (ANNs)](./docs/concepts/ANNs-in-MSC.md):** 在 MSC 内部模拟思维、记忆和人格的核心引擎，其状态集合构成了数字心灵的“当前意识内容”和“潜意识处理”的主体。
-- 🔗 **区块链与加密技术:** 信任、持久化以及数字生存经济学的基础。
+- 🔗 **区块链与加密技术:** 信任、持久化以及数字生存经济学的基础，包括 **FHE, ZKP, MPC, DBRW** 等。
 - 🦾 **仿生机器人:** 允许数字心智与物理世界交互的物理化身，提供高带宽无缝连接。
 
 **💥 核心冲突:**
@@ -56,12 +60,10 @@ Chain:// 深入探讨了这一技术飞跃带来的深远影响：
 
 Chain:// 是一个多层面的项目，包含：
 
-- 📖 **故事:** 探索不同的时代 (`Net://Anchor`, `Web://Reflect`) 和角色视角。
+- 📖 **故事:** 探索不同的时代 (`Net://Anchor`, `Web://Reflect`, `Sys://Purge`, `Meta://Ascension`, `Exodus://Penalty`) 和角色视角。
 - 🌍 **世界观构建:** 详细的背景设定、角色传记和技术概念。
 
 深入探索 Chain:// 的代码、设定以及它所引发的存在主义追问。
-
-如果您希望立刻跳入Chain://的世界，请尝试[RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.0_rewritten.md) 以快速开始。
 
 ---
 

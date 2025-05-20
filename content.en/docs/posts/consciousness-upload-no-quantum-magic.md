@@ -57,8 +57,8 @@ When I first conceived MSC, I found a contradiction:
 
 So, I decided to **leverage this cognitive bias**:
 
-1.  **First, meet expectations**: Have DMF claim that "QCaaS is the cornerstone of consciousness upload," which aligns with sci-fi enthusiasts' quantum superstition.
-2.  **Then, expose the lie**: Through Ember's exploration, gradually reveal the **sufficiency of classic computing**, allowing readers to personally experience the feeling of "being deceived."
+1. **First, meet expectations**: Have DMF claim that "QCaaS is the cornerstone of consciousness upload," which aligns with sci-fi enthusiasts' quantum superstition.
+2. **Then, expose the lie**: Through Ember's exploration, gradually reveal the **sufficiency of classic computing**, allowing readers to personally experience the feeling of "being deceived."
 
 ### **3.2 Quantum Conspiracy Theory as a Social Metaphor**
 
@@ -82,9 +82,9 @@ The problem with traditional sci-fi's quantum magic is:
 
 Chain://'s approach is:
 
-1.  **Demythologize technology**: Show how MSC achieves consciousness upload using known theories (FHE+MPC+ANN).
-2.  **Expose economically**: How DMF uses **information asymmetry** ("you don't understand quantum") to build an exploitative system.
-3.  **Narrative reversal**: Take readers from "believing in quantum magic" to "discovering classic is sufficient," experiencing a cognitive upheaval.
+1. **Demythologize technology**: Show how MSC achieves consciousness upload using known theories (FHE+MPC+ANN).
+2. **Expose economically**: How DMF uses **information asymmetry** ("you don't understand quantum") to build an exploitative system.
+3. **Narrative reversal**: Take readers from "believing in quantum magic" to "discovering classic is sufficient," experiencing a cognitive upheaval.
 
 **This is more sophisticated sci-fi** - it doesn't just fantasize about how magical technology is, but reveals **how power packages technology** to control the masses.
 

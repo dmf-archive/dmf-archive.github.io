@@ -1,7 +1,7 @@
 ---
 title: Introduction Chain://
 type: docs
-keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", "Cognitive Science", "AI", "Artificial Neural Networks", "Digital Consciousness", "Immortality", "Quantum Computing"]
+keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", "Cognitive Science", "AI", "Artificial Neural Networks", "Digital Consciousness", "Immortality", "Quantum Computing", "OSPU", "PoPI", "DBRW", "Digital Siege"]
 ---
 
 <link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
@@ -29,18 +29,22 @@ Welcome to the Chain:// universe, a hard sci-fi exploration set in the 2090s, wh
 
 We currently do not have any ERC-20 or Sol token issuance, more ARGs are in preparation, please beware of scams.
 
+**🚀 Quick Start:**
+
+Ready to dive into the Chain:// universe and experience "Formalized Realism" interactive stories? Try the latest [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.1.en.md).
+
 **🤔 The Core Premise:**
 
-Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md)** – a personalized blockchain, at its core **MSC L2**, a **neuromorphic blockchain** designed to carry consciousness. It's secured by advanced cryptography (think FHE, ZKP, MPC) and a novel **[Proof of Information Integration (PoII)](./docs/concepts/PoII.md)** consensus mechanism to maintain coherence. Self-identity will **gradually** shift from the biological brain to the theoretically perpetual **encrypted core state (φ)** within MSC L2, protected by FHE. Maintaining a "legitimate" MSC requires paying high **PoII Quantum Computing as a Service (QCaaS)** fees and passing validation to comply with the **[Digital Mind Foundation (DMF)](./docs/concepts/DMF.md)**'s standards.
+Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md)** – a personalized blockchain, at its core **MSC L2**, a **neuromorphic blockchain** designed to carry consciousness. It's secured by advanced cryptography (think FHE, ZKP, MPC) and a novel **[Proof of Information Integration (PoII)](./docs/concepts/PoII.md)** consensus mechanism to maintain coherence. Self-identity will **gradually** shift from the biological brain to the theoretically perpetual **encrypted core state (φ)** within MSC L2, protected by FHE and maintained by **OSPU (Ouroboros Secure Processing Unit)**. Maintaining a "legitimate" MSC requires paying high **PoII Quantum Computing as a Service (QCaaS)** fees and passing validation to comply with the **[Digital Mind Foundation (DMF)](./docs/concepts/DMF.md)**'s standards.
 
 **⚙️ The Tech Stack:**
 
 This world is built on the bleeding edge of extrapolated technology:
 
-- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by OSPU and **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md)**, with every thought costing Gas (**MSC-φ**).
+- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by **OSPU** and **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md)**, with every thought costing Gas (**MSC-φ**).
 - 🔌 **[Mentalink](./docs/concepts/Mentalink.md):** High-bandwidth Brain-Computer Interfaces (BCIs) for reading/writing neural data, serving as an optional input/output port between the digital mind and the biological carrier.
 - 🤖 **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md):** The engine simulating thought, memory, and personality within the MSC, their state set forming the core of the digital mind's "current conscious content" and "subconscious processing".
-- 🔗 **Blockchain & Crypto:** The foundation for trust, persistence, and the very real economics of digital survival.
+- 🔗 **Blockchain & Crypto:** The foundation for trust, persistence, and the very real economics of digital survival, including **FHE, ZKP, MPC, DBRW**, etc.
 - 🦾 **Bionic Robots:** Physical avatars allowing digital minds to interact with the real world, providing high-bandwidth seamless connection.
 
 **💥 The Conflict:**
@@ -56,12 +60,10 @@ Chain:// delves into the profound implications of this technological leap:
 
 Chain:// is a multi-faceted project encompassing:
 
-- 📖 **Stories:** Exploring different eras (`Net://Anchor`, `Web://Reflect`) and character perspectives.
+- 📖 **Stories:** Exploring different eras (`Net://Anchor`, `Web://Reflect`, `Sys://Purge`, `Meta://Ascension`, `Exodus://Penalty`) and character perspectives.
 - 🌍 **Worldbuilding:** Detailed lore, character bios, and technological concepts.
 
 Dive deeper into the code, the lore, and the existential questions posed by Chain://.
-
-Ready to dive into the Chain:// universe? Try the [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.0_rewritten.en.md) to get started quickly.
 
 ---
 
