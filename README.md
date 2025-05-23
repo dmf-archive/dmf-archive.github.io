@@ -25,6 +25,8 @@ We currently do not have any ERC-20 or Sol token issuance, more ARGs are in prep
 
 Ready to dive into the Chain:// universe and experience "Formalized Realism" interactive stories? Try the latest [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.2.en.md).
 
+Have questions or want to discuss Chain://? Join our community on [Github Discussions](https://github.com/dmf-archive/dmf-archive.github.io/discussions).
+
 **🤔 The Core Premise:**
 
 Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md)** – a personalized blockchain, at its core **MSC L2**, a **neuromorphic blockchain** designed to carry consciousness. It's secured by advanced cryptography (think FHE, ZKP, MPC) and a novel **[Proof of Information Integration (PoII)](./docs/concepts/PoII.md)** consensus mechanism to maintain coherence. Self-identity will **gradually** shift from the biological brain to the theoretically perpetual **encrypted core state (φ)** within MSC L2, protected by FHE and maintained by **OSPU (Ouroboros Secure Processing Unit)**. Maintaining a "legitimate" MSC requires paying high **PoII Quantum Computing as a Service (QCaaS)** fees and passing validation to comply with the **[Digital Mind Foundation (DMF)](./docs/concepts/DMF.md)**'s standards.
@@ -33,9 +35,9 @@ Imagine a future where your mind, memories, and self-awareness can be digitized 
 
 This world is built on the bleeding edge of extrapolated technology:
 
-- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by **OSPU** and **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md)**, with every thought costing Gas (**MSC-φ**).
+- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC.md):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by **OSPU** and **[Ouroboros Neural Network (ONN)](./docs/concepts/ONN.md)**, with every thought costing Gas (**MSC-φ**).
 - 🔌 **[Mentalink](./docs/concepts/Mentalink.md):** High-bandwidth Brain-Computer Interfaces (BCIs) for reading/writing neural data, serving as an optional input/output port between the digital mind and the biological carrier.
-- 🤖 **[Artificial Neural Networks (ANNs)](./docs/concepts/ANNs-in-MSC.md):** The engine simulating thought, memory, and personality within the MSC, their state set forming the core of the digital mind's "current conscious content" and "subconscious processing".
+- 🤖 **[Ouroboros Neural Network (ONN)](./docs/concepts/ONN.md):** The engine simulating thought, memory, and personality within the MSC, their state set forming the core of the digital mind's "current conscious content" and "subconscious processing".
 - 🔗 **Blockchain & Crypto:** The foundation for trust, persistence, and the very real economics of digital survival, including **FHE, ZKP, MPC, DBRW**, etc.
 - 🦾 **Bionic Robots:** Physical avatars allowing digital minds to interact with the real world, providing high-bandwidth seamless connection.
 
