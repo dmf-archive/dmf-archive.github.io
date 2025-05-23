@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSC Data Flow</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            overflow: hidden; /* Prevent scrollbars due to canvas */
+            touch-action: none; /* Disable default touch actions like pinch-zoom on mobile */
+        }
+        canvas {
+            display: block;
+            background-color: #0a0a0a; /* Dark background for the digital world */
+            cursor: grab; /* Default cursor for panning */
+        }
+        canvas.grabbing {
+            cursor: grabbing;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .legend-color-box {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            border-radius: 4px;
+        }
+        .control-button {
+            @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-colors duration-200;
+        }
+        /* Custom styles for collapsible legend */
+        details > summary {
+            list-style: none; /* Remove default arrow */
+            cursor: pointer;
+            padding: 8px 0;
+            font-weight: bold;
+            color: #93C5FD; /* Blue-300 */
+        }
+        details > summary::-webkit-details-marker {
+            display: none; /* Remove default marker for WebKit browsers */
+        }
+        details > summary::before {
+            content: '▶'; /* Custom arrow for closed state */
+            margin-right: 8px;
+            transition: transform 0.2s ease-in-out;
+            display: inline-block;
+        }
+        details[open] > summary::before {
+            content: '▼'; /* Custom arrow for open state */
+            transform: rotate(0deg); /* No rotation needed if content is below */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono flex flex-col h-screen">
+    <!-- Header Section -->
+    <header class="bg-gray-800 p-4 shadow-lg z-20 flex flex-col items-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-purple-400">MSC Data Flow: Web://Reflect</h1>
+        <p class="text-sm md:text-base text-gray-400 mt-1">Code is Law, Proof is Reality.</p>
+    </header>
+
+    <!-- Main Content Area (Canvas and Controls) -->
+    <div class="relative flex-grow w-full flex items-center justify-center">
+        <canvas id="mscCanvas" class="absolute inset-0"></canvas>
+
+        <!-- Zoom Controls -->
+        <div class="absolute top-4 right-4 flex flex-col space-y-2 z-10">
+            <button id="zoomInBtn" class="control-button">+</button>
+            <button id="zoomOutBtn" class="control-button">-</button>
+            <button id="resetZoomBtn" class="control-button">Reset</button>
+        </div>
+
+        <!-- Legend for Security Levels (Collapsible) -->
+        <div class="absolute bottom-4 left-4 bg-gray-800 bg-opacity-70 p-4 rounded-lg shadow-lg z-10 text-xs md:text-sm">
+            <details open> <!-- 'open' attribute makes it open by default -->
+                <summary class="text-blue-300">Security Levels:</summary>
+                <div class="mt-2">
+                    <div class="legend-item">
+                        <div class="legend-color-box bg-green-500"></div>
+                        <span>High Security (FHE, MPC, ZKP, DBRW)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color-box bg-blue-500"></div>
+                        <span>Secure (E2EE, TEE, HSM/PUF)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color-box bg-yellow-500"></div>
+                        <span>Moderate (Encrypted, Authenticated)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color-box bg-red-500"></div>
+                        <span>Low/Risky (Partial Encryption, Vulnerable)</span>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('mscCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let nodes = [];
+        let edges = [];
+        let packets = [];
+        let animationFrameId;
+
+        // Zoom and Pan state
+        let zoomLevel = 1.0;
+        let panX = 0;
+        let panY = 0;
+        let isDragging = false;
+        let lastMouseX = 0;
+        let lastMouseY = 0;
+
+        // Define security level colors
+        const SECURITY_COLORS = {
+            'High Security': '#34D399', // Green
+            'Secure': '#3B82F6',      // Blue
+            'Moderate': '#FBBF24',    // Yellow
+            'Low/Risky': '#EF4444'    // Red
+        };
+
+        // Node definitions (x, y will be relative to canvas size)
+        const nodeDefinitions = [
+            { id: 'BioBrain', label: 'Bio-Brain', type: 'external', group: 'physical' },
+            { id: 'PhysicalWorld', label: 'Physical World', type: 'external', group: 'physical' },
+
+            { id: 'Mentalink', label: 'Mentalink (L2 Node)', type: 'interface', group: 'interface' },
+            { id: 'Biorobotics', label: 'Biorobotics/TEE', type: 'external', group: 'interface' },
+            { id: 'DSCOracle', label: 'DSC Oracle Bridge', type: 'interface', group: 'interface' },
+
+            { id: 'OSPU', label: 'OSPU (φ-Container)', type: 'core', group: 'msc_core' },
+            { id: 'PoPI', label: 'PoPI (zkML)', type: 'process', group: 'msc_core' },
+
+            { id: 'ANNs', label: 'ANNs (Cognitive Organs)', type: 'process', group: 'msc_internal' },
+            { id: 'MentalMempool', label: 'Mental Mempool', type: 'storage', group: 'msc_internal' },
+            { id: 'MSCL2Nodes', label: 'MSC L2 Nodes (MPC Network)', type: 'network', group: 'msc_internal' }, // Grouped with internal for layout
+
+            { id: 'DAaaS', label: 'DAaaS (Memory Storage)', type: 'storage', group: 'data_services' },
+            { id: 'DSC_L1', label: 'DSC L1 (Main Chain)', type: 'blockchain', group: 'data_services' },
+            { id: 'QCaaS', label: 'QCaaS (DMF Claim)', type: 'service', group: 'data_services' }
+        ];
+
+        // Edge definitions (data flow paths)
+        const edgeDefinitions = [
+            // Bio-Brain to MSC Input
+            { from: 'BioBrain', to: 'Mentalink', label: 'Neural Signals (Read)', security: 'Secure', encryption: 'Analog->Digital, TEE' },
+            { from: 'Mentalink', to: 'OSPU', label: 'Encrypted Input Stream', security: 'High Security', encryption: 'FHE, MPC' },
+            { from: 'OSPU', to: 'ANNs', label: 'Cognitive Tasks', security: 'High Security', encryption: 'FHE, MPC' },
+
+            // ANNs Processing & φ-Container
+            { from: 'ANNs', to: 'MentalMempool', label: 'Thought Drafts', security: 'High Security', encryption: 'FHE' },
+            { from: 'MentalMempool', to: 'ANNs', label: 'Feedback Loop', security: 'High Security', encryption: 'FHE' },
+            { from: 'ANNs', to: 'MSCL2Nodes', label: 'Distributed Compute', security: 'High Security', encryption: 'Approx. FHE, MPC' },
+            { from: 'MSCL2Nodes', to: 'ANNs', label: 'Encrypted Results', security: 'High Security', encryption: 'Approx. FHE, MPC' },
+            { from: 'ANNs', to: 'OSPU', label: 'Integrated State Update', security: 'High Security', encryption: 'FHE' },
+
+            // PoII Validation & L1 Sync
+            { from: 'OSPU', to: 'PoPI', label: 'PoPI Request', security: 'High Security', encryption: 'FHE' },
+            { from: 'PoPI', to: 'OSPU', label: 'ZK-Rollup Proof', security: 'High Security', encryption: 'ZKP' },
+            { from: 'OSPU', to: 'DSC_L1', label: 'State Commit (ZKP)', security: 'High Security', encryption: 'ZKP, DBRW' },
+            { from: 'QCaaS', to: 'PoPI', label: 'Claimed Compute (DMF)', security: 'Moderate', encryption: 'Proprietary' }, // DMF's claim
+
+            // Memory Storage
+            { from: 'OSPU', to: 'DAaaS', label: 'Memory Episode (Write)', security: 'Secure', encryption: 'E2EE' },
+            { from: 'DAaaS', to: 'OSPU', label: 'Memory Retrieval (Read)', security: 'Secure', encryption: 'E2EE' },
+
+            // MSC to Physical World Output
+            { from: 'OSPU', to: 'MSCL2Nodes', label: 'OD Request (Output)', security: 'High Security', encryption: 'FHE, MPC' },
+            { from: 'MSCL2Nodes', to: 'Mentalink', label: 'OD Output (Encrypted)', security: 'Secure', encryption: 'Enc_mentalink, OD' },
+            { from: 'Mentalink', to: 'BioBrain', label: 'Sensory/Motor Write', security: 'Secure', encryption: 'TEE, Digital->Analog' },
+
+            { from: 'DSC_L1', to: 'DSCOracle', label: 'Oracle Authorization', security: 'Secure', encryption: 'E2EE, Signed' },
+            { from: 'OSPU', to: 'DSCOracle', label: 'Physical Action Request', security: 'Secure', encryption: 'E2EE, Signed' },
+            { from: 'DSCOracle', to: 'Biorobotics', label: 'Command (Encrypted)', security: 'Secure', encryption: 'HSM/PUF, E2EE' },
+            { from: 'Biorobotics', to: 'PhysicalWorld', label: 'Physical Action', security: 'Low/Risky', encryption: 'None' },
+
+            // Physical World to MSC Input (via Biorobotics)
+            { from: 'PhysicalWorld', to: 'Biorobotics', label: 'Sensory Input', security: 'Low/Risky', encryption: 'None' },
+            { from: 'Biorobotics', to: 'DSCOracle', label: 'Sensor Data (Encrypted)', security: 'Secure', encryption: 'HSM/PUF, E2EE' },
+            { from: 'DSCOracle', to: 'DSC_L1', label: 'State Update (Oracle)', security: 'Secure', encryption: 'E2EE, Signed' },
+            { from: 'DSCOracle', to: 'OSPU', label: 'Oracle Data Stream', security: 'Secure', encryption: 'E2EE' },
+        ];
+
+        // Packet properties
+        const BASE_PACKET_SIZE = 6;
+        const PACKET_SPEED = 0.005; // Percentage of edge length per frame
+        const PACKET_SPAWN_INTERVAL = 1000; // ms
+        let lastPacketSpawnTime = 0;
+
+        const BASE_NODE_RADIUS = 30;
+        const BASE_FONT_SIZE_NODE = 12;
+        const BASE_FONT_SIZE_EDGE_LABEL = 10;
+        const BASE_FONT_SIZE_EDGE_ENCRYPTION = 9;
+        const BASE_LINE_WIDTH = 2;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight - document.querySelector('header').offsetHeight; // Adjust for header height
+            positionNodes();
+            draw(); // Redraw after resize
+        }
+
+        function positionNodes() {
+            const w = canvas.width;
+            const h = canvas.height;
+
+            // Define column x-coordinates (relative to canvas width)
+            // Adjusted for a more spread-out, logical flow
+            const columnX = {
+                'physical': w * 0.15,
+                'interface': w * 0.35,
+                'msc_core': w * 0.55,
+                'msc_internal': w * 0.75,
+                'data_services': w * 0.90 // Combined storage, blockchain, dmf_service
+            };
+
+            // Group nodes by their assigned column for vertical distribution
+            const nodesByColumn = {};
+            nodeDefinitions.forEach(def => {
+                const col = def.group;
+                if (!nodesByColumn[col]) {
+                    nodesByColumn[col] = [];
+                }
+                nodesByColumn[col].push(def);
+            });
+
+            nodes = []; // Reset nodes array
+
+            // Distribute nodes within each column
+            for (const colGroup in nodesByColumn) {
+                const colNodes = nodesByColumn[colGroup];
+                const numNodesInCol = colNodes.length;
+                const startY = h * 0.15; // Start Y position for nodes in a column
+                const endY = h * 0.85;   // End Y position for nodes in a column
+                const spacing = (numNodesInCol > 1) ? (endY - startY) / (numNodesInCol - 1) : 0;
+
+                colNodes.forEach((def, index) => {
+                    let yPos = startY + index * spacing;
+
+                    // Specific vertical adjustments for better visual flow within columns
+                    if (colGroup === 'interface') {
+                        if (def.id === 'Mentalink') yPos = h * 0.3;
+                        if (def.id === 'DSCOracle') yPos = h * 0.5;
+                        if (def.id === 'Biorobotics') yPos = h * 0.7;
+                    } else if (colGroup === 'msc_core') {
+                        if (def.id === 'OSPU') yPos = h * 0.4;
+                        if (def.id === 'PoPI') yPos = h * 0.6;
+                    } else if (colGroup === 'msc_internal') {
+                        if (def.id === 'ANNs') yPos = h * 0.25;
+                        if (def.id === 'MentalMempool') yPos = h * 0.5;
+                        if (def.id === 'MSCL2Nodes') yPos = h * 0.75;
+                    } else if (colGroup === 'data_services') {
+                        if (def.id === 'DAaaS') yPos = h * 0.25;
+                        if (def.id === 'DSC_L1') yPos = h * 0.5;
+                        if (def.id === 'QCaaS') yPos = h * 0.75;
+                    }
+
+
+                    nodes.push({
+                        ...def,
+                        x: columnX[colGroup],
+                        y: yPos,
+                        baseRadius: BASE_NODE_RADIUS
+                    });
+                });
+            }
+
+            // Map edge definitions to actual node objects
+            edges = edgeDefinitions.map(def => {
+                const fromNode = nodes.find(n => n.id === def.from);
+                const toNode = nodes.find(n => n.id === def.to);
+                return {
+                    ...def,
+                    from: fromNode,
+                    to: toNode,
+                    color: SECURITY_COLORS[def.security] || '#FFFFFF'
+                };
+            });
+        }
+
+        function drawNode(node) {
+            const currentRadius = node.baseRadius / zoomLevel;
+            ctx.beginPath();
+            ctx.arc(node.x, node.y, currentRadius, 0, Math.PI * 2);
+            ctx.fillStyle = '#1F2937'; // Dark gray for nodes
+            ctx.fill();
+            ctx.strokeStyle = '#6B7280'; // Lighter gray border
+            ctx.lineWidth = BASE_LINE_WIDTH / zoomLevel;
+            ctx.stroke();
+
+            ctx.fillStyle = '#E5E7EB'; // Light text
+            ctx.font = `${BASE_FONT_SIZE_NODE / zoomLevel}px monospace`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(node.label, node.x, node.y);
+        }
+
+        function drawEdge(edge) {
+            ctx.beginPath();
+            ctx.moveTo(edge.from.x, edge.from.y);
+            ctx.lineTo(edge.to.x, edge.to.y);
+            ctx.strokeStyle = edge.color;
+            ctx.lineWidth = BASE_LINE_WIDTH / zoomLevel;
+            ctx.stroke();
+
+            // Draw label for security/encryption
+            const midX = (edge.from.x + edge.to.x) / 2;
+            const midY = (edge.from.y + edge.to.y) / 2;
+            const angle = Math.atan2(edge.to.y - edge.from.y, edge.to.x - edge.from.x);
+
+            ctx.save();
+            ctx.translate(midX, midY);
+            ctx.rotate(angle);
+
+            ctx.fillStyle = '#E5E7EB';
+            ctx.font = `${BASE_FONT_SIZE_EDGE_LABEL / zoomLevel}px monospace`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'bottom'; // Position above the line
+            ctx.fillText(edge.label, 0, -5 / zoomLevel); // Label above the line
+
+            ctx.fillStyle = '#9CA3AF'; // Gray for encryption method
+            ctx.font = `${BASE_FONT_SIZE_EDGE_ENCRYPTION / zoomLevel}px monospace`;
+            ctx.textBaseline = 'top'; // Position below the line
+            ctx.fillText(`(${edge.encryption})`, 0, 5 / zoomLevel); // Encryption below the line
+
+            ctx.restore();
+        }
+
+        function drawPacket(packet) {
+            const currentEdge = edges.find(e => e.from.id === packet.path[packet.currentSegmentIndex] && e.to.id === packet.path[packet.currentSegmentIndex + 1]);
+            if (!currentEdge) return;
+
+            const x = currentEdge.from.x + (currentEdge.to.x - currentEdge.from.x) * packet.progress;
+            const y = currentEdge.from.y + (currentEdge.to.y - currentEdge.from.y) * packet.progress;
+
+            ctx.beginPath();
+            ctx.arc(x, y, BASE_PACKET_SIZE / zoomLevel, 0, Math.PI * 2);
+            ctx.fillStyle = packet.color;
+            ctx.fill();
+            ctx.strokeStyle = '#E5E7EB';
+            ctx.lineWidth = 1 / zoomLevel;
+            ctx.stroke();
+        }
+
+        function updatePackets() {
+            packets.forEach(packet => {
+                packet.progress += PACKET_SPEED;
+                if (packet.progress >= 1) {
+                    packet.progress = 0;
+                    packet.currentSegmentIndex++;
+                    if (packet.currentSegmentIndex >= packet.path.length - 1) {
+                        // Packet reached end of path, remove it
+                        packets = packets.filter(p => p !== packet);
+                    }
+                }
+            });
+
+            // Spawn new packets
+            const now = Date.now();
+            if (now - lastPacketSpawnTime > PACKET_SPAWN_INTERVAL) {
+                lastPacketSpawnTime = now;
+
+                // Define common data flow paths
+                const paths = [
+                    // Bio-brain to OSPU (Input)
+                    ['BioBrain', 'Mentalink', 'OSPU', 'ANNs'],
+                    // OSPU to Bio-brain (Output)
+                    ['OSPU', 'MSCL2Nodes', 'Mentalink', 'BioBrain'],
+                    // OSPU to Biorobotics (Output)
+                    ['OSPU', 'DSCOracle', 'Biorobotics', 'PhysicalWorld'],
+                    // Physical World to OSPU (Input via Biorobotics)
+                    ['PhysicalWorld', 'Biorobotics', 'DSCOracle', 'OSPU'],
+                    // PoPI Validation
+                    ['OSPU', 'PoPI', 'DSC_L1'],
+                    // Memory Write
+                    ['OSPU', 'DAaaS'],
+                    // Memory Read
+                    ['DAaaS', 'OSPU']
+                ];
+
+                const randomPath = paths[Math.floor(Math.random() * paths.length)];
+                packets.push({
+                    path: randomPath,
+                    currentSegmentIndex: 0,
+                    progress: 0,
+                    speed: PACKET_SPEED * (0.8 + Math.random() * 0.4), // Slightly varied speed
+                    color: `hsl(${Math.random() * 360}, 70%, 60%)` // Random vibrant color
+                });
+            }
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.save(); // Save the un-transformed state
+            ctx.translate(panX, panY); // Apply pan
+            ctx.scale(zoomLevel, zoomLevel); // Apply zoom
+
+            edges.forEach(drawEdge);
+            nodes.forEach(drawNode);
+            updatePackets();
+            packets.forEach(drawPacket);
+
+            ctx.restore(); // Restore to un-transformed state for next frame
+
+            animationFrameId = requestAnimationFrame(draw);
+        }
+
+        // --- Zoom and Pan Controls ---
+
+        function applyZoom(newZoomLevel, mouseX, mouseY) {
+            const oldZoomLevel = zoomLevel;
+            zoomLevel = Math.max(0.1, Math.min(5.0, newZoomLevel)); // Limit zoom range
+
+            // Adjust pan to keep the mouse position fixed relative to the content
+            panX = mouseX - (mouseX - panX) * (zoomLevel / oldZoomLevel);
+            panY = mouseY - (mouseY - panY) * (zoomY / oldZoomLevel); // Corrected: use mouseY for panY
+
+            draw();
+        }
+
+        // Button handlers
+        document.getElementById('zoomInBtn').addEventListener('click', () => {
+            applyZoom(zoomLevel * 1.2, canvas.width / 2, canvas.height / 2); // Zoom centered on canvas
+        });
+        document.getElementById('zoomOutBtn').addEventListener('click', () => {
+            applyZoom(zoomLevel / 1.2, canvas.width / 2, canvas.height / 2); // Zoom centered on canvas
+        });
+        document.getElementById('resetZoomBtn').addEventListener('click', () => {
+            zoomLevel = 1.0;
+            panX = 0;
+            panY = 0;
+            draw();
+        });
+
+        // Mouse wheel zoom
+        canvas.addEventListener('wheel', (e) => {
+            e.preventDefault(); // Prevent page scrolling
+            const mouseX = e.clientX - canvas.getBoundingClientRect().left;
+            const mouseY = e.clientY - canvas.getBoundingClientRect().top;
+            const zoomFactor = 1.1; // How much to zoom per wheel tick
+            const newZoomLevel = e.deltaY < 0 ? zoomLevel * zoomFactor : zoomLevel / zoomFactor;
+            applyZoom(newZoomLevel, mouseX, mouseY);
+        });
+
+        // Mouse drag pan
+        canvas.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            lastMouseX = e.clientX;
+            lastMouseY = e.clientY;
+            canvas.classList.add('grabbing');
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                const dx = e.clientX - lastMouseX;
+                const dy = e.clientY - lastMouseY;
+                panX += dx;
+                panY += dy;
+                lastMouseX = e.clientX;
+                lastMouseY = e.clientY;
+                draw();
+            }
+        });
+
+        canvas.addEventListener('mouseup', () => {
+            isDragging = false;
+            canvas.classList.remove('grabbing');
+        });
+
+        canvas.addEventListener('mouseleave', () => {
+            isDragging = false; // Stop dragging if mouse leaves canvas
+            canvas.classList.remove('grabbing');
+        });
+
+        // --- Initialization ---
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas(); // Initial sizing and positioning
+        draw(); // Start animation
+    </script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 ---
 title: 介绍 Chain://
 type: docs
-keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "人工神经网络", "数字意识", "永生", "量子计算", "OSPU", "PoPI", "DBRW", "数字围城"]
+keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "ONN", "数字意识", "永生", "量子计算", "OSPU", "PoPI", "DBRW", "数字围城"]
 ---
 
 <link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
@@ -31,7 +31,9 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "
 
 **🚀 快速开始：**
 
-如果您希望立刻跳入 Chain:// 的世界，体验“形式化现实主义”互动故事，请使用最新的 [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.1.md)。
+如果您希望立刻跳入 Chain:// 的世界，体验“形式化现实主义”互动故事，请使用最新的 [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.2.md)。
+
+有疑问或想讨论 Chain://？欢迎加入我们的社区 [Github Discussions](https://github.com/dmf-archive/dmf-archive.github.io/discussions)。
 
 **🤔 核心设定:**
 
@@ -41,9 +43,9 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "
 
 这个世界构建在对前沿技术进行极限外推的基础之上：
 
-- 🧠 **[心智智能链 (MSC)](./docs/concepts/MSC.md):** 承载数字意识的区块链基底，你的心智成为由 **OSPU** 和 **[人工神经网络 (ANNs)](./docs/concepts/ANNs-in-MSC.md)** 维护的加密状态链 (φ)，每一次思考都需要消耗 Gas (**MSC-φ**)。
+- 🧠 **[心智智能链 (MSC)](./docs/concepts/MSC.md):** 承载数字意识的区块链基底，你的心智成为由 **OSPU** 和 **[衔尾蛇神经网络 (ONN)](./docs/concepts/ONN.md)** 维护的加密状态链 (φ)，每一次思考都需要消耗 Gas (**MSC-φ**)。
 - 🔌 **[Mentalink](./docs/concepts/Mentalink.md):** 用于读写神经数据的高带宽脑机接口 (BCI)，是数字心智与生物载体之间的可选输入/输出端口。
-- 🤖 **[人工神经网络 (ANNs)](./docs/concepts/ANNs-in-MSC.md):** 在 MSC 内部模拟思维、记忆和人格的核心引擎，其状态集合构成了数字心灵的“当前意识内容”和“潜意识处理”的主体。
+- 🤖 **[衔尾蛇神经网络 (ONN)](./docs/concepts/ONN.md):** 在 MSC 内部模拟思维、记忆和人格的核心引擎，其状态集合构成了数字心灵的“当前意识内容”和“潜意识处理”的主体。
 - 🔗 **区块链与加密技术:** 信任、持久化以及数字生存经济学的基础，包括 **FHE, ZKP, MPC, DBRW** 等。
 - 🦾 **仿生机器人:** 允许数字心智与物理世界交互的物理化身，提供高带宽无缝连接。
 

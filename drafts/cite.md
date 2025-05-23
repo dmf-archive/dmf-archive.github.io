@@ -1,1 +1,0 @@
-1. cryptskii, "Drop-In Cloning Protection for Any System Technical Paper: Dual-Binding Random Walk (DBRW)," decentralizedstatemachine.com, Accessed: May 16, 2025. [Online]. Available: https://decentralizedstatemachine.com/DBRW-combined.pdf

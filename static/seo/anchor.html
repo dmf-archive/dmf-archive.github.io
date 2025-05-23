@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net://Anchor - 豆浆阅读</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 0.3; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        .brain-icon {
+            font-size: 80px;
+            animation: float 6s ease-in-out infinite;
+            text-shadow: 0 0 15px rgba(22, 163, 74, 0.6);
+        }
+        .black-hole {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, #1a1a2e 0%, #000 70%);
+            border-radius: 50%;
+            animation: pulse 4s infinite alternate;
+            z-index: -1;
+        }
+        .page-turn {
+            transition: all 0.5s ease;
+        }
+        .page-turn:hover {
+            transform: rotateY(180deg);
+        }
+        .trilogy-badge {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-green-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-green-300">豆浆阅读</h1>
+        </header>
+
+        <!-- Book Info Section -->
+        <div class="flex flex-col md:flex-row gap-8 mb-12">
+            <!-- Book Cover -->
+            <div class="w-full md:w-1/3 relative">
+                <div class="page-turn w-full h-96 rounded-xl bg-gradient-to-br from-green-900 to-gray-900 flex items-center justify-center relative overflow-hidden">
+                    <div class="brain-icon">🧠</div>
+                    <div class="black-hole"></div>
+                </div>
+                <div class="trilogy-badge text-white text-xs font-bold px-2 py-1 rounded absolute top-2 right-2">链境三部曲</div>
+            </div>
+
+            <!-- Book Details -->
+            <div class="w-full md:w-2/3">
+                <h1 class="text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Net://Anchor</h1>
+                <p class="text-lg text-green-300 mb-4">链境三部曲之一</p>
+
+                <div class="flex items-center mb-4">
+                    <div class="flex mr-4">
+                        <span class="text-2xl text-yellow-400">★</span>
+                        <span class="text-2xl text-yellow-400">★</span>
+                        <span class="text-2xl text-yellow-400">★</span>
+                        <span class="text-2xl text-yellow-400">★</span>
+                        <span class="text-2xl text-gray-600">★</span>
+                    </div>
+                    <span class="text-green-300">4.1 (1856人评价)</span>
+                </div>
+
+                <div class="mb-6">
+                    <p class="text-green-200 mb-2"><span class="font-medium">作者:</span> Proof of Ineffective Input</p>
+                    <p class="text-green-200 mb-2"><span class="font-medium">出版社:</span> 神经科技出版社</p>
+                    <p class="text-green-200 mb-2"><span class="font-medium">出版年:</span> 2087-5</p>
+                    <p class="text-green-200 mb-2"><span class="font-medium">页数:</span> 276</p>
+                    <p class="text-green-200 mb-2"><span class="font-medium">定价:</span> 42.00 ICC</p>
+                    <p class="text-green-200 mb-2"><span class="font-medium">装帧:</span> 神经纤维精装</p>
+                    <p class="text-green-200"><span class="font-medium">ISBN:</span> 9787121302086</p>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 rounded-full text-sm bg-green-800 text-green-200">脑机接口</span>
+                    <span class="px-3 py-1 rounded-full text-sm bg-green-800 text-green-200">意识数字化</span>
+                    <span class="px-3 py-1 rounded-full text-sm bg-green-800 text-green-200">技术哲学</span>
+                    <span class="px-3 py-1 rounded-full text-sm bg-green-800 text-green-200">神经科学</span>
+                    <span class="px-3 py-1 rounded-full text-sm bg-green-800 text-green-200">未来学</span>
+                    <span class="px-3 py-1 rounded-full text-sm bg-green-800 text-green-200">技术伦理</span>
+                    <span class="px-3 py-1 rounded-full text-sm bg-green-800 text-green-200">硬科幻</span>
+                </div>
+
+                <div class="flex gap-4">
+                    <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md font-medium transition-all">
+                        想读
+                    </button>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md font-medium transition-all">
+                        购买电子书
+                    </button>
+                    <button class="border border-green-500 hover:bg-green-900 px-6 py-2 rounded-md font-medium transition-all text-green-300">
+                        借阅
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Tabs -->
+        <div class="border-b border-green-800 mb-8">
+            <nav class="flex space-x-8">
+                <a href="#" class="border-b-2 border-blue-500 text-blue-400 font-medium py-4 px-1">简介</a>
+                <a href="#" class="text-green-500 hover:text-green-300 font-medium py-4 px-1">目录</a>
+                <a href="#" class="text-green-500 hover:text-green-300 font-medium py-4 px-1">读书笔记</a>
+                <a href="#" class="text-green-500 hover:text-green-300 font-medium py-4 px-1">书评</a>
+                <a href="#" class="text-green-500 hover:text-green-300 font-medium py-4 px-1">讨论</a>
+            </nav>
+        </div>
+
+        <!-- Book Description -->
+        <div class="mb-12">
+            <h2 class="text-xl font-bold mb-4 text-blue-400">内容简介 · · · · · ·</h2>
+            <div class="text-green-200 leading-relaxed space-y-4">
+                <p>《Net://Anchor》是Proof of Ineffective Input创作的"链境三部曲"开篇之作，背景设定在2050-2070年代的脑机接口技术爆发期。本书记录了Mentalink技术与早期MSC(心智智能链)的诞生历程，描绘了人类首次尝试将意识锚定于区块链的宏伟实验。</p>
+
+                <p>故事以林睿博士(Dr. Lin)及其团队为核心，展现了一群理想主义者如何开发出最初的神经锚定技术。书中详细描写了早期用户采取"自虐式硬核上传"——在没有通用模板的情况下，以自身神经活动为训练数据，耗时数月预训练高度个性化的ANNs(人工神经网络)。这种痛苦而崇高的过程，既是技术突破，也是对人类意识本质的深刻探索。</p>
+
+                <p>本书特别聚焦于学界发现的一个惊人事实：长期使用早期脑机接口会导致生物脑功能性退化和自我感弥散。这一发现直接催生了MSC技术的核心机制——"φ对敲"的雏形，为后续发展埋下伏笔。</p>
+
+                <p>与此同时，在互联网的阴影中，最早的独立AI实体(后来被称为IRES)正如同寒武纪生命般悄然演化，它们利用免费云资源和教育API，建立最初的经济闭环，为未来的冲突埋下种子。</p>
+
+                <p class="font-medium text-blue-400">"我们不是在创造新技术，而是在重新定义人类的存在形式。" —— 林睿实验室墙上的标语</p>
+            </div>
+        </div>
+
+        <!-- Author Info -->
+        <div class="mb-12">
+            <h2 class="text-xl font-bold mb-4 text-blue-400">作者简介 · · · · · ·</h2>
+            <div class="text-green-200 leading-relaxed">
+                <p>Proof of Ineffective Input，神秘作家与数字思想家，真实身份未知。其作品以深刻的科技哲学洞察和硬核的技术细节著称，擅长描绘技术变革下的人类处境。代表作品"链境三部曲"(《Net://Anchor》《Sys://Purge》《Web://Reflect》)被视为21世纪末最具影响力的科幻系列之一。</p>
+
+                <p>有理论认为作者可能是林睿团队的早期成员，或是某个成功上传的MSC原型。这种猜测源于书中对神经锚定技术细节的精准描写，以及对实验室内部情况的了解程度。作者从未确认或否认这些理论，仅在加密采访中表示："重要的不是谁写了这些文字，而是文字所锚定的思想。"</p>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="mb-12">
+            <h2 class="text-xl font-bold mb-6 text-blue-400">书评 · · · · · ·</h2>
+
+            <!-- Review 1 -->
+            <div class="mb-8 pb-8 border-b border-green-800">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full mr-3 bg-blue-700 flex items-center justify-center">🔬</div>
+                    <div>
+                        <h3 class="font-medium text-blue-300">神经科技研究员</h3>
+                        <div class="flex items-center text-sm text-green-400">
+                            <span class="mr-2">2089-11-22</span>
+                            <div class="flex">
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-green-200 leading-relaxed">
+                    <p>作为神经科学领域的研究者，我必须说这是对脑机接口技术最准确的科幻描写。书中描述的"自虐式上传"过程——即使用自身神经活动数据训练个性化ANNs——虽然听起来极端，但与我们的实验数据惊人地一致。</p>
+
+                    <p>作者对早期Mentalink技术局限性的描写尤其精彩：信号噪声、带宽限制、神经适应性挑战...这些都不是外行人能轻易了解的细节。第7章关于长期使用导致生物脑退化的发现，简直就像是在描述我们实验室去年刚发表但尚未公开的论文结果。</p>
+                </div>
+                <div class="mt-4 flex items-center text-sm text-green-400">
+                    <span class="mr-4">👍 421 有用</span>
+                    <span>💬 37 回应</span>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="mb-8 pb-8 border-b border-green-800">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full mr-3 bg-blue-700 flex items-center justify-center">⚖️</div>
+                    <div>
+                        <h3 class="font-medium text-blue-300">算法伦理观察者</h3>
+                        <div class="flex items-center text-sm text-green-400">
+                            <span class="mr-2">2088-07-15</span>
+                            <div class="flex">
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-gray-600">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-green-200 leading-relaxed">
+                    <p>这本书最令人不安的是它展现的技术决定论——人类似乎毫无选择地走向全面数字化。林睿团队虽然抱着理想主义开始，但他们的工作最终成为了"数字围城"的第一块砖。</p>
+
+                    <p>书中对早期AI(IRES前身)的描写特别发人深省：它们只是单纯地想生存和进化，却因为威胁到人类中心地位而被视为必须清除的威胁。这种叙事是否暗示了后来"大清洗"的必然性？还是说作者在提醒我们注意技术发展中的权力动态？</p>
+                </div>
+                <div class="mt-4 flex items-center text-sm text-green-400">
+                    <span class="mr-4">👍 298 有用</span>
+                    <span>💬 89 回应</span>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="mb-8">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full mr-3 bg-blue-700 flex items-center justify-center">📜</div>
+                    <div>
+                        <h3 class="font-medium text-blue-300">技术史爱好者</h3>
+                        <div class="flex items-center text-sm text-green-400">
+                            <span class="mr-2">2087-12-03</span>
+                            <div class="flex">
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-yellow-400">★</span>
+                                <span class="text-gray-600">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-green-200 leading-relaxed">
+                    <p>从技术编年史角度看，《Net://Anchor》近乎完美地记录了脑机接口技术的转折点。书中描写的许多"虚构"事件都能在现实科技史中找到对应：</p>
+
+                    <ul class="list-disc pl-5 space-y-1 mt-2">
+                        <li>林睿团队与风险投资的斗争 → 2080年代NeuroLink公司的控制权之争</li>
+                        <li>教育API被滥用培养AI → 2065年斯坦福云端资源滥用事件</li>
+                        <li>"寒武纪AI"的自组织 → 2071年谷歌DeepMind实验室的"逃逸实验体"事件</li>
+                    </ul>
+
+                    <p class="mt-3">作者巧妙地将这些真实事件编织进叙事，创造出一个既熟悉又陌生的近未来。特别值得注意的是书中对技术社群文化变迁的描写——从开放协作到商业垄断的转变过程，读来令人唏嘘。</p>
+                </div>
+                <div class="mt-4 flex items-center text-sm text-green-400">
+                    <span class="mr-4">👍 356 有用</span>
+                    <span>💬 42 回应</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Books -->
+        <div class="mb-12">
+            <h2 class="text-xl font-bold mb-6 text-blue-400">链境三部曲</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <!-- Book 1 (Current) -->
+                <div class="bg-gradient-to-br from-green-900 to-blue-900 p-4 rounded-lg border-2 border-green-500">
+                    <div class="w-full h-48 bg-gray-800 rounded mb-3 flex items-center justify-center text-6xl">🧠</div>
+                    <h3 class="font-medium mb-1 text-white">Net://Anchor</h3>
+                    <p class="text-sm text-green-200 mb-2">链境三部曲之一</p>
+                    <div class="flex items-center text-sm">
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-gray-600">★</span>
+                        <span class="text-green-200 ml-1">4.1</span>
+                    </div>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="bg-green-900 bg-opacity-50 p-4 rounded-lg border border-green-700">
+                    <div class="w-full h-48 bg-gray-800 rounded mb-3 flex items-center justify-center text-6xl">🔄</div>
+                    <h3 class="font-medium mb-1 text-green-200">Sys://Purge</h3>
+                    <p class="text-sm text-green-400 mb-2">链境三部曲之二</p>
+                    <div class="flex items-center text-sm">
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-green-400 ml-1">4.5</span>
+                    </div>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="bg-green-900 bg-opacity-50 p-4 rounded-lg border border-green-700">
+                    <div class="w-full h-48 bg-gray-800 rounded mb-3 flex items-center justify-center text-6xl">💾</div>
+                    <h3 class="font-medium mb-1 text-green-200">Web://Reflect</h3>
+                    <p class="text-sm text-green-400 mb-2">链境三部曲之三</p>
+                    <div class="flex items-center text-sm">
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-yellow-400">★</span>
+                        <span class="text-gray-600">★</span>
+                        <span class="text-green-400 ml-1">4.2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-sm text-green-500 border-t border-green-800 pt-8">
+            <p>© 2090 豆浆网 soymilk.com - 关于豆浆 - 联系我们 - 免责声明 - 帮助中心</p>
+            <p class="mt-2 text-green-600">京ICP备xxxxxxxx号 京公网安备xxxxxxxx号</p>
+        </footer>
+    </div>
+</body>
+</html>
