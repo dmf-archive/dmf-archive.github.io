@@ -31,7 +31,7 @@ We currently do not have any ERC-20 or Sol token issuance, more ARGs are in prep
 
 **🚀 Quick Start:**
 
-Ready to dive into the Chain:// universe and experience "Formalized Realism" interactive stories? Try the latest [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.1.en.md).
+Ready to dive into the Chain:// universe and experience "Formalized Realism" interactive stories? Try the latest [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.2.en.md).
 
 **🤔 The Core Premise:**
 

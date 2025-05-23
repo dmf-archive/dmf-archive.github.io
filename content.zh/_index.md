@@ -31,7 +31,7 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "
 
 **🚀 快速开始：**
 
-如果您希望立刻跳入 Chain:// 的世界，体验“形式化现实主义”互动故事，请使用最新的 [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.1.md)。
+如果您希望立刻跳入 Chain:// 的世界，体验“形式化现实主义”互动故事，请使用最新的 [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.2.md)。
 
 **🤔 核心设定:**
 
