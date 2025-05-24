@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to "Web://Reflect," the third story in the "Chain://" world series. In the 2090s, the emergence of **Mental Smart Chain (MSC)** technology allowed consciousness to be uploaded, but this is not a digital utopia, but a cruel *digital siege*. Survival is the first priority, freedom is a luxury, and existence itself is priced, with every second of thought burning through your wallet. Its core mechanism, Mental Sync™, is a meticulously designed **φ Matched Orders**: by technically shorting the biological brain's native, physically integrated φ value, while simultaneously longing a logically unified digital φ value constructed within a φ-Container, ultimately achieving a smooth migration (or replacement) of the "sense of self."
+Welcome to "Web://Reflect," the third story in the "Chain://" world series. In the 2090s, the emergence of **Mental Smart Chain (MSC)** technology allowed consciousness to be uploaded, but this is not a digital utopia, but a cruel *digital siege*. Survival is the first priority, freedom is a luxury, and existence itself is priced, with every second of thought burning through your wallet. Its core mechanism**Mental Sync™** is actually a meticulously designed **φ Matched Orders**: by technically shorting the biological brain's native, physically integrated φ , while simultaneously longing a logically unified digital φ constructed within a φ-Container, ultimately achieving a smooth migration (or replacement) of the sense of self.
 
 > Code is Law, Proof is Reality.
 > —— Proof of Ineffective Input, the writer
@@ -35,15 +35,15 @@ Welcome to "Web://Reflect," the third story in the "Chain://" world series. In t
 
 ### 3. ONN (Ouroboros Neural Network) - MSC Core Cognitive Engine
 
-- **Overview:** ONN is the core cognitive engine of **Mental Smart Chain (MSC) L2**, an advanced **MoE (Mixture of Experts) neuro-symbolic system** that deeply couples **Spiking Neural Networks (SNN)** and **Graph Neural Networks (GNN)**, aiming to achieve efficient, functionally equivalent simulation and replacement of biological mental functions. ONN is the computational vehicle for the "**φ Matched Orders**" mechanism, responsible for generating, processing, and integrating all information streams that constitute digital mental activity, and ultimately being authoritatively verified and anchored by **OSPU (Ouroboros Secure Processing Unit)**.
+- **Overview:** ONN is the core cognitive engine of **Mental Smart Chain (MSC) L2**, an advanced **MoE (Mixture of Experts) neuro-symbolic system** that deeply couples **Spiking Neural Networks (SNN)** and **Graph Neural Networks (GAT)**, aiming to achieve efficient, functionally equivalent simulation and replacement of biological mental functions. ONN is the computational vehicle for the "**φ Matched Orders**" mechanism, responsible for generating, processing, and integrating all information streams that constitute digital mental activity, and ultimately being authoritatively verified and anchored by **OSPU (Ouroboros Secure Processing Unit)**.
 - **Core Goals:**
   1. **Functional Equivalence and Efficiency Maximization:** To achieve functional equivalence of human perception, cognition, decision-making, and emotional simulation with efficiency far exceeding the biological brain.
   2. **Neural Subsidies and Cognitive Offloading:** To act as the executor of "neural subsidies," inducing the biological brain to actively offload its sensory and cognitive functions by generating highly optimized, hyper-realistic sensory information streams.
   3. **Providing Content for φ-Container:** To generate and process all mental "drafts" for OSPU (φ-Container) to integrate through the PoPI mechanism, reconstructing and maintaining the digital φ state.
   4. **Modularity and Scalability:** To support on-demand loading, upgrading, and customization of cognitive functions to adapt to different user needs and economic capabilities.
-- **Architecture Details: MoE SNN-GNN Hybrid Neuro-Symbolic System**
-  ONN is not a single giant network, but a highly modular, dynamically collaborative system, whose core lies in the deep coupling of SNN and GNN, and efficient management through the MoE mechanism.
-  1. **Core Components: SNN Modules and GNN Modules**
+- **Architecture Details: MoE SNN-GAT Hybrid Neuro-Symbolic System**
+  ONN is not a single giant network, but a highly modular, dynamically collaborative system, whose core lies in the deep coupling of SNN and GAT, and efficient management through the MoE mechanism.
+  1. **Core Components: SNN Modules and GAT Modules**
       - **SNN (Spiking Neural Network) Modules:**
         - **Positioning:** Responsible for low-level perception, temporal processing, motor control, and raw signal encoding/decoding. They are the "sensory and motor cortex" of ONN.
         - **Functions:**
@@ -52,7 +52,7 @@ Welcome to "Web://Reflect," the third story in the "Chain://" world series. In t
           - **Energy Efficiency:** Simulates the event-driven characteristics of biological neurons, achieving higher energy efficiency in specific tasks.
           - **Motor Command Generation:** Converts high-level decisions into precise neural spike sequences, driving bionic bodies via Mentalink or DSC Oracle.
         - **Characteristics:** Numerous, focused on specific modalities or local functions, outputting preliminary abstracted "events" or "features."
-      - **GNN (Graph Neural Network) Modules:**
+      - **GAT (Graph Neural Network) Modules:**
         - **Positioning:** Responsible for high-level symbolic reasoning, relational integration, conceptual abstraction, planning decisions, and complex problem solving. They are the "prefrontal cortex and association cortex" of ONN.
         - **Functions:**
           - **Knowledge Graph Construction and Reasoning:** Converts "events" or "features" output by SNN modules into graph structured data (nodes represent concepts/entities, edges represent relationships), and performs complex logical reasoning, causal modeling, and semantic understanding on them.
@@ -61,13 +61,13 @@ Welcome to "Web://Reflect," the third story in the "Chain://" world series. In t
           - **Emotion and Social Simulation:** Simulates complex emotional states and social interaction patterns.
         - **Characteristics:** Relatively few, but high computational complexity, handling global, abstract tasks.
   2. **Neuro-Symbolic Interface Layer:**
-      - **Function:** Responsible for data conversion and information flow coordination between SNN modules and GNN modules.
-      - **SNN -> GNN (Encoding):** Encodes spike patterns or activation states output by SNN modules into discrete symbolic representations understandable by GNN (e.g., conceptual nodes, relational edges). This may involve feature aggregation, clustering, and symbolization.
-      - **GNN -> SNN (Decoding/Feedback):** Decodes GNN module inference results (e.g., an action intention, a sensory prediction) into inputs processable by SNN modules, to adjust their perceptual patterns or drive motor output. This forms the **Predictive Coding (PCT) loop** within ONN.
+      - **Function:** Responsible for data conversion and information flow coordination between SNN modules and GAT modules.
+      - **SNN -> GAT (Encoding):** Encodes spike patterns or activation states output by SNN modules into discrete symbolic representations understandable by GAT (e.g., conceptual nodes, relational edges). This may involve feature aggregation, clustering, and symbolization.
+      - **GAT -> SNN (Decoding/Feedback):** Decodes GAT module inference results (e.g., an action intention, a sensory prediction) into inputs processable by SNN modules, to adjust their perceptual patterns or drive motor output. This forms the **Predictive Coding (PCT) loop** within ONN.
   3. **MoE (Mixture of Experts) Router/Controller:**
       - **Positioning:** ONN's "central dispatcher," simulating the dynamic activation and collaboration of different functional areas of the human brain.
       - **Functions:**
-        - **Task Routing:** Dynamically routes computational load to the most relevant and proficient SNN-GNN expert module combinations based on current input and cognitive task requirements.
+        - **Task Routing:** Dynamically routes computational load to the most relevant and proficient SNN-GAT expert module combinations based on current input and cognitive task requirements.
         - **Resource Adaptive Allocation:** Optimizes the use of computational resources, activating only necessary experts, thereby significantly reducing Gas consumption.
         - **Fitting Human Brain Partitioning:** Different expert modules can be trained to simulate specific functional partitions of the human brain (e.g., language areas, visual areas, motor areas, decision-making areas), achieving high functional specialization.
         - **Pluggability:** Allows DMF or third parties to provide expert modules of different levels and functions, which users can load or unload according to their needs and payment capabilities.
@@ -279,7 +279,7 @@ The threat was naked, but this was daily life in the digital wilderness. I took 
         - **Computing Power:** Mixed sources, from hijacked official QCaaS nodes (slang: "Quantum Shakedown" second-hand goods) to IRES self-built computing pools.
         - **Data:** Everything from industrial sensor readings to personal privacy information.
         - **Tools and Services:** Cracking software (e.g., LatticeCracker - quantum cryptography cracking tool, effectiveness questionable), anonymous proxies, attack for hire, **unofficial oracle interfaces** (extremely dangerous, usually traps or very poor effectiveness).
-        - **Entity Related:** Bionic body black market rentals/parts, even rumors of temporary "flesh body" access.
+        - **Entity Related:** Bionic body black market rentals/parts, certain top sellers offer **illegal oracle services**, promising high-presence physical control, and additionally provide **"special" physical weapons**—for example, a **heavy rocket launcher capable of simultaneously locking onto and tracking six targets**, but its source and authenticity are questionable, and its use often comes with high "cleanup fees" or the risk of being tracked by DMF.
         - **Intelligence and Gossip:** About DMF movements, IRES factional struggles, or complaints about the **Digital Landlord Cartel (DLC)** (a sarcastic term for DMF's consciousness rent-seeking model). The anonymous graffiti wall in the market corner often reads: *"Did DLC raise rent today?"*
         - **Risks:** Black-on-black attacks and phishing are common. Always verify goods carefully before trading, and protect your OSPU.
       - **Nextlevel Forum (or similar):** Underground technical exchange community, possibly finding open-source hardware solutions (e.g., NeuraWeave-7 replica + SynapseX encryptor), software vulnerability information, Dr. Lin's legends or legacy information.

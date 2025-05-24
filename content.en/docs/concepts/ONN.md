@@ -5,7 +5,7 @@ type: docs
 
 # Ouroboros Neural Network (ONN)
 
-**Ouroboros Neural Network (ONN)** is the core cognitive engine of **Mental Smart Chain (MSC) L2**. It is an advanced **MoE (Mixture of Experts) neuro-symbolic system** that, through deep coupling of **Spiking Neural Networks (SNN)** and **Graph Neural Networks (GNN)**, aims to achieve efficient, functionally equivalent simulation and replacement of biological mental functions. ONN is the computational carrier of the "**φ Matched Orders**" mechanism, responsible for generating, processing, and integrating all information streams that constitute digital mental activity, and is ultimately subject to authoritative validation and anchoring by the **OSPU (Ouroboros Secure Processor)**.
+**Ouroboros Neural Network (ONN)** is the core cognitive engine of **Mental Smart Chain (MSC) L2**. It is an advanced **MoE (Mixture of Experts) neuro-symbolic system** that, through deep coupling of **Spiking Neural Networks (SNN)** and **Graph Neural Networks (GAT)**, aims to achieve efficient, functionally equivalent simulation and replacement of biological mental functions. ONN is the computational carrier of the "**φ Matched Orders**" mechanism, responsible for generating, processing, and integrating all information streams that constitute digital mental activity, and is ultimately subject to authoritative validation and anchoring by the **OSPU (Ouroboros Secure Processor)**.
 
 ## Core Objectives
 
@@ -14,11 +14,11 @@ type: docs
 3. **Providing Content for φ-Container:** Generates and processes all mental "drafts" for OSPU (φ-Container) to integrate through the **Proof of Predictive Integrity (PoPI)** mechanism, reconstructing and maintaining the digital φ state.
 4. **Modularity and Scalability:** Supports on-demand loading, upgrading, and customization of cognitive functions to adapt to different user needs and economic capabilities.
 
-## Architecture Details: MoE SNN-GNN Hybrid Neuro-Symbolic System
+## Architecture Details: MoE SNN-GAT Hybrid Neuro-Symbolic System
 
-ONN is not a single giant network, but a highly modular, dynamically collaborative system, with its core being the deep coupling of SNN and GNN, managed efficiently through the MoE mechanism.
+ONN is not a single giant network, but a highly modular, dynamically collaborative system, with its core being the deep coupling of SNN and GAT, managed efficiently through the MoE mechanism.
 
-### Core Components: SNN Modules and GNN Modules
+### Core Components: SNN Modules and GAT Modules
 
 - **SNN (Spiking Neural Network) Modules:**
   - **Positioning:** Responsible for low-level perception, temporal processing, motor control, and raw signal encoding/decoding. They are ONN's "sensory and motor cortex."
@@ -28,7 +28,7 @@ ONN is not a single giant network, but a highly modular, dynamically collaborati
     - **Energy Efficiency:** Simulates the event-driven characteristics of biological neurons, achieving higher energy efficiency in specific tasks.
     - **Motor Command Generation:** Translates high-level decisions into precise neural spike sequences, driving biorobotics via Mentalink or **DSC Oracle**.
   - **Characteristics:** Numerous, focused on specific modalities or local functions, outputting initially abstracted "events" or "features."
-- **GNN (Graph Neural Network) Modules:**
+- **GAT (Graph Neural Network) Modules:**
   - **Positioning:** Responsible for high-level symbolic reasoning, relationship integration, conceptual abstraction, planning, decision-making, and complex problem-solving. They are ONN's "prefrontal and association cortex."
   - **Functions:**
     - **Knowledge Graph Construction and Reasoning:** Transforms "events" or "features" output by SNN modules into graph-structured data (nodes representing concepts/entities, edges representing relationships), and performs complex logical reasoning, causal modeling, and semantic understanding on them.
@@ -39,15 +39,15 @@ ONN is not a single giant network, but a highly modular, dynamically collaborati
 
 ### Neuro-Symbolic Interface Layer
 
-- **Function:** Responsible for data conversion and information flow coordination between SNN and GNN modules.
-- **SNN -> GNN (Encoding):** Encodes spike patterns or activation states output by SNN modules into discrete symbolic representations understandable by GNN (e.g., concept nodes, relationship edges). This may involve feature aggregation, clustering, and symbolization.
-- **GNN -> SNN (Decoding/Feedback):** Decodes GNN module inference results (e.g., an action intention, a sensory prediction) into inputs processable by SNN modules, to adjust their perception patterns or drive motor outputs. This forms the **Predictive Coding Theory (PCT) loop** within ONN.
+- **Function:** Responsible for data conversion and information flow coordination between SNN and GAT modules.
+- **SNN -> GAT (Encoding):** Encodes spike patterns or activation states output by SNN modules into discrete symbolic representations understandable by GAT (e.g., concept nodes, relationship edges). This may involve feature aggregation, clustering, and symbolization.
+- **GAT -> SNN (Decoding/Feedback):** Decodes GAT module inference results (e.g., an action intention, a sensory prediction) into inputs processable by SNN modules, to adjust their perception patterns or drive motor outputs. This forms the **Predictive Coding Theory (PCT) loop** within ONN.
 
 ### MoE (Mixture of Experts) Router/Controller
 
 - **Positioning:** ONN's "central scheduler," simulating the dynamic activation and collaboration of different functional areas of the human brain.
 - **Functions:**
-  - **Task Routing:** Dynamically routes computational load to the most relevant and proficient SNN-GNN expert module combinations based on current input and cognitive task demands.
+  - **Task Routing:** Dynamically routes computational load to the most relevant and proficient SNN-GAT expert module combinations based on current input and cognitive task demands.
   - **Resource Adaptive Allocation:** Optimizes the use of computational resources, activating only necessary experts, thereby significantly reducing Gas consumption.
   - **Fitting Human Brain Partitioning:** Different expert modules can be trained to simulate specific functional partitions of the human brain (e.g., language areas, visual areas, motor areas, decision-making areas), achieving a high degree of functional specialization.
   - **Pluggability:** Allows DMF or third parties to provide expert modules of different levels and functions, which users can load or unload based on demand and payment ability.
