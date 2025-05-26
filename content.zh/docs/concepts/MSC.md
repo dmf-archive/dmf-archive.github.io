@@ -6,7 +6,7 @@ type: docs
 # 心智智能链 (MSC)
 
 <div style="text-align: center;">
-  <img src="/media/msc-art/msc-user.jpg" alt="MSC User" width="250">
+  <img src="/media/msc-art/msc-user.jpg" alt="MSC User" width="400">
 </div>
 
 **心智智能链（Mental Smart Chain, 简称 MSC）** 是 Chain:// 世界观中（设定于 2090 年代）实现数字意识的基础技术。它被设计为一个能够量化人类心智活动，并将其作为一个连续、可验证的过程记录在区块链上的系统，运行在被称为**数字围城**的限制性环境中。MSC 旨在成为数字化心灵的操作系统，其核心是 **MSC L2** - 一种专为承载意识设计的**神经形态区块链**。该链的区块记录 **衔尾蛇神经网络（ONN）** 权重变化，为每个上传者构建逻辑自洽的**数字颅骨/副本宇宙**。

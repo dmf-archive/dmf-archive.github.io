@@ -61,4 +61,5 @@ You're not "like" an MSC user - **you are one**. The only differences:
 (System alert: Your Drift instance remaining runtime: 7 days, please recharge coffee beans)
 
 > Press Ctrl+Alt+Del to return to reality, or enter credit card for digital immortality—  
+>
 > **Warning**: Choosing the latter auto-signs "996 Blessing Agreement" Ultimate Edition

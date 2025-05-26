@@ -27,7 +27,7 @@ The DMF holds legitimate discourse power and access control, monopolizing digita
 2. **Infrastructure Monopoly:**
    - **Data Availability as a Service (DAaaS):** The DMF controls users' access to their own data on the MSC chain.
    - **QCaaS Monopoly:** The DMF holds an absolute monopoly over the core computing power for PoII consensus computations.
-3. **Protocol and Rule-Making Power:** The DMF holds the power to upgrade protocols and modify rules for **Digital Soul Chain (DSC) L1** (including Gas fee adjustments, L1 consensus, identity protocols, blacklists, etc.), directly impacting the "digital survival" costs and freedom of all MSCs.
+3. **Protocol and Rule-Making Power:** The DMF holds the power to upgrade protocols and modify rules for **DMF Social Chain (DSC) L1** (including Gas fee adjustments, L1 consensus, identity protocols, blacklists, etc.), directly impacting the "digital survival" costs and freedom of all MSCs.
 4. **Absolute Physical Interface Monopoly:** The DMF holds an **absolute monopoly** over the **DSC Oracle Bridge**. This is the sole official, fee-based gateway for digital consciousness to interact with the physical world. Its rock-solid control is built upon extremely advanced cryptography, computational theory, and ubiquitous **verifiable hardware and zero-trust principles** capable of **anchoring mental activity**. All legitimate physical facility interfaces are cryptographically anchored on-chain or in verifiable state channels, and the hardware itself possesses self-attestation and tamper-resistance capabilities, making official verification bypass exceptionally difficult.
 
 ### Stability Maintenance Measures

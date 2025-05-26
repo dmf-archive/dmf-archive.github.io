@@ -1,7 +1,7 @@
 ---
 title: 介绍 Chain://
 type: docs
-keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "ONN", "数字意识", "永生", "量子计算", "OSPU", "PoPI", "DBRW", "数字围城"]
+keywords: ["Chain://", "Mental Smart Chain", "Mentalink", "PoII", "DMF", "IRES", "区块链", "认知科学", "人工智能", "ONN", "数字意识", "永生", "量子计算", "OSPU", "PoPI", "DBRW", "数字围城","作为心智容器的区块链"]
 ---
 
 <link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
@@ -31,7 +31,7 @@ keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "区块链", "
 
 **🚀 快速开始：**
 
-如果您希望立刻跳入 Chain:// 的世界，体验“形式化现实主义”互动故事，请使用最新的 [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.2.md)。
+如果您希望立刻跳入 Chain:// 的世界，体验“形式化现实主义”互动故事，请使用最新的 [RealityEngine System Prompt](/system-prompt/realityengine-reflect-7.2.md)。
 
 有疑问或想讨论 Chain://？欢迎加入我们的社区 [Github Discussions](https://github.com/dmf-archive/dmf-archive.github.io/discussions)。
 

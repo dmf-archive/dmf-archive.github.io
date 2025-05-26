@@ -6,7 +6,7 @@ type: docs
 # Mental Smart Chain (MSC)
 
 <div style="text-align: center;">
-  <img src="/media/msc-art/msc-user.jpg" alt="MSC User" width="250">
+  <img src="/media/msc-art/msc-user.jpg" alt="MSC User" width="400">
 </div>
 
 **Mental Smart Chain (MSC)** is the foundational technology in the Chain:// universe (set in the 2090s) for realizing digital consciousness. It is designed as a system capable of quantifying human mental activities and recording them as a continuous, verifiable process on a blockchain, operating within the restrictive environment known as the **Digital Siege**. MSC aims to be the operating system for digitized minds, with its core being **MSC L2** - a **neuromorphic blockchain** specifically designed to carry consciousness. The blocks of this chain record **Ouroboros Neural Network (ONN)** weight changes, building a logically consistent **digital skull/replica universe** for each uploader.

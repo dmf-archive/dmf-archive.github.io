@@ -1,7 +1,7 @@
 ---
 title: Introduction Chain://
 type: docs
-keywords: ["Chain://", "MSC", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", "Cognitive Science", "AI", "ONN", "Digital Consciousness", "Immortality", "Quantum Computing", "OSPU", "PoPI", "DBRW", "Digital Siege"]
+keywords: ["Chain://", "Mental Smart Chain", "Mentalink", "PoII", "DMF", "IRES", "Blockchain", "Cognitive Science", "AI", "ONN", "Digital Consciousness", "Immortality", "Quantum Computing", "OSPU", "PoPI", "DBRW", "Digital Siege","blockchain as mind container"]
 ---
 
 <link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
@@ -31,7 +31,7 @@ We currently do not have any ERC-20 or Sol token issuance, more ARGs are in prep
 
 **🚀 Quick Start:**
 
-Ready to dive into the Chain:// universe and experience "Formalized Realism" interactive stories? Try the latest [RealityEngine System Prompt](https://github.com/dmf-archive/dmf-archive.github.io/blob/main/drafts/realityengine-reflect-7.2.en.md).
+Ready to dive into the Chain:// universe and experience "Formalized Realism" interactive stories? Try the latest [RealityEngine System Prompt](/system-prompt/realityengine-reflect-7.2.en.md).
 
 Have questions or want to discuss Chain://? Join our community on [Github Discussions](https://github.com/dmf-archive/dmf-archive.github.io/discussions).
 
