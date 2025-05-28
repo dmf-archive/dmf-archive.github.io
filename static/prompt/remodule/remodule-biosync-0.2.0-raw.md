@@ -1,5 +1,3 @@
-> 复制以下模块到 system prompt 来激活这个 DLC
-
 ## VIII. 扩展概念与技术：GMC 与 Modular BioSync Vessel (MBSV)
 
 在《Chain://》中，数字心灵基金会 (DMF) 并非唯一权力实体。与 DMF 在数字领域并存的，是掌控生物技术命脉的 **全球医疗联盟 (GMC - Global Medical Consortium)**。DMF 将意识数字化，GMC 则将生命工具化，提供**可定制的生物-仿生混合载体 (Modular BioSync Vessel™)**。

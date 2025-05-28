@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Viewer</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body class="bg-gray-100 min-h-screen p-8">
+        <div class="max-w-6xl mx-auto">
+            <header class="flex justify-between items-center mb-6">
+                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100">Prompt Viewer</h1>
+                <div class="flex items-center space-x-4">
+                    <div class="relative">
+                        <button id="language-toggle" class="px-4 py-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-xl">
+                            <i class="fas fa-globe"></i>
+                        </button>
+                        <nav id="language-dropdown" class="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-700 rounded-md shadow-lg hidden z-10">
+                            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">English</a>
+                            <a href="#" data-lang="zh" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">中文</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <nav class="mb-6">
+                    <div class="flex border-b border-gray-200 dark:border-gray-700" id="tab-navigation">
+                        <button data-module="web-reflect" class="px-4 py-2 font-medium text-blue-600 border-b-2 border-blue-600 dark:text-blue-400 dark:border-blue-400">Web://Reflect</button>
+                        <button data-module="biosync" class="px-4 py-2 font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">Bio://Sync</button>
+                        <button data-module="metalayer" class="px-4 py-2 font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">MetaLayer</button>
+                    </div>
+                </nav>
+
+                <section class="relative bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden" id="content-section">
+                    <!-- Content will be dynamically loaded here -->
+                </section>
+            </main>
+        </div>
+
+        <script>
+            class PromptViewer {
+                constructor() {
+                    this.$ = id => document.getElementById(id);
+                    this.contentSection = this.$('content-section');
+                    this.tabNavigation = this.$('tab-navigation');
+                    this.languageDropdown = this.$('language-dropdown');
+
+                    this.modules = {
+                        'web-reflect': {
+                            zh: { file: '../prompt/realityengine-reflect-7.2.md', name: 'realityengine-reflect-7.2.md' },
+                            en: { file: '../prompt/realityengine-reflect-7.2.en.md', name: 'realityengine-reflect-7.2.en.md' }
+                        },
+                        'biosync': {
+                            zh: { file: '../prompt/remodule/remodule-biosync-0.2.0-raw.md', name: 'remodule-biosync-0.2.0-raw.md' },
+                            en: { file: '../prompt/remodule/remodule-biosync-0.2.0-raw.en.md', name: 'remodule-biosync-0.2.0-raw.en.md' }
+                        },
+                        'metalayer': {
+                            zh: { file: '../prompt/remodule/remodule-metalayer-1.0-raw.md', name: 'remodule-metalayer-1.0-raw.md' },
+                            en: { file: '../prompt/remodule/remodule-metalayer-1.0-raw.en.md', name: 'remodule-metalayer-1.0-raw.en.md' }
+                        }
+                    };
+
+                    this.currentModule = localStorage.getItem('activeTab') || 'web-reflect';
+                    this.currentLang = this.getLangFromUrl() || localStorage.getItem('preferredLang') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
+
+                    this.init();
+                }
+
+                init() {
+                    this.setupEventListeners();
+                    this.loadContent(this.currentModule, this.currentLang);
+                    this.updateLanguageToggle();
+                }
+
+                setupEventListeners() {
+                    this.$('language-toggle').addEventListener('click', () => {
+                        this.languageDropdown.classList.toggle('hidden');
+                    });
+
+                    this.languageDropdown.addEventListener('click', (e) => {
+                        if (e.target.tagName === 'A') {
+                            e.preventDefault();
+                            this.currentLang = e.target.dataset.lang;
+                            localStorage.setItem('preferredLang', this.currentLang);
+                            this.languageDropdown.classList.add('hidden');
+                            this.updateUrlLangParam(this.currentLang);
+                            this.loadContent(this.currentModule, this.currentLang);
+                            this.updateLanguageToggle();
+                        }
+                    });
+
+                    this.tabNavigation.addEventListener('click', (e) => {
+                        const button = e.target.closest('button[data-module]');
+                        if (button) {
+                            this.currentModule = button.dataset.module;
+                            localStorage.setItem('activeTab', this.currentModule);
+                            this.loadContent(this.currentModule, this.currentLang);
+                        }
+                    });
+
+                    this.contentSection.addEventListener('click', (e) => {
+                        if (e.target.classList.contains('copy-button')) {
+                            this.copyContent(e.target);
+                        }
+                    });
+                }
+
+                async loadContent(moduleName, lang) {
+                    const moduleData = this.modules[moduleName];
+                    if (!moduleData || !moduleData[lang]) {
+                        console.error(`Module data not found for ${moduleName} in ${lang}`);
+                        return;
+                    }
+
+                    const { file, name } = moduleData[lang];
+
+                    try {
+                        const resp = await fetch(file);
+                        const content = await resp.text();
+
+                        this.renderContent(name, content);
+                        this.activateTab(moduleName);
+                        hljs.highlightAll();
+                    } catch (error) {
+                        console.error(`加载 ${moduleName} 模块失败:`, error);
+                        this.contentSection.innerHTML = `<div class="p-4 text-red-500">加载内容失败: ${error.message}</div>`;
+                    }
+                }
+
+                renderContent(fileName, content) {
+                    this.contentSection.innerHTML = `
+                        <div class="p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm text-gray-500 dark:text-gray-400">${fileName}</span>
+                                <button class="copy-button px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded hover:bg-blue-200 dark:bg-blue-800 dark:text-blue-200 dark:hover:bg-blue-700">
+                                    ${this.getCopyButtonText()}
+                                </button>
+                            </div>
+                            <pre class="bg-gray-50 dark:bg-gray-900 p-4 rounded overflow-auto max-h-96"><code class="language-markdown">${this.escapeHTML(content)}</code></pre>
+                        </div>
+                    `;
+                }
+
+                escapeHTML(str) {
+                    const div = document.createElement('div');
+                    div.appendChild(document.createTextNode(str));
+                    return div.innerHTML;
+                }
+
+                getCopyButtonText() {
+                    return this.currentLang === 'zh' ? '复制' : 'Copy';
+                }
+
+                copyContent(buttonElement) {
+                    const codeElement = buttonElement.closest('.p-4').querySelector('code');
+                    if (codeElement && codeElement.textContent) {
+                        navigator.clipboard.writeText(codeElement.textContent).then(() => {
+                            const originalText = buttonElement.textContent;
+                            buttonElement.textContent = this.currentLang === 'zh' ? '已复制!' : 'Copied!';
+                            setTimeout(() => {
+                                buttonElement.textContent = originalText;
+                            }, 2000);
+                        }).catch(err => {
+                            console.error('复制失败:', err);
+                        });
+                    }
+                }
+
+                activateTab(moduleName) {
+                    this.tabNavigation.querySelectorAll('button').forEach(button => {
+                        if (button.dataset.module === moduleName) {
+                            button.classList.add('text-blue-600', 'border-b-2', 'border-blue-600', 'dark:text-blue-400', 'dark:border-blue-400');
+                            button.classList.remove('text-gray-500', 'dark:text-gray-400');
+                        } else {
+                            button.classList.remove('text-blue-600', 'border-blue-600', 'dark:text-blue-400', 'dark:border-blue-400');
+                            button.classList.add('text-gray-500', 'dark:text-gray-400');
+                        }
+                    });
+                }
+
+                getLangFromUrl() {
+                    const params = new URLSearchParams(window.location.search);
+                    return params.get('lang');
+                }
+
+                updateUrlLangParam(lang) {
+                    const url = new URL(window.location);
+                    url.searchParams.set('lang', lang);
+                    window.history.pushState({}, '', url);
+                }
+
+                updateLanguageToggle() {
+                    const langToggle = this.$('language-toggle');
+                    if (this.currentLang === 'zh') {
+                        langToggle.innerHTML = '<i class="fas fa-globe"></i> 中文';
+                    } else {
+                        langToggle.innerHTML = '<i class="fas fa-globe"></i> English';
+                    }
+                }
+            }
+
+            const viewer = new PromptViewer();
+        </script>
+    </body>
+
+</html>
