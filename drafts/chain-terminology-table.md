@@ -58,7 +58,7 @@
 - **宣传/商标**: PoII (Proof of Information Integration)
   - **真相（英文）**: Proof of Information Integration (PoII)
   - **真相（中文）**: 信息整合证明
-  - **解释**: 数字心灵基金会（DMF）对外宣传的官方意识验证机制，声声称基于整合信息理论（IIT）计算意识（φ值），以确保数字意识的真实性与“数字人权”。它代表着官方对数字存在的“合法性”认证，是数字公民身份的基石。
+  - **解释**: 数字心灵基金会（DMF）对外宣传的官方意识验证机制，声称基于整合信息理论（IIT）计算意识（φ值），以确保数字意识的真实性与“数字人权”。它代表着官方对数字存在的“合法性”认证，是数字公民身份的基石。
 
 - **宣传/商标**: PoPI (Proof of Predictive Integrity)
   - **真相（英文）**: Proof of Predictive Integrity (PoPI)
