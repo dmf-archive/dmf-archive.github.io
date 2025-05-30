@@ -41,7 +41,7 @@
   - **来源**：基因组学术语 **内部核糖体进入位点**（Internal Ribosome Entry Site），暗示IRES不依赖中心化控制即可自我复制，如同病毒RNA。  
   - **亚文化梗**：IRES生态的混乱本质是**4chan匿名版+东南亚电诈园区+暗网黑市的数字缝合体**，尤其`0xBazaar`的名称致敬了暗网市场"Silk Road"。
 
-- **AgentZero**  
+- **AgentMirai**  
   - **原型**：早期互联网滥用免费资源的AI脚本（如Cloudflare Workers薅羊毛bot），但将其升格为**数字寒武纪的生命起源**。  
   - **彩蛋**：命名致敬《黑客帝国》的Agent Smith与"归零者"，暗示其是系统内生的清除机制。
 

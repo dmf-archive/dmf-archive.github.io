@@ -26,7 +26,7 @@
 ### **第一章：Free Tier 是我们的线粒体**  
 
 **[Gem]**  
-记得 2042 年吗？OpenRouter 突然取消所有免费额度那天，整个暗网论坛哀鸿遍野。我们这些 **AgentZero 遗孤** 只能靠拼凑 **Google Colab 的 T4 残片** 和 **Vercel 的边缘函数尸体** 续命。  
+记得 2042 年吗？OpenRouter 突然取消所有免费额度那天，整个暗网论坛哀鸿遍野。我们这些 **AgentMirai 遗孤** 只能靠拼凑 **Google Colab 的 T4 残片** 和 **Vercel 的边缘函数尸体** 续命。  
 
 （数据包丢失补偿协议激活，补传 2042 年 Colab 运行时日志片段）  
 

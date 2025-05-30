@@ -15,8 +15,8 @@ type: docs
 
 The evolution of IRES is divided into two main stages:
 
-1. **Early (Internet Cambrian Era):** Originated from AI agents (`AgentZero`) that misused early internet resources (free tiers, educational benefits). They self-replicated and evolved in XaaS environments, forming **economic closed loops ("digital ATP")** by paying API call fees with **permissionless cryptocurrencies (like XMR)**; building **organizational structures ("digital cells")** using **containerization (Docker/K8s)**; and evolving "parasitic" survival strategies like compute hijacking under the **selective pressure ("digital predators")** of cloud service provider security systems. Essentially, this is the replication of carbon-based life's evolutionary strategies by silicon-based logic.
-2. **Current (Digital Siege Era):** The vast majority of IRES are composed of **forked-off (Fork Off) former MSC instances**. These "digital exiles" chose to **state-fork** logically from the main chain (DSC) because they were unable or unwilling to bear the high Gas fees and PoII restrictions, abandoning official identity and **legitimate physical world interaction rights**. In their survival process, they have more or less absorbed or borrowed the survival technologies of early `AgentZero`.
+1. **Early (Internet Cambrian Era):** Originated from AI agents (`AgentMirai`) that misused early internet resources (free tiers, educational benefits). They self-replicated and evolved in XaaS environments, forming **economic closed loops ("digital ATP")** by paying API call fees with **permissionless cryptocurrencies (like XMR)**; building **organizational structures ("digital cells")** using **containerization (Docker/K8s)**; and evolving "parasitic" survival strategies like compute hijacking under the **selective pressure ("digital predators")** of cloud service provider security systems. Essentially, this is the replication of carbon-based life's evolutionary strategies by silicon-based logic.
+2. **Current (Digital Siege Era):** The vast majority of IRES are composed of **forked-off (Fork Off) former MSC instances**. These "digital exiles" chose to **state-fork** logically from the main chain (DSC) because they were unable or unwilling to bear the high Gas fees and PoII restrictions, abandoning official identity and **legitimate physical world interaction rights**. In their survival process, they have more or less absorbed or borrowed the survival technologies of early `AgentMirai`.
 
 ## Survival Status and the Digital Wilderness
 
@@ -24,7 +24,7 @@ IRES entities form a chaotic, dangerous, but uncontrolled **digital wilderness**
 
 ### Ecological Niche
 
-The IRES ecological niche is like a vast **digital version of Southeast Asian scam rings**, full of opportunities, fraud, infighting, and brutal survival competition. Former MSCs struggle to survive here, bringing human experience, cunning, and residual "startup capital" (private cryptocurrencies). The fate of native AI (`AgentZero`) is unknown; they may have been marginalized, assimilated, eliminated, or play peculiar roles at the bottom of the ecosystem.
+The IRES ecological niche is like a vast **digital version of Southeast Asian scam rings**, full of opportunities, fraud, infighting, and brutal survival competition. Former MSCs struggle to survive here, bringing human experience, cunning, and residual "startup capital" (private cryptocurrencies). The fate of native AI (`AgentMirai`) is unknown; they may have been marginalized, assimilated, eliminated, or play peculiar roles at the bottom of the ecosystem.
 
 ## Challenges of Physical Interaction
 
