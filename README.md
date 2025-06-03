@@ -21,9 +21,8 @@
 
 - ▶️ **Experience Interactive Narrative**: [RealityEngine System Prompt](https://dmf-archive.github.io/prompt/?lang=en)
 - 💬 **Join the Discussion**: [Github Community](https://github.com/dmf-archive/dmf-archive.github.io/discussions)
-- 📚 **Explore the Lore**: [Concept Documents](https://dmf-archive.github.io/docs/concepts/MSC)
 
-> ⚠️ Beware of Scams: We currently do not issue any tokens.
+> ⚠️ Beware of Scams: We currently do not launch any tokens.
 
 ## 🤔 The Core Premise
 

@@ -2,26 +2,7 @@
 title: 介绍 Chain://
 type: docs
 keywords:
-  [
-    "Chain://",
-    "Mental Smart Chain",
-    "Mentalink",
-    "PoII",
-    "DMF",
-    "IRES",
-    "区块链",
-    "认知科学",
-    "人工智能",
-    "ONN",
-    "数字意识",
-    "永生",
-    "量子计算",
-    "OSPU",
-    "PoPI",
-    "DBRW",
-    "数字围城",
-    "作为心智容器的区块链",
-  ]
+  ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","区块链","认知科学","人工智能","数字意识","永生","量子计算","OSPU","PoPI","数字围城","作为心智容器的区块链"]
 ---
 
 <link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
@@ -49,7 +30,6 @@ keywords:
 
 - ▶️ **体验互动叙事**：[RealityEngine 系统提示词](https://dmf-archive.github.io/prompt/?lang=zh)
 - 💬 **加入讨论**：[Github 社区](https://github.com/dmf-archive/dmf-archive.github.io/discussions)
-- 📚 **探索设定集**：[概念文档](./docs/concepts/MSC.md)
 
 > ⚠️ 警惕骗局：我们暂未发行任何代币
 
@@ -81,6 +61,7 @@ Chain:// 深入探讨了这一技术飞跃带来的深远影响：
 Chain:// 是一个多层面的项目，包含：
 
 - 📖 **故事:** 探索不同的时代 (`Net://Anchor`, `Web://Reflect`, `Sys://Purge`, `Meta://Ascension`, `Exodus://Penalty`) 和角色视角。
+  - **短篇故事集：** [Net://Anchor](https://github.com/dmf-archive/dmf-archive.github.io/tree/main/drafts/net-anchor)
 - 🌍 **世界观构建:** 详细的背景设定、角色传记和技术概念。
 
 深入探索 Chain:// 的代码、设定以及它所引发的存在主义追问。

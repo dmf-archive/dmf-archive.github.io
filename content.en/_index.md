@@ -1,27 +1,7 @@
 ---
 title: Introduction Chain://
 type: docs
-keywords:
-  [
-    "Chain://",
-    "Mental Smart Chain",
-    "Mentalink",
-    "PoII",
-    "DMF",
-    "IRES",
-    "Blockchain",
-    "Cognitive Science",
-    "AI",
-    "ONN",
-    "Digital Consciousness",
-    "Immortality",
-    "Quantum Computing",
-    "OSPU",
-    "PoPI",
-    "DBRW",
-    "Digital Siege",
-    "blockchain as mind container",
-  ]
+keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Blockchain","Cognitive Science","AI","Digital Consciousness","Immortality","OSPU","PoPI","Digital Siege","blockchain as mind container"]
 ---
 
 <link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
@@ -49,9 +29,8 @@ keywords:
 
 - ▶️ **Experience Interactive Narrative**: [RealityEngine System Prompt](https://dmf-archive.github.io/prompt/?lang=en)
 - 💬 **Join the Discussion**: [Github Community](https://github.com/dmf-archive/dmf-archive.github.io/discussions)
-- 📚 **Explore the Lore**: [Concept Documents](./docs/concepts/MSC.md)
 
-> ⚠️ Beware of Scams: We currently do not issue any tokens.
+> ⚠️ Beware of Scams: We currently do not launch any tokens.
 
 ## 🤔 The Core Premise
 

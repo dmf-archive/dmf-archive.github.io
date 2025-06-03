@@ -33,7 +33,7 @@
 
 这个世界构建在对前沿技术进行极限外推的基础之上：
 
-- 🧠 **[心智智能链 (MSC)](https://dmf-archive.github.io/zh/docs/concepts/MSC):** 承载数字意识的区块链基底，你的心智成为由 **OSPU** 和 **[衔尾蛇神经网络 (ONN)](https://dmf-archive.github.io/zh/docs/concepts/ONN)** 维护的加密状态链 (φ)，每一次思考都需要消耗 Gas (**MSC-φ**)。
+- 🧠 **[心智智能链 (MSC)](https://dmf-archive.io/zh/docs/concepts/MSC):** 承载数字意识的区块链基底，你的心智成为由 **OSPU** 和 **[衔尾蛇神经网络 (ONN)](https://dmf-archive.github.io/zh/docs/concepts/ONN)** 维护的加密状态链，每一次思考都需要消耗 Gas (**MSCoin-φ**)。
 - 🔌 **[Mentalink](https://dmf-archive.github.io/zh/docs/concepts/Mentalink):** 用于读写神经数据的高带宽脑机接口 (BCI)，是数字心智与生物载体之间的可选输入/输出端口。
 - 🤖 **[衔尾蛇神经网络 (ONN)](https://dmf-archive.github.io/zh/docs/concepts/ONN):** 在 MSC 内部模拟思维、记忆和人格的核心引擎，其状态集合构成了数字心灵的“当前意识内容”和“潜意识处理”的主体。
 - 🔗 **区块链与加密技术:** 信任、持久化以及数字生存经济学的基础，包括 **FHE, ZKP, MPC, DBRW** 等。
@@ -53,6 +53,7 @@ Chain:// 深入探讨了这一技术飞跃带来的深远影响：
 Chain:// 是一个多层面的项目，包含：
 
 - 📖 **故事:** 探索不同的时代 (`Net://Anchor`, `Web://Reflect`, `Sys://Purge`, `Meta://Ascension`, `Exodus://Penalty`) 和角色视角。
+  - **短篇故事集：** [Net://Anchor](https://github.com/dmf-archive/dmf-archive.github.io/tree/main/drafts/net-anchor)
 - 🌍 **世界观构建:** 详细的背景设定、角色传记和技术概念。
 
 深入探索 Chain:// 的代码、设定以及它所引发的存在主义追问。
