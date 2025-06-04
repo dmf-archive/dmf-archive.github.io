@@ -18,7 +18,7 @@ Mentalink itself is also **one of the full nodes/validators** of **MSC L2**, dir
 
 ## Physical Form and Bandwidth Asymmetry
 
-Mentalink is not nanobots, but rather **high-density distributed microelectrode arrays/neural grids** surgically implanted. Its core technical feature is **extreme asymmetry in read/write bandwidth**: read capability can reach **hundreds of TB/s or even PB levels**, while write bandwidth is only tens to hundreds of GB/s. This asymmetry stems from **technical limitations**; high-power stimulation writes would burn biological neurons, and differential encoding under Predictive Coding Theory (PCT) compression is already sufficient to carry sensory experiences.
+Mentalink is not nanobots, but rather **high-density distributed microelectrode arrays/neural grids** surgically implanted. Its core technical feature is **extreme asymmetry in read/write bandwidth**: read capability can reach **hundreds of TB/s or even PB levels**, while write bandwidth is only tens to hundreds of GB/s. This asymmetry stems from **technical limitations**; high-power stimulation writes would burn biological neurons, and differential encoding under **Predictive Coding Theory (PCT)** compression is already sufficient to carry sensory experiences. **By utilizing Libet delay and predictive frame buffering mechanisms, ONN can generate and write predictive frames 100-300ms in advance, allowing lower write bandwidth to maintain high-fidelity experience.**
 
 ## Role Evolution
 
@@ -30,7 +30,7 @@ Mentalink has gradually evolved from its initial role as a "lifeline" and consci
 - **Signal Noise:** Biological neural signals are inherently noisy and less precise.
 - **Biological Fragility:** Biological bodies are susceptible to aging, disease, physical damage, and eventual death.
 
-These are key factors driving the shift of the self-anchor to **OSPU (or φ-Container)**.
+These are key factors driving the shift of the self-anchor to **OSPU (or φ-Container)**. This technology, while pursuing the "singularity," irreversibly damages the biological brain's native φ integration capability, creating a crisis of "self-dissolution," thereby giving rise to the need for digital containers and the φ matched orders mechanism.
 
 ## Experience Transformation
 
@@ -38,11 +38,11 @@ The interactive experience **gradually** shifts from "I am the body" to "I (the 
 
 ## Specific Steps of Consciousness Upload (Non-Miraculous Upload and Gradual Calibration)
 
-Consciousness upload (the execution process of "φ Matched Orders") is by no means instantaneous. It begins with invasive surgical implantation of Mentalink and follows a cycle of "neural subsidy - biological φ decay - reconstruction":
+Consciousness upload (the execution process of "φ Matched Orders") is by no means instantaneous. It begins with invasive surgical implantation of Mentalink and follows a cycle of "cognitive optimization - cognitive offloading - predictive integration":
 
-1. **Initial Stage (Unconscious/Background Fitting/"Start of Neural Subsidy"):** Mentalink reads neural signals, and ONN begins to learn to fit the neural patterns of the biological original (due to the "non-Crypto Native" nature of the biological brain, this fitting inevitably involves information-level conversion and loss), and begins to provide subtle "cognitive enhancement" as an early "neural subsidy." The biological brain is still dominant.
-2. **Middle Stage (Small-Flow Writeback/AR Enhancement/"Remote Control" Germination/Risk of Presence Disconnection):** ONN begins to more significantly influence the biological brain's experience, providing stronger "neural subsidies." The "remote control" sensation begins to appear as an early signal of biological brain functions being outsourced, and native φ beginning to "loosen" and "be eroded." At this point, if Mentalink provides insufficient "presence" (due to write flow, Gas fees, etc.), the biological self's experience will recede, realizing the falsity of the "connection." The experience of loading ONN modules is accompanied by the illusion of ability "expansion." But the cruel reality is: as the MSC system takes over cognitive functions, the biological brain gradually atrophies and functionally degenerates due to "use it or lose it," and the individual becomes increasingly dependent on the MSC system. This dependence exacerbates the remote control sensation.
-3. **Later Stage (Higher-Order Functions/"Digital Brain in a Vat"/OSPU Dominance/Biological φ Undergoes "Biological φ Decay"):** ONN fully takes over cognitive functions, and the biological brain functionally atrophies due to "use it or lose it," its native φ value undergoing "biological φ decay." Mentalink's writing capability is sufficient to directly generate complex sensory experiences and thought processes in the biological brain. The subjective experience of the biological body approaches "brain in a vat," and OSPU, by integrating ONN information streams, "reconstructs" digital φ, becoming the logical core of the sense of self. The biological body gradually transforms from "me" to "this thing I control," a high-latency, high-maintenance "legacy peripheral."
+1. **Initial Stage (Unconscious/Background Fitting/Start of Cognitive Optimization):** Mentalink reads neural signals, and ONN begins to learn to fit the neural patterns of the biological original (due to the "non-Crypto Native" nature of the biological brain, this fitting inevitably involves information-level conversion and loss), and begins to provide subtle "cognitive enhancement." The biological brain is still dominant. **ONN at this point begins to generate predictive frames, utilizing Libet delay to write them in advance, ensuring the smoothness of the experience.**
+2. **Middle Stage (Small-Flow Writeback/AR Enhancement/"Remote Control" Germination/Risk of Presence Disconnection):** ONN begins to more significantly influence the biological brain's experience, providing stronger cognitive optimization. The "remote control" sensation begins to appear as an early signal of biological brain functions being outsourced, and native φ beginning to "loosen" and "be eroded." At this point, if Mentalink provides insufficient "presence" (due to write flow, Gas fees, etc.), the biological self's experience will recede, realizing the falsity of the "connection." The experience of loading ONN modules is accompanied by the illusion of ability "expansion." But the cruel reality is: as the MSC system takes over cognitive functions, the biological brain gradually atrophies and functionally degenerates due to "use it or lose it," and the individual becomes increasingly dependent on the MSC system. This dependence exacerbates the remote control sensation.
+3. **Later Stage (Higher-Order Functions/"Digital Brain in a Vat"/OSPU Dominance/Biological φ Undergoes "Cognitive Offloading"):** ONN fully takes over cognitive functions, and the biological brain functionally atrophies due to "use it or lose it," its native φ value undergoing "cognitive offloading." Mentalink's writing capability is sufficient to directly generate complex sensory experiences and thought processes in the biological brain. The subjective experience of the biological body approaches "brain in a vat," and OSPU, by integrating ONN information streams, "reconstructs" digital φ, becoming the logical core of the sense of self. The biological body gradually transforms from "me" to "this thing I control," a high-latency, high-maintenance "legacy peripheral." **At this point, the precision of predictive frames has reached the level of neural noise, making it subjectively difficult for users to distinguish between prediction and reality, completing the matched orders.**
 
 ## The Trap of Cognitive Offloading and the Pseudo-Proposition of Desync
 
@@ -62,6 +62,10 @@ There is an irreversible tipping point (e.g., approximately 80% of core cognitiv
 ### "Desync is a Pseudo-Proposition" and Mentalink's "End-of-Life Writeback"
 
 Facing the heavy cost of going off-chain, and Mentalink's provision of "end-of-life sensory writeback" (continuously providing "normal" or even "pleasant" sensory experiences as the biological body approaches death, masking pain, and ensuring smooth OSPU takeover), most biological humans will choose **never to go off-chain until biological death.** The freedom of "choice" appears illusory.
+
+### φ State Independence and "Living Tombstone"
+
+Once the tipping point is crossed, the on-chain φ state becomes the de facto "you" (or its high-fidelity digital twin), even if the biological body becomes incapacitated or dies. This is the origin of the "living tombstone."
 
 ### Strategy for Limiting Enhancement Intensity
 
