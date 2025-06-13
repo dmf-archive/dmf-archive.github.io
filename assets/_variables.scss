@@ -1,1 +1,35 @@
-/* You can override SASS variables here. */
+@mixin theme-light {
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-500: #adb5bd;
+
+  --color-link: #0055bb;
+  --color-visited-link: #8440f1;
+
+  --body-background: white;
+  --body-font-color: black;
+
+  --icon-filter: none;
+
+  --hint-color-info: #6bf;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
+
+@mixin theme-dark {
+  --gray-100: #222;
+  --gray-200: #333;
+  --gray-500: #888;
+
+  --color-link: #84b2ff;
+  --color-visited-link: #b88dff;
+
+  --body-background: rgb(0, 0, 0);
+  --body-font-color: rgb(170, 170, 170);
+
+  --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: #6bf;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}

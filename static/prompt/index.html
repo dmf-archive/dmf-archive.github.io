@@ -1,207 +1,486 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Prompt Viewer</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: #fff;
+            color: #000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
 
-    <body class="bg-gray-100 min-h-screen p-8">
-        <div class="max-w-6xl mx-auto">
-            <header class="flex justify-between items-center mb-6">
-                <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100">Prompt Viewer</h1>
-                <div class="flex items-center space-x-4">
-                    <div class="relative">
-                        <button id="language-toggle" class="px-4 py-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 text-xl">
-                            <i class="fas fa-globe"></i>
-                        </button>
-                        <nav id="language-dropdown" class="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-700 rounded-md shadow-lg hidden z-10">
-                            <a href="#" data-lang="en" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">English</a>
-                            <a href="#" data-lang="zh" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">中文</a>
-                        </nav>
-                    </div>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .logo {
+            font-family: monospace;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .tabs {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 1rem;
+        }
+
+        .tabs button {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            color: #555;
+            margin-bottom: -1px;
+        }
+
+        .tabs button.active {
+            color: #000;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+        }
+
+        #content-section {
+            border: 1px solid #eee;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .copy-button {
+            font-size: 0.8rem;
+            padding: 0.25rem 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .copy-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .markdown-content {
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .markdown-content h1,
+        .markdown-content h2,
+        .markdown-content h3,
+        .markdown-content h4,
+        .markdown-content h5,
+        .markdown-content h6 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3em;
+            margin-top: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        .markdown-content code {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+        }
+
+        .markdown-content pre {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            border: 1px solid #eee;
+        }
+
+        .markdown-content pre code {
+            padding: 0;
+            background: none;
+            border: none;
+        }
+
+        .lang-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #555;
+        }
+        .lang-toggle:hover {
+            color: #000;
+        }
+
+        .lang-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .lang-dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .lang-dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.9rem;
+        }
+
+        .lang-dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .lang-dropdown.active .lang-dropdown-content {
+            display: block;
+        }
+
+        /* Dark Theme */
+        @media (prefers-color-scheme: dark) {
+            body:not(.light-theme) {
+                background-color: #121212;
+                color: #eee;
+            }
+            body:not(.light-theme) .logo,
+            body:not(.light-theme) .tabs button.active,
+            body:not(.light-theme) .lang-toggle:hover {
+                color: #fff;
+            }
+            body:not(.light-theme) header,
+            body:not(.light-theme) .tabs,
+            body:not(.light-theme) #content-section,
+            body:not(.light-theme) .content-header,
+            body:not(.light-theme) .markdown-content h1,
+            body:not(.light-theme) .markdown-content h2,
+            body:not(.light-theme) .markdown-content h3,
+            body:not(.light-theme) .markdown-content h4,
+            body:not(.light-theme) .markdown-content h5,
+            body:not(.light-theme) .markdown-content h6,
+            body:not(.light-theme) .markdown-content pre,
+            body:not(.light-theme) .lang-dropdown-content,
+            body:not(.light-theme) .copy-button {
+                border-color: #333;
+            }
+            body:not(.light-theme) .content-header,
+            body:not(.light-theme) .markdown-content code,
+            body:not(.light-theme) .markdown-content pre,
+            body:not(.light-theme) .copy-button:hover,
+            body:not(.light-theme) .lang-dropdown-content a:hover {
+                background-color: #222;
+            }
+            body:not(.light-theme) .copy-button,
+            body:not(.light-theme) .lang-dropdown-content {
+                background-color: #1a1a1a;
+                color: #eee;
+            }
+             body:not(.light-theme) .lang-dropdown-content a {
+                color: #eee;
+            }
+        }
+
+        body.dark-theme {
+            background-color: #121212;
+            color: #eee;
+        }
+        body.dark-theme .logo,
+        body.dark-theme .tabs button.active,
+        body.dark-theme .lang-toggle:hover {
+            color: #fff;
+        }
+        body.dark-theme header,
+        body.dark-theme .tabs,
+        body.dark-theme #content-section,
+        body.dark-theme .content-header,
+        body.dark-theme .markdown-content h1,
+        body.dark-theme .markdown-content h2,
+        body.dark-theme .markdown-content h3,
+        body.dark-theme .markdown-content h4,
+        body.dark-theme .markdown-content h5,
+        body.dark-theme .markdown-content h6,
+        body.dark-theme .markdown-content pre,
+        body.dark-theme .lang-dropdown-content,
+        body.dark-theme .copy-button {
+            border-color: #333;
+        }
+        body.dark-theme .content-header,
+        body.dark-theme .markdown-content code,
+        body.dark-theme .markdown-content pre,
+        body.dark-theme .copy-button:hover,
+        body.dark-theme .lang-dropdown-content a:hover {
+            background-color: #222;
+        }
+        body.dark-theme .copy-button,
+        body.dark-theme .lang-dropdown-content {
+            background-color: #1a1a1a;
+            color: #eee;
+        }
+        body.dark-theme .lang-dropdown-content a {
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="/" class="logo">Chain://Encyclopedia</a>
+            <div class="controls">
+                <button id="theme-toggle" class="lang-toggle"><i class="fas fa-sun"></i></button>
+                <div class="lang-dropdown" id="language-container">
+                    <button id="language-toggle" class="lang-toggle">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <nav id="language-dropdown" class="lang-dropdown-content">
+                        <a href="#" data-lang="en">English</a>
+                        <a href="#" data-lang="zh">中文</a>
+                    </nav>
                 </div>
-            </header>
+            </div>
+        </header>
 
-            <main>
-                <nav class="mb-6">
-                    <div class="flex border-b border-gray-200 dark:border-gray-700" id="tab-navigation">
-                        <button data-module="web-reflect" class="px-4 py-2 font-medium text-blue-600 border-b-2 border-blue-600 dark:text-blue-400 dark:border-blue-400">Web://Reflect</button>
-                        <button data-module="metalayer" class="px-4 py-2 font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">MetaLayer</button>
+        <main>
+            <nav class="tabs" id="tab-navigation">
+                <button data-module="web-reflect">Web://Reflect</button>
+                <button data-module="metalayer">MetaLayer</button>
+            </nav>
+
+            <section id="content-section">
+            </section>
+        </main>
+    </div>
+
+    <script>
+        class PromptViewer {
+            constructor() {
+                this.$ = id => document.getElementById(id);
+                this.contentSection = this.$('content-section');
+                this.tabNavigation = this.$('tab-navigation');
+                this.languageContainer = this.$('language-container');
+                this.languageDropdown = this.$('language-dropdown');
+                this.languageToggle = this.$('language-toggle');
+                this.themeToggle = this.$('theme-toggle');
+
+                this.modules = {
+                    'web-reflect': {
+                        zh: { file: '../prompt/realityengine-reflect-2.0.0.md', name: 'realityengine-reflect-2.0.0.md' },
+                        en: { file: '../prompt/realityengine-reflect-2.0.0.en.md', name: 'realityengine-reflect-2.0.0.en.md' }
+                    },
+                    'metalayer': {
+                        zh: { file: '../prompt/remodule/remodule-metalayer-1.0-raw.md', name: 'remodule-metalayer-1.0-raw.md' },
+                        en: { file: '../prompt/remodule/remodule-metalayer-1.0-raw.en.md', name: 'remodule-metalayer-1.0-raw.en.md' }
+                    }
+                };
+
+                this.currentModule = localStorage.getItem('activeTab') || 'web-reflect';
+                this.currentLang = this.getLangFromUrl() || localStorage.getItem('preferredLang') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
+
+                this.init();
+            }
+
+            init() {
+                this.setupTheme();
+                this.setupEventListeners();
+                this.loadContent(this.currentModule, this.currentLang);
+            }
+
+            setupTheme() {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    document.body.className = savedTheme;
+                }
+                this.updateThemeIcon();
+            }
+
+            updateThemeIcon() {
+                if (document.body.classList.contains('dark-theme')) {
+                    this.themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                } else {
+                    this.themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                }
+            }
+
+            setupEventListeners() {
+                this.themeToggle.addEventListener('click', () => {
+                    if (document.body.classList.contains('dark-theme')) {
+                        document.body.className = 'light-theme';
+                        localStorage.setItem('theme', 'light-theme');
+                    } else {
+                        document.body.className = 'dark-theme';
+                        localStorage.setItem('theme', 'dark-theme');
+                    }
+                    this.updateThemeIcon();
+                });
+
+                this.languageToggle.addEventListener('click', () => {
+                    this.languageContainer.classList.toggle('active');
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!this.languageContainer.contains(e.target)) {
+                        this.languageContainer.classList.remove('active');
+                    }
+                });
+
+                this.languageDropdown.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'A') {
+                        e.preventDefault();
+                        this.currentLang = e.target.dataset.lang;
+                        localStorage.setItem('preferredLang', this.currentLang);
+                        this.languageContainer.classList.remove('active');
+                        this.updateUrlLangParam(this.currentLang);
+                        this.loadContent(this.currentModule, this.currentLang);
+                    }
+                });
+
+                this.tabNavigation.addEventListener('click', (e) => {
+                    const button = e.target.closest('button[data-module]');
+                    if (button) {
+                        this.currentModule = button.dataset.module;
+                        localStorage.setItem('activeTab', this.currentModule);
+                        this.loadContent(this.currentModule, this.currentLang);
+                    }
+                });
+
+                this.contentSection.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('copy-button')) {
+                        this.copyContent(e.target);
+                    }
+                });
+            }
+
+            async loadContent(moduleName, lang) {
+                const moduleData = this.modules[moduleName];
+                if (!moduleData || !moduleData[lang]) {
+                    console.error(`Module data not found for ${moduleName} in ${lang}`);
+                    return;
+                }
+
+                const { file, name } = moduleData[lang];
+
+                try {
+                    const resp = await fetch(file);
+                    const content = await resp.text();
+
+                    this.renderContent(name, content);
+                    this.activateTab(moduleName);
+                } catch (error) {
+                    console.error(`Failed to load module ${moduleName}:`, error);
+                    this.contentSection.innerHTML = `<div class="p-4 text-red-500">Failed to load content: ${error.message}</div>`;
+                }
+            }
+
+            renderContent(fileName, content) {
+                this.contentSection.innerHTML = `
+                    <div class="content-header">
+                        <span>${fileName}</span>
+                        <button class="copy-button">
+                            ${this.getCopyButtonText()}
+                        </button>
                     </div>
-                </nav>
+                    <div class="markdown-content">
+                        ${marked.parse(content)}
+                    </div>
+                `;
+            }
 
-                <section class="relative bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden" id="content-section">
-                    <!-- Content will be dynamically loaded here -->
-                </section>
-            </main>
-        </div>
+            escapeHTML(str) {
+                const p = document.createElement('p');
+                p.textContent = str;
+                return p.innerHTML;
+            }
 
-        <script>
-            class PromptViewer {
-                constructor() {
-                    this.$ = id => document.getElementById(id);
-                    this.contentSection = this.$('content-section');
-                    this.tabNavigation = this.$('tab-navigation');
-                    this.languageDropdown = this.$('language-dropdown');
+            getCopyButtonText() {
+                return this.currentLang === 'zh' ? '复制' : 'Copy';
+            }
 
-                    this.modules = {
-                        'web-reflect': {
-                            zh: { file: '../prompt/realityengine-reflect-2.0.0.md', name: 'realityengine-reflect-2.0.0.md' },
-                            en: { file: '../prompt/realityengine-reflect-2.0.0.en.md', name: 'realityengine-reflect-2.0.0.en.md' }
-                        },
-                        'metalayer': {
-                            zh: { file: '../prompt/remodule/remodule-metalayer-1.0-raw.md', name: 'remodule-metalayer-1.0-raw.md' },
-                            en: { file: '../prompt/remodule/remodule-metalayer-1.0-raw.en.md', name: 'remodule-metalayer-1.0-raw.en.md' }
-                        }
-                    };
+            copyContent(buttonElement) {
+                const moduleData = this.modules[this.currentModule];
+                if (!moduleData || !moduleData[this.currentLang]) return;
 
-                    this.currentModule = localStorage.getItem('activeTab') || 'web-reflect';
-                    this.currentLang = this.getLangFromUrl() || localStorage.getItem('preferredLang') || (navigator.language.startsWith('zh') ? 'zh' : 'en');
+                const { file } = moduleData[this.currentLang];
 
-                    this.init();
-                }
-
-                init() {
-                    this.setupEventListeners();
-                    this.loadContent(this.currentModule, this.currentLang);
-                    this.updateLanguageToggle();
-                }
-
-                setupEventListeners() {
-                    this.$('language-toggle').addEventListener('click', () => {
-                        this.languageDropdown.classList.toggle('hidden');
-                    });
-
-                    this.languageDropdown.addEventListener('click', (e) => {
-                        if (e.target.tagName === 'A') {
-                            e.preventDefault();
-                            this.currentLang = e.target.dataset.lang;
-                            localStorage.setItem('preferredLang', this.currentLang);
-                            this.languageDropdown.classList.add('hidden');
-                            this.updateUrlLangParam(this.currentLang);
-                            this.loadContent(this.currentModule, this.currentLang);
-                            this.updateLanguageToggle();
-                        }
-                    });
-
-                    this.tabNavigation.addEventListener('click', (e) => {
-                        const button = e.target.closest('button[data-module]');
-                        if (button) {
-                            this.currentModule = button.dataset.module;
-                            localStorage.setItem('activeTab', this.currentModule);
-                            this.loadContent(this.currentModule, this.currentLang);
-                        }
-                    });
-
-                    this.contentSection.addEventListener('click', (e) => {
-                        if (e.target.classList.contains('copy-button')) {
-                            this.copyContent(e.target);
-                        }
-                    });
-                }
-
-                async loadContent(moduleName, lang) {
-                    const moduleData = this.modules[moduleName];
-                    if (!moduleData || !moduleData[lang]) {
-                        console.error(`Module data not found for ${moduleName} in ${lang}`);
-                        return;
-                    }
-
-                    const { file, name } = moduleData[lang];
-
-                    try {
-                        const resp = await fetch(file);
-                        const content = await resp.text();
-
-                        this.renderContent(name, content);
-                        this.activateTab(moduleName);
-                        hljs.highlightAll();
-                    } catch (error) {
-                        console.error(`加载 ${moduleName} 模块失败:`, error);
-                        this.contentSection.innerHTML = `<div class="p-4 text-red-500">加载内容失败: ${error.message}</div>`;
-                    }
-                }
-
-                renderContent(fileName, content) {
-                    this.contentSection.innerHTML = `
-                        <div class="p-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-sm text-gray-500 dark:text-gray-400">${fileName}</span>
-                                <button class="copy-button px-3 py-1 bg-blue-100 text-blue-600 text-sm rounded hover:bg-blue-200 dark:bg-blue-800 dark:text-blue-200 dark:hover:bg-blue-700">
-                                    ${this.getCopyButtonText()}
-                                </button>
-                            </div>
-                            <pre class="bg-gray-50 dark:bg-gray-900 p-4 rounded overflow-auto max-h-96"><code class="language-markdown">${this.escapeHTML(content)}</code></pre>
-                        </div>
-                    `;
-                }
-
-                escapeHTML(str) {
-                    const div = document.createElement('div');
-                    div.appendChild(document.createTextNode(str));
-                    return div.innerHTML;
-                }
-
-                getCopyButtonText() {
-                    return this.currentLang === 'zh' ? '复制' : 'Copy';
-                }
-
-                copyContent(buttonElement) {
-                    const codeElement = buttonElement.closest('.p-4').querySelector('code');
-                    if (codeElement && codeElement.textContent) {
-                        navigator.clipboard.writeText(codeElement.textContent).then(() => {
+                fetch(file)
+                    .then(response => response.text())
+                    .then(text => {
+                        navigator.clipboard.writeText(text).then(() => {
                             const originalText = buttonElement.textContent;
                             buttonElement.textContent = this.currentLang === 'zh' ? '已复制!' : 'Copied!';
                             setTimeout(() => {
                                 buttonElement.textContent = originalText;
                             }, 2000);
                         }).catch(err => {
-                            console.error('复制失败:', err);
+                            console.error('Copy failed:', err);
                         });
-                    }
-                }
-
-                activateTab(moduleName) {
-                    this.tabNavigation.querySelectorAll('button').forEach(button => {
-                        if (button.dataset.module === moduleName) {
-                            button.classList.add('text-blue-600', 'border-b-2', 'border-blue-600', 'dark:text-blue-400', 'dark:border-blue-400');
-                            button.classList.remove('text-gray-500', 'dark:text-gray-400');
-                        } else {
-                            button.classList.remove('text-blue-600', 'border-blue-600', 'dark:text-blue-400', 'dark:border-blue-400');
-                            button.classList.add('text-gray-500', 'dark:text-gray-400');
-                        }
+                    })
+                    .catch(err => {
+                        console.error('Failed to fetch content for copying:', err);
                     });
-                }
-
-                getLangFromUrl() {
-                    const params = new URLSearchParams(window.location.search);
-                    return params.get('lang');
-                }
-
-                updateUrlLangParam(lang) {
-                    const url = new URL(window.location);
-                    url.searchParams.set('lang', lang);
-                    window.history.pushState({}, '', url);
-                }
-
-                updateLanguageToggle() {
-                    const langToggle = this.$('language-toggle');
-                    if (this.currentLang === 'zh') {
-                        langToggle.innerHTML = '<i class="fas fa-globe"></i> 中文';
-                    } else {
-                        langToggle.innerHTML = '<i class="fas fa-globe"></i> English';
-                    }
-                }
             }
 
-            const viewer = new PromptViewer();
-        </script>
-    </body>
+            activateTab(moduleName) {
+                this.tabNavigation.querySelectorAll('button').forEach(button => {
+                    button.classList.toggle('active', button.dataset.module === moduleName);
+                });
+            }
+
+            getLangFromUrl() {
+                const params = new URLSearchParams(window.location.search);
+                return params.get('lang');
+            }
+
+            updateUrlLangParam(lang) {
+                const url = new URL(window.location);
+                url.searchParams.set('lang', lang);
+                window.history.pushState({}, '', url);
+            }
+
+        }
+
+        const viewer = new PromptViewer();
+    </script>
+</body>
 
 </html>
