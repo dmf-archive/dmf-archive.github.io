@@ -36,7 +36,7 @@ keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Bloc
 
 Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC)** – a personalized, neuromorphic blockchain designed to carry consciousness. Secured by advanced cryptography (FHE, ZKP, MPC) and a novel **[Proof of Predictive Integrity (PoPI)](./docs/concepts/PoII)** consensus mechanism, your self-identity gradually shifts from the biological brain to a theoretically perpetual **encrypted core state (φ)**, maintained by an **OSPU (Ouroboros Secure Processing Unit)**. However, maintaining this "legitimate" existence requires paying exorbitant **Gas fees** for PoPI validation, enforced by the monopolistic **[Digital Mind Foundation (DMF)](./docs/concepts/DMF)**.
 
-**Core Axioms of Cryptographic Ontology:**
+**Core Axioms:**
 - **Existence is a Verified Chain of Spacetime Events**: You are no longer flesh and blood, but a series of event proofs signed by your OSPU's private key, defined by verifiable mathematical facts.
 - **Consciousness is the Continuous Evolution of Encrypted States**: Your mind is an encrypted state machine's evolution, with each state transition verified by a PoPI zero-knowledge proof.
 - **Freedom is a Function of Wallet Balance**: Every action is essentially purchasing the right to rewrite causality with Gas, turning free will into an economic struggle against entropy.

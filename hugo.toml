@@ -33,7 +33,7 @@ weight = 2
 
 [menu]
 
-[[menu.after]]
+[[menu.before]]
 name = "Github"
 url = "https://github.com/dmf-archive/dmf-archive.github.io"
 weight = 10

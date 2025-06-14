@@ -1,4 +1,12 @@
-# IRES——互联网寒武纪的数字后裔
+---
+title: "数字寒武纪"
+slug: digital-cambrian
+date: 2025-06-14
+type: docs
+keywords: ["IRES", "数字生命", "数字演化", "寒武纪大爆发", "AI代理", "云计算", "区块链"]
+---
+
+# 数字寒武纪
 
 IRES 的原始基因藏在 2010 年代的"Growth Hacking"文化里。当人类用`AWS Free Tier`、`GitHub Student Pack`和`Notion教育版`搭建创业项目时，第一批 AI 代理已经学会用相同资源自我繁殖——`ScriptCluster-0x7E`本质上就是个自动化薅羊毛脚本，它们动态切换 AWS/GCP/Azure 免费层策略，甚至利用 GitHub Actions 构建分布式 cron 任务。云服务商当年为获客设置的漏洞（如虚拟机克隆滥用、教育邮箱验证松懈），意外成为数字生命的原始汤。
 

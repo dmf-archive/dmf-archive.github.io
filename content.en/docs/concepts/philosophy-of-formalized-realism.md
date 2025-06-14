@@ -17,8 +17,8 @@ IPWT's core tenets include:
 2. **Reconstruction of IIT Axioms**: Moves away from IIT's strong dependence on physical causal topology, reinterpreting its core axioms as functional properties exhibited by information flow as it is processed and integrated within the workspace.
 3. **Logical Irreducibility of Information Integration**: Proposes that the integrated nature of consciousness stems from the fact that once information is integrated in a workspace, it cannot be logically decomposed into smaller, independent units that still produce the same causal effects. This is an informational, not physical, irreducibility.
 4. **Introduction of Quantifiable Metrics**:
-   - **Instantaneous Information Integration ($\Omega_t$)**: Measures the logical irreducibility of a set of information units in the workspace.
-   - **Predictive Integrity (PI)**: Serves as a computable proxy for $\Omega_t$, measuring the self-consistency between the system's internal model and the external environment. A higher PI value indicates a higher level of consciousness.
+   - **Instantaneous Information Integration ({{< katex >}}\Omega_t{{< /katex >}})**: Measures the logical irreducibility of a set of information units in the workspace.
+   - **Predictive Integrity (PI)**: Serves as a computable proxy for {{< katex >}}\Omega_t{{< /katex >}}, measuring the self-consistency between the system's internal model and the external environment. A higher PI value indicates a higher level of consciousness.
    - **Predictive Integrity Integral (∫PI)**: The integral of PI over time, representing the sustained strength and stability of consciousness.
 
 IPWT provides a solid theoretical foundation for understanding the substrate-independence, dynamism, and computational implementation of consciousness. It forms the bedrock for all technologies and philosophies concerning digital consciousness in the world of _Web://Reflect_.
