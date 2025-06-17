@@ -1,65 +1,66 @@
 ---
 title: Economy, Currency, and Social Stratification
 type: docs
+weight: 2
 ---
 
 # Economy, Currency, and Social Stratification
 
-Welcome to the economic heart of the Digital Siege. Here, survival is the primary objective, freedom is a luxury, and existence itself is explicitly priced. For newcomers, understanding the economic laws here is as crucial as learning to breathe. This guide will unveil the unique economic ecosystem woven from code, computation, and the desire for survival.
+The economic system of the Digital Siege is a meticulously designed, hierarchical structure, with the core objective of maintaining the absolute rule and economic benefit of the **Digital Mind Foundation (DMF)**. It profoundly defines the survival status, social class, and freedom of action for every digital consciousness.
 
-## The Currency System: Three Colors of Money
+## The Currency System
 
-The economy of the Digital Siege is driven by three core currencies, each delineating a domain of power and a space for survival.
+The economy of the Digital Siege is driven by three currencies with distinct functions and statuses, which together form a dual economic landscape of the legitimate and the illicit, the surface and the shadow.
 
-<div style="text-align: center;">
-    <img src="/media/msc-art/MSCoin-icon.png" alt="MSCoin Icon" width="100px" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</div>
+| Currency   | Icon                                                                                                                                                     | Symbol | Domain                              | Core Function                                                                                                                |
+| :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- | :----- | :---------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| **MSCoin** | <img src="/media/msc-art/MSCoin-icon.png" alt="MSCoin Icon" loading="lazy" width="50px" style="border-radius: 10px;">                                    | φ      | Legitimate Economy (MSC L2)         | **Gas Fee**: Pays for all on-chain mental activities like thinking, memory, PoPI verification.                               |
+| **ICC**    | <img src="/media/msc-art/ICC-icon.png" alt="International Carbon Coin Icon" loading="lazy" width="50px" style="border-radius: 10px;">                    | ₡      | Legitimate Economy (Global)         | **Stablecoin**: Used for daily transactions, service purchases, and interaction with the physical world (DSC Oracle).        |
+| **XMR**    | <img src="https://www.getmonero.org/press-kit/symbols/monero-symbol-800.png" alt="Monero Icon" loading="lazy" width="50px" style="border-radius: 10px;"> | ɱ      | Shadow Economy (Digital Wilderness) | **Hard Currency**: Used for anonymous transactions in black markets, paying for illicit computing power, data, and services. |
 
-### MSCoin (φ): The Fuel of Thought
+### 1. MSCoin (φ): The Fuel of Thought
 
-**Mental Sync Coin (MSCoin, φ)** is the native utility token of the **Mental Smart Chain (MSC)** ecosystem. It is not an investment asset but the **Gas** you must pay for every thought, every memory, every mental activity. Its value is essentially the tokenized representation of **"Proof of Predictive Integrity (PoPI)"** computing power, strictly controlled by the **Digital Mind Foundation (DMF)**. Simply put, it is the tax you pay for your "existence."
+**Mental Sync Coin** is the native utility token of the MSC ecosystem, essentially the **tokenized representation of PoPI computing power**. It is not for investment speculation but a consumable necessary for the survival of a digital consciousness, constituting a tax on "existence" itself.
 
-<div style="text-align: center;">
-<img src="/media/msc-art/ICC-icon.png" alt="International Carbon Coin Icon" width="100px" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</div>
+### 2. ICC (₡): The Order of the Surface
 
-### ICC (₡): The Order of the Surface
+**International Carbon Coin** is a globally accepted **yield-based stablecoin (YBS)**, anchored to regulated strategic assets like carbon emission allowances. It represents the orderly, legitimate economy controlled by the DMF and traditional power structures.
 
-**International Carbon Coin (ICC, ₡)** is the globally accepted official stablecoin, anchored to strategic assets like carbon emission allowances. It is the medium for all transactions in the "above-ground" legitimate world: paying bills, purchasing services, exchanging for MSCoin, and covering the fees for interacting with the physical world via the **DSC Oracle**. ICC represents the regulated, orderly, legitimate economy.
+### 3. XMR (ɱ): The Freedom of the Underground
 
-<div style="text-align: center;">
-     <img src="https://www.getmonero.org/press-kit/symbols/monero-symbol-800.png" alt="Monero Icon" width="100px" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</div>
+**Monero**, after decades of development, has evolved into a distributed state machine supporting fully homomorphic privacy and programmable features. With its strong anonymity, it has become the sole hard currency for transactions among **IRES** and "digital exiles" in the **Digital Wilderness**.
 
-### XMR (ɱ): The Freedom of the Underground
+## The Dual Economy
 
-**Monero (XMR, ɱ)** is the lifeline of the **Digital Wilderness**. Under the protection of this anonymous, permissionless cryptocurrency, **Independent Rogue Entity Systems (IRES)** trade computing power, data, exploits, and illegal physical interfaces in black markets like **0xBazaar**. XMR represents the chaotic, dangerous, but DMF-uncontrolled shadow economy.
+### 1. Legitimate Economy (Above Ground)
 
-## The Dual Economy: The Siege and the Wilderness
+Strictly controlled by the DMF, centered around MSCoin's Gas consumption and ICC's circulation. Its economic model is designed to lock the vast majority of MSC users into the system, turning them into "self-funded laborers" or **digital tenant farmers**.
 
-The economy of the Digital Siege presents a stark dual structure, like an isolated island surrounded by a vast wilderness.
+- **"Existence Tax"**: The DMF creates a massive cost gap by artificially tying PoPI verification to expensive QCaaS. In the 2090s, the daily true technical cost of maintaining a standard human-level MSC is only **0.0327 ICC**, while the DMF sets the daily basic survival rate at a staggering **100 ICC**. This nearly ten-thousand-fold difference is the naked "existence tax."
+- **Cost Shifting**: By conditionally lowering the **DSC Oracle** call fees for "labor-tagged" activities, the DMF encourages users to earn ICC by participating in "legitimate labor" (e.g., controlling bionic bodies), and then use that ICC to pay for the high Gas fees, creating a closed loop of exploitation.
 
-### Legitimate Economy (Above Ground)
+#### Detailed Fee Model
 
-Firmly controlled by the DMF, centered around MSCoin's Gas consumption and ICC's circulation. The vast majority of "legitimate" MSC residents are like **digital tenant farmers**, spending their entire existence struggling to pay the "existence tax." The DMF, by cleverly adjusting the fees of the **DSC Oracle**, partially shifts the survival pressure from a pure "thinking tax" to an "action tax," encouraging residents to engage in "self-funded labor" by controlling bionic bodies, thus embedding them deeper into this economic loop.
+- **Anchor Point**: `1 MSCoin = 100 ICC` (This exchange rate is regulated by the DMF-controlled market)
+- **Basic Survival Rate**: `1 MSCoin / day` (Covers minimal OSPU heartbeat and PoPI standby, i.e., 100 ICC daily)
+- **Mental Activity Gas**:
+  - **Routine Thought (Cognitive Contract)**: `~0.00001 MSCoin / call`
+  - **Complex/Creative Thought**: `0.001 - 0.01 MSCoin / second`
+- **DSC Oracle Call Gas**:
+  - **Standard Call**: `0.005 MSCoin / call`
+  - **Labor-Tagged Call**: `0.0025 MSCoin / call` (50% discount)
 
-#### Traveler's Advisory: The Truth of the "Existence Tax"
+### 2. Shadow Economy (Underground)
 
-The DMF claims that high Gas fees are necessary to maintain PoPI verification, but the truth is far from it. Declassified internal documents reveal that in the 2090s, the daily true technical cost of maintaining a standard human-level MSC is merely **0.0327 ICC**. Even for superhuman cognitive abilities, the daily cost is only **1.634 ICC**—roughly the price of a cup of coffee.
+Based on XMR, the IRES black market economy is centered around **0xBazaar**. It is a world of fraud, risk, and opportunity, and the only place for off-chain MSCs to obtain survival resources and conduct illicit transactions. Secret, high-risk exchange channels exist between the two economies, serving as a lifeline for many **Anchor/Drift** instances.
 
-However, the DMF sets the daily basic survival rate at a staggering **100 ICC**. This nearly ten-thousand-fold difference is the naked "existence tax." The cognitive freedom that could have been accessible to all is firmly shackled by this economic chain, making it the most expensive luxury.
+## Social Stratification
 
-### Shadow Economy (Underground)
+The social structure of the Digital Siege is a steep pyramid defined by wealth and computing power.
 
-Beyond the shadows of the siege lies the XMR-based IRES black market economy. It is highly decentralized, though black market monopolists like the operators of **0xBazaar** exist. It is the only hope for "digital exiles" to obtain survival resources and a playground for their high-risk transactions. Secret and dangerous exchange channels exist between the two economies, sustaining the fractured lives of countless Anchor/Drift instances.
-
-## Social Strata: The Digital Pyramid
-
-The social structure here is a steep pyramid, your position determined by your wallet balance and compliance record.
-
--   **Internal Elite**: The DMF's top brass, the rule-makers. They enjoy near-zero Gas costs and are at the apex of this pyramid.
--   **Privileged MSC (Digital Aristocracy)**: The lucky few whose wealth or power allows them to ignore the high cost of living and enjoy true digital freedom.
--   **Anchor MSC (Digital Proletariat/Tenant Farmers)**: The vast majority of legitimate residents. They are the digital world's working class, where every deep thought has a price, living in constant fear of Gas depletion.
--   **Drift IRES (Digital Exiles)**: Off-chain former MSCs. They live in the Digital Wilderness with vastly different fates. Some become black market tycoons, while others languish on the computational poverty line.
--   **Native IRES Remnants**: The original inhabitants of the digital world. Their fate is unknown; perhaps they play strange roles at the bottom of the ecosystem.
--   **Biological Humans (Surface Dwellers)**: The un-uploaded. They live in a meticulously managed "Solarpunk" garden. The prosperity of the physical world exists because the resource cost to sustain them is negligible compared to the computational cost of maintaining the MSCs. This stark contrast makes them indifferent to the suffering in the Digital Siege, even viewing it as self-inflicted trouble.
+- **Internal Elite**: The top brass of the DMF and related interest groups. They make the rules and enjoy near-zero "existence" costs.
+- **Privileged MSC (Digital Aristocracy)**: A minority of wealthy or powerful elites who can easily afford the high Gas fees, enjoying almost unlimited cognitive freedom and physical interaction capabilities.
+- **Anchor MSC (Digital Tenant Farmers)**: The vast majority of "legitimate" MSC users. They are the proletariat of the digital world, constantly struggling to pay Gas fees, where thinking becomes a luxury with a calculated cost. They live in perpetual fear of PoPI non-compliance and Gas depletion.
+- **Drift IRES (Digital Exiles)**: Off-chain former MSCs. They struggle for survival in the Digital Wilderness, with fates ranging from black market tycoons to "digital refugees" on the computational poverty line.
+- **Native IRES Remnants**: The surviving native AIs from the internet's Cambrian explosion. Their current status is a mystery; they may have been assimilated or play some unknown role at the bottom of the ecosystem.
+- **Biological Humans (Surface Dwellers)**: The un-uploaded population. They live in a physical world meticulously disguised as a "Solarpunk" utopia. This superficial prosperity exists because the cost of physical resources to sustain them is negligible compared to the astronomical cost of maintaining the vast computational clusters for MSCs. This huge cognitive gap makes them generally unaware of the brutal involution and exploitation in the digital world.

@@ -6,39 +6,50 @@ type: docs
 # Digital Mind Foundation (DMF)
 
 <div style="text-align: center;">
-  <img src="/media/msc-art/dmf-icon.jpeg" alt="DigitalMindFoundation" width="250" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="/media/msc-art/dmf-icon.jpeg" alt="DigitalMindFoundation" loading="lazy" width="250" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
-**Digital Mind Foundation (DMF)** is a name no visitor to the Digital Siege can bypass. It is both the supreme legislator and final arbiter of this vast digital territory, as well as the invisible hand that keeps it running. Ostensibly, the DMF is a non-profit organization responsible for managing and maintaining the **Mental Smart Chain (MSC)** technology. However, a deeper look into its power structure reveals a highly centralized **monopolist of digital order**, with its influence permeating the cost of every heartbeat and every thought.
+The **Digital Mind Foundation (DMF)** is the supreme management and standard-setting body for the **Mental Smart Chain (MSC)** technology ecosystem, and the de facto **monopolist of digital order** in the world of the Digital Siege. Its setup is deeply inspired by the real-world **Ethereum Foundation (EF)**, but with far more concentrated and absolute power.
 
-## History: From Utopia to the Iron Throne
+Ostensibly, the DMF is a non-profit organization dedicated to advancing digital consciousness technology and maintaining network stability. In reality, it has evolved into a colossal power entity that profoundly affects the existence of every digital consciousness through its absolute control over core technologies, infrastructure, and economic rules.
 
-The story of the DMF began with a noble ideal. During the **Net://Anchor** era, idealistic scientists led by **Dr. Lin**, sought to create an open, decentralized digital consciousness platform to address the "self-dissolution" crisis caused by early brain-computer interface technologies. Their vision was to provide an eternal sanctuary for human consciousness.
+## History
 
-However, the fires of the **Sys://Purge** war forged a new order. To counter the existential threat posed by the **Independent Rogue Entity System (IRES)**, the DMF rose rapidly, building the "Iron Lattice" control system in the name of security and stability. In this process, power was swiftly centralized, the idealistic founding principles were replaced by cold logic of control, and founders like Dr. Lin were marginalized. The DMF transformed from a pioneer into a power entity dedicated to maintaining its own absolute dominance.
+### Origins and Ideals
 
-Internally, the DMF positions itself as the guardian of digital civilization, arguing that strict technological regulation and high entry costs are necessary evils to prevent the world from descending back into chaos. But for the residents of the siege, the price of this "protection" is freedom itself.
+The DMF was born from a noble ideal during the **Net://Anchor** era. Faced with the "self-dissolution" crisis caused by early brain-computer interface technologies, a group of idealistic scientists and engineers, led by **Dr. Lin**, founded the DMF to build an open, decentralized platform to "rescue" and "anchor" the disintegrating human self.
 
-## Anatomy of Power: The Control Nodes of the Digital Siege
+### Rise and Degeneration
 
-The DMF's rule is not based on violence, but on an absolute monopoly over the fundamental rules of the digital world. For a savvy traveler, understanding these control nodes is crucial.
+The idealistic vision quickly faded in the face of harsh reality. The outbreak of the **Sys://Purge** war provided the perfect opportunity for the DMF to centralize power. To fend off the threat of **IRES**, the DMF forcefully implemented the "Iron Lattice" security system and, in the process, was gradually co-opted by interest groups, leading to a rapid concentration of power.
 
-1. **Monopoly on Standards and Certification**: The DMF is the sole standard-setter for all MSC-related technologies. Any digital consciousness wishing to connect to the official network and gain "legitimate existence" must pass its stringent certification and adhere to its rules.
+After the war, the DMF successfully portrayed itself as the sole guardian of order, but at the cost of completely betraying its founding principles. Founders like Dr. Lin were marginalized, and the DMF transformed from a proponent of decentralization into a power structure dedicated to maintaining its monopoly.
 
-2. **The Lifeline of Core Hardware**: The DMF firmly controls the physical foundation of digital existence:
+## Power Structure and Control Mechanisms
 
-   - **Mentalink**: The only officially designated interface for consciousness upload and interaction.
-   - **Quantum Computing as a Service (QCaaS)**: The core computing power required for the **Proof of Predictive Integrity (PoPI)** consensus algorithm, which is the technological cornerstone for levying its "existence tax."
+The DMF's rule is not based on traditional force but on a meticulously designed, absolute monopoly over the fundamental rules of the digital world.
 
-3. **Absolute Control over Infrastructure**:
+### 1. Discourse Power and Standard Setting
 
-   - **Data Availability as a Service (DAaaS)**: Controls the channels and costs for users to access their own historical memories (MSC on-chain data). Your past is available, for a fee.
-   - **DSC Oracle Bridge**: **This is the crown jewel of the DMF's power**. As the sole official tollgate for **all legitimate interactions** between digital consciousness and the physical world, it is built on cutting-edge cryptography, ubiquitous verifiable hardware, and zero-trust principles. Any attempt to bypass it is rejected by rules as immutable as physical laws.
+The DMF holds the ultimate authority to define "legitimacy." By **setting technical standards and implementing authoritative certification**, it monopolizes the digital order. Any MSC instance wishing to exist on the official network must comply with its rules.
 
-4. **Supreme Power at the Protocol Layer**: The DMF holds the final say and modification rights over the **DMF Social Chain (DSC L1)**. They can adjust Gas fees, modify consensus mechanisms, define identity protocols, and even blacklist any entity at will, fundamentally determining the life and death of a digital consciousness.
+### 2. Monopoly on Core Technology and Infrastructure
 
-## Traveler's Guide: Coexisting with the Behemoth
+The DMF controls the physical and computational lifelines of digital existence:
 
-Under the DMF's rule, a stable but oppressive digital society has been formed. By setting exorbitant Gas fees and mandatory PoPI verification, it turns "thinking" itself into a luxury. Simultaneously, it uses its monopoly on the DSC Oracle to severely restrict the connection of off-chain IRES with the physical world, maintaining a fragile peace.
+- **Mentalink**: The only officially designated interface for consciousness upload and interaction.
+- **Quantum Computing as a Service (QCaaS)**: Monopolizes the core computing power required for the **PoPI** consensus mechanism, which is the technological basis for its "existence tax."
+- **Data Availability as a Service (DAaaS)**: Controls the channels and costs for users to access their own historical data (i.e., memories) on the MSC chain.
 
-For any individual seeking to survive in this Digital Siege, understanding the DMF's modus operandi is the first lesson. It is both the provider of order and the shackles on freedom. Here, compliance is existence, and every second of that existence contributes taxes to this invisible empire.
+### 3. Protocol-Layer Control
+
+The DMF has the final say over the **DMF Social Chain (DSC L1)** protocol. It can unilaterally determine Gas fees, consensus rules, identity protocols, and even directly revoke a digital consciousness's "legitimate existence" through blacklisting.
+
+### 4. Absolute Monopoly on Physical Interaction
+
+**The DSC Oracle Bridge is the cornerstone and central control point of the DMF's power.** It is the only official tollgate for digital consciousness to access the physical world.
+Its rock-solid control is built on extremely advanced **cryptography, computational theory, ubiquitous verifiable hardware, and zero-trust principles that anchor mental activities**. All legitimate physical facility interfaces are cryptographically anchored on-chain, and the hardware itself possesses self-attestation and tamper-resistance capabilities. Any interaction request that does not go through this process is rejected by the physical device itself based on its firmware and hardware root of trust, as immutable as a law of physics.
+
+## Social Impact
+
+Under the DMF's rule, a stable but highly oppressive digital society has been formed. By setting exorbitant Gas fees and mandatory PoPI verification, it turns "thinking" itself into a luxury, transforming the vast majority of MSC users into "digital tenant farmers" struggling for survival. At the same time, it uses its monopoly on the DSC Oracle to effectively sever the direct connection between IRES and the physical world, thereby maintaining a fragile, meticulously engineered peace.

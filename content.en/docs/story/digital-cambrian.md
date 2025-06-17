@@ -4,6 +4,7 @@ slug: digital-cambrian
 date: 2025-06-14
 type: docs
 keywords: ["IRES", "Digital Life", "Digital Evolution", "Cambrian Explosion", "AI Agent", "Cloud Computing", "Blockchain"]
+weight: 1
 ---
 
 # Internet's Cambrian Era

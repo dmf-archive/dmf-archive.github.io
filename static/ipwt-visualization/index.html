@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IPWT Visualization</title>
+        <meta name="description"
+            content="An interactive visualization of the Integrated Predictive Workspace Theory (IPWT), a unified framework for the science of consciousness.">
+        <meta name="keywords"
+            content="IPWT, Consciousness, Predictive Coding, Workspace Theory, Integrated Information Theory, Neuroscience, Philosophy of Mind">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            'dark-bg': '#121212',
+                            'dark-card': '#1a1a1a',
+                            'dark-text': '#e5e7eb',
+                            'dark-border': '#374151',
+                            'light-bg': '#f3f4f6',
+                            'light-card': '#ffffff',
+                            'light-text': '#111827',
+                            'light-border': '#e5e7eb',
+                        }
+                    }
+                }
+            }
+        </script>
+        <style>
+            @import url('https://rsms.me/inter/inter.css');
+
+            html {
+                font-family: 'Inter', sans-serif;
+            }
+
+            .card-stack {
+                perspective: 2000px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .card {
+                width: 90%;
+                max-width: 700px;
+                height: 75vh;
+                /* Set height to 3/4 of viewport height */
+                position: absolute;
+                transform-style: preserve-3d;
+                transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s, box-shadow 0.6s;
+                opacity: 0;
+                transform: translateY(30px) scale(0.9);
+                pointer-events: none;
+                cursor: grab;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                display: flex;
+                /* Added for flex layout */
+                flex-direction: column;
+                /* Added for flex layout */
+            }
+
+            .card-content {
+                overflow-y: auto;
+                /* Enable scrolling within the card */
+                padding: 2rem;
+                flex-grow: 1;
+            }
+
+            .card.resetting {
+                transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+                /* Smooth reset animation */
+            }
+
+            .dark .card {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .card.active {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                pointer-events: auto;
+                z-index: 10;
+            }
+
+            .card.grabbing {
+                cursor: grabbing;
+                transition: none;
+                /* Disable transition while grabbing */
+            }
+
+            .card.prev {
+                transform: translateX(-60px) scale(0.9);
+                opacity: 0.7;
+                z-index: 5;
+            }
+
+            .card.next {
+                transform: translateX(60px) scale(0.9);
+                opacity: 0.7;
+                z-index: 5;
+            }
+
+            /* Lightbox styles */
+            .lightbox {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.3s ease;
+            }
+
+            .lightbox.active {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .lightbox img {
+                max-width: 90%;
+                max-height: 90%;
+                object-fit: contain;
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+            }
+
+            .control-btn {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 1rem;
+                color: #555;
+                transition: color 0.2s;
+                padding: 0.5rem;
+            }
+
+            .control-btn:hover {
+                color: #111827;
+            }
+
+            .dark .control-btn {
+                color: #9ca3af;
+            }
+
+            .dark .control-btn:hover {
+                color: #e5e7eb;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body
+        class="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300 flex flex-col items-center min-h-screen overflow-hidden">
+
+        <div class="fixed top-0 left-0 right-0 z-50 bg-light-bg/80 dark:bg-dark-bg/80 backdrop-blur-sm">
+            <header
+                class="max-w-4xl mx-auto flex justify-between items-center p-4 border-b border-light-border dark:border-dark-border">
+                <a href="/"
+                    class="font-mono text-lg font-bold text-light-text dark:text-dark-text no-underline">Chain://Encyclopedia</a>
+                <div id="controls" class="flex items-center space-x-2">
+                    <button id="level-toggle" class="control-btn text-sm font-semibold">Beginner</button>
+                    <button id="lang-toggle" class="control-btn text-sm font-semibold">EN</button>
+                    <button id="download-btn" class="control-btn"><i class="fas fa-download"></i></button>
+                    <button id="theme-toggle" class="control-btn"><i class="fas fa-sun"></i></button>
+                </div>
+            </header>
+        </div>
+
+        <main id="content-container" class="w-full flex-grow flex items-center justify-center min-h-screen relative">
+            <!-- Content will be loaded here -->
+        </main>
+
+        <div id="navigation-container"
+            class="fixed bottom-8 z-50 w-full flex justify-center items-center space-x-8 md:absolute md:inset-0 md:w-auto md:justify-between md:px-8 md:pointer-events-none">
+            <button id="prev-btn"
+                class="pointer-events-auto w-12 h-12 flex items-center justify-center rounded-full bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border disabled:opacity-50 shadow-md transition-transform hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <div id="progress-indicator-mobile"
+                class="text-sm font-medium text-gray-500 dark:text-gray-400 pointer-events-auto md:hidden"></div>
+            <button id="next-btn"
+                class="pointer-events-auto w-12 h-12 flex items-center justify-center rounded-full bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border disabled:opacity-50 shadow-md transition-transform hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+        <div id="progress-container"
+            class="hidden md:fixed md:bottom-8 md:z-50 md:w-full md:flex md:justify-center md:items-center">
+            <div id="progress-indicator-desktop"
+                class="text-sm font-medium text-gray-500 dark:text-gray-400 pointer-events-auto"></div>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <img id="lightbox-image" src="" alt="Enlarged view">
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const state = {
+                    level: localStorage.getItem('ipwt_level') || 'beginner',
+                    lang: localStorage.getItem('ipwt_lang') || 'en',
+                    theme: localStorage.getItem('ipwt_theme') || 'dark',
+                    currentIndex: 0,
+                    cards: []
+                };
+
+                const $ = (selector) => document.querySelector(selector);
+                const $$ = (selector) => document.querySelectorAll(selector);
+
+                const contentContainer = $('#content-container');
+                const lightbox = $('#lightbox');
+                const lightboxImage = $('#lightbox-image');
+                const levelToggle = $('#level-toggle');
+                const langToggle = $('#lang-toggle');
+                const themeToggle = $('#theme-toggle');
+                const downloadBtn = $('#download-btn');
+                const prevBtn = $('#prev-btn');
+                const nextBtn = $('#next-btn');
+                const progressIndicatorMobile = $('#progress-indicator-mobile');
+                const progressIndicatorDesktop = $('#progress-indicator-desktop');
+                const navigationContainer = $('#navigation-container');
+
+            const cardTemplate = (card, index) => {
+                const isTitleCard = index === 0; // Title card is always the first one
+                const isFurtherReadingCard = card.title.includes("Further Exploration") || card.title.includes("进一步探索");
+                let textAlignClass = 'text-left';
+                if (isTitleCard || isFurtherReadingCard) {
+                    textAlignClass = 'text-center justify-center items-center';
+                }
+                
+                const titleClass = isTitleCard ? 'text-3xl font-bold mb-2' : 'text-2xl font-bold mb-3';
+
+                return `
+                    <div class="card bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border rounded-2xl flex flex-col ${textAlignClass}">
+                        <div class="card-content">
+                            <h1 class="${titleClass}">${card.title}</h1>
+                            ${card.introduction_html}
+                            ${card.content_html}
+                        </div>
+                    </div>
+                `;
+            };
+
+                const loadContent = async () => {
+                    try {
+                        const path = `./content/${state.level}_${state.lang}.json`;
+                        const response = await fetch(path);
+                        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                        const data = await response.json();
+
+                        contentContainer.innerHTML = data.map(cardTemplate).join('');
+                        state.currentIndex = 0;
+                        state.cards = Array.from($$('.card'));
+                        setupCards();
+                        setupLightboxTriggers();
+                    } catch (error) {
+                        console.error("Failed to load content:", error);
+                        contentContainer.innerHTML = `<div class="text-center p-8"><h2 class="text-2xl font-bold text-red-500">Failed to load content</h2><p class="text-gray-600 dark:text-gray-400">Could not fetch or parse ${state.level}_${state.lang}.json. Please check the file and the console for more details.</p></div>`;
+                    }
+                };
+
+                const updateTheme = () => {
+                    document.documentElement.classList.toggle('dark', state.theme === 'dark');
+                    themeToggle.innerHTML = state.theme === 'dark' ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+                    localStorage.setItem('ipwt_theme', state.theme);
+                };
+
+                const updateControls = () => {
+                    levelToggle.textContent = state.level.charAt(0).toUpperCase() + state.level.slice(1);
+                    langToggle.textContent = state.lang.toUpperCase();
+                    document.documentElement.lang = state.lang;
+                    document.title = `IPWT Visualization - ${state.level.charAt(0).toUpperCase() + state.level.slice(1)} (${state.lang.toUpperCase()})`;
+                };
+
+                const setupCards = () => {
+                    if (state.cards.length === 0) return;
+                    updateCardClasses();
+                    initDragInteraction();
+                };
+
+                const updateCardClasses = () => {
+                    state.cards.forEach((card, index) => {
+                        card.classList.remove('active', 'prev', 'next', 'grabbing');
+                        if (index === state.currentIndex) card.classList.add('active');
+                        else if (index === state.currentIndex - 1) card.classList.add('prev');
+                        else if (index === state.currentIndex + 1) card.classList.add('next');
+                    });
+                    updateNavigation();
+                };
+
+                const updateNavigation = () => {
+                    prevBtn.disabled = state.currentIndex === 0;
+                    nextBtn.disabled = state.currentIndex === state.cards.length - 1;
+                    const progressText = `${state.currentIndex + 1} / ${state.cards.length}`;
+                    progressIndicatorMobile.textContent = progressText;
+                    progressIndicatorDesktop.textContent = progressText;
+                };
+
+                const changeCard = (direction) => {
+                    const newIndex = state.currentIndex + direction;
+                    if (newIndex >= 0 && newIndex < state.cards.length) {
+                        state.currentIndex = newIndex;
+                        updateCardClasses();
+                    }
+                };
+
+                const initDragInteraction = () => {
+                    let isDragging = false, startX = 0, currentX = 0, dx = 0, raw_dx = 0;
+                    const activeCard = () => state.cards[state.currentIndex];
+
+                    const onDown = (e) => {
+                        if (!activeCard()) return;
+                        isDragging = true;
+                        startX = e.pageX || e.touches[0].pageX;
+                        activeCard().classList.add('grabbing');
+                    };
+
+                    const onMove = (e) => {
+                        if (!isDragging || !activeCard()) return;
+                        currentX = e.pageX || e.touches[0].pageX;
+                        raw_dx = currentX - startX;
+                        // Apply non-linear damping for visual feedback
+                        dx = Math.tanh(raw_dx / 300) * 300;
+                        activeCard().style.transform = `translateX(${dx}px) rotate(${dx / 20}deg)`;
+                    };
+
+                    const onUp = () => {
+                        if (!isDragging || !activeCard()) return;
+                        isDragging = false;
+                        activeCard().classList.remove('grabbing');
+
+                        // Use the raw displacement for threshold checking
+                        if (Math.abs(raw_dx) > 100) {
+                            changeCard(raw_dx > 0 ? -1 : 1);
+                        } else {
+                            // Smoothly reset the card position
+                            activeCard().classList.add('resetting');
+                            activeCard().style.transform = '';
+                            activeCard().addEventListener('transitionend', () => {
+                                activeCard().classList.remove('resetting');
+                            }, { once: true });
+                        }
+                        dx = 0;
+                        raw_dx = 0;
+                    };
+
+                    contentContainer.addEventListener('mousedown', onDown);
+                    contentContainer.addEventListener('mousemove', onMove);
+                    document.addEventListener('mouseup', onUp);
+                    contentContainer.addEventListener('touchstart', onDown, { passive: true });
+                    contentContainer.addEventListener('touchmove', onMove, { passive: true });
+                    document.addEventListener('touchend', onUp);
+                };
+
+                const setupLightboxTriggers = () => {
+                    $$('.lightbox-trigger').forEach(trigger => {
+                        trigger.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const imgSrc = trigger.dataset.src;
+                            if (imgSrc) {
+                                lightboxImage.src = imgSrc;
+                                lightbox.classList.add('active');
+                            }
+                        });
+                    });
+                };
+
+                lightbox.addEventListener('click', () => {
+                    lightbox.classList.remove('active');
+                });
+
+                prevBtn.onclick = () => changeCard(-1);
+                nextBtn.onclick = () => changeCard(1);
+
+                levelToggle.addEventListener('click', () => {
+                    state.level = state.level === 'beginner' ? 'advanced' : 'beginner';
+                    localStorage.setItem('ipwt_level', state.level);
+                    updateControls();
+                    loadContent();
+                });
+
+                langToggle.addEventListener('click', () => {
+                    state.lang = state.lang === 'en' ? 'zh' : 'en';
+                    localStorage.setItem('ipwt_lang', state.lang);
+                    updateControls();
+                    loadContent();
+                });
+
+                themeToggle.addEventListener('click', () => {
+                    state.theme = state.theme === 'dark' ? 'light' : 'dark';
+                    updateTheme();
+                });
+
+                downloadBtn.addEventListener('click', () => {
+                    const activeCard = state.cards[state.currentIndex];
+                    if (!activeCard) return;
+
+                    html2canvas(activeCard, {
+                        backgroundColor: state.theme === 'dark' ? '#1a1a1a' : '#ffffff',
+                        scale: 2 // Increase resolution
+                    }).then(canvas => {
+                        const link = document.createElement('a');
+                        link.download = `ipwt-card-${state.level}-${state.lang}-${state.currentIndex}.png`;
+                        link.href = canvas.toDataURL('image/png');
+                        link.click();
+                    });
+                });
+
+                // Initial load
+                updateTheme();
+                updateControls();
+                loadContent();
+            });
+        </script>
+    </body>
+
+</html>

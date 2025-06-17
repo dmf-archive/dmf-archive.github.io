@@ -200,8 +200,8 @@ The core ideas of the "Predictive Integrity" (PI) framework proposed in this art
 
 - **Rui, L. (2025). _Integrated Predictive Workspace Theory: Towards a Unified Framework for the Science of Consciousness_.**
   - IPWT aims to construct a unified framework for the science of consciousness, deeply integrating Predictive Coding, Workspace Theory, and Integrated Information Theory.
-  - In this theory, consciousness is viewed as a dynamic process driven by prediction and realized through information integration within a workspace. Theoretically, the degree of conscious integration is measured by **Instantaneous Information Integration ($\Omega_t$)**, defined by "Synergistic Information."
-  - As $\Omega_t$ is difficult to compute directly, IPWT introduces **Predictive Integrity (PI)** and its integral **(∫PI)** as its **computable functional proxy metrics**. A system that can efficiently integrate information to make accurate predictions and maintain a stable state (high PI / ∫PI) is considered to have a higher level of conscious integration.
+  - In this theory, consciousness is viewed as a dynamic process driven by prediction and realized through information integration within a workspace. Theoretically, the degree of conscious integration is measured by **Instantaneous Information Integration ({{< katex >}}\Omega_t{{< /katex >}})**, defined by "Synergistic Information."
+  - As {{< katex >}}\Omega_t{{< /katex >}} is difficult to compute directly, IPWT introduces **Predictive Integrity (PI)** and its integral **(∫PI)** as its **computable functional proxy metrics**. A system that can efficiently integrate information to make accurate predictions and maintain a stable state (high PI / ∫PI) is considered to have a higher level of conscious integration.
   - This endows PI with a profound meaning far beyond model diagnostics: it becomes a bridge connecting computational processes with conscious phenomena, providing a concrete, operational tool for quantifying and studying states of consciousness.
   - Link: [https://doi.org/10.5281/zenodo.15676305](https://doi.org/10.5281/zenodo.15676305)
 

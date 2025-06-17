@@ -1,4 +1,5 @@
 ---
-title: "Net://Anchor"
-weight: 2
+title: "Net://Anchor · 故事"
+bookFlatSection: true
+weight: 1
 ---

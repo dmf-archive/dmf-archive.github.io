@@ -4,6 +4,7 @@ slug: digital-cambrian
 date: 2025-06-14
 type: docs
 keywords: ["IRES", "数字生命", "数字演化", "寒武纪大爆发", "AI代理", "云计算", "区块链"]
+weight: 1
 ---
 
 # 数字寒武纪

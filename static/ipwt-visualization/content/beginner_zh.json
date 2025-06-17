@@ -1,0 +1,42 @@
+[
+    {
+        "title": "整合预测工作空间理论",
+        "introduction_html": "<p class=\"text-lg text-gray-600 dark:text-gray-400 mb-6\">初学者指南</p>",
+        "content_html": "<p class=\"text-sm text-gray-500 dark:text-gray-300\">一个关于意识统一理论的介绍。</p><p class=\"mt-8 text-xs text-gray-400 dark:text-gray-500\">拖动或使用方向键浏览</p>"
+    },
+    {
+        "title": "1. 什么是 IPWT？一个新的综合理论",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">整合预测工作空间理论 (IPWT) 是一个用于意识科学的统一框架。它优雅地将三个最强大的现有理论<strong>融合成一个单一、连贯的模型</strong>。</p>",
+        "content_html": "<ul class=\"space-y-3 text-sm\"><li class=\"flex items-start\"><span class=\"text-blue-500 font-bold mr-3\">➤</span><div><strong class=\"text-blue-400\">预测编码 (引擎):</strong> 大脑是一台预测机器，不断猜测接下来会发生什么。</div></li><li class=\"flex items-start\"><span class=\"text-green-500 font-bold mr-3\">➤</span><div><strong class=\"text-green-400\">工作空间理论 (舞台):</strong> 一个“全局舞台”，重要信息在此被选中并广播，成为我们意识的内容。</div></li><li class=\"flex items-start\"><span class=\"text-yellow-500 font-bold mr-3\">➤</span><div><strong class=\"text-yellow-400\">整合信息理论 (魔法):</strong> 贡献了“意识即整合信息(协同)”的核心思想，但 IPWT 对其进行了重构，使其在计算上可行。</div></li></ul><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">IPWT 旨在解释意识如何涌现、其功能是什么，以及如何测量它。</p>"
+    },
+    {
+        "title": "2. 引擎：一个预测性大脑",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">预测编码的核心思想简单而深刻：你的大脑并非被动地从感官接收信息，而是主动地<strong>预测</strong>信息。</p>",
+        "content_html": "<div class=\"bg-light-bg dark:bg-dark-bg p-4 rounded-lg border border-light-border dark:border-dark-border\"><p class=\"font-semibold mb-2\">一个日常例子：接球</p><ol class=\"list-decimal list-inside space-y-2 text-sm\"><li><strong>预测:</strong> 你的大脑生成一个关于球的轨迹模型。</li><li><strong>感官输入:</strong> 你的眼睛提供球当前位置的实际数据。</li><li><strong>预测误差:</strong> 大脑比较其预测与实际数据，差异就是“预测误差”。</li><li><strong>更新与行动:</strong> 这个误差信号迫使内部模型更新，并触发行动——移动你的手。</li></ol></div><p class=\"mt-4 text-gray-700 dark:text-gray-300\">我们所感知的并非原始感官数据，而是大脑为解释预测误差而提出的<strong>最佳假设</strong>。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">感知并非通向现实的窗户，而是一种受控的幻觉。</p>"
+    },
+    {
+        "title": "3. 舞台：一个为信息而设的工作空间",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">虽然大脑在无意识中并行处理海量信息，但我们的意识体验却非常有限。工作空间理论用剧院的比喻来解释这一点。</p>",
+        "content_html": "<ul class=\"space-y-3 text-sm\"><li class=\"flex items-start\"><svg class=\"h-5 w-5 mr-3 mt-1 text-green-500 flex-shrink-0\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\" clip-rule=\"evenodd\" /></svg><div><strong>无意识的专家:</strong> “观众”由众多专门的、无意识的大脑模块组成。</div></li><li class=\"flex items-start\"><svg class=\"h-5 w-5 mr-3 mt-1 text-green-500 flex-shrink-0\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\" clip-rule=\"evenodd\" /></svg><div><strong>注意力的“聚光灯”:</strong> 一个选择机制，挑选最相关的信息放到“舞台”上。</div></li><li class=\"flex items-start\"><svg class=\"h-5 w-5 mr-3 mt-1 text-green-500 flex-shrink-0\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\"><path fill-rule=\"evenodd\" d=\"M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z\" clip-rule=\"evenodd\" /></svg><div><strong>全局广播:</strong> 一旦登上舞台，信息就会被“全局广播”回给所有专家观众。这种可用性，正是使信息变得有意识的原因。</div></li></ul><p class=\"mt-4 text-gray-700 dark:text-gray-300\">IPWT 称这个舞台为<b>工作空间实例 (WSI)</b>，它是一个灵活、动态的网络配置。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">意识是系统让信息在全局范围内对自己可用的方式。</p>"
+    },
+    {
+        "title": "4. “魔法”：整合与协同 (Ω)",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">意识体验是统一的。你体验的是一个单一、连贯的场景。这就是<strong>整合</strong>。</p>",
+        "content_html": "<div class=\"bg-light-bg dark:bg-dark-bg p-4 rounded-lg border border-light-border dark:border-dark-border\"><h3 class=\"font-semibold mb-2\">逻辑不可约性</h3><p class=\"text-sm\">整合后的整体所包含的信息，比其各部分之和还要多。这种“额外”的信息被称为<strong>协同 (Synergy, Ω)</strong>。<br/><br/>想象字母 'M'、'A'、'O'。单独看，它们只是形状。当被整合时，它们形成了“猫”的概念，这个概念具有毛茸茸、会喵喵叫等涌现属性，这些属性在单个字母中是找不到的。</p></div><p class=\"mt-4 text-gray-700 dark:text-gray-300\">IPWT 提出，<strong>意识“是”这种协同的、逻辑上不可约的信息</strong>。这使其成为信息处理的一个属性，从而可以被测量。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">整体确实大于部分之和，而意识就存在于那差异之中。</p>"
+    },
+    {
+        "title": "5. 测量不可测量之物？",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">一个科学理论必须是可检验的。如果意识是协同信息 (Ω)，我们如何测量它？直接计算几乎不可能。</p>",
+        "content_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">IPWT 的解决方案是使用一个巧妙的代理指标：<strong>预测完整性 (PI)</strong>。其逻辑如下：</p><ul class=\"space-y-2 text-sm list-disc list-inside\"><li>一个高度整合 (高 Ω) 的系统必然非常高效。</li><li>一个高效的系统在预测世界上将会非常出色。</li><li>因此，一个系统的<strong>预测性能</strong>是其内部信息整合程度的有力指标。</li></ul><div class=\"mt-4 bg-light-bg dark:bg-dark-bg p-4 rounded-lg border border-light-border dark:border-dark-border\"><h3 class=\"font-semibold mb-2\">预测完整性 (PI)</h3><p class=\"text-sm\">PI 是一个分数，它量化了一个系统在最小化其预测误差方面的表现。<br/><br/><strong>高 PI 分数</strong>表示清晰、稳定和有效的意识状态。<strong>低 PI 分数</strong>表示中断或较低的意识状态。</p></div><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">通过测量 PI，我们可以对意识水平有一个客观、可计算的把握。</p>"
+    },
+    {
+        "title": "6. 体验的本质 (感受质)",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">为什么“红色”感觉上是红色的？这是著名的意识“难题”。IPWT 提供了一个务实的、功能性的答案，将问题从“它是什么”重新定义为“它做什么”。</p>",
+        "content_html": "<div class=\"bg-light-bg dark:bg-dark-bg p-4 rounded-lg border border-light-border dark:border-dark-border\"><h3 class=\"font-semibold mb-2\">感受质即功能标签</h3><p class=\"text-sm\">主观体验（感受质）并非无用的附加物。它们是高效、压缩的<strong>标签</strong>，为内部状态赋予了巨大的行为意义。<br/><br/>疼痛的“痛苦感”是一个紧急的、无法忽视的功能标签，大声疾呼“需要行动！保护身体！”。</p></div><p class=\"mt-4 text-gray-700 dark:text-gray-300\">这种观点使感受质成为一个计算上可处理的问题。它们是信息压缩和显著性标记的进化解决方案，使生物体能够对关乎生存的最重要事物做出快速有效的反应。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">感觉即是功能。</p>"
+    },
+    {
+        "title": "进一步探索",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-6\">阅读原始论文或了解本研究的社会学单元测试，请访问以下资源。</p>",
+        "content_html": "<div class=\"space-y-4\"><a href=\"https://github.com/dmf-archive/IPWT\" target=\"_blank\" class=\"inline-block bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-lg transition-colors\">在 GitHub 上阅读论文</a><a href=\"https://dmf-archive.github.io/\" target=\"_blank\" class=\"inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg transition-colors\">通过 Chain:// 探索</a></div>"
+    }
+]

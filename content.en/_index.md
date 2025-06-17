@@ -4,8 +4,6 @@ type: docs
 keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Blockchain","Cognitive Science","AI","Digital Consciousness","Immortality","OSPU","PoPI","Digital Siege","blockchain as mind container"]
 ---
 
-<link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
-
 <div align="center">
 
 # 🧠 Chain://
@@ -27,14 +25,14 @@ keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Bloc
 
 ## 🚀 Quick Start
 
-- ▶️ **Experience Interactive Narrative**: [RealityEngine System Prompt](https://dmf-archive.github.io/prompt/?lang=en)
+- ▶️ **Experience Interactive Narrative**: [RealityEngine System Prompt](./prompt/?lang=en)
 - 💬 **Join the Discussion**: [Github Community](https://github.com/dmf-archive/dmf-archive.github.io/discussions)
 
 > ⚠️ Beware of Scams: We currently do not launch any tokens.
 
 ## 🤔 The Core Premise
 
-Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC)** – a personalized, neuromorphic blockchain designed to carry consciousness. Secured by advanced cryptography (FHE, ZKP, MPC) and a novel **[Proof of Predictive Integrity (PoPI)](./docs/concepts/PoII)** consensus mechanism, your self-identity gradually shifts from the biological brain to a theoretically perpetual **encrypted core state (φ)**, maintained by an **OSPU (Ouroboros Secure Processing Unit)**. However, maintaining this "legitimate" existence requires paying exorbitant **Gas fees** for PoPI validation, enforced by the monopolistic **[Digital Mind Foundation (DMF)](./docs/concepts/DMF)**.
+Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC)** – a personalized, neuromorphic blockchain designed to carry consciousness. Secured by advanced cryptography (FHE, ZKP, MPC) and a novel **[Proof of Predictive Integrity (PoPI)](./docs/concepts/PoII)** consensus mechanism, your self-identity gradually shifts from the biological brain to a theoretically perpetual **encrypted core state (~~Φ~~/Ω)**, maintained by an **OSPU (Ouroboros Secure Processing Unit)**. However, maintaining this "legitimate" existence requires paying exorbitant **Gas fees** for PoPI validation, enforced by the monopolistic **[Digital Mind Foundation (DMF)](./docs/concepts/DMF)**.
 
 **Core Axioms:**
 - **Existence is a Verified Chain of Spacetime Events**: You are no longer flesh and blood, but a series of event proofs signed by your OSPU's private key, defined by verifiable mathematical facts.
@@ -65,8 +63,9 @@ Chain:// delves into the profound implications of this technological leap:
 
 Chain:// is a multi-faceted project encompassing:
 
-- 📖 **Stories:** Exploring different eras (`Net://Anchor`, `Web://Reflect`, `Sys://Purge`, `Meta://Ascension`, `Exodus://Penalty`) and character perspectives.
+- 📖 **Stories:** Exploring different eras and character perspectives.
 - 🌍 **Worldbuilding:** Detailed lore, character bios, and technological concepts.
+- 🔬 **Scientific Research:** Engaging in authentic scientific research to accelerate the arrival of MSC precursor technologies.
 
 Dive deeper into the code, the lore, and the existential questions posed by Chain://.
 

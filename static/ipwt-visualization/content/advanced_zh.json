@@ -1,0 +1,47 @@
+[
+    {
+        "title": "整合预测工作空间理论",
+        "introduction_html": "<p class=\"text-lg text-gray-600 dark:text-gray-400 mb-6\">进阶探索</p>",
+        "content_html": "<p class=\"text-sm text-gray-500 dark:text-gray-300\">深入探讨 IPWT 的计算与哲学基础。</p><p class=\"mt-8 text-xs text-gray-400 dark:text-gray-500\">拖动或使用方向键浏览</p>"
+    },
+    {
+        "title": "1. IPWT 核心架构",
+        "introduction_html": "<p class=\"text-sm text-gray-600 dark:text-gray-400 mb-4\">该理论整合了预测编码（动力学）、工作空间理论（架构）以及对整合信息理论公理的功能性重构（整合）。</p>",
+        "content_html": "<div class=\"lightbox-trigger relative w-full h-40 rounded-lg overflow-hidden cursor-pointer border border-light-border dark:border-dark-border\" data-src=\"assets/architecture_zh.png\"><img src=\"assets/architecture_zh.png\" alt=\"IPWT 核心架构图 预览\" class=\"w-full h-full object-cover blur-sm\" onerror=\"this.style.display='none'\"><div class=\"absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white\"><svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-8 w-8 mb-2\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M15 12a3 3 0 11-6 0 3 3 0 016 0z\" /><path stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z\" /></svg><span class=\"font-semibold\">点击查看</span></div></div><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">一个集动力学、架构和功能整合于一体的综合理论。</p>"
+    },
+    {
+        "title": "2. 从物理到功能",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">IPWT 的核心创新之一，是将“整合”概念从整合信息理论（IIT）所提出的刚性物理约束中解放出来，并将其重新定义为信息处理的功能属性。</p>",
+        "content_html": "<div class=\"grid grid-cols-1 md:grid-cols-2 gap-4 text-sm\"><div class=\"bg-light-bg dark:bg-dark-bg p-3 rounded-lg border border-light-border dark:border-dark-border\"><h3 class=\"font-semibold mb-2 text-red-500\">原始 IIT 的瓶颈</h3><ul class=\"text-left list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2\"><li><strong>物理基底依赖:</strong> 意识与特定物理系统的“内在因果结构”绑定。</li><li><strong>计算不可行性:</strong> 计算 Phi (Φ) 是一个 NP-Hard 问题，对于复杂系统几乎不可能。</li><li><strong>静态视角:</strong> 关注单一时刻的因果结构，难以解释意识的动态特性。</li></ul></div><div class=\"bg-light-bg dark:bg-dark-bg p-3 rounded-lg border border-light-border dark:border-dark-border\"><h3 class=\"font-semibold mb-2 text-green-500\">IPWT 的功能性解决方案</h3><ul class=\"text-left list-disc list-inside text-gray-600 dark:text-gray-400 space-y-2\"><li><strong>逻辑不可约性:</strong> 整合由协同信息定义——这是信息流的属性，而非物理原子。</li><li><strong>可计算代理 (PI):</strong> 我们不直接计算 Ω，而是测量其功能性后果：预测完整性 (PI)。</li><li><strong>动态过程:</strong> 通过将整合嵌入预测编码框架，IPWT 将意识视为一个连续的过程。</li></ul></div></div><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">整合并非原子的属性，而是信息协同的属性。</p>"
+    },
+    {
+        "title": "3. 协同的数学：PID & ΦID",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">IPWT 的“逻辑不可约性”概念植根于信息论，特别是部分信息分解 (PID) 及其扩展——整合信息分解 (ΦID)。</p>",
+        "content_html": "<p class=\"text-sm text-gray-700 dark:text-gray-300 mb-2\">这些框架将多个源 (X₁, X₂) 提供给一个目标 (Y) 的信息分解为不同的原子部分：</p><ul class=\"space-y-2 text-sm mb-4\"><li><strong class=\"text-blue-400\">冗余:</strong> 从 X₁ 或 X₂ 单独一个源就能获得的信息。</li><li><strong class=\"text-green-400\">唯一信息:</strong> 只能从 X₁ 或只能从 X₂ 获得的信息。</li><li><strong class=\"text-yellow-400\">协同 (Ω):</strong> 关键部分。这是只有同时考虑 X₁ 和 X₂ 时才存在的“涌现”信息。</li></ul><p class=\"text-gray-700 dark:text-gray-300\">虽然 ΦID 提供了更完整的图景，但其计算复杂度巨大。因此，IPWT 使用<strong>协同</strong>作为其理论基石，但在经验测试中依赖更实用、可计算的代理指标<strong>预测完整性 (PI)</strong>。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">协同 (Ω) 是整合的理论基础；预测完整性 (PI) 是其经验代理。</p>"
+    },
+    {
+        "title": "4. 预测完整性 (PI) 解析",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">PI 是一个功能性度量，旨在量化意识状态的有效性和稳定性。它源于自由能原理，反映了准确性与复杂性之间的权衡。</p>",
+        "content_html": "<div class=\"bg-light-bg dark:bg-dark-bg p-4 rounded-lg border border-light-border dark:border-dark-border text-center mb-4\"><p class=\"font-mono text-lg\">PI_t = exp(-α * (不准确度 + γ * 复杂度))</p></div><ul class=\"space-y-2 text-sm\"><li><strong class=\"text-red-400\">不准确度:</strong> 加权的预测误差 (ε)。这是判断错误的代价。</li><li><strong class=\"text-yellow-400\">复杂度:</strong> 为容纳新信息而更新内部模型的“成本”。一个简单、优雅的模型更优（奥卡姆剃刀）。</li><li><strong class=\"text-blue-400\">γ (伽马):</strong> 一个权衡超参数，平衡准确性与复杂度的代价。</li></ul><p class=\"mt-4 text-gray-700 dark:text-gray-300\">高 PI 分数标志着一个系统在预测上既准确又在模型结构上高效——这是一个稳健、整合和有意识状态的标志。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">意识是在预测准确性与模型复杂性之间取得最优权衡的状态。</p>"
+    },
+    {
+        "title": "5. 案例研究：盲视",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">V1 皮层受损的患者报告其视野部分失明，但仍能以高于偶然的概率“猜中”那里物体的位置。IPWT 为此提供了清晰的计算解释。</p>",
+        "content_html": "<ul class=\"space-y-3 text-sm\"><li class=\"flex items-start\"><span class=\"text-red-500 font-bold mr-3\">➤</span><div><strong class=\"text-red-400\">主导WSI失败:</strong> 负责主观视觉体验的主要工作空间没有从受损的V1接收到高质量输入。其<strong>对主导WSI的协同信息(Ω)贡献为零</strong>，因此没有主观的“看见”。</div></li><li class=\"flex items-start\"><span class=\"text-green-500 font-bold mr-3\">➤</span><div><strong class=\"text-green-400\">局部模块成功:</strong> 视觉信息仍通过皮层下通路到达其他专门模块。这些局部模块可以运行自己的、无意识的预测编码循环并直接指导行为。</div></li></ul><p class=\"mt-4 text-gray-700 dark:text-gray-300\">盲视展示了单纯的信息处理与主观意识所必需的<strong>在主导工作空间内的全局性、协同性整合</strong>之间的关键区别。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">没有协同整合的信息处理，就不是意识。</p>"
+    },
+    {
+        "title": "6. 案例研究：精神分裂症",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">精神分裂症的各种症状可以被统一在一个总括之下：预测编码机制的根本性失调。</p>",
+        "content_html": "<ul class=\"space-y-3 text-sm\"><li><strong class=\"text-blue-400\">异常显著性:</strong> 大脑错误地为随机的预测误差分配了高精度（重要性），导致妄想。</li><li><strong class=\"text-yellow-400\">自我监控失败:</strong> 幻觉可被视为未能预测并因此抵消自身的内部言语。由此产生的未预测到的感官信号被误解为来自外部。</li><li><strong class=\"text-red-400\">WSI门控失败:</strong> 思维障碍可能源于WSI无法正确地对信息进行门控，允许不相关的想法侵入有意识的工作空间。</li></ul><p class=\"mt-4 text-gray-700 dark:text-gray-300\">这种计算精神病学方法使我们能够将精神分裂症不视为一堆奇怪行为的集合，而是作为一个发生故障的贝叶斯推理引擎的可预测后果。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">精神病理可被视为大脑贝叶斯推理引擎的一种失败模式。</p>"
+    },
+    {
+        "title": "7. “难题”作为一个功能性问题",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-4\">IPWT处理感受质（主观体验）的“难题”，不是通过问“红色的感觉是什么？”，而是通过问“红色的感觉起什么作用？”。</p>",
+        "content_html": "<div class=\"bg-light-bg dark:bg-dark-bg p-4 rounded-lg border border-light-border dark:border-dark-border\"><h3 class=\"font-semibold mb-2\">作为高级功能标签的感受质</h3><p class=\"text-sm\">一个感受质是对一个复杂状态的高度压缩、与行为相关的总结，通过工作空间广播以迫使行动。<br/><br/>疼痛的“尖锐感”是身体伤害状态的功能标签，要求立即撤退。它们是进化对信息过载的解决方案，将复杂数据转化为简单、不可否认的行动指令。</p></div><p class=\"mt-4 text-gray-700 dark:text-gray-300\">这种重构将一个棘手的哲学之谜，转变为一个关于信息压缩、显著性和行为控制的可处理的科学问题。</p><p class=\"text-xs text-gray-500 dark:text-gray-400 mt-6 text-center italic\">感受质并非神秘属性，而是用于行为控制的高带宽、压缩数据标签。</p>"
+    },
+    {
+        "title": "进一步探索",
+        "introduction_html": "<p class=\"text-gray-700 dark:text-gray-300 mb-6\">阅读原始论文或了解本研究的社会学单元测试，请访问以下资源。</p>",
+        "content_html": "<div class=\"space-y-4\"><a href=\"https://github.com/dmf-archive/IPWT\" target=\"_blank\" class=\"inline-block bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-4 rounded-lg transition-colors\">在 GitHub 上阅读论文</a><a href=\"https://dmf-archive.github.io/\" target=\"_blank\" class=\"inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg transition-colors\">通过 Chain:// 探索</a></div>"
+    }
+]

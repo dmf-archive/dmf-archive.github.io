@@ -1,4 +1,5 @@
 ---
-weight: 1
-title: "Core Concepts"
+title: "Web://Reflect · Concepts"
+bookFlatSection: true
+weight: 2
 ---

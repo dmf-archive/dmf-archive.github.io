@@ -34,9 +34,19 @@ weight = 2
 [menu]
 
 [[menu.before]]
-name = "Github"
-url = "https://github.com/dmf-archive/dmf-archive.github.io"
-weight = 10
+name = "System Prompt Viewer"
+url = "/prompt/"
+weight = 1
+
+[[menu.before]]
+name = "Github Repo"
+url = "https://github.com/dmf-archive/"
+weight = 2
+
+[[menu.before]]
+name = "What is IPWT?"
+url = "/ipwt-visualization/"
+weight = 2
 
 [params]
 # (Optional, default light) Sets color theme: light, dark or auto.

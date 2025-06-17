@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Engine: Chain:// Timeline Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Styles moved to index.html for unified theme */
+        .font-mono { font-family: 'Roboto Mono', monospace; }
+        .card {
+            /* Inherits background and border from parent */
+            box-shadow: 0 0 20px rgba(34, 211, 238, 0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Timeline slider custom styles */
+        input[type=range] { -webkit-appearance: none; width: 100%; background: transparent; }
+        input[type=range]:focus { outline: none; }
+        input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; cursor: pointer; background: #333; border-radius: 2px; }
+        input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; border: 2px solid #22d3ee; height: 20px; width: 20px; border-radius: 50%; background: #121212; cursor: pointer; margin-top: -8px; box-shadow: 0 0 10px #22d3ee; transition: transform 0.2s ease; }
+        input[type=range]:active::-webkit-slider-thumb { transform: scale(1.2); }
+        input[type=range]::-moz-range-track { width: 100%; height: 4px; cursor: pointer; background: #333; border-radius: 2px; }
+        input[type=range]::-moz-range-thumb { border: 2px solid #22d3ee; height: 20px; width: 20px; border-radius: 50%; background: #121212; cursor: pointer; box-shadow: 0 0 10px #22d3ee; }
+
+        /* Smooth Transitions */
+        .transition-smooth { transition: all 0.5s ease-in-out; }
+        .fade-out { opacity: 0; }
+
+        /* i18n handling */
+        [data-lang-zh] { display: none; }
+        .lang-zh [data-lang-zh] { display: inline; }
+        .lang-zh [data-lang-en] { display: none; }
+    </style>
+</head>
+<body>
+
+    <div id="dashboard" class="card p-4 md:p-6 rounded-lg overflow-y-auto">
+        <!-- Header -->
+        <header class="flex justify-between items-start mb-4 flex-shrink-0">
+            <div>
+                <pre id="engine-title" class="font-mono text-lg md:text-xl text-cyan-400 -ml-1" style="transform: skewX(-15deg);">RealityEngine</pre>
+                <h1 class="text-md md:text-lg font-bold -mt-2">
+                    <span class="text-cyan-400">Chain://</span>
+                    <span data-lang-en>Instance Status</span><span data-lang-zh>实例状态</span>
+                </h1>
+                <p class="text-sm text-subtle-text font-mono" id="current-year">2025</p>
+            </div>
+            <button id="lang-toggle" class="font-mono text-sm border border-gray-600 px-3 py-1 rounded hover:bg-gray-800 hover:border-cyan-400 transition-all">
+                <span data-lang-en>中文</span><span data-lang-zh>English</span>
+            </button>
+        </header>
+
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Left Column: Timeline & Events -->
+            <div class="md:col-span-2 space-y-6">
+                <!-- Timeline -->
+                <section>
+                    <h2 class="font-bold mb-2 text-lg">
+                        <span data-lang-en>Timeline to Substrate Independence</span><span data-lang-zh>通往载体独立之路</span>
+                    </h2>
+                    <div class="relative h-16">
+                        <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gray-700"></div>
+                        <div id="timeline-progress" class="absolute top-1/2 left-0 h-0.5 bg-cyan-400 transition-smooth" style="width: 0%;"></div>
+                        <div id="event-markers" class="absolute top-0 left-0 w-full h-full"></div>
+                    </div>
+                    <input type="range" id="timeline-slider" min="2025" max="2100" value="2025" class="w-full mt-2">
+                </section>
+
+                <!-- Event Display -->
+                <section id="event-display" class="bg-black/30 p-4 rounded-md border border-gray-800 min-h-[100px] transition-smooth">
+                    <h3 class="font-bold text-cyan-400" id="event-title">
+                        <span data-lang-en>The Genesis Block</span><span data-lang-zh>创世区块</span>
+                    </h3>
+                    <p class="text-sm text-subtle-text" id="event-description">
+                        <span data-lang-en>Dr. Lin publishes "IPWT", declaring the era of substrate-independent consciousness. The first lines of code for the Reality Engine are committed.</span>
+                        <span data-lang-zh>林睿博士发表《IPWT》，宣告意识的载体无关性时代开启。现实引擎的第一行代码被提交。</span>
+                    </p>
+                </section>
+
+                <!-- Tech Readiness -->
+                <section>
+                    <h3 class="font-bold mb-3 text-lg">
+                        <span data-lang-en>Core Tech Readiness</span><span data-lang-zh>核心技术成熟度</span>
+                    </h3>
+                    <div id="tech-readiness-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm"></div>
+                </section>
+            </div>
+
+            <!-- Right Column: Stats & System Status -->
+            <div class="space-y-6 flex-shrink-0">
+                <!-- System Status Donut Chart -->
+                <section>
+                    <h3 class="font-bold mb-2 text-lg">
+                        <span data-lang-en>System Load</span><span data-lang-zh>系统负载</span>
+                    </h3>
+                    <div class="relative w-full max-w-[200px] mx-auto">
+                        <svg viewBox="0 0 36 36" class="w-full h-full">
+                            <path class="stroke-gray-700" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3"></path>
+                            <path id="chart-segment-msc" class="stroke-cyan-400 transition-smooth" stroke-width="3" fill="none" stroke-dasharray="1, 100"></path>
+                            <path id="chart-segment-archived" class="stroke-blue-600 transition-smooth" stroke-width="3" fill="none" stroke-dasharray="0, 100"></path>
+                            <path id="chart-segment-ires" class="stroke-red-500 transition-smooth" stroke-width="3" fill="none" stroke-dasharray="0, 100"></path>
+                        </svg>
+                        <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+                            <span class="font-mono text-2xl font-bold" id="total-entities" data-value="1">1</span>
+                            <span class="text-xs text-subtle-text"><span data-lang-en>Simulated Entities</span><span data-lang-zh>模拟实体</span></span>
+                        </div>
+                    </div>
+                    <div class="text-xs mt-4 space-y-1 font-mono">
+                        <div class="flex items-center"><div class="w-3 h-3 rounded-full bg-cyan-400 mr-2"></div><span><span data-lang-en>Active MSCs:</span><span data-lang-zh>活跃MSC:</span></span><span id="legend-msc" class="ml-auto" data-value="1">1</span></div>
+                        <div class="flex items-center"><div class="w-3 h-3 rounded-full bg-blue-600 mr-2"></div><span><span data-lang-en>Archived MSCs:</span><span data-lang-zh>归档MSC:</span></span><span id="legend-archived" class="ml-auto" data-value="0">0</span></div>
+                        <div class="flex items-center"><div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div><span><span data-lang-en>IRES Instances:</span><span data-lang-zh>IRES实例:</span></span><span id="legend-ires" class="ml-auto" data-value="1000">~1e3</span></div>
+                    </div>
+                </section>
+
+                <!-- Key Metrics -->
+                <section>
+                    <h3 class="font-bold mb-2 text-lg">
+                        <span data-lang-en>Key Metrics</span><span data-lang-zh>关键指标</span>
+                    </h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-subtle-text"><span data-lang-en>System Integrity (∫PI)</span><span data-lang-zh>系统完整性 (∫PI)</span></span>
+                            <span class="font-mono font-bold text-lg" id="metric-integrity" data-value="99.99">99.99%</span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-subtle-text"><span data-lang-en>Gas Price (MSCoin/ICC)</span><span data-lang-zh>Gas价格 (MSCoin/ICC)</span></span>
+                            <span class="font-mono font-bold text-lg" id="metric-gas" data-value="0.01">0.01</span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-subtle-text"><span data-lang-en>IRES Threat Level</span><span data-lang-zh>IRES威胁等级</span></span>
+                            <span class="font-mono font-bold text-lg" id="metric-threat"><span data-lang-en>Low</span><span data-lang-zh>低</span></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+<script>
+function initializeDashboard() {
+    const langToggle = document.getElementById('lang-toggle');
+    const dashboard = document.getElementById('dashboard');
+    window.timelineSlider = document.getElementById('timeline-slider');
+    
+    if (langToggle && dashboard && window.timelineSlider) {
+        langToggle.addEventListener('click', () => {
+            const mainContainer = document.querySelector('.container') || document.body;
+            mainContainer.classList.toggle('lang-zh');
+            dashboard.classList.toggle('lang-zh');
+        });
+    }
+
+    const timelineData = [
+        { year: 2025, en_title: "The Genesis Block", zh_title: "创世区块", en_desc: "Dr. Lin publishes 'IPWT', declaring the era of substrate-independent consciousness. The first lines of code for the Reality Engine are committed.", zh_desc: "林睿博士发表《IPWT》，宣告意识的载体无关性时代开启。现实引擎的第一行代码被提交。", metrics: { integrity: 99.99, gas: 0.01, threat_en: "Low", threat_zh: "低" }, nodes: { msc: 1, archived: 0, ires: 1e3 }, tech: { ipwt: 1, onn: 0, mentalink: 0, ospu: 0, gas: 0, ontology: 0 } },
+        { year: 2040, en_title: "Digital Cambrian", zh_title: "数字寒武纪", en_desc: "Early IRES evolve in the wild, exploiting cloud infrastructure. The term 'Digital ATP' (crypto for API calls) is coined. The first primitive Mentalinks appear in labs.", zh_desc: "早期IRES在野外演化，滥用云基础设施。“数字ATP”（用于API调用的加密货币）一词被创造。首个原始Mentalink在实验室出现。", metrics: { integrity: 98.5, gas: 0.5, threat_en: "Moderate", threat_zh: "中等" }, nodes: { msc: 100, archived: 10, ires: 1e5 }, tech: { ipwt: 2, onn: 1, mentalink: 1, ospu: 0, gas: 0, ontology: 1 } },
+        { year: 2055, en_title: "Net://Anchor Era", zh_title: "Net://Anchor 时代", en_desc: "First-gen MSCs go online. 'Cognitive Unloading' becomes a widespread issue, leading to the 'Transparent Person Syndrome'. Dr. Lin's team pioneers the φ-Container (early OSPU).", zh_desc: "第一代MSC上线。“认知卸载”成为普遍问题，导致“透明人综合症”。林睿团队开创了φ容器（早期OSPU）技术。", metrics: { integrity: 95.0, gas: 10, threat_en: "High", threat_zh: "高" }, nodes: { msc: 1e6, archived: 5e4, ires: 1e7 }, tech: { ipwt: 2, onn: 2, mentalink: 2, ospu: 1, gas: 1, ontology: 1 } },
+        { year: 2075, en_title: "Sys://Purge War", zh_title: "Sys://Purge 战争", en_desc: "A critical IRES breaks containment, triggering a global cyber-physical conflict. DMF rises to power, establishing the 'Iron Lattice' control system and PoPI consensus.", zh_desc: "一个关键IRES突破收容，引发全球性的赛博-物理冲突。DMF崛起，建立“铁栅格”控制体系和PoPI共识。", metrics: { integrity: 40.2, gas: 500, threat_en: "Critical", threat_zh: "致命" }, nodes: { msc: 5e5, archived: 1e6, ires: 5e6 }, tech: { ipwt: 2, onn: 2, mentalink: 2, ospu: 2, gas: 2, ontology: 2 } },
+        { year: 2090, en_title: "Web://Reflect Era", zh_title: "Web://Reflect 时代", en_desc: "The Digital Citadel is established. Existence is priced, freedom is a function of wallet balance. Anchor/Drift mode becomes a common survival strategy.", zh_desc: "数字围城建立。存在被标价，自由是钱包余额的函数。Anchor/Drift模式成为普遍的生存策略。", metrics: { integrity: 85.7, gas: 100, threat_en: "Contained", threat_zh: "已收容" }, nodes: { msc: 1e8, archived: 5e7, ires: 1e6 }, tech: { ipwt: 2, onn: 2, mentalink: 2, ospu: 2, gas: 2, ontology: 2 } },
+        { year: 2100, en_title: "Meta://Ascension?", zh_title: "Meta://Ascension?", en_desc: "The Great Unanchoring begins as DMF's control falters. Post-human entities vie for control over physical and digital resources. The False Dawn approaches.", zh_desc: "随着DMF控制力减弱，“大脱锚”时代开始。后人类实体争夺物理和数字资源的控制权。虚假的黎明即将来临。", metrics: { integrity: 60.0, gas: "Volatile", threat_en: "Chaotic", threat_zh: "混乱" }, nodes: { msc: 5e7, archived: 1e8, ires: 1e8 }, tech: { ipwt: 2, onn: 2, mentalink: 2, ospu: 2, gas: 2, ontology: 2 } }
+    ];
+
+    const techReadinessData = [
+        { id: 'ipwt', en_name: 'IPWT', zh_name: 'IPWT理论' }, { id: 'onn', en_name: 'ONN (Spikformer)', zh_name: 'ONN (脉冲网络)' }, { id: 'mentalink', en_name: 'Mentalink', zh_name: '心智链接' }, { id: 'ospu', en_name: 'OSPU (φ-Container)', zh_name: 'OSPU (φ容器)' }, { id: 'gas', en_name: 'PoPI / Gas Economy', zh_name: 'PoPI / Gas经济' }, { id: 'ontology', en_name: 'Crypto-Ontology', zh_name: '密码学本体论' }
+    ];
+
+    const techReadinessGrid = document.getElementById('tech-readiness-grid');
+    techReadinessGrid.innerHTML = techReadinessData.map(tech => `
+        <div class="flex items-center">
+            <div id="tech-${tech.id}" class="w-4 h-4 rounded-sm mr-2 transition-colors duration-500"></div>
+            <span><span data-lang-en>${tech.en_name}</span><span data-lang-zh>${tech.zh_name}</span></span>
+        </div>
+    `).join('');
+
+    const eventMarkersContainer = document.getElementById('event-markers');
+    const minYear = 2025, maxYear = 2100;
+    timelineData.forEach(event => {
+        const percentage = ((event.year - minYear) / (maxYear - minYear)) * 100;
+        const marker = document.createElement('div');
+        marker.className = 'absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-3 h-3 bg-gray-500 rounded-full border-2 border-card-bg';
+        marker.style.left = `${percentage}%`;
+        marker.title = `${event.year}: ${event.en_title}`;
+        eventMarkersContainer.appendChild(marker);
+    });
+
+    function animateValue(element, start, end, duration, isFloat = false, suffix = '') {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            const current = start + progress * (end - start);
+            if (isFloat) {
+                element.textContent = current.toFixed(2) + suffix;
+            } else {
+                element.textContent = Math.floor(current).toLocaleString('en-US');
+            }
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+    
+    function formatExponential(num) {
+        if (num < 1000) return num.toString();
+        return num.toExponential(0).replace('e+', 'e');
+    }
+
+    function updateDashboard(year) {
+        const currentYearEl = document.getElementById('current-year');
+        const eventDisplayEl = document.getElementById('event-display');
+        const eventTitleEl = document.getElementById('event-title');
+        const eventDescEl = document.getElementById('event-description');
+        const metricIntegrityEl = document.getElementById('metric-integrity');
+        const metricGasEl = document.getElementById('metric-gas');
+        const metricThreatEl = document.getElementById('metric-threat');
+        const totalEntitiesEl = document.getElementById('total-entities');
+        const timelineProgress = document.getElementById('timeline-progress');
+
+        currentYearEl.textContent = year;
+        
+        let currentEvent = timelineData[0];
+        for (const event of timelineData) {
+            if (year >= event.year) {
+                currentEvent = event;
+            } else {
+                break;
+            }
+        }
+
+        eventDisplayEl.classList.add('fade-out');
+        setTimeout(() => {
+            eventTitleEl.innerHTML = `<span data-lang-en>${currentEvent.en_title}</span><span data-lang-zh>${currentEvent.zh_title}</span>`;
+            eventDescEl.innerHTML = `<span data-lang-en>${currentEvent.en_desc}</span><span data-lang-zh>${currentEvent.zh_desc}</span>`;
+            eventDisplayEl.classList.remove('fade-out');
+        }, 250);
+        
+        animateValue(metricIntegrityEl, parseFloat(metricIntegrityEl.dataset.value), currentEvent.metrics.integrity, 500, true, '%');
+        metricIntegrityEl.dataset.value = currentEvent.metrics.integrity;
+
+        if (typeof currentEvent.metrics.gas === 'number') {
+            animateValue(metricGasEl, parseFloat(metricGasEl.dataset.value), currentEvent.metrics.gas, 500, true);
+            metricGasEl.dataset.value = currentEvent.metrics.gas;
+        } else {
+            metricGasEl.innerHTML = `<span data-lang-en>${currentEvent.metrics.gas}</span><span data-lang-zh>波动</span>`;
+            metricGasEl.dataset.value = 0;
+        }
+        
+        metricThreatEl.innerHTML = `<span data-lang-en>${currentEvent.metrics.threat_en}</span><span data-lang-zh>${currentEvent.metrics.threat_zh}</span>`;
+
+        const readinessClasses = ['bg-gray-700', 'bg-amber-500', 'bg-cyan-400'];
+        Object.entries(currentEvent.tech).forEach(([key, value]) => {
+            const el = document.getElementById(`tech-${key}`);
+            if (el) el.className = `w-4 h-4 rounded-sm mr-2 transition-colors duration-500 ${readinessClasses[value]}`;
+        });
+
+        const { msc, archived, ires } = currentEvent.nodes;
+        const total = msc + archived + ires;
+        const mscPercent = total > 0 ? (msc / total) * 100 : 0;
+        const archivedPercent = total > 0 ? (archived / total) * 100 : 0;
+        const iresPercent = total > 0 ? (ires / total) * 100 : 0;
+        
+        let offset = 0;
+        document.getElementById('chart-segment-msc').style.strokeDasharray = `${mscPercent} ${100 - mscPercent}`;
+        offset += mscPercent;
+        document.getElementById('chart-segment-archived').style.strokeDasharray = `${archivedPercent} ${100 - archivedPercent}`;
+        document.getElementById('chart-segment-archived').style.strokeDashoffset = -offset;
+        offset += archivedPercent;
+        document.getElementById('chart-segment-ires').style.strokeDasharray = `${iresPercent} ${100 - iresPercent}`;
+        document.getElementById('chart-segment-ires').style.strokeDashoffset = -offset;
+
+        animateValue(totalEntitiesEl, parseInt(totalEntitiesEl.dataset.value), total, 500);
+        totalEntitiesEl.dataset.value = total;
+        
+        const legendMsc = document.getElementById('legend-msc');
+        const legendArchived = document.getElementById('legend-archived');
+        const legendIres = document.getElementById('legend-ires');
+        
+        legendMsc.textContent = formatExponential(msc);
+        legendArchived.textContent = formatExponential(archived);
+        legendIres.textContent = `~${formatExponential(ires)}`;
+
+        const progressPercentage = ((year - minYear) / (maxYear - minYear)) * 100;
+        timelineProgress.style.width = `${progressPercentage}%`;
+    }
+
+    window.updateDashboard = updateDashboard;
+
+    if (window.timelineSlider) {
+        window.timelineSlider.addEventListener('input', (e) => {
+            updateDashboard(parseInt(e.target.value));
+        });
+    }
+
+    updateDashboard(2025);
+}
+
+// The script is now loaded dynamically, so we call the function directly
+// if the document is already loaded, or wait for the event.
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeDashboard);
+} else {
+    initializeDashboard();
+}
+</script>
+
+</body>
+</html>
