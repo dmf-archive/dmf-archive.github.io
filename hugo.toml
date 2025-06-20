@@ -34,17 +34,17 @@ weight = 2
 [menu]
 
 [[menu.before]]
-name = "System Prompt Viewer"
+name = "Web://Reflect · Prompt Viewer"
 url = "/prompt/"
 weight = 1
 
 [[menu.before]]
-name = "Github Repo"
+name = "Github · DMF Archive"
 url = "https://github.com/dmf-archive/"
 weight = 2
 
 [[menu.before]]
-name = "What is IPWT?"
+name = "Slice · What is IPWT?"
 url = "/ipwt-visualization/"
 weight = 2
 

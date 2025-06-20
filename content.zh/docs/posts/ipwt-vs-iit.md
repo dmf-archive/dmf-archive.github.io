@@ -17,7 +17,7 @@ date: 2025-06-16
 >
 > **原文链接:** <a href="https://github.com/dmf-archive/IPWT"><img src="https://img.shields.io/badge/Theory-IPWT-blue?style=flat-square" alt="Theory: IPWT"/></a>
 >
-> **DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15676305.svg)](https://doi.org/10.5281/zenodo.15676305)
+> **DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15676305.svg)](https://doi.org/10.5281/zenodo.15676304)
 
 在意识科学的宏伟殿堂里，朱利奥·托诺尼（Giulio Tononi）的整合信息理论（Integrated Information Theory, IIT）无疑是一座丰碑。它以近乎数学公理的优雅，试图为意识——这个最主观的体验——戴上客观定量的枷锁。IIT 告诉我们，意识是信息整合的产物，其量度 Φ（Phi）值代表了一个物理系统作为整体所拥有的、无法被其部分所解释的因果力量。
 

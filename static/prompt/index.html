@@ -178,6 +178,17 @@
             display: block;
         }
 
+        .quote-container {
+            border-left: 4px solid #ccc;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            color: #555; /* Light theme default */
+        }
+
+        .quote-container p {
+            margin: 0.5rem 0;
+        }
+
         /* Dark Theme */
         @media (prefers-color-scheme: dark) {
             body:not(.light-theme) {
@@ -201,8 +212,10 @@
             body:not(.light-theme) .markdown-content h6,
             body:not(.light-theme) .markdown-content pre,
             body:not(.light-theme) .lang-dropdown-content,
-            body:not(.light-theme) .copy-button {
+            body:not(.light-theme) .copy-button,
+            body:not(.light-theme) .quote-container {
                 border-color: #333;
+                color: #bbb; /* Dark theme color for quote */
             }
             body:not(.light-theme) .content-header,
             body:not(.light-theme) .markdown-content code,
@@ -242,8 +255,10 @@
         body.dark-theme .markdown-content h6,
         body.dark-theme .markdown-content pre,
         body.dark-theme .lang-dropdown-content,
-        body.dark-theme .copy-button {
+        body.dark-theme .copy-button,
+        body.dark-theme .quote-container {
             border-color: #333;
+            color: #bbb; /* Dark theme color for quote */
         }
         body.dark-theme .content-header,
         body.dark-theme .markdown-content code,
@@ -282,6 +297,11 @@
         </header>
 
         <main>
+            <div class="quote-container">
+                <p class="quote-zh" style="display: none;">本prompt经过多轮LLM测试优化：追求精确叙事推荐Gemini-Flash/Pro，偏好创意表达建议DeepSeek-R1/V3。ChatGPT/Claude需额外调整提示词才能达到最佳效果。</p>
+                <p class="quote-en" style="display: none;">This prompt has been optimized through multiple LLM tests: Gemini-Flash/Pro for precise narration, DeepSeek-R1/V3 for creative expression. ChatGPT/Claude requires additional prompt tuning for optimal results.</p>
+            </div>
+
             <nav class="tabs" id="tab-navigation">
                 <button data-module="web-reflect">Web://Reflect</button>
                 <button data-module="metalayer">MetaLayer</button>
@@ -302,11 +322,13 @@
                 this.languageDropdown = this.$('language-dropdown');
                 this.languageToggle = this.$('language-toggle');
                 this.themeToggle = this.$('theme-toggle');
+                this.quoteZh = document.querySelector('.quote-zh');
+                this.quoteEn = document.querySelector('.quote-en');
 
                 this.modules = {
                     'web-reflect': {
-                        zh: { file: '../prompt/realityengine-reflect-2.1.0.md', name: 'realityengine-reflect-2.1.0.md' },
-                        en: { file: '../prompt/realityengine-reflect-2.1.0.en.md', name: 'realityengine-reflect-2.1.0.en.md' }
+                        zh: { file: '../prompt/realityengine-reflect-2.1.1.md', name: 'realityengine-reflect-2.1.1.md' },
+                        en: { file: '../prompt/realityengine-reflect-2.1.1.en.md', name: 'realityengine-reflect-2.1.1.en.md' }
                     },
                     'metalayer': {
                         zh: { file: '../prompt/remodule/remodule-metalayer-1.0-raw.md', name: 'remodule-metalayer-1.0-raw.md' },
@@ -323,7 +345,18 @@
             init() {
                 this.setupTheme();
                 this.setupEventListeners();
+                this.updateQuoteDisplay();
                 this.loadContent(this.currentModule, this.currentLang);
+            }
+
+            updateQuoteDisplay() {
+                if (this.currentLang === 'zh') {
+                    this.quoteZh.style.display = 'block';
+                    this.quoteEn.style.display = 'none';
+                } else {
+                    this.quoteZh.style.display = 'none';
+                    this.quoteEn.style.display = 'block';
+                }
             }
 
             setupTheme() {
@@ -371,6 +404,7 @@
                         localStorage.setItem('preferredLang', this.currentLang);
                         this.languageContainer.classList.remove('active');
                         this.updateUrlLangParam(this.currentLang);
+                        this.updateQuoteDisplay();
                         this.loadContent(this.currentModule, this.currentLang);
                     }
                 });

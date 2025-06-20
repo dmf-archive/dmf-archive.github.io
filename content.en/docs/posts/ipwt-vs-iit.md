@@ -17,7 +17,7 @@ date: 2025-06-16
 >
 > **Original:** <a href="https://github.com/dmf-archive/IPWT"><img src="https://img.shields.io/badge/IPWT-In%20world%20version-blue?style=flat-square" alt="IPWT In world version"/></a>
 >
-> **DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15676305.svg)](https://doi.org/10.5281/zenodo.15676305)
+> **DOI:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15676305.svg)](https://doi.org/10.5281/zenodo.15676304)
 
 In the grand temple of consciousness science, Giulio Tononi's Integrated Information Theory (IIT) is undoubtedly a monument. With an elegance approaching mathematical axioms, it attempts to place an objective, quantitative yoke on consciousness—the most subjective of experiences. IIT tells us that consciousness is the product of integrated information, and its measure, Φ (Phi), represents the causal power a physical system possesses as a whole, irreducible to its parts.
 
