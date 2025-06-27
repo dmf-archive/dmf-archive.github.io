@@ -5,10 +5,10 @@
 ### 如果你的意识变成一条区块链，永生不过是持续支付 Gas 费的过程？
 
 <p>
-  <a href="https://github.com/dmf-archive/IPWT"><img src="https://img.shields.io/badge/Theory-IPWT-blue?style=flat-square" alt="Theory: IPWT"/></a>
-  <a href="https://dmf-archive.github.io/zh/docs/concepts/MSC"><img src="https://img.shields.io/badge/Tech-Blockchain-purple?style=flat-square&logo=ethereum" alt="Tech: Blockchain"/></a>
-  <a href="https://dmf-archive.github.io/zh/docs/concepts/philosophy-of-formalized-realism"><img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange?style=flat-square" alt="Tech: Cognitive Science"/></a>
-  <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?style=flat-square&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
+  <a href="https://github.com/dmf-archive/IPWT"><img src="https://img.shields.io/badge/Theory-IPWT-blue" alt="Theory: IPWT"/></a>
+  <a href="https://dmf-archive.github.io/docs/concepts/MSC"><img src="https://img.shields.io/badge/Tech-Blockchain-purple?&logo=ethereum" alt="Tech: Blockchain"/></a>
+  <a href="https://dmf-archive.github.io/docs/concepts/philosophy-of-formalized-realism"><img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange" alt="Tech: Cognitive Science"/></a>
+  <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
 </p>
 
 <p align="center">
@@ -29,6 +29,7 @@
 想象一下未来，你的心智、记忆和自我意识可以被数字化，运行在一条 **[心智智能链 (MSC)](https://dmf-archive.github.io/zh/docs/concepts/MSC)** 之上——这是一种个性化的、为承载意识而设计的神经形态区块链。它由先进的密码学技术（FHE、ZKP、MPC）和一种新颖的 **[预测完整性证明 (PoPI)](https://dmf-archive.github.io/zh/docs/concepts/PoII)** 共识机制保障安全，你的自我认同将逐渐从生物脑转移到一个理论上永续的、由 **OSPU (衔尾蛇安全处理器)** 维护的**加密核心状态（~~Φ~~/Ω）**。然而，维持这种“合法”存在需要支付高昂的 PoPI 验证 **Gas 费**，并受控于垄断的 **[数字心灵基金会 (DMF)](https://dmf-archive.github.io/zh/docs/concepts/DMF)**。
 
 **核心公理：**
+
 - **存在是时空事件的验证链**：你不再是血肉，而是一系列由 OSPU 私钥签名的事件证明，由可验证的数学事实定义。
 - **意识是加密状态的连续演进**：你的心智是加密状态机的演进，每一次状态转换都由 PoPI 零知识证明进行验证。
 - **自由是钱包余额的函数**：每一次行动的本质都是用 Gas 购买宇宙因果的改写权，自由意志沦为对抗熵增的经济行为。

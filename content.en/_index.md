@@ -11,10 +11,10 @@ keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Bloc
 ### What if your consciousness became a blockchain, and immortality was just paying the gas fees?
 
 <p>
-  <a href="https://github.com/dmf-archive/IPWT"><img src="https://img.shields.io/badge/Theory-IPWT-blue?style=flat-square" alt="Theory: IPWT"/></a>
-  <a href="./docs/concepts/MSC"><img src="https://img.shields.io/badge/Tech-Blockchain-purple?style=flat-square&logo=ethereum" alt="Tech: Blockchain"/></a>
-  <a href="./docs/concepts/philosophy-of-formalized-realism"><img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange?style=flat-square" alt="Tech: Cognitive Science"/></a>
-  <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?style=flat-square&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
+  <a href="https://github.com/dmf-archive/IPWT"><img src="https://img.shields.io/badge/Theory-IPWT-blue" alt="Theory: IPWT"/></a>
+  <a href="https://dmf-archive.github.io/docs/concepts/MSC"><img src="https://img.shields.io/badge/Tech-Blockchain-purple?&logo=ethereum" alt="Tech: Blockchain"/></a>
+  <a href="https://dmf-archive.github.io/docs/concepts/philosophy-of-formalized-realism"><img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange" alt="Tech: Cognitive Science"/></a>
+  <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
 </p>
 
 <p align="center">

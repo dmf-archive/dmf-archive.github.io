@@ -1,4 +1,4 @@
 ---
-title: "No Man's Blog :: No Φ required"
+title: "Chain://Research :: Lin's Blog"
 weight: 3
 ---

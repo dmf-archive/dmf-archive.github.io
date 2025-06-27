@@ -39,7 +39,7 @@ MSC (Mental Smart Chain) operates based on four major technical modules, none of
 
 Early theories of consciousness upload, such as Integrated Information Theory (IIT), attempted to quantify consciousness (φ value) through physical causal topology. However, IPWT explicitly states that IIT's φ value calculation is physically infeasible, and its strong binding to physical causal topology makes it unsuitable for substrate-independent digital consciousness.
 
-Web://Reflect's setting evolved from the initial exploration of IIT in `static/prompt/old/realityengine-reflect-0.3.0.md`, to the introduction of the φ matched orders mechanism in `static/prompt/old/realityengine-reflect-1.0.0.md`, and finally proposed **IPWT (Integrated Predictive Workspace Theory)** as the ultimate solution in `static/prompt/realityengine-reflect-2.1.1.md`. IPWT posits that consciousness is a product of prediction-driven, workspace-based, information integration, and introduces quantifiable metrics:
+Web://Reflect's setting evolved from the initial exploration of IIT in `static/prompt/old/realityengine-reflect-0.3.0.md`, to the introduction of the φ matched orders mechanism in `static/prompt/old/realityengine-reflect-1.0.0.md`, and finally proposed **IPWT (Integrated Predictive Workspace Theory)** as the ultimate solution in `static/prompt/realityengine-reflect-2.1.2.md`. IPWT posits that consciousness is a product of prediction-driven, workspace-based, information integration, and introduces quantifiable metrics:
 
 - **Instantaneous Information Integration ($\Omega_t$)**: The theoretical gold standard for consciousness integration, measuring the synergistic information (CI) produced by a set of information units in predicting a target, relative to their total predictive information (total mutual information). The essence of consciousness is $\Omega$.
 - **Predictive Integrity (PI)**: As a computable proxy for $\Omega_t$, PI indirectly reflects the level of information integration by measuring the system's predictive performance. The higher the PI value, the more efficiently the system is predicting, and the higher the clarity of consciousness.
@@ -49,7 +49,7 @@ The essence of PoPI is to verify the information integration degree (Ω) of digi
 
 ### 2.3 The Truth About Computing Costs and the Quantum Scam
 
-According to the setting in `static/prompt/realityengine-reflect-2.1.1.md`:
+According to the setting in `static/prompt/realityengine-reflect-2.1.2.md`:
 
 - Maintaining a standard human consciousness level ONN-MSC, the actual daily technical cost in the 2090s is approximately **0.0327 ICC** (equivalent to about 1 USD/day in the real world).
 - Maintaining a super-human consciousness level ONN-MSC, the actual daily technical cost is approximately **1.634 ICC** (roughly the price of a cup of coffee).
