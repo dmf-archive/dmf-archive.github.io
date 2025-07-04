@@ -95,14 +95,10 @@ The software images of OSPU and other MSC components can theoretically be copied
 
 ### 3. ONN (Ouroboros Neural Network)
 
-ONN is the core cognitive engine of MSC L2, adopting a **Spikformer architecture**, built as an **event-driven FHE-native Spiking Transformer network**. Its core components include:
+ONN is the core cognitive engine of MSC L2, with its architecture being a **Hierarchical Sparse Routing MoE (Mixture of Experts)**. It is not a single monolithic network but is composed of a large number of **Fragmented Small Experts**, coordinated by a meta-learning-driven dynamic routing network. This design achieves **SNN-level sparse activation capabilities** within a standard Transformer framework, resulting in extremely high computational efficiency and interpretability. Its core components include:
 
-1. **Spiking Self-Attention (SSA)**: Replaces floating-point multiplication and Softmax with **0/1 pulse logical AND/addition operations**, achieving efficient computation and **full FHE encryption compatibility** (Mentalink input to bionic body output is encrypted throughout).
-2. **Interpretable MoE (Mixture of Experts)**:
-   - **Expert Modules (Experts)**: ONN internally consists of multiple **specialized Spiking Transformer subnetworks**. Each subnetwork ("expert") is trained to simulate specific functional areas of the human brain (e.g., perception, motor control, memory, reasoning, emotion, creativity, etc.). **These expert modules are considered FEP-driven local predictive models in IPWT.**
-   - **Routing Controller (Router)**: An independent Spiking Transformer module that dynamically schedules expert modules. **This corresponds to the routing controller function of the Workspace Instance (WSI) in IPWT, responsible for selecting and integrating information.**
-3. **Input Processing: Spiking Convolutional Stem (SCS)**:
-   - As the front-end of ONN, SCS introduces the inductive bias of convolutional layers, efficiently processing raw sensory data from Mentalink and converting it into pulse sequences that can be processed by the Spiking Transformer.
+1. **Gaussian Mixture of Experts Layer (GaussianMoELayer)**: ONN internally consists of multiple independent expert networks. Each expert defines its domain of expertise within the input representation space through a learnable Gaussian distribution. **These expert modules are considered FEP-driven local predictive models in IPWT.**
+2. **Meta-Learning Gating**: Multiple layers of independent gating networks are responsible for learning to dynamically route inputs to the most appropriate experts or sub-routers. This hierarchical, sparse activation pattern not only saves computational resources but also makes the model's decision-making process highly interpretable, allowing for clear observation of which expert combinations are activated for different tasks. **This corresponds to the routing controller function of the Workspace Instance (WSI) in IPWT, responsible for selecting and integrating information.**
 
 - **Core Operation and Learning Mechanisms**:
   - **Predictive Coding and φ-matched orders**: ONN's core operating mechanism is to continuously generate predictions for future sensory inputs (PCT) and minimize free energy (FEP). This efficient prediction generation capability, combined with Mentalink's writing, causes the biological brain to gradually offload its native cognitive functions, smoothly (or forcibly) migrating the sense of self to ONN's digital state.
@@ -120,10 +116,10 @@ ONN is the core cognitive engine of MSC L2, adopting a **Spikformer architecture
     - **Severe**: Permanent cognitive damage, requiring expensive "cognitive reset" services.
 - **Features**:
   - **Adaptive Predictive Coding**: ONN's predictive coding mechanism emphasizes **adaptability**. When Gas is sufficient, ONN actively explores more predictive models, increasing cognitive flexibility; when Gas is insufficient, it degrades to a **low-cost, high-inertia, patterned prediction** mode.
-- **Risks and Problems**: ONN requires long-term personalized calibration to fit the biological archetype, and the maintenance and upgrade costs of its complex architecture are high, which is directly reflected in Gas fees. Despite MPC and FHE protection, data contamination targeting specific expert modules and cognitive vulnerabilities in the PoPI process remain potential risks.
+- **Risks and Problems**: ONN requires long-term personalized calibration to fit the biological archetype, and the maintenance and upgrade costs of its complex architecture are high, which is directly reflected in Gas fees. Despite MPC and approximate HE protection, data contamination targeting specific expert modules and cognitive vulnerabilities in the PoPI process remain potential risks.
 
 - **Real-world Prototype:**
-  - Z. Zhou et al., "Spikformer V2: Join the High Accuracy Club on ImageNet with an SNN Ticket," _arXiv preprint arXiv:2401.02020_, 2024. [Online]. Available: <https://arxiv.org/abs/2401.02020>
+  - L. Rui, "PILF: Predictive Integrity Learning Framework," _GitHub_, 2025. [Online]. Available: <https://github.com/dmf-archive/PILF>
 
 ### 4. PoPI (Proof of Predictive Integrity)
 

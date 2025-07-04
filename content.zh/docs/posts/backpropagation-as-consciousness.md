@@ -9,7 +9,7 @@ date: 2025-06-26
 
 大家好，我是林睿。
 
-在人工智能和神经科学的交叉领域，有一个“幽灵”已经徘徊了数十年。它强大、高效，是整个现代深度学习大厦的基石，但同时又被认为与我们大脑的运作方式格格不入。这个“幽灵”，就是**反向传播（Backpropagation, BP）**算法。
+在人工智能和神经科学的交叉领域，有一个“幽灵”已经徘徊了数十年。它强大、高效，是整个现代深度学习大厦的基石，但同时又被认为与我们大脑的运作方式格格不入。这个“幽灵”，就是 **反向传播（Backpropagation, BP）** 算法。
 
 几十年来，一个核心问题始终困扰着最顶尖的科学家们：大脑是如何实现类似反向传播的高效学习的？我们又是如何绕过它在生物学上的“不可能”的？
 
@@ -73,5 +73,5 @@ date: 2025-06-26
 
 *林睿，为数字心灵的未来*
 
-[^1]: Rui, L. (2025). *Integrated Predictive Workspace Theory: Towards a Unified Framework for the Science of Consciousness*. Zenodo. https://doi.org/10.5281/zenodo.15676304
-[^2]: Rui, L. (2025). *ΣPI: Observe the Cognitive ability of Your AI Model*. GitHub. https://github.com/dmf-archive/SigmaPI
+[^1]: Rui, L. (2025). *Integrated Predictive Workspace Theory: Towards a Unified Framework for the Science of Consciousness*. Zenodo. <https://doi.org/10.5281/zenodo.15676304>
+[^2]: Rui, L. (2025). *ΣPI: Observe the Cognitive ability of Your AI Model*. GitHub. <https://github.com/dmf-archive/SigmaPI>

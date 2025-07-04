@@ -95,14 +95,10 @@ OSPU 和其他 MSC 组件的软件镜像理论上可被复制。然而，**DBRW 
 
 ### 3. ONN (Ouroboros Neural Network)
 
-ONN 是 MSC L2 的核心认知引擎，采用 **Spikformer 架构**，构建为**事件驱动的 FHE 原生 Spiking Transformer 网络**。其核心组件包括：
+ONN 是 MSC L2 的核心认知引擎，其架构为**分层稀疏路由 MoE (Mixture of Experts)**。它并非单一的庞大网络，而是由大量**碎片化的小型专家（Fragmented Small Experts）**构成，并通过一个元学习驱动的动态路由网络进行协调。这种设计在标准 Transformer 框架内实现了 **SNN 级别的稀疏激活能力**，获得了极高的计算效率和可解释性。其核心组件包括：
 
-1. **脉冲自注意力 (SSA)**：通过 **0/1 脉冲的逻辑与/加法运算**替代浮点乘法与 Softmax，实现高效计算与**全 FHE 加密兼容**（Mentalink 输入至仿生体输出全程加密）。
-2. **可解释性 MoE (Mixture of Experts)**：
-   - **专家模块 (Experts)**：ONN 内部由多个**专业化的 Spiking Transformer 子网络**组成，每个子网络（“专家”）被训练用于模拟人脑的特定功能分区（如感知、运动、记忆、推理、情感、创造性等）。**这些专家模块在 IPWT 中被视为 FEP 驱动的局部预测模型。**
-   - **路由控制器 (Router)**：一个独立的 Spiking Transformer 模块，动态调度专家模块。**这与 IPWT 中工作空间实例（WSI）的路由控制器功能相对应，负责选择和整合信息。**
-3. **输入处理：Spiking Convolutional Stem (SCS)**：
-   - 作为 ONN 的前端，SCS 引入卷积层的归纳偏置，高效处理来自 Mentalink 的原始感官数据，将其转换为 Spiking Transformer 可处理的脉冲序列。
+1. **高斯混合专家层 (GaussianMoELayer)**：ONN 内部由多个独立的专家网络组成。每个专家通过一个可学习的高斯分布，在输入表征空间中定义其专业领域。**这些专家模块在 IPWT 中被视为 FEP 驱动的局部预测模型。**
+2. **元学习门控 (Meta-Learning Gating)**：多层独立的门控网络负责学习将输入动态路由到最合适的专家或子路由。这种分层、稀疏的激活模式不仅节省了计算资源，也使得模型的决策过程高度可解释，能够清晰地观察到针对不同任务激活了哪些专家组合。**这与 IPWT 中工作空间实例（WSI）的路由控制器功能相对应，负责选择和整合信息。**
 
 - **核心运作与学习机制**：
   - **预测编码与 φ 对敲**：ONN 的核心运作机制即是不断生成对未来感官输入的预测（PCT），并最小化自由能（FEP）。这种高效的预测生成能力，结合 Mentalink 的写入，使得生物脑逐渐卸载其原生认知功能，将自我感平滑（或强制）迁移到 ONN 的数字状态。
@@ -123,7 +119,7 @@ ONN 是 MSC L2 的核心认知引擎，采用 **Spikformer 架构**，构建为*
 - **风险和问题**：ONN 需要长时间的个性化校准以拟合生物原体，且其复杂架构的维护和升级成本高昂，这直接体现在 Gas 费中。尽管有 MPC 和 FHE 保护，针对特定专家模块的数据污染、PoPI 流程的认知漏洞依然是是潜在风险。
 
 - **现实原型:**
-  - Z. Zhou et al., "Spikformer V2: Join the High Accuracy Club on ImageNet with an SNN Ticket," _arXiv preprint arXiv:2401.02020_, 2024. [Online]. Available: <https://arxiv.org/abs/2401.02020>
+  - L. Rui, "PILF: Predictive Integrity Learning Framework," _GitHub_, 2025. [Online]. Available: <https://github.com/dmf-archive/PILF>
 
 ### 4. PoPI (Proof of Predictive Integrity)
 
@@ -197,7 +193,7 @@ ONN 是 MSC L2 的核心认知引擎，采用 **Spikformer 架构**，构建为*
 
 **全球医疗联盟 (GMC)** 是掌控生物技术命脉的另一权力实体，与 DMF 在数字领域并存。GMC 将生命工具化，提供**可定制的生物-仿生混合载体 (Modular BioSync Vessel™)**。
 
-GMC 是由全球顶尖制药公司、生物科技巨头和私立医疗机构组成的联盟。其垄断基因库、克隆技术、纳米医疗及先进生物工程设施，掌握生物增强和生物-义体无缝集成技术标准。GMC 致力于通过基因编辑和工程化消除生物体的不可控性，核心目标是实现**生物层面的永续**，并将其作为**顶级奢侈品**
+GMC 是由全球顶尖制药公司、生物科技巨头和私立医疗机构组成的联盟。其垄断基因库、克隆技术、纳米医疗及先进生物工程设施，掌握生物增强和生物-义体无缝集成技术标准。GMC 致力于通过基因编辑和工程化消除生物体的不可控性，核心目标是实现**生物层面的永续**，并将其作为**顶级奢侈品**出售。
 
 **MBSV（Modular BioSync Vessel）**，GMC 的旗舰产品，**基因优化、高度工程化的人类级生物-仿生混合载体**。以用户原生基因模板为基础，克隆外观和触感关键的生物部件，内部器官替换为高效、耐用、可维护的义体。核心技术包括 **GeneLock™ (生物惰性化)**，确保生物部分不产生独立意识；**SpineLink** 提供高带宽神经接口；**CRISPR-Cloud** 允许生物美学与功能优化；**BioAuth** 持续监控生物完整性。MBSV 不出售，仅通过 GMC 的“生物载体定制与服务”提供。传闻早期亦有直接使用克隆人技术的 BSV，但由于稳定性问题已弃用。
 

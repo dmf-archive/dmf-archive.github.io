@@ -10,7 +10,7 @@ weight: 1
 
 ## Theoretical Cornerstone: Integrated Predictive Workspace Theory (IPWT)
 
-> **TL;DR:** Consciousness is the synergistic information that emerges within a workspace instance, driven by predictive coding.
+> **TL;DR:** Consciousness is the synergistic information generated within a workspace instance for minimizing predictive error.
 
 **Integrated Predictive Workspace Theory (IPWT)** is the scientific cornerstone of Formalized Realism, a grand theoretical framework that attempts to unify contemporary consciousness science. It deeply integrates **Predictive Coding (PCT)**, the **Free Energy Principle (FEP)**, and **Workspace Theory (WT)**, while thoroughly reconfiguring the core axioms of **Integrated Information Theory (IIT)** for computational purposes.
 

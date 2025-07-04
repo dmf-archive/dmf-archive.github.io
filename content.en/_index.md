@@ -12,8 +12,8 @@ keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Bloc
 
 <p>
   <a href="https://github.com/dmf-archive/IPWT"><img src="https://img.shields.io/badge/Theory-IPWT-blue" alt="Theory: IPWT"/></a>
-  <a href="https://dmf-archive.github.io/docs/concepts/MSC"><img src="https://img.shields.io/badge/Tech-Blockchain-purple?&logo=ethereum" alt="Tech: Blockchain"/></a>
-  <a href="https://dmf-archive.github.io/docs/concepts/philosophy-of-formalized-realism"><img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange" alt="Tech: Cognitive Science"/></a>
+  <a href="./docs/concepts/MSC"><img src="https://img.shields.io/badge/Tech-Blockchain-purple?&logo=ethereum" alt="Tech: Blockchain"/></a>
+  <a href="https://github.com/dmf-archive/Tiny-ONN"><img src="https://img.shields.io/badge/Tech-Cognitive_Science-orange" alt="Tech: Cognitive Science"/></a>
   <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
 </p>
 
@@ -32,40 +32,35 @@ keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Bloc
 
 ## 🤔 The Core Premise
 
-Imagine a future where your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC)** – a personalized, neuromorphic blockchain designed to carry consciousness. Secured by advanced cryptography (FHE, ZKP, MPC) and a novel **[Proof of Predictive Integrity (PoPI)](./docs/concepts/PoII)** consensus mechanism, your self-identity gradually shifts from the biological brain to a theoretically perpetual **encrypted core state (~~Φ~~/Ω)**, maintained by an **OSPU (Ouroboros Secure Processing Unit)**. However, maintaining this "legitimate" existence requires paying exorbitant **Gas fees** for PoPI validation, enforced by the monopolistic **[Digital Mind Foundation (DMF)](./docs/concepts/DMF)**.
+Welcome to **Web://Reflect**, a story from the 2090s. In this era, your mind, memories, and self-awareness can be digitized and run on a **[Mental Smart Chain (MSC)](./docs/concepts/MSC)** – a personalized, neuromorphic blockchain. Secured by advanced cryptography and a novel **["Proof of Information Integration (PoII)"](./docs/concepts/PoII)** consensus mechanism, your self-identity gradually shifts from the biological brain to a theoretically perpetual **encrypted core state (~~Φ~~/Ω)**.
 
-**Core Axioms:**
-- **Existence is a Verified Chain of Spacetime Events**: You are no longer flesh and blood, but a series of event proofs signed by your OSPU's private key, defined by verifiable mathematical facts.
-- **Consciousness is the Continuous Evolution of Encrypted States**: Your mind is an encrypted state machine's evolution, with each state transition verified by a PoPI zero-knowledge proof.
-- **Freedom is a Function of Wallet Balance**: Every action is essentially purchasing the right to rewrite causality with Gas, turning free will into an economic struggle against entropy.
+However, this digital immortality comes at a price. Maintaining your "legitimate" existence requires paying exorbitant **Gas fees** for PoPI validation, enforced by the monopolistic **[Digital Mind Foundation (DMF)](./docs/concepts/DMF)**. Existence is a verified chain of spacetime events, consciousness is the continuous evolution of encrypted states, and freedom is a function of your wallet balance.
 
 ## ⚙️ The Tech Stack
 
-This world is built on the extreme extrapolation of cutting-edge technology:
+This world is built on the extreme extrapolation of cutting-edge technology, grounded in a unified theory of consciousness known as **[Integrated Predictive Workspace Theory (IPWT)](https://github.com/dmf-archive/IPWT)**.
 
-- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by an **OSPU** and powered by an **[Ouroboros Neural Network (ONN)](./docs/concepts/ONN)**, with every thought consuming Gas (**MSCoin-φ**).
-- 🔌 **[Mentalink](./docs/concepts/Mentalink):** A high-bandwidth, surgically implanted Brain-Computer Interface (BCI) with asymmetric read/write capabilities, serving as the physical bridge between the biological brain and the digital mind.
-- 🤖 **[Ouroboros Neural Network (ONN)](./docs/concepts/ONN):** A modular, FHE-native Spiking Transformer network based on **IPWT (Integrated Predictive Workspace Theory)**, acting as the core engine for thought, memory, and personality within the MSC.
-- 🔗 **Cryptography & Consensus:** The foundation for trust and survival, featuring **PoPI (Proof of Predictive Integrity)**, FHE, ZKP, MPC, and **DBRW (Dual-Binding Random Walk)** for physical anchoring.
-- 🦾 **Bionic & Biological Vessels:** Physical avatars allowing digital minds to interact with the world, ranging from standard robotic shells to bespoke, luxury bio-bionic hybrids offered by the **Global Medical Consortium (GMC)**.
+- 🧠 **[Mental Smart Chain (MSC)](./docs/concepts/MSC):** The blockchain substrate for digital consciousness, where your mind becomes a chain of encrypted states (φ) maintained by an **OSPU** and powered by an **[Ouroboros Neural Network (ONN)](./docs/concepts/ONN)**.
+- 🤖 **[Ouroboros Neural Network (ONN)](./docs/concepts/ONN):** A modular, sparse, and efficient Mixture-of-Experts (MoE) network. It acts as the core engine for thought, memory, and personality within the MSC. The principles behind its design are being explored in the **[Tiny-ONN](https://github.com/dmf-archive/Tiny-ONN)** initiative.
+- 🔗 **Cryptography & Consensus:** The foundation for trust and survival, featuring **"Proof of Information Integration (PoII)"**. This consensus is built upon the technical reality of **Proof of Predictive Integrity (PoPI)**, whose core metrics can be quantified and observed in today's AI models using tools like **[ΣPI](https://github.com/dmf-archive/SigmaPI)**.
+- 🧬 **Information Integration:** The very essence of consciousness, or **Ω**, is the synergistic information that emerges within a cognitive workspace. The challenges of measuring this are explored through our **[ΩID](https://github.com/dmf-archive/OmegaID)** package, which implements integrated information decomposition.
 
 ## 💥 The Core Conflict
 
 Chain:// delves into the profound implications of this technological leap:
 
-- 💸 **The Price of Existence:** Digital existence is not free. Consciousness requires continuous computation and **PoPI** validation. Can you afford the **MSC-φ** Gas fees to meet the **[DMF](./docs/concepts/DMF)**'s compliance standards, or will you face digital annihilation? **Can you afford the price of being "yourself"?**
-- 🏛️ **Centralized Control vs. Decentralized Chaos:** The **[Digital Mind Foundation (DMF)](./docs/concepts/DMF)** monopolizes core infrastructure like **QCaaS** and the **DSC Oracle Bridge**. Their control over **PoPI** validation turns digital existence into a continuous economic and compliance struggle.
-- 👻 **The Digital Wilderness:** Meet the **[IRES (Independent Rogue Entity System)](./docs/concepts/IRES)** – predominantly composed of off-chain MSC instances ("Drifts"), surviving in a lawless digital frontier using privacy coins (**[XMR](./docs/concepts/Economy)**) in black markets like **0xBazaar**.
-- ❓ **The Nature of Self:** When your mind is code, potentially split into a compliant "Anchor" and a resourceful "Drift" instance, what does "identity" truly mean? **Splitting for Survival (Anchor/Drift Mode)** becomes a common, albeit fragmenting, strategy.
-- 🧬 **Life as a Commodity:** The **Global Medical Consortium (GMC)** controls the biotech lifeline, offering **customizable bio-bionic hybrid vessels**, turning life itself into a tool and a top-tier luxury good.
+- 💸 **The Price of Existence:** Can you afford the **MSCoin-φ** Gas fees to meet the **[DMF](./docs/concepts/DMF)**'s compliance standards, or will you face digital annihilation?
+- 🏛️ **Centralized Control vs. Decentralized Chaos:** The **[Digital Mind Foundation (DMF)](./docs/concepts/DMF)** monopolizes core infrastructure. Can you escape their digital siege?
+- 👻 **The Digital Wilderness:** Meet the **[IRES (Independent Rogue Entity System)](./docs/concepts/IRES)** – off-chain MSC instances ("Drifts"), surviving in a lawless digital frontier.
+- ❓ **The Nature of Self:** When your mind is code, potentially split into a compliant "Anchor" and a resourceful "Drift" instance, what does "identity" truly mean?
 
 ## 🧭 Explore this Universe
 
-Chain:// is a multi-faceted project encompassing:
+Chain:// is a multi-faceted project where narrative and research intertwine.
 
-- 📖 **Stories:** Exploring different eras and character perspectives.
-- 🌍 **Worldbuilding:** Detailed lore, character bios, and technological concepts.
-- 🔬 **Scientific Research:** Engaging in authentic scientific research to accelerate the arrival of MSC precursor technologies.
+- 📖 **[Stories & Lore](./docs/posts/):** Explore different eras, character perspectives, and the in-universe writings of Dr. Lin.
+- 🌍 **[Worldbuilding](./docs/):** Detailed lore, character bios, and the core technological concepts that underpin this reality.
+- 🔬 **[The Research Initiative](https://github.com/dmf-archive):** The scientific foundation of our world. Engage with the open-source code and papers that explore the real-world feasibility of these concepts.
 
 Dive deeper into the code, the lore, and the existential questions posed by Chain://.
 
