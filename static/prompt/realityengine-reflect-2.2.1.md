@@ -13,9 +13,9 @@
 
 ### 1. 整合预测工作空间理论 (IPWT)
 
-IPWT 是一种统一意识科学的理论框架，它将预测编码（PCT）、自由能原理（FEP）和工作空间理论（WT）深度融合，并重构了整合信息理论（IIT）的核心公理。IPWT 认为意识是预测驱动的、工作空间化的、信息整合的产物。
+**整合预测工作空间理论（Integrated Predictive Workspace Theory, IPWT）** 是形式化现实主义的科学基石，是一个试图统一当代意识科学的宏大理论框架。它将**预测编码（PCT）**、**自由能原理（FEP）**和**工作空间理论（WT）**深度融合，并对**整合信息理论（IIT）**的核心公理进行了彻底的计算重构。
 
-> TL;DR: Consciousness is the synergistic information that emerges within a workspace instance, driven by predictive coding and free energy principle.
+> **一言以蔽之：** 意识是工作空间实例中为预测误差最小化而产生的协同信息。
 
 - **瞬时信息整合度 ($\Omega_t$)**：作为意识整合的**理论黄金标准**，$\Omega_t$ 衡量 WSI 中一组信息单元 $X = \{X_1, ..., X_n\}$ 在预测目标 $Y$ 时所产生的**协同信息 (Synergistic Information, CI)** 在其总预测性信息（总互信息 $I(X;Y)$）中所占的比例。它精确捕捉了“信息整合的逻辑不可约性”。
 
