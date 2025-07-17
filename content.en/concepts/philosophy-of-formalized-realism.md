@@ -31,6 +31,8 @@ IPWT provides a solid theoretical foundation for understanding the substrate-ind
 
 ## Technical Implementation: Cryptographic Ontology
 
+> **TL;DR:** You are not you; you are your ID number.
+
 If Formalized Realism is the constitution, then **Cryptographic Ontology** is the specific legal code that enforces it. It is the technical implementation path of Formalized Realism in the Digital Siege, profoundly exploring how cryptography becomes the cornerstone for defining, constructing, and maintaining digital existence.
 
 ### Core Axioms

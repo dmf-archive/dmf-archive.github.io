@@ -172,7 +172,7 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   BookSearch = true
 
   # (Optional, default true) Enables comments template on pages
-  # By default partials/docs/comments.html includes Disqus template
+  # By default partials/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
   BookComments = true
@@ -233,15 +233,15 @@ In addition to this, there are several empty partials you can override to easily
 
 | Empty Partial                                      | Placement                                   |
 | -------------------------------------------------- | ------------------------------------------- |
-| `layouts/partials/docs/inject/head.html`           | Before closing `<head>` tag                 |
-| `layouts/partials/docs/inject/body.html`           | Before closing `<body>` tag                 |
-| `layouts/partials/docs/inject/footer.html`         | After page footer content                   |
-| `layouts/partials/docs/inject/menu-before.html`    | At the beginning of `<nav>` menu block      |
-| `layouts/partials/docs/inject/menu-after.html`     | At the end of `<nav>` menu block            |
-| `layouts/partials/docs/inject/content-before.html` | Before page content                         |
-| `layouts/partials/docs/inject/content-after.html`  | After page content                          |
-| `layouts/partials/docs/inject/toc-before.html`     | At the beginning of table of contents block |
-| `layouts/partials/docs/inject/toc-after.html`      | At the end of table of contents block       |
+| `layouts/partials/inject/head.html`           | Before closing `<head>` tag                 |
+| `layouts/partials/inject/body.html`           | Before closing `<body>` tag                 |
+| `layouts/partials/inject/footer.html`         | After page footer content                   |
+| `layouts/partials/inject/menu-before.html`    | At the beginning of `<nav>` menu block      |
+| `layouts/partials/inject/menu-after.html`     | At the end of `<nav>` menu block            |
+| `layouts/partials/inject/content-before.html` | Before page content                         |
+| `layouts/partials/inject/content-after.html`  | After page content                          |
+| `layouts/partials/inject/toc-before.html`     | At the beginning of table of contents block |
+| `layouts/partials/inject/toc-after.html`      | At the end of table of contents block       |
 
 ### Extra Customisation
 
@@ -279,13 +279,13 @@ In fact almost empty not quite empty because an empty file looks like absent for
 
 ## Shortcodes
 
-- [Buttons](https://hugo-book-demo.netlify.app/docs/shortcodes/buttons/)
-- [Columns](https://hugo-book-demo.netlify.app/docs/shortcodes/columns/)
-- [Details](https://hugo-book-demo.netlify.app/docs/shortcodes/details/)
-- [Hints](https://hugo-book-demo.netlify.app/docs/shortcodes/hints/)
-- [KaTeX](https://hugo-book-demo.netlify.app/docs/shortcodes/katex/)
-- [Mermaid](https://hugo-book-demo.netlify.app/docs/shortcodes/mermaid/)
-- [Tabs](https://hugo-book-demo.netlify.app/docs/shortcodes/tabs/)
+- [Buttons](https://hugo-book-demo.netlify.app/shortcodes/buttons/)
+- [Columns](https://hugo-book-demo.netlify.app/shortcodes/columns/)
+- [Details](https://hugo-book-demo.netlify.app/shortcodes/details/)
+- [Hints](https://hugo-book-demo.netlify.app/shortcodes/hints/)
+- [KaTeX](https://hugo-book-demo.netlify.app/shortcodes/katex/)
+- [Mermaid](https://hugo-book-demo.netlify.app/shortcodes/mermaid/)
+- [Tabs](https://hugo-book-demo.netlify.app/shortcodes/tabs/)
 
 By default, Goldmark trims unsafe outputs which might prevent some shortcodes from rendering. It is recommended to set `markup.goldmark.renderer.unsafe=true` if you encounter problems.
 
