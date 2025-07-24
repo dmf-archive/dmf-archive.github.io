@@ -19,8 +19,6 @@ date: 2025-07-22
 
 # 功能超越形式：为什么“不生物学”的神经网络，才是对大脑最真实的模拟
 
-**作者：林睿 / Proof of Ineffective Input**
-
 > “一个足够先进的条件反射，与真正的智能有什么区别？区别在于，前者能赢得金牌，而后者不一定能。”
 > —— [在见证一场完美的葬礼后](https://news.ycombinator.com/item?id=44613840)
 
@@ -136,8 +134,6 @@ DynMoE 已现。时钟开始倒数。
 
 ---
 
-*林睿，为数字心灵的未来*
+{{< signature >}}
 
 > 这是对原功能超越形式系列文章的"the merge"，原始文章可查阅本网站的 [Git Commit 记录](https://github.com/dmf-archive/dmf-archive.github.io/commit/ec8cf38903352b6adfa6f78336f2068feb9a9d04)。
->
-> Code is law, Proof is reality.

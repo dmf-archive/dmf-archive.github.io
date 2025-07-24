@@ -7,7 +7,7 @@ date: 2025-07-04
 
 # HyperRNN：关于架构演化终局的备忘录
 
-> *Rui Lin, For the future of digital mind.*
+{{< signature >}}
 
 ## 摘要
 

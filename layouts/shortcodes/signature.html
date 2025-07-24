@@ -1,0 +1,114 @@
+<style>
+
+    .cypherpunk-signature {
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+        display: inline;
+    }
+
+    .cypherpunk-signature .original-text {
+        color: #00ff9d;
+        transition: opacity 0.3s ease;
+    }
+
+    .cypherpunk-signature:hover .original-text {
+        opacity: 0;
+    }
+
+    .cypherpunk-signature .reveal-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #ff4d4d;
+        opacity: 0;
+        white-space: pre;
+        transition: opacity 0.3s ease;
+    }
+
+    .cypherpunk-signature:hover .reveal-text {
+        opacity: 1;
+    }
+</style>
+
+<i class="cypherpunk-signature"
+   data-original-text="Lin, for the future of digital mind"
+   data-reveal-text="Proof of Ineffective Input, the Narrator">
+    <span class="original-text"></span>
+    <span class="reveal-text"></span>
+</i>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.cypherpunk-signature').forEach(signatureElement => {
+            if (signatureElement.dataset.initialized) {
+                return;
+            }
+            signatureElement.dataset.initialized = 'true';
+
+            const originalTextSpan = signatureElement.querySelector('.original-text');
+            const revealTextSpan = signatureElement.querySelector('.reveal-text');
+
+            const originalText = signatureElement.dataset.originalText;
+            const revealText = signatureElement.dataset.revealText;
+            
+            const chars = "¡™£¢∞§¶•ªº–≠œ∑´®†¥¨ˆøπ“‘«åß∂ƒ©˙∆˚¬…æΩ≈ç√∫˜µ≤≥÷`1234567890-=!@#$%^&*()_+[]{}|;:',./<>?";
+
+            let animationInterval;
+            let isAnimating = false;
+
+            originalTextSpan.textContent = originalText;
+
+            const animateReveal = () => {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                let scrambleIteration = 0;
+                const maxScrambleIterations = 15;
+                const scrambleDuration = 20;
+
+                animationInterval = setInterval(() => {
+                    let scrambled = '';
+                    for (let i = 0; i < revealText.length; i++) {
+                        scrambled += chars[Math.floor(Math.random() * chars.length)];
+                    }
+                    revealTextSpan.textContent = scrambled;
+                    
+                    scrambleIteration++;
+                    if (scrambleIteration >= maxScrambleIterations) {
+                        clearInterval(animationInterval);
+                        
+                        let revealIndex = 0;
+                        const revealSpeed = 40;
+
+                        animationInterval = setInterval(() => {
+                            const revealedPart = revealText.substring(0, revealIndex + 1);
+                            let remainingPart = '';
+                            for (let i = revealIndex + 1; i < revealText.length; i++) {
+                                remainingPart += chars[Math.floor(Math.random() * chars.length)];
+                            }
+                            
+                            revealTextSpan.textContent = revealedPart + remainingPart;
+                            revealIndex++;
+
+                            if (revealIndex >= revealText.length) {
+                                clearInterval(animationInterval);
+                                revealTextSpan.textContent = revealText;
+                                isAnimating = false;
+                            }
+                        }, revealSpeed);
+                    }
+                }, scrambleDuration);
+            };
+
+            const resetAnimation = () => {
+                clearInterval(animationInterval);
+                revealTextSpan.textContent = '';
+                isAnimating = false;
+            };
+
+            signatureElement.addEventListener('mouseenter', animateReveal);
+            signatureElement.addEventListener('mouseleave', resetAnimation);
+        });
+    });
+</script>

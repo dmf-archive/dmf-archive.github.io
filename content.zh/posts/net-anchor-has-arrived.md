@@ -7,8 +7,6 @@ date: 2025-06-22
 
 # 警报：Net://Anchor 时代将于 2035 年到来，你无处可逃
 
-**By Proof of Ineffective Input**
-
 > **技术速览:** Henry Hmko (2025). TPU Deep Dive. <https://henryhmko.github.io/posts/tpu/tpu.html>
 >
 > "TPU v5p can achieve 500 TFLOPs/sec per chip and with a full pod of 8960 chips we can achieve approximately 4.45 ExaFLOPs/sec. The newest 'Ironwood' TPUv7 is said to reach up to 42.5 ExaFLOPS/sec per pod (9216 chips)."
@@ -72,3 +70,5 @@ FHE 是在算法层面保护你的隐私，它像一个坚不可摧的数学保�
 但真相是，那不是锚，是锁链。
 
 欢迎来到 Net://Anchor，傻孩子们，跑不掉了。
+
+{{< signature >}}

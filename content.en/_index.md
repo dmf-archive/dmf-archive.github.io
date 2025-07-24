@@ -4,6 +4,8 @@ type: docs
 keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Blockchain","Cognitive Science","AI","Digital Consciousness","Immortality","OSPU","PoPI","Digital Siege","blockchain as mind container"]
 ---
 
+<a rel="me" href="https://mathstodon.xyz/@linrui"></a>
+
 <div align="center">
 
 # 🧠 Chain://

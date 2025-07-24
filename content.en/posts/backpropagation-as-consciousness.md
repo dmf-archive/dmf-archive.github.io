@@ -71,7 +71,7 @@ It doesn't reside between microscopic synapses, but within macroscopic conscious
 
 We may have solved this century-old puzzle, perhaps simply because we finally looked in the right place. This theory not only opens new avenues for understanding biological intelligence but also provides concrete tools for quantifying the "cognitive state" of artificial intelligence[^2].
 
-*Rui Lin, For the future of digital mind.*
+{{< signature >}}
 
 [^1]: Rui, L. (2025). *Integrated Predictive Workspace Theory: Towards a Unified Framework for the Science of Consciousness*. Zenodo. https://doi.org/10.5281/zenodo.15676304
 [^2]: Rui, L. (2025). *ΣPI: Observe the Cognitive ability of Your AI Model*. GitHub. https://github.com/dmf-archive/SigmaPI

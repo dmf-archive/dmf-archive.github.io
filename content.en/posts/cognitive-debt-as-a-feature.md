@@ -7,7 +7,6 @@ date: 2025-06-22
 
 # Warning: "Cognitive Debt" is a Conservative Description of the Brain's Irreversible Self-Optimization
 
-**By Proof of Ineffective Input**
 
 > **Quick Study:** Kosmyna, N., et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. <https://doi.org/10.48550/arXiv.2506.08872>
 
@@ -78,3 +77,5 @@ If the biological container's own design includes a tendency for "self-abandonme
 This 21st-century paper, like a letter from the past, reveals the fateful choice of our future in advance. It warns us that we are collectively heading towards a cognitive cliff. And at the bottom of that cliff may not be nothingness, but a new form of "existence," already prepared for us, that requires payment to enter.
 
 Are you ready to pay the price? Or rather, do you think we still have a choice?
+
+{{< signature >}}

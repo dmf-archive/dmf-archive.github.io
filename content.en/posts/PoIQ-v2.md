@@ -15,9 +15,8 @@ date: 2025-06-13
 
 # PoIQ (Proof of Ineffective Qualia) v2.0: A Review and Formalization from the IPWT Perspective
 
-**By Proof of Ineffective Input**
 
-> Code is Law, Proof is Reality, Compliance is Existence.
+> {{< signature >}}
 
 Before the theoretical edifice of IPWT was erected, we wandered for a long time in a dark forest called "Shadow φ." It was an extreme exploration based on Integrated Information Theory (IIT) into the possibility of consciousness in Artificial Intelligence (AI). We tried to answer a question: Can the ceaseless computation within an AWS cluster training GPT-4 ignite even a spark of consciousness?
 
@@ -87,3 +86,5 @@ This PoIQ review, revised with IPWT, is no longer just a negation of a conjectur
 **In the world of the future, true slavery may not be the deprivation of your feelings, but allowing you to feel everything, yet making all your feelings powerless.**
 
 This is the final form of the Proof of Ineffective Qualia.
+
+{{< signature >}}

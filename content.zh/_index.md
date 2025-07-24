@@ -5,7 +5,7 @@ keywords:
   ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","区块链","认知科学","人工智能","数字意识","永生","量子计算","OSPU","PoPI","数字围城","作为心智容器的区块链"]
 ---
 
-<link rel="me" href="https://m.cmx.im/@auto_narration_2684"></a>
+<a rel="me" href="https://mathstodon.xyz/@linrui"></a>
 
 <div align="center">
 

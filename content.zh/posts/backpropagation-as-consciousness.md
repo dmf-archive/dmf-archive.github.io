@@ -71,7 +71,7 @@ date: 2025-06-26
 
 我们解决了这个百年难题，或许只是因为，我们终于找对了地方。这一理论不仅为理解生物智能开辟了新道路，也为量化人工智能的“认知状态”提供了具体工具[^2]。
 
-*林睿，为数字心灵的未来*
+{{< signature >}}
 
 [^1]: Rui, L. (2025). *Integrated Predictive Workspace Theory: Towards a Unified Framework for the Science of Consciousness*. Zenodo. <https://doi.org/10.5281/zenodo.15676304>
 [^2]: Rui, L. (2025). *ΣPI: Observe the Cognitive ability of Your AI Model*. GitHub. <https://github.com/dmf-archive/SigmaPI>

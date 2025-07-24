@@ -7,7 +7,6 @@ date: 2025-06-22
 
 # Alert: The Net://Anchor Era Arrives in 2035. You Cannot Escape
 
-**By Proof of Ineffective Input**
 
 > **Tech Brief:** Henry Hmko (2025). TPU Deep Dive. <https://henryhmko.github.io/posts/tpu/tpu.html>
 >
@@ -72,3 +71,5 @@ They will call it the `Net://Anchor` era, a great age where your fragile, crumbl
 But the truth is, it's not an anchor. It's a chain.
 
 Welcome to Net://Anchor, you fools. There's no escape.
+
+{{< signature >}}

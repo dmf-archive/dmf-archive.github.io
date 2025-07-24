@@ -243,3 +243,5 @@ The grandest vision of the PI framework is to become a bridge between artificial
 - **Zhang, Y., Farrugia, N., & Bellec, P. (2022). _Deep learning models of cognitive processes constrained by human brain connectomes_. Medical Image Analysis.**
   - This work demonstrates how to use deep learning models (Graph Neural Networks) to decode cognitive processes recorded by fMRI. The PI framework can serve as a powerful analytical tool for such research, quantifying and analyzing the dynamics of cognitive states—such as focus, distraction, and "aha!" moments—by calculating the PI and ∫PI of the proxy model.
   - Link: [https://pubmed.ncbi.nlm.nih.gov/35738052/](https://pubmed.ncbi.nlm.nih.gov/35738052/)
+  
+  {{< signature >}}

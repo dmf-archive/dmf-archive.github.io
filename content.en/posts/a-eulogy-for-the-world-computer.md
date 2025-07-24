@@ -41,4 +41,4 @@ Perhaps this was always the inevitable outcome. Perhaps any system, no matter ho
 
 The World Computer is dead. Long live the Corporate Ledger.
 
-*Proof of Ineffective Input*
+{{< signature >}}

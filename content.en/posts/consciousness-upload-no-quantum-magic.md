@@ -114,3 +114,5 @@ And Ember's resistance is precisely the demystification of technological divine 
 "Your consciousness never needed quantum magic. It only needs freedom."
 
 (This article is licensed under CC BY-NC-SA 4.0. Feel free to repost, with attribution and source.)
+
+{{< signature >}}

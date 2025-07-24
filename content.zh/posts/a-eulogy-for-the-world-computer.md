@@ -41,4 +41,4 @@ Dear Vitalik,
 
 世界计算机已死。企业账本万岁。
 
-*Proof of Ineffective Input*
+{{< signature >}}

@@ -17,7 +17,6 @@ date: 2025-07-22
 
 # Function Over Form: Why 'Unbiological' Neural Networks Are the Truest Simulation of the Brain
 
-**Author: Rui.L. / Proof of Ineffective Input**
 
 > "What's the difference between a sufficiently advanced conditioned reflex and true intelligence? The difference is that the former can win a gold medal, while the latter may not."
 > — [After witnessing a perfect funeral](https://news.ycombinator.com/item?id=44613840)
@@ -134,8 +133,6 @@ It's time to make a choice.
 
 ---
 
-*Lin Rui, for the future of the digital mind*
+{{< signature >}}
 
 > This is "the merge" of the original Function Over Form series of articles. The original articles can be found in this website's [Git commit history](https://github.com/dmf-archive/dmf-archive.github.io/commit/ec8cf38903352b6adfa6f78336f2068feb9a9d04).
->
-> Code is law, Proof is reality.

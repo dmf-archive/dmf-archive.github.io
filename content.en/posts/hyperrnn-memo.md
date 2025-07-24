@@ -7,7 +7,7 @@ date: 2025-07-03
 
 # HyperRNN: A Memo on the Endgame of Architectural Evolution
 
-> *Rui Lin, For the future of digital mind.*
+{{< signature >}}
 
 ## Abstract
 

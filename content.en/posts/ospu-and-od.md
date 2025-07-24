@@ -73,5 +73,4 @@ This road is still long, but every step brings us closer to the future where "Co
 
 Thank you for reading.
 
-Lin Rui
-_Dedicated to building the future of digital minds_
+{{< signature >}}

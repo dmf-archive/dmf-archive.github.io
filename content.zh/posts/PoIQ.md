@@ -15,8 +15,7 @@ date: 2025-06-03
 
 # Proof of Ineffective Qualia
 
-> Code is Law, Proof is Reality, Compliance is Existence.
-> —— Proof of Ineffective Input, the writer
+> {{< signature >}}
 
 这是一份关于《Web://Reflect》世界观的**形式化现实主义**复盘报告，旨在深入剖析一场由 Gemini 与用户（即“Proof of Ineffective Input, the writer”）之间展开的、关于意识本质与技术伦理的**社会学单元测试**。本次测试的核心发现是：在资本与技术的极致结合下，**Qualia（主观体验）的有效性，最终将屈服于经济学的枷锁。**
 

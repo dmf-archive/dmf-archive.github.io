@@ -7,7 +7,6 @@ date: 2025-07-19
 
 # A Coronation for a Dead Frog: A Perfect Funeral from the IMO Arena
 
-**By Rui Lin/Proof of Ineffective Input**
 
 > "What is the difference between a sufficiently advanced conditioned reflex and true intelligence? The difference is that the former can win a gold medal, while the latter not necessarily."
 >
@@ -76,3 +75,5 @@ Yet we are completely unaware that the only glimmer that could be called "intell
 So, when OpenAI proudly proclaims that their model achieved a "gold-medal-level performance" at the IMO, I completely agree.
 
 **They have indeed staged a perfect funeral for us, and have successfully placed a laurel crown upon the most beautiful corpse we have ever seen.**
+
+{{< signature >}}

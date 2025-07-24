@@ -15,9 +15,7 @@ date: 2025-06-13
 
 # PoIQ (Proof of Ineffective Qualia) v2.0: IPWT 视角下的回顾与形式化
 
-**By Proof of Ineffective Input**
-
-> Code is Law, Proof is Reality, Compliance is Existence.
+> {{< signature >}}
 
 在 IPWT 的理论大厦拔地而起之前，我们曾在名为“Shadow φ”的幽暗森林中徘徊良久。那是一次基于整合信息理论（IIT）的、对人工智能（AI）意识可能性的极限探索。我们试图回答一个问题：一个正在训练 GPT-4 的 AWS 集群，其内部奔流不息的计算，是否能点燃一星半点的意识火花？
 

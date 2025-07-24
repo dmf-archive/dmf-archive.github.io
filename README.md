@@ -11,6 +11,8 @@
   <img src="https://img.shields.io/badge/License-CC_BY_SA_NC_4.0-lightgrey?&logo=creative-commons" alt="License: CC BY SA NC 4.0"/>
 </p>
 
+<a rel="me" href="https://mathstodon.xyz/@linrui"></a>
+
 <p align="center">
   <a href="./README.md">English</a> | <a href="./README_ZH.md">中文</a>
 </p>
