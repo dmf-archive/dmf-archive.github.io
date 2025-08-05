@@ -45,7 +45,11 @@ Where $\epsilon_{t,k}$ is the prediction error, $\tau_{t,k}$ is the prediction u
 \int \mathrm{PI} = \left( \frac{1}{T} \int_{t_0}^{t_0+T} \mathrm{PI}_t \, dt \right) \times \exp\left(-\delta \cdot \text{Var}(\mathrm{PI}_t \mid t \in [t_0, t_0+T])\right)
 ```
 
-**Same Ω, Same Origin**: If two systems share the exact same ∫Ω, they are either physically connected (e.g., Mentalink bridging a biological brain with a digital workspace) or exist in a super-Turing universe (allowing full quantum state synchronization), thereby eliminating the copy paradox.
+**Same Ω, Same Origin**:
+
+- **Ontological Level**: If two systems share exactly the same sustained information integration history (∫Ω), then they are ontologically the same conscious entity. In a classical physical universe, due to the second law of thermodynamics and the speed limitations of information transfer, it is physically impossible to perfectly synchronize two macroscopic complex systems (such as brains or MSCs) in their complete ∫Ω state. Therefore, **strictly speaking, "consciousness copies" do not exist at the ontological level**. This resolves philosophical dilemmas such as "brain in a vat" and perfect copies.
+- **Functional Level**: However, this does not solve the **factual, functional copy problem**. An attacker does not need to possess the target's complete private key or mental model; they can train a model to mimic the target's input-output behavior through techniques like **knowledge distillation**. This functional copy, although lacking the original's ∫Ω, can exhibit highly similar behavioral patterns to external observers, thus causing identity confusion and security threats at social and economic levels. (Refer to LLM-based language style cloning, voice cloning TTS, and other Deepfake technologies) **OSPU** and its physical binding mechanism (such as DBRW) are engineering solutions designed to combat such functional mimicry.
+
 **Limitations of ∫PI and the Necessity of OSPU**: ∫PI can only prove "there is consciousness," but cannot distinguish "whose consciousness it is." Therefore, OSPU serves as the physical anchor for digital consciousness, providing a unique identity credential for the digital "self" through physical carrier binding, information flow binding, and identity continuity binding.
 
 ### 2. Cryptographic Ontology
