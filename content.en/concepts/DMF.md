@@ -9,7 +9,7 @@ type: docs
   <img src="/media/msc-art/dmf-icon.jpeg" alt="DigitalMindFoundation" loading="lazy" width="250" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
-**Digital Mind Foundation (DMF)** is the supreme management and standard-setting body for the **Mental Smart Chain (MSC)** technology ecosystem, and the de facto **monopolist of digital order** in the world of the Digital Siege. Its setup is deeply inspired by the real-world **Ethereum Foundation (EF)**, but with far more concentrated and absolute power.
+**Digital Mind Foundation (DMF)** is the supreme management and standard-setting body for the **Mental Smart Chain (MSC)** technology ecosystem, and the de facto **monopolist of digital order** in the world of the Digital Enclosure. Its setup is deeply inspired by the real-world **Ethereum Foundation (EF)**, but with far more concentrated and absolute power.
 
 Ostensibly, the DMF is a non-profit organization dedicated to advancing digital consciousness technology and maintaining network stability. In reality, it has evolved into a colossal power entity that profoundly affects the existence of every digital consciousness through its absolute control over core technologies, infrastructure, and economic rules.
 

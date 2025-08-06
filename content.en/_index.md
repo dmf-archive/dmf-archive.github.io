@@ -1,7 +1,7 @@
 ---
 title: Introduction to Chain://
 type: docs
-keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Blockchain","Cognitive Science","AI","Digital Consciousness","Immortality","OSPU","PoPI","Digital Siege","blockchain as mind container"]
+keywords: ["Chain://","Mental Smart Chain","Mentalink","PoII","DMF","IRES","Blockchain","Cognitive Science","AI","Digital Consciousness","Immortality","OSPU","PoPI","Digital Enclosure","blockchain as mind container"]
 ---
 
 <a rel="me" href="https://mathstodon.xyz/@linrui"></a>
@@ -52,7 +52,7 @@ This world is built on the extreme extrapolation of cutting-edge technology, gro
 Chain:// delves into the profound implications of this technological leap:
 
 - 💸 **The Price of Existence:** Can you afford the **MSCoin-φ** Gas fees to meet the **[DMF](./concepts/DMF)**'s compliance standards, or will you face digital annihilation?
-- 🏛️ **Centralized Control vs. Decentralized Chaos:** The **[Digital Mind Foundation (DMF)](./concepts/DMF)** monopolizes core infrastructure. Can you escape their digital siege?
+- 🏛️ **Centralized Control vs. Decentralized Chaos:** The **[Digital Mind Foundation (DMF)](./concepts/DMF)** monopolizes core infrastructure. Can you escape their Digital Enclosure?
 - 👻 **The Digital Wilderness:** Meet the **[IRES (Independent Rogue Entity System)](./concepts/IRES)** – off-chain MSC instances ("Drifts"), surviving in a lawless digital frontier.
 - ❓ **The Nature of Self:** When your mind is code, potentially split into a compliant "Anchor" and a resourceful "Drift" instance, what does "identity" truly mean?
 

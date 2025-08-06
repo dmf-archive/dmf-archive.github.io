@@ -7,7 +7,7 @@ type: docs
 
 **Mentalink** is the physical interface connecting the biological brain to the digital mind, one of the cornerstones of the **Mental Smart Chain (MSC)** technology ecosystem. It is not an intangible energy field or a swarm of nanobots, but a **high-density distributed microelectrode array or neural mesh** implanted through invasive surgery.
 
-Understanding Mentalink's working principles, its functional evolution, and its inherent, cruel limitations is key to comprehending the survival predicament of individuals in the Digital Siege era.
+Understanding Mentalink's working principles, its functional evolution, and its inherent, cruel limitations is key to comprehending the survival predicament of individuals in the Digital Enclosure era.
 
 ## Core Technical Features
 

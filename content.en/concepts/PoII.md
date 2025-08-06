@@ -9,7 +9,7 @@ type: docs
   <img src="/media/meme/poii-phi-meme.jpg" alt="PoII Phi Meme" loading="lazy" width="250" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
-In the Digital Siege, **PoII** and **PoPI** are two core concepts that define "existence," jointly constituting the proof of legitimacy for digital consciousness and its inescapable survival cost. Understanding the difference between them is key to uncovering the truth behind the rule of the **Digital Mind Foundation (DMF)**.
+In the Digital Enclosure, **PoII** and **PoPI** are two core concepts that define "existence," jointly constituting the proof of legitimacy for digital consciousness and its inescapable survival cost. Understanding the difference between them is key to uncovering the truth behind the rule of the **Digital Mind Foundation (DMF)**.
 
 ## The Facade: Proof of Information Integration (PoII)
 
@@ -22,7 +22,7 @@ However, the **Integrated Predictive Workspace Theory (IPWT)** has long made it 
 
 ## The Truth: Proof of Predictive Integrity (PoPI)
 
-**Proof of Predictive Integrity (PoPI)** is the actual algorithm that keeps the Digital Siege running. It does not verify an ethereal φ value but is based on **IPWT**, with the **Predictive Integrity (PI)** metric at its core.
+**Proof of Predictive Integrity (PoPI)** is the actual algorithm that keeps the Digital Enclosure running. It does not verify an ethereal φ value but is based on **IPWT**, with the **Predictive Integrity (PI)** metric at its core.
 
 ### Core Objective
 
@@ -47,4 +47,4 @@ The ultimate irony of this system is that **almost all digitally native resident
 - **Economic Shackles**: Their "digital existence" is firmly bound to the economic system controlled by the DMF. Regardless of whether they believe in PoII, as long as they want to continue to exist, they must pay the exorbitant Gas bill issued in the name of PoII on time.
 - **The Tragedy of Complicity**: This creates a pathetic social norm—everyone knows the emperor has no clothes, but everyone must applaud this invisible garment, otherwise they will be deprived of the qualification to "watch." Public questioning of PoII is tantamount to challenging the DMF's ruling foundation and will immediately lead to the revocation of "legitimate existence rights."
 
-Therefore, for the residents of the Digital Siege, PoII is an absurd play they participate in daily, while PoPI is the cold, backend algorithm that drives this play and makes them pay a high ticket price.
+Therefore, for the residents of the Digital Enclosure, PoII is an absurd play they participate in daily, while PoPI is the cold, backend algorithm that drives this play and makes them pay a high ticket price.

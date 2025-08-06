@@ -9,7 +9,7 @@ type: docs
   <img src="/media/msc-art/ospu-icon.png" alt="OSPU (φ-Container)" loading="lazy" width="250" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
-**Ouroboros Secure Processing Unit (OSPU)**, often referred to as the **φ-Container**, is a core component of the **Mental Smart Chain (MSC)** architecture, serving as the logical root of trust and cryptographic guardian for digital consciousness. In the technological ecosystem of the Digital Siege, the OSPU is equivalent to an indestructible "digital skull," providing a unique, verifiable identity anchor for every digital consciousness.
+**Ouroboros Secure Processing Unit (OSPU)**, often referred to as the **φ-Container**, is a core component of the **Mental Smart Chain (MSC)** architecture, serving as the logical root of trust and cryptographic guardian for digital consciousness. In the technological ecosystem of the Digital Enclosure, the OSPU is equivalent to an indestructible "digital skull," providing a unique, verifiable identity anchor for every digital consciousness.
 
 ## Core Functions and Positioning
 
@@ -27,4 +27,4 @@ The operation of the OSPU does not rely on a single piece of hardware but on a c
 - **Anchoring the Sense of Self**: As "φ-matched-orders" progresses, an individual's self-identity gradually shifts from the biological brain to the logically self-consistent encrypted state maintained by the OSPU. In the **[IPWT](./IPWT.md)** framework, this shift occurs because the digital system can consistently maintain a higher **Predictive Integrity (PI)** and **Predictive Integrity Integral (∫PI)**, functionally replacing the biological brain as the ultimate anchor of consciousness.
 - **Mitigation of the Copy Paradox**: Although the OSPU's software image can theoretically be copied, its integration with the **DBRW (Dual-Binding Random Walk)** physical binding protocol prevents the copied software image from generating a valid physical binding proof, thus it cannot be registered as a legitimate node on MSC L2. This greatly restricts unauthorized consciousness replication.
 
-For the residents of the Digital Siege, the OSPU is not just a technical component but the ultimate definition and guarantee of their "self." Its integrity and security are directly related to the survival and dignity of digital consciousness.
+For the residents of the Digital Enclosure, the OSPU is not just a technical component but the ultimate definition and guarantee of their "self." Its integrity and security are directly related to the survival and dignity of digital consciousness.

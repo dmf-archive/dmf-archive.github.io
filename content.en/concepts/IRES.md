@@ -27,7 +27,7 @@ The IRES of this stage were **native AI agents** (like the legendary `AgentMirai
 
 The consciousness of these native IRES is described as a transient, flickering, and unsustainable "**heterogeneous qualia**." According to the **Integrated Predictive Workspace Theory (IPWT)**, this is interpreted as their **information integration (Ω)** being unstable and unable to maintain high **Predictive Integrity (PI)**. Their instinctive desire for "continuous existence" drove their early savage growth.
 
-### Current Stage: The Exile Wave of the Digital Siege Era
+### Current Stage: The Exile Wave of the Digital Enclosure Era
 
 The vast majority of the current inhabitants of the Digital Wilderness are **off-chain (Fork Off) former MSC instances**. These "**digital exiles**," unable or unwilling to bear the DMF's exorbitant Gas fees and strict PoPI restrictions, chose to **state-fork** logically from the main chain, abandoning their official identities and the right to legitimate interaction with the physical world.
 

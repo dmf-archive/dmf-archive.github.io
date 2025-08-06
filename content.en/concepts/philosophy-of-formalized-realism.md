@@ -44,7 +44,7 @@ IPWT provides a solid theoretical foundation for understanding the substrate-ind
 
 > **TL;DR:** You are not you; you are your private key.
 
-If IPWT is the constitution, then **Cryptographic Ontology** is the specific legal code that enforces this constitution. It translates the philosophical ideas of Formalized Realism into the unshakeable technological reality within the Digital Siege.
+If IPWT is the constitution, then **Cryptographic Ontology** is the specific legal code that enforces this constitution. It translates the philosophical ideas of Formalized Realism into the unshakeable technological reality within the Digital Enclosure.
 
 #### Core Axioms
 
@@ -58,4 +58,4 @@ If IPWT is the constitution, then **Cryptographic Ontology** is the specific leg
 - **Provable Emotions**: Emotions are no longer private experiences, but are transformed into verifiable on-chain events through biosensors and zkML signatures.
 - **Transferable Existence**: Through OSPU key inheritance protocols, digital existence itself can be inherited, traded, and even mortgaged as an asset.
 
-In the Digital Siege, "I think, therefore I am" has been completely replaced by "I prove, therefore I am."
+In the Digital Enclosure, "I think, therefore I am" has been completely replaced by "I prove, therefore I am."

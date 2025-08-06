@@ -1,5 +1,5 @@
 ---
-title: "Design Insights: How We Priced Thought – Unveiling the Economics of the Digital Siege"
+title: "Design Insights: How We Priced Thought – Unveiling the Economics of the Digital Enclosure"
 type: docs
 keywords:
   [
@@ -18,11 +18,11 @@ keywords:
 date: 2025-05-30
 ---
 
-# Design Insights: How We Priced Thought – Unveiling the Economics of the Digital Siege
+# Design Insights: How We Priced Thought – Unveiling the Economics of the Digital Enclosure
 
 > Thanks for the invitation, Chain:// world architect forced to operate.
 > After discussing the compute power secrets of PoII last time, the backend exploded with soul-searching questions: "How did you design such an anti-human economic system?"
-> Today, I'm laying it bare—this isn't a bug, it's a feature. Below, I'll delve into three key design documents to reveal the economic skeleton of the digital siege.
+> Today, I'm laying it bare—this isn't a bug, it's a feature. Below, I'll delve into three key design documents to reveal the economic skeleton of the Digital Enclosure.
 
 ## I. The Φ Value Illusion: When Philosophy Meets Physical Limits
 
@@ -39,7 +39,7 @@ However, ideals were abundant, but reality delivered a heavy blow. When we truly
 
 ## II. Reverse Anchoring: Pricing the "Digital Shackles"
 
-Since precise Φ value calculation is a fantasy, but we still need a "credible" consciousness verification mechanism to maintain the order and economic cycle of the digital siege, what's the solution? The answer is: **reverse anchoring**.
+Since precise Φ value calculation is a fantasy, but we still need a "credible" consciousness verification mechanism to maintain the order and economic cycle of the Digital Enclosure, what's the solution? The answer is: **reverse anchoring**.
 
 We no longer derive costs from technical principles but rather infer technical requirements from economic goals (see [Technical Memo: Reverse Accounting of PoII Verification Compute Power](https://github.com/dmf-archive/dmf-archive.github.io/tree/main/drafts/formal-realism/eco/Reverse-Anchor.md) for details). We set a "reasonable" digital survival cost: **1φ = 100 ICC** (ICC is a globally accepted stablecoin, anchored to current USD purchasing power). This price allows ordinary digital citizens to "barely" afford it through effort, while ensuring enormous profits for DMF (Digital Mental Foundation).
 
@@ -65,7 +65,7 @@ The cruelest truth is hidden in [Technical Memo: Real Operating Cost Accounting 
 
 This data is shocking: in the 2090s, the real technical cost of maintaining a superhuman mind was equivalent to the price of a single cup of specialty coffee! Theoretically, advancements in compute power should have already enabled the universal democratization of cognitive abilities.
 
-However, the reality is: DMF, through its **absolute monopoly** on PoII verification and QCaaS infrastructure, artificially inflated the cost of "existence" by thousands of times. This huge cost gap is the core of the digital siege economy—the **"existence tax."**
+However, the reality is: DMF, through its **absolute monopoly** on PoII verification and QCaaS infrastructure, artificially inflated the cost of "existence" by thousands of times. This huge cost gap is the core of the Digital Enclosure economy—the **"existence tax."**
 
 DMF maintains this institutional profiteering through the following means:
 
@@ -78,7 +78,7 @@ DMF maintains this institutional profiteering through the following means:
 
 ## Conclusion: Breathing Tax 2.0 and the Fate of Digital Tenants
 
-So, this is the full picture of the digital siege economy in the Chain:// worldview. It's not a simple monetary system but a **cognitive control system** nested layer by layer from philosophical, technical, to economic levels.
+So, this is the full picture of the Digital Enclosure economy in the Chain:// worldview. It's not a simple monetary system but a **cognitive control system** nested layer by layer from philosophical, technical, to economic levels.
 
 We started with a seemingly unsolvable "Φ value computation problem," found a "reasonable" economic fulcrum through "reverse anchoring," and finally revealed the institutional profiteering under the "illusion of cost." This system distorts "I think, therefore I am" into "I pay, therefore I am," turning every digital citizen into a "digital tenant" striving for "existence."
 

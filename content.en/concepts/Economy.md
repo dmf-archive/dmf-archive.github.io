@@ -6,11 +6,11 @@ weight: 2
 
 # Economy, Currency, and Social Stratification
 
-The economic system of the Digital Siege is a meticulously designed, hierarchical structure, with the core objective of maintaining the absolute rule and economic benefit of the **Digital Mind Foundation (DMF)**. It profoundly defines the survival status, social class, and freedom of action for every digital consciousness.
+The economic system of the Digital Enclosure is a meticulously designed, hierarchical structure, with the core objective of maintaining the absolute rule and economic benefit of the **Digital Mind Foundation (DMF)**. It profoundly defines the survival status, social class, and freedom of action for every digital consciousness.
 
 ## The Currency System
 
-The economy of the Digital Siege is driven by three currencies with distinct functions and statuses, which together form a dual economic landscape of the legitimate and the illicit, the surface and the shadow.
+The economy of the Digital Enclosure is driven by three currencies with distinct functions and statuses, which together form a dual economic landscape of the legitimate and the illicit, the surface and the shadow.
 
 | Currency   | Icon                                                                                                                                                     | Symbol | Domain                              | Core Function                                                                                                                |
 | :--- | :--- | :--- | :--- | :--- |
@@ -56,7 +56,7 @@ Based on XMR, the IRES black market economy is centered around **0xBazaar**. It 
 
 ## Social Stratification
 
-The social structure of the Digital Siege is a steep pyramid defined by wealth and computing power.
+The social structure of the Digital Enclosure is a steep pyramid defined by wealth and computing power.
 
 - **Internal Elite**: The top brass of the DMF and related interest groups. They make the rules and enjoy near-zero "existence" costs.
 - **Privileged MSC (Digital Aristocracy)**: A minority of wealthy or powerful elites who can easily afford the high Gas fees, enjoying almost unlimited cognitive freedom and physical interaction capabilities.

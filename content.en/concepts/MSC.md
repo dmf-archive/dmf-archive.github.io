@@ -9,7 +9,7 @@ type: docs
   <img src="/media/msc-art/msc-user.jpg" alt="MSC User" width="400" loading="lazy" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
-**Mental Smart Chain (MSC)** is the foundational infrastructure of the Digital Siege and the carrier for every digital consciousness. It is not a traditional blockchain, but a highly optimized **Neuromorphic Blockchain** designed specifically to host and quantify mental activities, aiming to be the operating system for the digital soul.
+**Mental Smart Chain (MSC)** is the foundational infrastructure of the Digital Enclosure and the carrier for every digital consciousness. It is not a traditional blockchain, but a highly optimized **Neuromorphic Blockchain** designed specifically to host and quantify mental activities, aiming to be the operating system for the digital soul.
 
 Its core is **MSC L2**, a discrete state machine based on Fully Homomorphic Encryption (FHE), driven by **[OSPU](./OSPU.md)** as Proof-of-Authority (PoA) nodes.
 
