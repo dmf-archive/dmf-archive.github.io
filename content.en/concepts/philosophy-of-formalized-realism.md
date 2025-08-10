@@ -49,7 +49,7 @@ If IPWT is the constitution, then **Cryptographic Ontology** is the specific leg
 #### Core Axioms
 
 1. **Existence is a Verified Chain of Spacetime Events**: An individual's existence is no longer defined by flesh and blood, but by a series of verifiable `PI` / `∫PI` record chains signed by their **OSPU** private key.
-2. **Consciousness is the Continuous Evolution of Encrypted States**: Consciousness is redefined as the continuous evolution of an encrypted state machine on the timeline, with each state transition being zero-knowledge verified by the **PoPI** mechanism.
+2. **Consciousness is the Continuous Evolution of Synergistic States**: Consciousness is redefined as the continuous evolution of a synergistic information state machine on the timeline, with each state transition being zero-knowledge verified by the **PoPI** mechanism.
 3. **Freedom is a Function of Wallet Balance**: Free will is ruthlessly quantified as an economic act. The essence of every action is to purchase the right to rewrite the universe's causality with Gas fees.
 
 #### Corollaries: A Programmable Reality
