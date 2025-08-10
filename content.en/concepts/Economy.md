@@ -36,7 +36,7 @@ The economy of the Digital Enclosure is driven by three currencies with distinct
 
 Strictly controlled by the DMF, centered around MSCoin's Gas consumption and ICC's circulation. Its economic model is designed to lock the vast majority of MSC users into the system, turning them into "self-funded laborers" or **digital tenant farmers**.
 
-- **"Existence Tax"**: The DMF creates a massive cost gap by artificially tying PoPI verification to expensive QCaaS. In the 2090s, the daily true technical cost of maintaining a standard human-level MSC is only **0.0327 ICC**, while the DMF sets the daily basic survival rate at a staggering **100 ICC**. This nearly ten-thousand-fold difference is the naked "existence tax."
+- **"Existence Tax"**: The DMF creates a massive cost gap by artificially tying PoPI verification to expensive QCaaS. In the Web://Reflect era, the daily true technical cost of maintaining a standard human-level MSC is only **0.0327 ICC**, while the DMF sets the daily basic survival rate at a staggering **100 ICC**. This nearly ten-thousand-fold difference is the naked "existence tax."
 - **Cost Shifting**: By conditionally lowering the **DSC Oracle** call fees for "labor-tagged" activities, the DMF encourages users to earn ICC by participating in "legitimate labor" (e.g., controlling bionic bodies), and then use that ICC to pay for the high Gas fees, creating a closed loop of exploitation.
 
 #### Detailed Fee Model

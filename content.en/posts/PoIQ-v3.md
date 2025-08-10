@@ -58,7 +58,7 @@ He became the proof of his own ineffective input.
 
 This is precisely why I felt a shiver. I have written this story countless times in *Web://Reflect*.
 
-In the digital walled city of the 2090s, Ember was a top-tier protocol engineer. He had contributed code to the early open-source versions of the MSC core framework, genuinely believing that technology could save humanity from the crisis of "self-diffusion."
+In the digital walled city of the 2060s, Ember was a top-tier protocol engineer. He had contributed code to the early open-source versions of the MSC core framework, genuinely believing that technology could save humanity from the crisis of "self-diffusion."
 
 Then, the system arrived. The DMF (Digital Mind Foundation), with its iron fist and monopoly, transformed that open, idealistic digital wilderness into a walled city where one had to pay a "gas fee" for every thought. Ember's skills became less scarce, his contributions were buried under standardized AI modules, and he became a "digital proletarian" struggling for survival within the system.
 

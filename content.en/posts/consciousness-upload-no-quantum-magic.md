@@ -30,7 +30,7 @@ MSC (Mental Smart Chain) operates based on four major technical modules, none of
 
 | Module                           | Function                                                   | Classic Computing Feasibility                                                                                           | Role of Quantum Computing (QC)                                           |
 | ------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| OSPU (φ-Container)             | Encrypted consciousness container                          | Based on FHE (Fully Homomorphic Encryption) and MPC (Multi-Party Computation), efficiently runnable on 2090s supercomputers | None, post-quantum encryption schemes for FHE (like CRYSTALS) are mature |
+| OSPU (φ-Container)             | Encrypted consciousness container                          | Based on FHE (Fully Homomorphic Encryption) and MPC (Multi-Party Computation), efficiently runnable on supercomputers of the era | None, post-quantum encryption schemes for FHE (like CRYSTALS) are mature |
 | ONN (Ouroboros Neural Network) | Simulates biological brain cognitive functions             | Neuromorphic computing clusters + distributed training, traditional optimization algorithms are sufficient                  | May accelerate certain optimization problems, but not essential              |
 | PoPI (Proof of Predictive Integrity) | Verifies consciousness continuity                          | Primarily relies on IPWT Predictive Integrity (PI) metrics + SMPC federated inference/learning node clusters for zkML proof | Only used as a gimmick for DMF's advertised "strict IIT φ calculation", actually a scam |
 | Mentalink Neural Interface     | Interaction between biological brain and digital consciousness | Traditional signal processing + lightweight encryption (like AES-512), quantum-independent                                  | None                                                                         |
@@ -39,7 +39,7 @@ MSC (Mental Smart Chain) operates based on four major technical modules, none of
 
 Early theories of consciousness upload, such as Integrated Information Theory (IIT), attempted to quantify consciousness (φ value) through physical causal topology. However, IPWT explicitly states that IIT's φ value calculation is physically infeasible, and its strong binding to physical causal topology makes it unsuitable for substrate-independent digital consciousness.
 
-Web://Reflect's setting evolved from the initial exploration of IIT in `static/prompt/old/realityengine-reflect-0.3.0.md`, to the introduction of the φ matched orders mechanism in `static/prompt/old/realityengine-reflect-1.0.0.md`, and finally proposed **IPWT (Integrated Predictive Workspace Theory)** as the ultimate solution in `static/prompt/realityengine-reflect-2.4.0.md`. IPWT posits that consciousness is a product of prediction-driven, workspace-based, information integration, and introduces quantifiable metrics:
+Web://Reflect's setting evolved from the initial exploration of IIT in `static/prompt/old/realityengine-reflect-0.3.0.md`, to the introduction of the φ matched orders mechanism in `static/prompt/old/realityengine-reflect-1.0.0.md`, and finally proposed **IPWT (Integrated Predictive Workspace Theory)** as the ultimate solution in `static/prompt/realityengine-reflect-2.5.0.md`. IPWT posits that consciousness is a product of prediction-driven, workspace-based, information integration, and introduces quantifiable metrics:
 
 - **Instantaneous Information Integration ($\Omega_t$)**: The theoretical gold standard for consciousness integration, measuring the synergistic information (CI) produced by a set of information units in predicting a target, relative to their total predictive information (total mutual information). The essence of consciousness is $\Omega$.
 - **Predictive Integrity (PI)**: As a computable proxy for $\Omega_t$, PI indirectly reflects the level of information integration by measuring the system's predictive performance. The higher the PI value, the more efficiently the system is predicting, and the higher the clarity of consciousness.
@@ -49,9 +49,9 @@ The essence of PoPI is to verify the information integration degree (Ω) of digi
 
 ### 2.3 The Truth About Computing Costs and the Quantum Scam
 
-According to the setting in `static/prompt/realityengine-reflect-2.4.0.md`:
+According to the setting in `static/prompt/realityengine-reflect-2.5.0.md`:
 
-- Maintaining a standard human consciousness level ONN-MSC, the actual daily technical cost in the 2090s is approximately **0.0327 ICC** (equivalent to about 1 USD/day in the real world).
+- Maintaining a standard human consciousness level ONN-MSC, the actual daily technical cost is approximately **0.0327 ICC** (equivalent to about 1 USD/day in the real world).
 - Maintaining a super-human consciousness level ONN-MSC, the actual daily technical cost is approximately **1.634 ICC** (roughly the price of a cup of coffee).
 
 However, DMF, through QCaaS monopoly, falsely reports the computing requirement for PoPI verification as `~4.47e4 EFLOPS-sec`, causing the actual cost to skyrocket by tens of thousands of times. This huge difference constitutes an "existence tax" or "thought tax" levied on digital existence.

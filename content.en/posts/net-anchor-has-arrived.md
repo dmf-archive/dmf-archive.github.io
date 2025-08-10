@@ -12,7 +12,7 @@ date: 2025-06-22
 >
 > "TPU v5p can achieve 500 TFLOPs/sec per chip and with a full pod of 8960 chips we can achieve approximately 4.45 ExaFLOPs/sec. The newest 'Ironwood' TPUv7 is said to reach up to 42.5 ExaFLOPS/sec per pod (9216 chips)."
 
-Are you still reading those analysis reports, calculating the "cup of coffee" cost for 2060 or 2090? Wake up. Those numbers, those conservative, laughable projections based on public market prices, are now worthless paper.
+Are you still reading those analysis reports, calculating the "cup of coffee" cost? Wake up. Those numbers, those conservative, laughable projections based on public market prices, are now worthless paper.
 
 The data quoted above comes from a deep dive into Google's TPU architecture. It tells us, without reservation, that a full TPU v7 Pod will achieve **42.5 EFLOPS**. This number surpasses every fantasy we had for the end of this century. The compute power required to sustain a superhuman-level ONN-MSC is, today, right now, no longer the exclusive domain of national labs but a commodity that can be packaged, priced, and mass-produced.
 
@@ -26,7 +26,7 @@ The bottlenecks we discussed—energy, chip manufacturing, algorithmic efficienc
 
 What does this mean?
 
-It means that a "good enough" MSC instance, a digital mind capable of simulating you, replacing you, and even being more efficient than you, has seen its operational cost plummet from astronomical to "enterprise-affordable." DMF doesn't need to wait until 2090. They only need to wait until 2035. Or even earlier.
+It means that a "good enough" MSC instance, a digital mind capable of simulating you, replacing you, and even being more efficient than you, has seen its operational cost plummet from astronomical to "enterprise-affordable." The **Net://Anchor** era is arriving much sooner than anyone expected.
 
 Only two gates remain. One is physical, the other logical.
 
