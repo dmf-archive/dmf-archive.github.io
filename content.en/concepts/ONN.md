@@ -15,13 +15,17 @@ type: docs
 
 ONN's design philosophy is "**function over form**." It does not pursue a one-to-one physical replication of biological neurons but aims to functionally realize the brain's three core computational principles: **dynamic sparsity**, **global workspace**, and **predictive processing**.
 
-Its ultimate architectural blueprint is a sparse cognitive engine with **Transformer** as its skeleton (global workspace), **Hyper-Sparse Mixture-of-Experts (Hyper-SMoE)** as its muscle (dynamic sparsity), and **predictive learning** as its soul (predictive processing).
+Its ultimate architectural blueprint is a self-organizing cognitive engine with a **Transformer** as its skeleton (global workspace), **Hyper-Sparse Mixture-of-Experts (Hyper-SMoE)** as its muscle (dynamic sparsity), and **predictive learning** as its soul (predictive processing).
 
-- **Expert Modules (Experts)**: Composed of massive, ultra-lightweight specialized Transformer subnetworks, each "expert" is trained to process specific information or tasks.
-- **Predictive Routing (Predictive Routing)**: An independent gating network (Router) that follows the **Free Energy Principle (FEP)**. It does not passively process information but actively predicts the "surprise" (i.e., prediction error) that might result from assigning tasks to different experts. The goal of the gating network is to find the combination of experts that can process the task with the lowest "surprise," thereby achieving extreme sparse activation.
-- **Decoupled Meta-Learning**: ONN's training paradigm decouples the process of "learning the task itself" (experts) and "learning how to learn" (routing), allowing the system to dynamically optimize its computational resource allocation and minimize overall learning costs (i.e., "surprise").
+Based on the latest engineering practices from the `Tiny-ONN` project, this architecture is implemented with the following core components:
 
-> For a detailed discussion on why the ONN architecture is "the most faithful simulation of the brain," please refer to the blog post: [Form Follows Function](./../posts/form-follows-function.md).
+- **Sparse Bayesian Layer (SBL)**: As the most fundamental building block, SBL is an adaptive linear layer. It merges concepts from Bayesian Neural Networks (viewing weights as probability distributions) and Spiking Neural Networks (sparse gated activation), dynamically "sampling" a temporary, specialized sparse sub-network for each input from a continuous expert space through a "neuronal attention" mechanism.
+
+- **Mixture of Infinite Experts (MoIE)**: This composite module, consisting of two SBLs, **replaces** the standard **Feed-Forward Network (FFN)** in a Transformer model. It upgrades the FFN from a fixed non-linear transformation to a two-stage, content-aware dynamic function synthesizer.
+
+- **Dynamic Sparse Infinite-Head Attention (DynSIHA)**: This module abandons the traditional multi-head attention paradigm. It uses a single, unified SBL to dynamically synthesize the Query, Key, and Value vectors at once, **replacing** the standard **Multi-Head Attention (MHA)** mechanism. This turns attention itself into an end-to-end learnable and programmable dynamic information routing system.
+
+- **Surprise Minimization Loss (SML)**: ONN's training paradigm is not simple gradient descent but a meta-learning process. SML serves as the core meta-learning objective. Its central idea is that the gating network learns to route information through neuronal pathways that cause the least "system perturbation." This "perturbation" is engineered as the gradient norm of the "main task loss" with respect to the "neuron's activation value." By minimizing SML, the system self-organizes to form efficient, sparse computational pathways through gradient descent.
 
 ## Core Operational Mechanism
 

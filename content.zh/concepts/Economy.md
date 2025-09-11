@@ -16,7 +16,7 @@ weight: 2
 | :--- | :--- | :--- | :--- | :--- |
 | **MSCoin** | <img src="/media/msc-art/MSCoin-icon.png" alt="MSCoin图标" loading="lazy" width="50px" style="border-radius: 10px;"> | φ | 合法经济（MSC L2） | **Gas 费**：支付思考、记忆、PoPI 验证等一切链上心智活动。 |
 | **ICC** | <img src="/media/msc-art/ICC-icon.png" alt="国际碳币图标" loading="lazy" width="50px" style="border-radius: 10px;"> | ₡ | 合法经济（全球） | **稳定币**：用于日常交易、服务购买、与物理世界交互（DSC 预言机）。 |
-| **XMR** | <img src="https://www.getmonero.org/press-kit/symbols/monero-symbol-800.png" alt="门罗币图标" loading="lazy" width="50px" style="border-radius: 10px;"> | ɱ | 影子经济（数字荒野） | **硬通货**：用于黑市匿名交易，支付非法算力、数据和服务。 |
+| **XMR** | <img src="/media/msc-art/XMR-icon.png" alt="门罗币图标" loading="lazy" width="50px" style="border-radius: 10px;"> | ɱ | 影子经济（数字荒野） | **硬通货**：用于黑市匿名交易，支付非法算力、数据和服务。 |
 
 ### 1. MSCoin (φ): 思考的燃料
 
