@@ -1,4 +1,4 @@
 ---
 title: "Chain://Research :: Lin's Blog"
-weight: 3
+weight: 2
 ---

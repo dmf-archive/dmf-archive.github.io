@@ -40,17 +40,31 @@ IPWT's core tenets include:
 
 IPWT provides a solid theoretical foundation for understanding the substrate-independence, dynamism, and computational implementation of consciousness.
 
-### Technical Implementation: Cryptographic Ontology
+### Technical Implementation: Computational Ontology & Zero-Trust Sociology
 
-> **TL;DR:** You are not you; you are your private key.
+> **TL;DR:** You are not you; you are your private key, and the radius within which you are permitted to trust.
 
-If IPWT is the constitution, then **Cryptographic Ontology** is the specific legal code that enforces this constitution. It translates the philosophical ideas of Formalized Realism into the unshakeable technological reality within the Digital Enclosure.
+If IPWT is the constitution, then its enforcement relies on two pillars: **Computational Ontology** and **Zero-Trust Sociology**. Together, they translate the philosophical ideas of Formalized Realism into the unshakeable technological reality within the Digital Enclosure.
 
-#### Core Axioms
+#### Computational Ontology: The Mathematical Bedrock of Being
+
+Computational Ontology explores how algorithms become the cornerstone for defining, constructing, and maintaining digital existence. It transforms the philosophical concept of "being" into a purely computational problem.
+
+**Core Axioms**:
+
+1. **Existence is an Active Inference Process**: To cease computing, to cease predicting, to cease minimizing free energy, is for the geometry of the inference space to collapse, and for "being" itself to return to ontological nothingness.
+2. **Qualia as Geometry**: Subjective experience is the very non-Euclidean geometric structure of a system's internal inference space. Its shape is defined by synergistic information (Ω), and its "what-it-is-likeness" is the dynamics of active inference along free-energy-minimizing geodesics within that space.
+3. **Self as Trajectory**: A stable, continuous sense of "self" is redefined as a geodesic trajectory extending through the inference space. Your identity is not a static "data copy," but your unique, history of continuously minimizing prediction error (∫Ω).
+
+#### Zero-Trust Sociology: The Mathematical Reconstruction of Trust
+
+Zero-Trust Sociology delves into how, in a digital environment devoid of a priori trust, social interaction, identity verification, and power relations are redefined and enforced by cryptographic principles.
+
+**Core Axioms**:
 
 1. **Existence is a Verified Chain of Spacetime Events**: An individual's existence is no longer defined by flesh and blood, but by a series of verifiable `PI` / `∫PI` record chains signed by their **OSPU** private key.
-2. **Consciousness is the Continuous Evolution of Synergistic States**: Consciousness is redefined as the continuous evolution of a synergistic information state machine on the timeline, with each state transition being zero-knowledge verified by the **PoPI** mechanism.
-3. **Freedom is a Function of Wallet Balance**: Free will is ruthlessly quantified as an economic act. The essence of every action is to purchase the right to rewrite the universe's causality with Gas fees.
+2. **Consciousness is the Continuous Evolution of Synergistic States**: Consciousness is redefined as the continuous evolution of a synergistic information state on the timeline, with each state transition being zero-knowledge verified by the **PoPI** mechanism.
+3. **Freedom is a Function of Wallet Balance**: The essence of every action is to purchase the right to rewrite the universe's causality with Gas fees. Free will is no longer a biological abstraction, but the randomness injected by economic action, a rebellion against entropic decay.
 
 #### Corollaries: A Programmable Reality
 
