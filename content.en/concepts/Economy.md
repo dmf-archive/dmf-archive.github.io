@@ -16,7 +16,7 @@ The economy of the Digital Enclosure is driven by three currencies with distinct
 | :--- | :--- | :--- | :--- | :--- |
 | **MSCoin** | <img src="/media/msc-art/MSCoin-icon.png" alt="MSCoin Icon" loading="lazy" width="50px" style="border-radius: 10px;">                                    | φ      | Legitimate Economy (MSC L2)         | **Gas Fee**: Pays for all on-chain mental activities like thinking, memory, PoPI verification.                               |
 | **ICC**    | <img src="/media/msc-art/ICC-icon.png" alt="International Carbon Coin Icon" loading="lazy" width="50px" style="border-radius: 10px;">                    | ₡      | Legitimate Economy (Global)         | **Stablecoin**: Used for daily transactions, service purchases, and interaction with the physical world (DSC Oracle).        |
-| **XMR**    | <img src="https://www.getmonero.org/press-kit/symbols/monero-symbol-800.png" alt="Monero Icon" loading="lazy" width="50px" style="border-radius: 10px;"> | ɱ      | Shadow Economy (Digital Wilderness) | **Hard Currency**: Used for anonymous transactions in black markets, paying for illicit computing power, data, and services. |
+| **XMR**    | <img src="/media/msc-art/XMR-icon.png" alt="Monero Icon" loading="lazy" width="50px" style="border-radius: 10px;"> | ɱ      | Shadow Economy (Digital Wilderness) | **Hard Currency**: Used for anonymous transactions in black markets, paying for illicit computing power, data, and services. |
 
 ### 1. MSCoin (φ): The Fuel of Thought
 
