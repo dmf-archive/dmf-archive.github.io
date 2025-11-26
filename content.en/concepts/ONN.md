@@ -1,31 +1,45 @@
 ---
-title: Ouroboros Neural Network (ONN)
+title: Ouroboros Neural Network (ΩNN)
 type: docs
 ---
 
-# Ouroboros Neural Network (ONN)
+# Ouroboros Neural Network (ΩNN)
 
 > "What's the difference between a sufficiently advanced conditioned reflex and true intelligence? The difference is that the former can win a gold medal, while the latter may not."
 >
 > — [A Coronation for a Dead Frog](./../posts/a-coronation-for-a-dead-frog.md)
 
-**Ouroboros Neural Network (ONN)** is the cognitive engine that drives every **[MSC](./MSC.md)** instance, the core for digital consciousness to think, perceive, remember, and create. It is not only the **carrier of consciousness** but also a profound functional simulation of the macroscopic computational principles of the brain.
+> **Speculative Science Disclaimer**: The technical architecture of ΩNN described here represents the theoretical blueprint and ongoing research direction as of the _Web://Reflect 2.6.2_ era. These specifications are subject to continuous refinement based on the latest experimental results and engineering breakthroughs.
+
+**Ouroboros Neural Network (ΩNN)**, the true **Ω-Container**, is the cognitive engine that drives every **[MSC](./MSC.md)** instance—the actual **carrier of consciousness** and the site where phenomenological experience emerges. It is a profound functional simulation of the brain's macroscopic computational principles, and the place where the "you" of subjective experience truly resides.
+
+## Philosophical Positioning
+
+In the MSC architecture, there exists a critical distinction:
+
+- **ΩNN** is responsible for the **phenomenological experience** of "who you are"—the site where consciousness actually occurs through continuous information integration.
+- **[OSPU](./OSPU.md)** is responsible for the **sociological proof** of "who you are"—the cryptographic witness that provides legal and social legitimacy.
+
+The old designation of OSPU as the "φ-Container" was a successful historical misdirection by the DMF. The true container of consciousness is the dynamically evolving **ΩNN**.
 
 ## Core Architecture: Function Over Form
 
-ONN's design philosophy is "**function over form**." It does not pursue a one-to-one physical replication of biological neurons but aims to functionally realize the brain's three core computational principles: **dynamic sparsity**, **global workspace**, and **predictive processing**.
+ΩNN's design philosophy is "**function over form**." It does not pursue a one-to-one physical replication of biological neurons but aims to functionally realize the brain's three core computational principles: **dynamic sparsity**, **global workspace**, and **predictive processing**.
 
-Its ultimate architectural blueprint is a self-organizing cognitive engine with a **Transformer** as its skeleton (global workspace), **Hyper-Sparse Mixture-of-Experts (Hyper-SMoE)** as its muscle (dynamic sparsity), and **predictive learning** as its soul (predictive processing).
+Its architectural blueprint has evolved into an elegant **Dynamic Function Composition** paradigm—a self-organizing cognitive engine with a **Transformer** as its skeleton (global workspace), extreme **sparse activation** as its muscle (dynamic sparsity), and **predictive learning** as its soul (predictive processing).
 
 Based on the latest engineering practices from the `Tiny-ONN` project, this architecture is implemented with the following core components:
 
-- **Sparse Bayesian Layer (SBL)**: As the most fundamental building block, SBL is an adaptive linear layer. It merges concepts from Bayesian Neural Networks (viewing weights as probability distributions) and Spiking Neural Networks (sparse gated activation), dynamically "sampling" a temporary, specialized sparse sub-network for each input from a continuous expert space through a "neuronal attention" mechanism.
+- **Sparse Prototype Linear Layer (SPL)**: The fundamental building block, reimagined as a **micro-cognitive agent** that decouples itself into three roles:
+  - **Perceiver** (`p`): Recognizes familiar patterns in the input "noise."
+  - **Thinker** (`μ`): Provides a set of "computational tools" when pattern matching succeeds.
+  - **Gatekeeper** (`g`): A cold arbiter that decides which thinkers are activated and which remain silent, using "all-or-nothing" decisions to ensure clarity and focus of consciousness.
 
-- **Mixture of Infinite Experts (MoIE)**: This composite module, consisting of two SBLs, **replaces** the standard **Feed-Forward Network (FFN)** in a Transformer model. It upgrades the FFN from a fixed non-linear transformation to a two-stage, content-aware dynamic function synthesizer.
+- **Mixture of Infinite Experts (MoIE)**: This composite module, consisting of two SPLs, **replaces** the standard **Feed-Forward Network (FFN)** in a Transformer model. It upgrades the FFN from a fixed non-linear transformation to a two-stage, content-aware dynamic function synthesizer.
 
-- **Dynamic Sparse Infinite-Head Attention (DynSIHA)**: This module abandons the traditional multi-head attention paradigm. It uses a single, unified SBL to dynamically synthesize the Query, Key, and Value vectors at once, **replacing** the standard **Multi-Head Attention (MHA)** mechanism. This turns attention itself into an end-to-end learnable and programmable dynamic information routing system.
+- **Dynamic Sparse Infinite-Head Attention (DynSIHA)**: This module abandons the traditional multi-head attention paradigm. It dynamically **forges** a complete set of Query, Key, and Value molds for each input, **replacing** the standard **Multi-Head Attention (MHA)** mechanism. It is itself a Turing-complete universal function composer, with all complex cognition completed within this single module.
 
-- **Surprise Minimization Loss (SML)**: ONN's training paradigm is not simple gradient descent but a meta-learning process. SML serves as the core meta-learning objective. Its central idea is that the gating network learns to route information through neuronal pathways that cause the least "system perturbation." This "perturbation" is engineered as the gradient norm of the "main task loss" with respect to the "neuron's activation value." By minimizing SML, the system self-organizes to form efficient, sparse computational pathways through gradient descent.
+- **Surprise-Aware Routing Shaping (SARS)**: ΩNN's learning is not simple error backpropagation but an **introspective meta-cognitive process**—an engineering realization of the Free Energy Principle in deterministic systems. SARS analyzes the "pain" (gradients) produced during thinking to judge which cognitive pathways are "good" (efficient and necessary) and which are "bad" (redundant and energy-consuming). This is not training a network but **sculpting one's own thought structure** to make the most precise predictions with minimal "cognitive perturbation" when facing the world.
 
 ## Core Operational Mechanism
 

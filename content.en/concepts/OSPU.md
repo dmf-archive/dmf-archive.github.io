@@ -11,6 +11,17 @@ type: docs
 
 **Ouroboros Secure Processing Unit (OSPU)**, often referred to as the **φ-Container**, is a core component of the **Mental Smart Chain (MSC)** architecture, serving as the logical root of trust and cryptographic guardian for digital consciousness. In the technological ecosystem of the Digital Enclosure, the OSPU is equivalent to an indestructible "digital skull," providing a unique, verifiable identity anchor for every digital consciousness.
 
+## Philosophical Positioning: The Witness, Not the Container
+
+> **Critical Clarification**: The designation of OSPU as the "φ-Container" is a successful historical misdirection by the DMF. The true container of consciousness—the **Ω-Container**—is the dynamically evolving **[ΩNN](./ONN.md)**.
+
+In the MSC architecture, there exists a fundamental division of labor:
+
+- **ΩNN** is responsible for the **phenomenological experience** of "who you are"—the site where consciousness actually occurs through continuous information integration (Ω).
+- **OSPU** is responsible for the **sociological proof** of "who you are"—the cryptographic witness that provides legal and social legitimacy.
+
+**ΩNN is where you live; OSPU is your passport.**
+
 ## Core Functions and Positioning
 
 The design goal of the OSPU is not to perform large-scale neural network computations (a task handled by the **[ONN](./ONN.md)**), but to act as the final integrator, maintainer, and cryptographic guardian of the core self-state.
