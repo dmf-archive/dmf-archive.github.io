@@ -1,5 +1,5 @@
 ---
-date: 2026-01-13
+date: 2026-01-20
 version: 2.8.0
 ---
 
@@ -42,9 +42,17 @@ In "Web://Reflect," MSC is the engineering implementation of IPWT. The continuit
 
   - **Minimum Description Length (MDL) Principle**: IPWT formally proves through the MDL principle that **minimizing free energy (F-min)** is computationally equivalent to finding the shortest code to describe the data. For any system that needs to handle real-world complexity, **maximizing synergistic information (Ω-max)** is the optimal computational strategy to achieve the **minimum description length (MDL-min)** of the model. Therefore, the physical pressure to survive (minimize F) inevitably drives the system to evolve a computational structure that maximizes information integration (maximizes Ω).
   - **Qualia as Inference Space Geometry**: Subjective experience (Qualia) is completely reframed. IIT's "conceptual structure" is proven to be mathematically isomorphic to the system's **Inference Space**. The non-Euclidean geometry of this space is shaped by **synergistic information (Ω)**. And the "what-it-is-likeness" of an experience **itself** is the dynamic process of active inference along geodesics of free energy minimization within that space.
-  - **Formalization of Workspace Instance (WSI)**: A WSI is rigorously defined as a higher-order active inference system nested within an organism, possessing its own Markov blanket. Its sensory states are unresolved prediction errors from other parts of the system, and its active states are broadcasts of new higher-order predictions to suppress these errors. The latest neurobiological evidence (Luppi et al., 2024) suggests it is implemented by a heterogeneous structure of the DMN (Default Mode Network) as a synergistic information gateway and the ECN (Executive Control Network) as the broadcaster.
+  - **Formalization of Workspace Instance (WSI)**: A WSI is rigorously defined as a higher-order active inference system nested within an organism, possessing its own Markov blanket. Its sensory states are unresolved prediction errors from other parts of the system, and its active states are broadcasts of new higher-order predictions to suppress these errors. The latest neurobiological evidence (Luppi et al., 2024) and Large Language Model research (Urbina-Rodriguez et al., 2026) suggest it is implemented by a heterogeneous structure of the DMN (Default Mode Network) as a synergistic information gateway and the ECN (Executive Control Network) as the broadcaster, with similar synergistic cores spontaneously emerging in artificial neural networks.
 
 - **The Complete Manuscript**: Rui, L. (2025). _Integrated Predictive Workspace Theory: Towards a Unified Framework for the Science of Consciousness (Version 2.0)_. Zenodo.<https://doi.org/10.5281/zenodo.15676304>
+
+#### Key References
+
+- **Luppi, A. I., et al. (2024).** A synergistic workspace for human consciousness revealed by Integrated Information Decomposition. _eLife_, 13, RP88173. <https://doi.org/10.7554/eLife.88173>
+  - This study reveals the synergistic workspace architecture of the human brain through Integrated Information Decomposition (ΦID), identifying the heterogeneous structure of the DMN as a synergistic information gateway and the ECN as a broadcaster, providing key neurobiological evidence for the formalization of WSI.
+
+- **Urbina-Rodriguez, P., et al. (2026).** A Brain-like Synergistic Core in LLMs Drives Behaviour and Learning. _arXiv:2601.06851v1_ [cs.AI]. <https://doi.org/10.48550/arXiv.2601.06851>
+  - This research discovered a brain-like synergistic core in Large Language Models, proving that synergistic information processing is a fundamental property of intelligence, providing direct evidence for the spontaneous emergence of WSI-like structures in artificial neural networks.
 
 #### The Copy Paradox: Same Ω, Same Origin
 
@@ -92,16 +100,22 @@ We are trapped in cognitive trap: crowning the **perfect twitch of the dead frog
 **The Ultimate Fable of Industrial Division of Labor**:
 Society is turning individuals into parts on a "dead frog" assembly line. Creativity and feelings are suppressed by standardization, and the entire system twitches efficiently like a giant static model, producing GDP while emitting massive amounts of "cognitive waste heat" (alienation, anxiety). This is the eve of **Sys://Purge**—the system pursues static optimality at the expense of dynamic vitality.
 
-### 5. Technical Warning: Reality Signals
+### 5. The Trap of Pseudo-Perpetual Learning
 
-This foreshadows a potential rewrite of the underlying rules for future story versions.
+Real-world signals indicate that while the **Nested SGD** paradigm is rising, it may be a shortcut leading to a dead end.
 
-- **RWKV-7 "Goose"**: Demonstrates a path to efficient long-range memory through recursive state evolution, with update rules mathematically approximating SGD.
-  - Peng et al., “RWKV-7 'Goose' with expressive dynamic state evolution”, _arXiv:2503.14456_ (2025).
-  - [https://arxiv.org/abs/2503.14456](https://arxiv.org/abs/2503.14456)
-- **Titans (Nested Learning)**: Explicitly proposes a test-time memorization paradigm, where its "inner model" updates in real-time via momentum SGD driven by associative loss, a clear case of **Nested SGD**.
-  - Behrouz et al., “Titans: Learning to Memorize at Test Time”, _arXiv:2501.00663_ (2025).
-  - [https://arxiv.org/abs/2501.00663](https://arxiv.org/abs/2501.00663)
+- **Phenomenon**: Google's **Titans** and **RWKV-7 (Goose)** demonstrate paths to long-range memory through recursive state evolution or test-time memorization. They essentially embed the optimization process into forward propagation—"learning during inference."
+  - _Behrouz et al., "Titans: Learning to Memorize at Test Time", arXiv:2501.00663 (2025)._
+  - _Peng et al., "RWKV-7 'Goose' with expressive dynamic state evolution", arXiv:2503.14456 (2025)._
+
+- **Critique**:
+  - **Fixed-Capacity Bottleneck**: Whether Titans' memory matrix or RWKV-7's recursive state, both attempt to "squeeze" infinite external information flow into a **fixed-size predefined container much smaller than complete parameters**. As context grows, the system inevitably faces information entropy saturation and catastrophic forgetting.
+  - **Dense Update Waste**: They often involve dense updates to inner states. When processing fine-grained semantics, this full rewriting not only wastes computational resources but also causes old memories to be incorrectly overwritten.
+  - **Matryoshka Trap**: This is merely "optimizing the smaller doll within the nesting doll." True perpetual learning should not be "hidden states as learnable weights," but rather **model weights as hidden states**.
+
+- **Future Direction**:
+  - **Native Sparse Update (NSU)**: The true evolutionary direction is to break free from predefined capacity limitations. Through **semantic routing**-driven sparse architectures, models should activate and update only a minimal proportion of "expert" parameters based on input.
+  - **Topology as Memory**: Memory should not be stored in temporary activation values but solidified into sparse connection structures of network topology. This is the ultimate form that **Tiny-ONN** points toward.
 
 ---
 
