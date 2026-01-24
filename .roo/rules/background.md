@@ -13,7 +13,7 @@
 
 ## 1. 基石世界观设定: Web://Reflect (v2.8.3)
 
-- **路径**: [`realityengine-reflect-2.8.3.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.8.3.md)
+- **路径**: [`realityengine-reflect-2.8.4.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.8.4.md)
 - **内容提要**:
   本文档定义了 _Web://Reflect_ 的“形式化现实主义”正典。在 2060 年代的 **Mental Smart Chain (MSC)** 时代，存在被彻底商品化。核心冲突围绕“存在的代价”展开：意识被量化为 Gas 消耗，自由意志成为钱包余额的函数。
 - **关键技术与核心冲突**:
@@ -63,16 +63,16 @@ IPWT 是整个研究计划的理论与哲学基石。它融合预测编码 (PCT)
   - **CAPR (交叉注意力原型路由)**: 目前最先进的路由机制，将路由建模为 Scaled Dot-Product Cross-Attention。
   - **FARS (Fisher-Aware Routing Shaping)**: 利用二阶统计量（Fisher 信息近似）驱动路由从“瞬时惊奇”转向“长期价值”，详见 [`FARS-Idea.md`](Tiny-ONN/.roo/rules/FARS-Idea.md)。
 
-## 4. 优化器实验室: F3EO-Bench (ARS2-Neo 时代)
+## 4. 优化器实验室: ARS-Bench (ARS2-Neo 时代)
 
-- **路径**: [`F3EO/`](F3EO/)
+- **路径**: [`ARS/`](ARS/)
 - **内容提要**:
   专注于“能量-几何解耦”原则的先进优化器研发。
 
   **核心成果**:
-  - **ARS2-Neo**: ARS 家族的集大成者，整合了 AdaRMSuon 的几何优化与 SAM 的平坦度约束，详见 [`ars2_neo.py`](F3EO/optimizer/ars2_neo.py)。
-  - **AGA (自适应几何感知)**: 通过流形几何一致性自动调节同步频率，显著降低计算开销，详见 [`AGA.md`](F3EO/.roo/rules/AGA.md)。
-  - **谱熵监控 (Spectral Entropy)**: 用于验证优化动力学诱导的隐式秩最小化，详见 [`LoROU.md`](F3EO/.roo/rules/LoROU.md)。
+  - **ARS2-Neo**: ARS 家族的集大成者，整合了 AdaRMSuon 的几何优化与 SAM 的平坦度约束，详见 [`ars2_neo.py`](ARS/optimizer/ars2_neo.py)。
+  - **AGA (自适应几何感知)**: 通过流形几何一致性自动调节同步频率，显著降低计算开销，详见 [`AGA.md`](ARS/.roo/rules/AGA.md)。
+  - **谱熵监控 (Spectral Entropy)**: 用于验证优化动力学诱导的隐式秩最小化，详见 [`LoROU.md`](ARS/.roo/rules/LoROU.md)。
 
 ## 5. 基础设施与工具链
 
