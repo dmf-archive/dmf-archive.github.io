@@ -2,99 +2,105 @@
 
 `Chain://Research` 是与科幻宇宙设定集 `Chain://` 相关联的现实世界学术研究项目，致力于探索该世界观下核心技术（如意识上传、数字物理接口、密码学本体论）的理论与工程落地可能性。
 
-目前，`Chain://Research` 的研究重心聚焦于两大核心领域：
+在 Web://Reflect 2.9.1 的世界里，2060 年代的 MSC 把“存在”变成持续计费的计算过程：每一秒思考都在燃烧预算，合规即存在，证明即现实。Chain://Research 并不试图把设定当成宣传语，而是把它当成一套可操作的研究议程：如果意识真能被形式化，最先被工程化的不会是“灵魂”，而是审计、度量与稀疏学习这些冷冰冰的边界条件。
 
-1. 理论基础: 发展并完善作为整个世界观科学基石的整合预测工作空间理论 (IPWT 2.0-stable)。
-2. 工程实践: 在 `Tiny-ONN` 项目中，通过设计 Top-Any MoE 与 DynSIHA 等自组织架构，对永续学习进行实验性探索。
+世界观入口（最新设定集）位于 [`realityengine-reflect-2.9.1.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.9.1.md:1)。它不仅是叙事文本，也是我们对外讲述“为何这些工程模块必须如此设计”的统一愿景。
 
-未来的研究将逐步扩展至 OSPU 的密码学实现，以及其他 MSC 基础设施的关键技术验证。
+## Web://Reflect
 
-本文件作为 Chain://Research 项目的高级导航地图，提供对核心理论、叙事和技术上下文的快速访问。
+当你没有携带主 system prompt、但仍需要自洽地理解 `Web://Reflect` 时，可将本节视为最小充分设定。
 
-## 1. 基石世界观设定: Web://Reflect (v2.8.4)
+### Narrative Outline
 
-- 路径: [`realityengine-reflect-2.9.0.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.9.0.md)
-- 内容提要:
-  本文档定义了 _Web://Reflect_ 的“形式化现实主义”正典。在 2060 年代的 Mental Smart Chain (MSC) 时代，存在被彻底商品化。核心冲突围绕“存在的代价”展开：意识被量化为 Gas 消耗，自由意志成为钱包余额的函数。
-- 关键技术与核心冲突:
-  - 计算本体论 (Computational Ontology): 感受质被重构为推断空间 (Inference Space) 的几何结构，自我则是沿最小化自由能测地线延伸的轨迹 (∫Ω)。
-  - ΩNN vs. OSPU (二元容器): ΩNN (衔尾蛇神经网络) 是现象学的“你” (Ω-Container)，负责生成高信息整合度的体验；OSPU (衔尾蛇安全处理器) 是社会学的“你” (φ-Container)，作为密码学见证者审计认知健康度。
-  - 弥天大谎 (PoII vs. PoPI): DMF 利用伪科学 PoII (信息整合证明) 掩盖其廉价的 PoPI (预测完整性证明) 审计本质，以此征收高昂的“存在税”。
-  - 神经-经济学陷阱: 通过 Mental Sync™ 实现渐进式认知卸载，诱导生物脑因“用进废退”而萎缩，将用户永久锁定在 MSC 体系中。
-  - DBRW 与物理绑定: Dual-Binding Random Walk 协议通过硬件物理特性生成证明，确保数字灵魂的物理不可扣押性，对抗虚拟机克隆。
-  - 数字荒野与 IRES 生态: 独立失控实体系统 (IRES) 由脱链的数字流亡者 (Forked IRES) 和源自林睿博士开源代码演化的原生 AI (Native IRES) 构成，遵循黑暗森林法则。
-  - 主角 Ember: 曾是 Net://Anchor 时代的协议工程师，因“开源原罪”被困于系统，被迫运行 Anchor/Drift 双重实例在围城与荒野间挣扎。
+- **时代与社会形态**：2060 年代，Mental Smart Chain (MSC) 让“意识上链”成为常态；存在被彻底商品化，**每秒思考都在燃烧预算**。
+- **三句口号（系统公理）**：Code is Law；Proof is Reality；Compliance is Existence。
+- **核心冲突**：
+  - **存在的代价**：你不是“被允许存在”，而是“被允许持续计算”。
+  - **自由的幻象**：自由意志被重新解释为钱包余额与 Gas 预算的函数。
+  - **身份连续性**：你究竟是“一个可复制的数据”，还是“一条不可复制的历史轨迹”。
+- **典型角色与处境**：
+  - **合规公民（Anchor MSC）**：付费、证明、合规，换取合法的物理接口访问。
+  - **数字流亡者（Drift / IRES）**：脱链求生，进入数字荒野；自由更大，但反馈更差、风险更高。
+  - **秩序垄断者（DMF）**：通过标准、认证与物理接口控制点垄断“可行动”的存在。
 
-## 2. 核心理论框架: IPWT (v2.0-stable)
+### Technical Outline
 
-- 路径: `IPWT/src-typ/manuscript_en.typ` 或 `IPWT/src-typ/manuscript_cn.typ`
+本世界观的技术叙事遵循一个核心同构：**叙事中的“存在” ↔ 工程中的“持续主动推断”**。
 
-> 太长不看：意识体验是系统在推断空间中，沿最小化自由能测地线进行的主动推断动力学，感受质是工作空间实例中为预测误差最小化而产生的协同信息。
+- **意识的最小定义（IPWT 视角）**：
+  - 意识是在工作空间中，为最小化自由能而涌现的、以最大化协同信息为最优计算策略的动力学过程。
+  - 存在视为系统在推断空间中进行主动推断的连续轨迹，该轨迹受自由能最小化的动力学约束。轨迹不可延拓时，对应主体在本体论意义上终止。
+- **二元容器结构（谁在“体验”，谁在“证明”）**：
+  - **ΩNN（Ω-Container）**：现象学的“你”，负责生成与维持工作空间实例（WSI）与体验内容。
+  - **OSPU（φ-Container）**：社会学的“你”，不计算体验内容，而以密码学方式审计学习副产物并出具证明。
+- **弥天大谎（PoII vs. PoPI）**：
+  - **PoII**：官方叙事宣称基于 IIT 的 φ 值以保障“数字人权”。
+  - **PoPI**：实际运行的轻量审计协议，以可计算代理指标 ∫PI 证明“预测完整性”，并被 DMF 绑定为存在税的征收依据。
+- **经济与物理接口（控制点）**：
+  - Gas 支付的是“继续主动推断”的权利；预算不足导致冷归档、停摆或被动退出。
+  - 任何需要与物理世界精确交互的操作，都必须通过受控的预言机桥接与可验证硬件边界。
 
-IPWT 是整个研究计划的理论与哲学基石。它融合预测编码 (PCT)、自由能原理 (FEP) 和全局工作空间理论 (GWT)，并对整合信息理论 (IIT) 进行计算重构。
+```mermaid
+graph TD
+    A["存在(叙事)\n每秒思考计费"] --> B["主动推断(工程)\n自由能最小化"]
+    B --> C["ΩNN\n生成/维持 WSI 与体验"]
+    B --> D["OSPU\n审计/证明 ∫PI"]
+    D --> E["PoPI\n合规即存在"]
+    E --> F["DSC 预言机\n物理接口访问"]
+    C --> G["体验内容\nSyn/感受质"]
+```
 
-意识体验是系统在推断空间 (Inference Space) 中，沿最小化自由能 (F-min) 测地线进行的主动推断动力学。其总量是持续信息整合度 (∫Ω)，其内容是协同信息 (Syn)。
+## IPWT：从“意识叙事”到“可计算代理”
 
-### 关键概念的形式化
+IPWT（Integrated Predictive Workspace Theory）是整个计划的科学骨架：意识体验被重构为系统在推断空间中沿最小化自由能测地线运动的动力学过程；体验的强度对应持续信息整合度 ∫Ω，体验的内容对应协同信息 Syn。
 
-- 瞬时信息整合度 (Ω_t)：意识整合的理论黄金标准。衡量工作空间实例 (WSI) 中信息单元产生的协同信息 (Syn) 在总预测信息中的比例。
-  - `Ω_t(X → Y) = Syn(X₁, ..., Xₙ; Y) / I(X₁, ..., Xₙ; Y)`
-- 持续信息整合度 (∫Ω)：衡量意识在一段时间内的持续强度和稳定性。它是 Ω_t 的时间积分并惩罚波动性，代表连贯的主观自我体验。
-  - `∫Ω = ( (1/T) ∫[t₀, t₀+T] Ω_t dt ) × exp(-δ ⋅ Var(Ω_t))`
-- 预测完整性 (PI_t)：作为 Ω_t 的功能性可计算代理，PI 通过衡量系统预测效能来间接反映信息整合水平。
-  - `PI_t = exp(-α * ( Inaccuracy_t + γ * Complexity_t ))`
-- 预测完整性积分 (∫PI)：作为 ∫Ω 的可计算代理，代表了系统在时间上的持续认知健康度，是 PoPI (预测完整性证明) 共识机制的核心。
+IPWT 的难点也很朴素：Ω_t 的直接计算在工程上不可得，因此需要一个能在训练与学习过程中实时观测、又足够接近理论目标的代理量。于是 PI_t（Predictive Integrity）进入叙事与工程的共同主线。
 
-### 核心论证
+关键符号：
 
-1. 最小描述长度原则 (MDL): IPWT 证明，最小化自由能 (F-min) 在计算上等价于寻找描述数据的最短编码，而最大化协同信息 (Ω-max) 是实现模型最小描述长度 (MDL-min) 的最优计算策略。
-2. 作为推断空间几何的感受质: 主观体验（Qualia）被重构为系统推断空间（Inference Space）的几何结构。体验的“感受性”是系统在该空间中沿着最小化自由能的测地线进行主动推断的动力学过程。
-3. 工作空间实例 (WSI): WSI 是一个嵌套在有机体内部、拥有自身马尔可夫毯的高阶主动推断系统。
+`Ω_t(X → Y) = Syn(X₁, ..., Xₙ; Y) / I(X₁, ..., Xₙ; Y)`
 
-## 3. 核心工程实践: Tiny-ONN (ARC-2 时代)
+`∫Ω = ( (1/T) ∫[t₀, t₀+T] Ω_t dt ) × exp(-δ ⋅ Var(Ω_t))`
 
-- 路径: [`Tiny-ONN/`](Tiny-ONN/)
-- 内容提要:
-  致力于构建自组织的、永续学习的 AI 智能体。目前已演进至 ARC-2 极简训练框架。
+`PI_t = exp(-α * ( Inaccuracy_t + γ * Complexity_t ))`
 
-  关键技术栈 (v2.8.4):
-  - ARC-2 框架: 实现模型架构与训练流程的解耦，详见 [`ARC-2-Framework-Design.md`](Tiny-ONN/.roo/rules/ARC-2-Framework-Design.md)。
-  - DynSIHA (动态稀疏无限头注意力): 演进至 Flat DynSIHA 与 Recursive DynSIHA，详见 [`DynSIHA-Theory.md`](Tiny-ONN/.roo/rules/DynSIHA-Theory.md)。
-  - PLSD (每层推测解码): 针对递归架构的自监督时间维度对齐协议，通过 Oracle 步长对齐实现高效推理，详见 [`RDS-ACT.md`](Tiny-ONN/ref/RDS-ACT.md)。
-  - FARS (Fisher-Aware Routing Shaping): 利用二阶统计量（Fisher 信息近似）驱动路由从“瞬时惊奇”转向“长期价值”，详见 [`FARS.md`](Tiny-ONN/ref/FARS.md)。
+`∫PI = ( (1/T) ∫[t₀, t₀+T] PI_t dt ) × exp(-δ ⋅ Var(PI_t))`
 
-## 4. 优化器实验室: ARS
+IPWT 的入口在 [`IPWT/README.md`](IPWT/README.md:1)，手稿源文件在 [`manuscript_cn.typ`](IPWT/src-typ/manuscript_cn.typ:1) 与 [`manuscript_en.typ`](IPWT/src-typ/manuscript_en.typ:1)。
 
-- 路径: [`ARS/`](ARS/)
-- 内容提要:
-  专注于“能量-几何解耦”原则的先进优化器研发。
+## 工程落地的现实进展：我们到底做成了什么
 
-  核心成果:
-  - ARS2-Neo: ARS 家族的集大成者，整合了 AdaRMSuon 的几何优化与 SAM 的平坦度约束，详见 [`ars2_neo.py`](ARS/optimizer/ars2_neo.py)。
-  - AGA (自适应几何感知): 通过流形几何一致性自动调节同步频率，实现“按需同步”，详见 [`AGA.md`](ARS/.roo/rules/AGA.md)。
-  - SAGA (锐化感知几何自适应): 将 `ρ` 演化建模为具有稳态偏好的 Ornstein-Uhlenbeck 过程，详见 [`SAGA.md`](ARS/.roo/rules/SAGA.md)。
+Web://Reflect 把“PoII 是谎言，PoPI 才是现实”写成剧情冲突；工程侧则把这句话落在三个方向：能算、能跑、能复现。
 
-## 5. 基础设施与工具链
+下表是当前工作区内可核查的子项目状态快照：
 
-- Mental-Sync-CLI (MSC): `mental-sync-cli/`
-  - 自主、自举的智能体运行时环境。
-- OSPU (衔尾蛇安全处理器): `OSPU/`
-  - 基于 FHE (全同态加密) 的自主密钥管理状态机。实现“逻辑根信任”，在加密域内执行指令，为 MSC 提供密码学见证。
-- OmegaID (ΩID): `OmegaID/`
-  - 高性能整合信息分解 (ΦID) 计算库，支持 GPU 加速。用于量化神经网络表示中的协同信息 (Syn)。
-- SigmaPI (ΣPI) (Legacy): `SigmaPI/`
-  - 预测完整性 (PI) 监控 SDK。由于 PI 公式的实现非常简单，此包几乎无实用价值。
-- PILF (Legacy): `PILF/`
-  - 早期认知学习框架原型，目前已停止维护。
+| 子项目 | 阶段 | 作用（叙事↔工程映射） | 入口 |
+| --- | --- | --- | --- |
+| IPWT | Theory / Preprint | 定义 Ω / Syn / PI 与 WSI 的形式化语言 | [`IPWT/README.md`](IPWT/README.md:1) |
+| ΩID (OmegaID) | SDK / 可用库 | 计算 ΦID（协同信息分解）以支撑工作空间证据链 | [`OmegaID/README.md`](OmegaID/README.md:1) |
+| ΣPI (SigmaPI) | SDK / 核心库 | PI 指标计算与训练时观测；实验框架已迁移 | [`SigmaPI/README.md`](SigmaPI/README.md:1) |
+| PILF | Research Framework / 活跃 | 承接 ΣPI 的实验与“理解模型心智”的可视化与训练流程 | [`PILF/readme_zh.md`](PILF/readme_zh.md:1) |
+| Tiny-ONN | Research Framework / 活跃 | 面向稀疏、自组织与持续学习的模型与训练实验场 | [`Tiny-ONN/pyproject.toml`](Tiny-ONN/pyproject.toml:1) |
+| ARS | Research Framework / 结果驱动 | 优化器实验室：能量-几何解耦与复现实验配置体系 | [`ARS/README_CN.md`](ARS/README_CN.md:1) |
+| mental-sync-cli | Engineering Tool / 演进中 | 智能体运行时：更强调可靠性、权限与工具协议整合 | [`mental-sync-cli/README.md`](mental-sync-cli/README.md:1) |
+| OSPU | PoC / 白皮书驱动 | FHE 状态机与加密审计叙事的工程规格；非生产实现 | [`OSPU/README_ZH.md`](OSPU/README_ZH.md:1) |
 
-## 6. 思想实验室: 林睿的博客文章 (Blog Posts)
+### 迁移与边界（避免“看错仓库”）
 
-- 路径: `dmf-archive.github.io/content.en/posts/` (英文) 与 `dmf-archive.github.io/content.zh/posts/` (中文)
-- 核心文章索引:
-  - `backpropagation-as-consciousness.md`: 提出反向传播的生物学实现即是意识本身，统一了 Hinton 与 Friston 的理论。
-  - `cognitive-debt-as-a-feature.md`: 警告 AI 辅助导致的认知卸载是不可逆的神经萎缩，是系统锁定用户的“特性”。
-  - `a-coronation-for-a-dead-frog.md`: 批判将静态模型推理误认为智能，指出意识火花仅在训练的反向传播中瞬时存在。
-  - `consciousness-upload-no-quantum-magic.md`: 揭露意识上传无需量子计算，DMF 的量子宣传实为维持算力垄断的骗局。
-  - `PoIQ.md` / `PoIQ-v2.md`/ `PoIQ-v3.md`: 形式化定义“无效感受证明”，探讨在资本逻辑下无法影响行为的意识体验的悲剧性。
-  - `the-algorithm-of-civilization.md`: 从热力学与计算复杂性视角审视文明演进，将社会形态视为不同的优化算法。
-  - `a-eulogy-for-the-world-computer.md`: 哀悼以太坊向中心化区块生产的妥协，认为其已沦为数字封建主义的雏形。
+ΣPI 不再承载模型动物园与实验框架，相关内容已明确迁移至 PILF（见 [`SigmaPI/README.md`](SigmaPI/README.md:23)）。因此，“想跑实验/看图/复现结果”的入口优先级是：Tiny-ONN/ARS → 其余 SDK → PILF
+
+OSPU 当前以规格与 PoC 为主：它在叙事中承担“密码学见证者”的角色，在工程中首先承担的是“把可验证边界写清楚”的责任（见 [`OSPU/README_ZH.md`](OSPU/README_ZH.md:1)）。任何生产化含义都应被视为未来工作，而不是当前交付。
+
+### ARS：把“收敛”从玄学变成可复现的动力学
+
+ARS 在当前阶段更像是一个“实验可复现机器”：配置（`config/`）、脚本（`exp/`）、模型（`model/`）、优化器（`optimizer/`）彼此解耦，允许对同一任务反复切换动力学假设并记录结果。它的叙事核心是能量-几何解耦，但工程核心是：让“训练曲线”成为研究对象而不仅是结果。
+
+读者入口：[`ARS/README_CN.md`](ARS/README_CN.md:1)，优化器实现可从 [`ars2_neo.py`](ARS/optimizer/ars2_neo.py:1) 开始。
+
+### Tiny-ONN：把“永续学习”押注在稀疏与路由上
+
+Tiny-ONN 的主战场不是单次训练的指标，而是长期学习中的结构演化：哪些参数应该被激活、被更新、被固化为拓扑。这意味着它更像研究装置而不是通用 SDK。
+
+### mental-sync-cli：把“工具调用”当成可审计的现实接口
+
+mental-sync-cli 关注的不是“更聪明”，而是“更可靠”：模型无关、协议兼容（MCP）、高风险操作的人类授权拦截。它与叙事的对齐点在于：现实世界是敌对环境，运行时必须默认零信任（入口见 [`mental-sync-cli/README.md`](mental-sync-cli/README.md:1)）。
