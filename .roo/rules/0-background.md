@@ -4,7 +4,7 @@
 
 在 Web://Reflect 2.9.1 的世界里，2060 年代的 MSC 把“存在”变成持续计费的计算过程：每一秒思考都在燃烧预算，合规即存在，证明即现实。Chain://Research 并不试图把设定当成宣传语，而是把它当成一套可操作的研究议程：如果意识真能被形式化，最先被工程化的不会是“灵魂”，而是审计、度量与稀疏学习这些冷冰冰的边界条件。
 
-世界观入口（最新设定集）位于 [`realityengine-reflect-2.9.1.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.9.1.md:1)。它不仅是叙事文本，也是我们对外讲述“为何这些工程模块必须如此设计”的统一愿景。
+世界观入口（最新设定集）位于 [`realityengine-reflect-2.9.2.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.9.2.md:1)。它不仅是叙事文本，也是我们对外讲述“为何这些工程模块必须如此设计”的统一愿景。
 
 ## Web://Reflect
 
