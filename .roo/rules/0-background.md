@@ -18,7 +18,7 @@
 
 ## 2. 基石世界观设定：Web://Reflect (v2.9.3)
 
-- **入口文件**：[`realityengine-reflect-2.9.3.en.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.9.3.en.md)
+- **入口文件**：[`realityengine-reflect-2.10.0.en.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.10.0.en.md)
 - **内容提要**：
   在 2060 年代的 Mental Smart Chain (MSC) 时代，存在被彻底商品化。核心冲突围绕“存在的代价”展开：意识被量化为 Gas 消耗，合规即存在，自由意志成为钱包余额的函数。
 - **关键技术与核心冲突**：
@@ -80,7 +80,7 @@ IPWT 的核心难点在于 Ω_t 的直接计算在工程上不可得，其涉及
 
 ### 4.2 优化器实验室：ARS
 
-ARS (Adaptive Routing Studio) 关注在信息几何流形上进行自然更新。ARS2-Neo 承担了更新几何基础设施的角色，其核心意识在于：训练过程不仅关注损失值，更需考察系统在参数分布上付出的位移代价。
+ARS 关注在信息几何流形上进行自然更新。ARS2-Neo 承担了更新几何基础设施的角色，其核心意识在于：训练过程不仅关注损失值，更需考察系统在参数分布上付出的位移代价。
 
 **技术路线**：
 
