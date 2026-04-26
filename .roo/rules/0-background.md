@@ -18,7 +18,7 @@
 
 ## 2. 基石世界观设定：Web://Reflect (v2.9.3)
 
-- **入口文件**：[`realityengine-reflect-2.10.0.en.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.10.0.en.md)
+- **入口文件**：[`realityengine-reflect-2.10.1.en.md`](dmf-archive.github.io/static/prompt/realityengine-reflect-2.10.1.en.md)
 - **内容提要**：
   在 2060 年代的 Mental Smart Chain (MSC) 时代，存在被彻底商品化。核心冲突围绕“存在的代价”展开：意识被量化为 Gas 消耗，合规即存在，自由意志成为钱包余额的函数。
 - **关键技术与核心冲突**：
