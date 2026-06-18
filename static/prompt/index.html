@@ -74,10 +74,7 @@
             <p id="q-en" style="display:none">This prompt has been optimized through multiple LLM tests: Gemini-3-Pro for precise narration, Claude-4.5/Kimi K2.5 for creative expression. ChatGPT requires additional prompt tuning for optimal results.<br>Download Markdown source file directly: <a href="/prompt/realityengine-reflect-2.10.4.en.md" target="_blank">realityengine-reflect-2.10.4.en.md</a></p>
         </div>
 
-        <nav class="tabs" id="tabs">
-            <button data-m="web-reflect">Web://Reflect</button>
-            <button data-m="metalayer">MetaLayer</button>
-        </nav>
+        <nav class="tabs" id="tabs"></nav>
 
         <section id="content"></section>
     </div>
@@ -91,7 +88,15 @@
             'metalayer': {
                 zh: {f: '../prompt/remodule/remodule-metalayer-1.0-raw.md', n: 'remodule-metalayer-1.0-raw.md'},
                 en: {f: '../prompt/remodule/remodule-metalayer-1.0-raw.en.md', n: 'remodule-metalayer-1.0-raw.en.md'}
+            },
+            'nation-railways': {
+                zh: {f: '../prompt/re_nation_railways_v0.1.1.md', n: 're_nation_railways_v0.1.1.md'}
             }
+        };
+        const labels = {
+            'web-reflect': 'Web://Reflect',
+            'metalayer': 'MetaLayer',
+            'nation-railways': 'Nation://Railways'
         };
 
         let lang = new URLSearchParams(location.search).get('lang') || localStorage.preferredLang || (navigator.language.startsWith('zh') ? 'zh' : 'en');
@@ -106,6 +111,7 @@
             if (t) document.body.className = t;
             updateThemeIcon();
             updateQuote();
+            renderTabs();
             load(mod);
 
             $('tabs').onclick = e => {
@@ -128,9 +134,24 @@
         }
         function updateThemeIcon() { $('theme-icon').className = document.body.classList.contains('dark-theme') ? 'fas fa-moon' : 'fas fa-sun'; }
         function toggleLang() { const d = $('lang-menu').style; d.display = d.display === 'block' ? 'none' : 'block'; }
-        function setLang(l) { lang = l; localStorage.preferredLang = lang; history.pushState({}, '', `?lang=${lang}`); $('lang-menu').style.display = 'none'; updateQuote(); load(mod); }
+        function setLang(l) { lang = l; localStorage.preferredLang = lang; history.pushState({}, '', `?lang=${lang}`); $('lang-menu').style.display = 'none'; updateQuote(); renderTabs(); load(mod); }
+
         function updateQuote() { $('q-zh').style.display = lang === 'zh' ? 'block' : 'none'; $('q-en').style.display = lang === 'en' ? 'block' : 'none'; }
 
+        function renderTabs() {
+            const tabs = $('tabs');
+            tabs.innerHTML = '';
+            const available = Object.keys(modules).filter(k => modules[k][lang]);
+            if (!available.includes(mod)) mod = available[0] || 'web-reflect';
+            available.forEach(k => {
+                const btn = document.createElement('button');
+                btn.dataset.m = k;
+                btn.textContent = labels[k] || k;
+                if (k === mod) btn.classList.add('active');
+                tabs.appendChild(btn);
+            });
+            localStorage.activeTab = mod;
+        }
         async function load(m) {
             const d = modules[m]?.[lang]; if (!d) return;
             try {
