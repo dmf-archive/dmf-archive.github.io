@@ -126,41 +126,28 @@ IPWT 的核心难点在于 Ω_t 的直接计算在工程上不可得，其涉及
 
 ### 优化器实验室：ARS（当前研究核心）
 
-ARS 关注在信息几何流形上进行自然更新。ARS 家族承担了更新几何基础设施的角色，其核心意识在于：训练过程不仅关注损失值，更需考察系统在参数分布上付出的位移代价。
+ARS 家族在信息几何流形上实施结构化自然梯度更新。核心更新律如下：
 
-技术路线：
+- `ARS (AdaRMSuon)` — 能量-几何解耦
+  - `m_t = β1·m_{t-1} + (1-β1)·g_t`；`v_t = β2·v_{t-1} + (1-β2)·g_t²`
+  - `ĝ = m̂_t / (√v̂_t + ε)` 预白化 → `E_t = ‖ĝ‖` 能量标量 → `S_t = NS(ĝ)` 正交化 → `Δθ_t = -η · E_t · S_t`
+- `ARS2` — + SAM 平坦度约束
+  - 在 `ĝ` 方向施加 `ρ` 邻域扰动，惩罚尖锐极小值
+- `ARS2C` — + Christoffel 动态 β
+  - `C = δ_g / (ρ·ĝ + ε)` → 行列对齐矩阵 → 逐元素 `β₁_t, β₂_t`（曲率决定遗忘速率）
+- `ARS2D` — + 双边正交化
+  - `U = NS(G_nat)` → `W = NS(Uᵀ)ᵀ`，模拟 K-FAC 行/列双等距更新
+- `AR-GSAM` — + 曲率对齐动态 ρ
+  - `c_norm = ‖C‖_F`，`cos_sim = |⟨c_ortho, s_unit⟩|` → `f_c = 1 + log(1 + c_norm/ν)`，`f_a = 1 + (1 - cos_sim)` → `ρ_target = ρ_min · f_c · f_a`
+- `ARS2E (Einsteinium)` — + 离散 EFE 联络保幅度
+  - `Γ_ij = Δv̂_ij / (v̂_ij + ε)`（Fisher 度量相对变化率）
+  - `alignment_preserved = |⟨Γ_norm, v̂_norm⟩| · σ(‖H_ab‖_F / MPS_tau)`
 
-- 使用二阶统计近似曲率信息，将一阶更新提升为 Fisher-aware 的结构化预条件更新
-- 实施能量-几何解耦，将"下降速率"与"下降几何"分开处理
-- 通过平坦度约束抑制尖锐极小值，提升泛化上限
+`谱系`：`RMSuon → AdaRMSuon → ARS2-Neo → {ARS2C / ARS2D / AR-GSAM / ARS2E} → ARS2E-AGAM`
 
-ARS 家族谱系：
+`实验成果`：CIFAR-10 (ResNet-18) 95.87% | Wikitext-2 (Qwen3 3-layer) 90.69 PPL | Grokking (Modular Addition) 99.00% @ 112ep
 
-```
-RMSuon (2025-11)          # 正交化原始动量
-  └─ AdaRMSuon (2025-12)   # 关键转折：正交化预白化方向
-       └─ ARS2-Neo (2026-01)  # +SAM 平坦度约束
-            ├─ ARS2C (2026-05)   # +Christoffel 动态 β
-            ├─ ARS2D (2026-05)   # +双边正交化（行列双等距）
-            └─ AR-GSAM (2026-05)    # +曲率对齐动态 ρ
-                 └─ ARS2DC-AR-GSAM  # 完整体（待验证）
-```
-
-核心设计文档：
-
-- `ARS/.roo/rules/ARS.md` — 基础能量-几何解耦更新律
-- `ARS/.roo/rules/ARS2.md` — SAM 平坦度约束与 A-GSAM 自适应同步
-- `ARS/.roo/rules/ARS2C.md` — Christoffel 符号驱动的动态 β 优化
-- `ARS/.roo/rules/ARS2D.md` — 双边正交化（理论完成，实现已编码）
-- `ARS/.roo/rules/AR-GSAM.md` — 曲率对齐动态 ρ 调制（New AR-GSAM，实现已编码）
-
-实验成果：
-
-- CIFAR-10 (ResNet-18) — ARS2-Neo Sync (ρ=0.1) — 95.87% Acc
-- Wikitext-2 (Qwen3, 3-layer) — ARS2-Neo Sync — 90.69 PPL
-- Grokking (Modular Addition) — ARS2D A-GSAM — 99.00% @ 112 epoch
-
-理论意义：ARS2DC-AR-GSAM 是最小作用量原理/拉格朗日定理在数字优化中的离散实现。其能量-几何解耦 + 动态 β/ρ 机制，使优化器沿 Fisher 信息流形上的测地线演化，每一步更新都在隐式执行 MDL（最小描述长度）先验。
+`理论意义`：能量-几何解耦 + 动态 β/ρ 使优化器沿 Fisher 测地线演化，每步隐式执行 MDL 先验。ARS2E 将 β 调度从 Christoffel 类比提升为离散 EFE 驱动的保幅度联络。
 
 ### 持续学习实验场：Tiny-Ouroboros（暂停中）
 
@@ -189,7 +176,7 @@ Tiny-Ouroboros（前身 Tiny-ONN）曾是研究计划中最活跃的实验装置
 
 mental-sync-cli 专注于构建高可靠性的智能体环境。其设计原则包括模型无关性、MCP 协议兼容以及高风险操作的人类授权拦截。在叙事层面上，它代表了对敌对环境下零信任运行时的工程落地。
 
-入口：`mental-sync-cli/README.md`
+项目已归档。
 
 ### 分析工具
 
