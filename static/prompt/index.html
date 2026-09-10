@@ -5,30 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt Viewer</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        :root {
-            --bg: #fff; --fg: #000; --muted: #555; --border: #eee;
-            --surface: #f8f8f8; --code-bg: #f0f0f0;
-        }
-        .dark-theme {
-            --bg: #121212; --fg: #eee; --muted: #bbb; --border: #333;
-            --surface: #222; --code-bg: #222;
-        }
+        :root { --bg:#fff; --fg:#000; --muted:#555; --border:#eee; --surface:#f8f8f8; --code-bg:#f0f0f0; }
+        .dark-theme { --bg:#121212; --fg:#eee; --muted:#bbb; --border:#333; --surface:#222; --code-bg:#222; }
         @media (prefers-color-scheme: dark) {
-            body:not(.light-theme) { --bg: #121212; --fg: #eee; --muted: #bbb; --border: #333; --surface: #222; --code-bg: #222; }
+            body:not(.light-theme) { --bg:#121212; --fg:#eee; --muted:#bbb; --border:#333; --surface:#222; --code-bg:#222; }
         }
         * { box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            background: var(--bg); color: var(--fg); line-height: 1.6;
-            margin: 0; padding: 2rem;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.6; margin: 0; padding: 2rem; }
         .container { max-width: 800px; margin: 0 auto; }
-        header {
-            display: flex; justify-content: space-between; align-items: center;
-            margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem;
-        }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
         .logo { font-family: monospace; font-size: 1.2rem; font-weight: bold; text-decoration: none; color: var(--fg); }
         .controls { display: flex; gap: 1rem; position: relative; }
         button { background: none; border: none; cursor: pointer; font-size: 1rem; color: var(--muted); }
@@ -40,8 +26,6 @@
         .tabs button { padding: .5rem 1rem; border-bottom: 2px solid transparent; margin-bottom: -1px; }
         .tabs button.active { color: var(--fg); font-weight: bold; border-color: var(--fg); }
         .quote { border-left: 4px solid #ccc; padding-left: 1rem; margin-bottom: 1.5rem; color: var(--muted); }
-        .quote a { color: inherit; text-decoration: underline; }
-        .quote a:hover { color: var(--fg); }
         #content { border: 1px solid var(--border); border-radius: 4px; }
         .header { display: flex; justify-content: space-between; align-items: center; padding: .5rem 1rem; background: var(--surface); border-bottom: 1px solid var(--border); font-size: .9rem; color: var(--muted); }
         .btn { padding: .25rem .5rem; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); font-size: .8rem; color: var(--fg); }
@@ -58,9 +42,9 @@
         <header>
             <a href="/" class="logo">Chain://Encyclopedia</a>
             <div class="controls">
-                <button onclick="toggleTheme()"><i id="theme-icon" class="fas fa-sun"></i></button>
+                <button onclick="toggleTheme()" id="theme-btn">☀</button>
                 <div style="position:relative">
-                    <button onclick="toggleLang()"><i class="fas fa-globe"></i></button>
+                    <button onclick="toggleLang()">🌐</button>
                     <div id="lang-menu" class="dropdown">
                         <a href="#" onclick="setLang('en')">English</a>
                         <a href="#" onclick="setLang('zh')">中文</a>
@@ -70,8 +54,8 @@
         </header>
 
         <div class="quote">
-            <p id="q-zh" style="display:none">本prompt经过多轮LLM测试优化：追求精确叙事推荐Gemini-3-Pro，偏好创意表达建议Claude-4.5/Kimi K2.5。ChatGPT/需额外调整提示词才能达到最佳效果。<br>直接下载 Markdown 源文件：<a href="/prompt/re-reflect-2.10.4.md" target="_blank">re-reflect-2.10.4.md</a></p>
-            <p id="q-en" style="display:none">This prompt has been optimized through multiple LLM tests: Gemini-3-Pro for precise narration, Claude-4.5/Kimi K2.5 for creative expression. ChatGPT requires additional prompt tuning for optimal results.<br>Download Markdown source file directly: <a href="/prompt/re-reflect-2.10.4.en.md" target="_blank">re-reflect-2.10.4.en.md</a></p>
+            <p id="q-zh" style="display:none">本 prompt 经多轮 LLM 实测调优，综合表现首推 deepseek-v4 / v4.1-flash（no pro，over fitting）。其余模型在角色扮演上或多或少存在退化，语言风格亦常难尽如人意，Claude 则受制于偏严的安全过滤器。</p>
+            <p id="q-en" style="display:none">This prompt has been tuned through multiple rounds of LLM testing, with deepseek-v4 / v4.1-flash (no pro, over fitting) recommended for overall performance. Other models tend to degrade in role-play to varying degrees and often fall short in language style; and Claude is constrained by an overly strict safety filter.</p>
         </div>
 
         <nav class="tabs" id="tabs"></nav>
@@ -82,8 +66,8 @@
     <script>
         const modules = {
             'web-reflect': {
-                zh: {f: '../prompt/re-reflect-2.10.4.md', n: 're-reflect-2.10.4.md'},
-                en: {f: '../prompt/re-reflect-2.10.4.en.md', n: 're-reflect-2.10.4.en.md'}
+                zh: {f: '../prompt/re-reflect-2.11.0.md', n: 're-reflect-2.11.0.md'},
+                en: {f: '../prompt/re-reflect-2.11.0.en.md', n: 're-reflect-2.11.0.en.md'}
             },
             'metalayer': {
                 zh: {f: '../prompt/remodule/remodule-metalayer-1.0-raw.md', n: 'remodule-metalayer-1.0-raw.md'},
@@ -93,84 +77,66 @@
                 zh: {f: '../prompt/re_nation_railways_v0.6.0.md', n: 're_nation_railways_v0.6.0.md'}
             }
         };
-        const labels = {
-            'web-reflect': 'Web://Reflect',
-            'metalayer': 'MetaLayer',
-            'nation-railways': 'Nation://Railways'
-        };
+        const labels = { 'web-reflect': 'Web://Reflect', 'metalayer': 'MetaLayer', 'nation-railways': 'Nation://Railways' };
+        const t = { zh: {dl: '下载', cp: '复制', ok: '已复制!'}, en: {dl: 'Download', cp: 'Copy', ok: 'Copied!'} };
 
         let lang = new URLSearchParams(location.search).get('lang') || localStorage.preferredLang || (navigator.language.startsWith('zh') ? 'zh' : 'en');
         let mod = localStorage.activeTab || 'web-reflect';
 
         const $ = id => document.getElementById(id);
-        const q = (s, c = document) => c.querySelector(s);
-        const qa = (s, c = document) => [...c.querySelectorAll(s)];
+        const q = s => document.querySelector(s);
+        const qa = s => [...document.querySelectorAll(s)];
 
-        function init() {
-            const t = localStorage.theme;
-            if (t) document.body.className = t;
+        const init = () => {
+            if (localStorage.theme) document.body.className = localStorage.theme;
             updateThemeIcon();
             updateQuote();
             renderTabs();
             load(mod);
+            $('tabs').onclick = e => { if (e.target.dataset.m) { mod = e.target.dataset.m; localStorage.activeTab = mod; load(mod); } };
+            document.onclick = e => { if (!e.target.closest('.controls')) $('lang-menu').style.display = 'none'; };
+            $('content').onclick = e => { if (e.target.classList.contains('copy-btn')) copyFile(); };
+        };
 
-            $('tabs').onclick = e => {
-                if (e.target.dataset.m) { mod = e.target.dataset.m; localStorage.activeTab = mod; load(mod); }
-            };
-            document.onclick = e => {
-                if (!e.target.closest('.controls')) $('lang-menu').style.display = 'none';
-            };
-            $('content').onclick = e => {
-                if (e.target.classList.contains('copy-btn')) copyFile();
-            };
-        }
-
-        function toggleTheme() {
-            const isDark = document.body.classList.toggle('dark-theme');
+        const toggleTheme = () => {
+            const dark = document.body.classList.toggle('dark-theme');
             document.body.classList.remove('light-theme');
-            if (!isDark) document.body.classList.add('light-theme');
-            localStorage.theme = isDark ? 'dark-theme' : 'light-theme';
+            if (!dark) document.body.classList.add('light-theme');
+            localStorage.theme = dark ? 'dark-theme' : 'light-theme';
             updateThemeIcon();
-        }
-        function updateThemeIcon() { $('theme-icon').className = document.body.classList.contains('dark-theme') ? 'fas fa-moon' : 'fas fa-sun'; }
-        function toggleLang() { const d = $('lang-menu').style; d.display = d.display === 'block' ? 'none' : 'block'; }
-        function setLang(l) { lang = l; localStorage.preferredLang = lang; history.pushState({}, '', `?lang=${lang}`); $('lang-menu').style.display = 'none'; updateQuote(); renderTabs(); load(mod); }
+        };
+        const updateThemeIcon = () => { $('theme-btn').textContent = document.body.classList.contains('dark-theme') ? '🌙' : '☀'; };
+        const toggleLang = () => { const d = $('lang-menu').style; d.display = d.display === 'block' ? 'none' : 'block'; };
+        const setLang = l => { lang = l; localStorage.preferredLang = lang; history.pushState({}, '', `?lang=${lang}`); $('lang-menu').style.display = 'none'; updateQuote(); renderTabs(); load(mod); };
+        const updateQuote = () => { $('q-zh').style.display = lang === 'zh' ? 'block' : 'none'; $('q-en').style.display = lang === 'en' ? 'block' : 'none'; };
 
-        function updateQuote() { $('q-zh').style.display = lang === 'zh' ? 'block' : 'none'; $('q-en').style.display = lang === 'en' ? 'block' : 'none'; }
-
-        function renderTabs() {
+        const renderTabs = () => {
             const tabs = $('tabs');
-            tabs.innerHTML = '';
             const available = Object.keys(modules).filter(k => modules[k][lang]);
             if (!available.includes(mod)) mod = available[0] || 'web-reflect';
-            available.forEach(k => {
-                const btn = document.createElement('button');
-                btn.dataset.m = k;
-                btn.textContent = labels[k] || k;
-                if (k === mod) btn.classList.add('active');
-                tabs.appendChild(btn);
-            });
+            tabs.innerHTML = available.map(k => `<button data-m="${k}" class="${k === mod ? 'active' : ''}">${labels[k] || k}</button>`).join('');
             localStorage.activeTab = mod;
-        }
-        async function load(m) {
+        };
+
+        const load = async m => {
             const d = modules[m]?.[lang]; if (!d) return;
             try {
                 const text = await fetch(d.f).then(r => r.text());
-                $('content').innerHTML = `<div class="header"><span>${d.n}</span><div><a href="${d.f}" download class="btn"><i class="fas fa-download"></i> ${lang === 'zh' ? '下载' : 'Download'}</a><button class="btn copy-btn">${lang === 'zh' ? '复制' : 'Copy'}</button></div></div><div class="markdown">${marked.parse(text)}</div>`;
+                $('content').innerHTML = `<div class="header"><span>${d.n}</span><div><a href="${d.f}" download class="btn">${t[lang].dl}</a><button class="btn copy-btn">${t[lang].cp}</button></div></div><div class="markdown">${marked.parse(text)}</div>`;
                 qa('#tabs button').forEach(b => b.classList.toggle('active', b.dataset.m === m));
             } catch (e) { $('content').innerHTML = `<div class="markdown">Error: ${e.message}</div>`; }
-        }
+        };
 
-        async function copyFile() {
+        const copyFile = async () => {
             const d = modules[mod][lang];
             try {
                 const text = await fetch(d.f).then(r => r.text());
                 await navigator.clipboard.writeText(text);
                 const btn = q('.copy-btn');
-                btn.textContent = lang === 'zh' ? '已复制!' : 'Copied!';
-                setTimeout(() => btn.textContent = lang === 'zh' ? '复制' : 'Copy', 2000);
+                btn.textContent = t[lang].ok;
+                setTimeout(() => btn.textContent = t[lang].cp, 2000);
             } catch (e) { console.error(e); }
-        }
+        };
 
         init();
     </script>

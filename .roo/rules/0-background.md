@@ -117,7 +117,7 @@ IPWT 的核心难点在于 Ω_t 的直接计算在工程上不可得，其涉及
 - `IPWT/README.md` — Theory / Preprint — 已发布 v2.0.0-stable — 起始 2025-06 — 定义 Ω/Syn/PI 与 WSI 的形式化语言，整个研究计划的科学骨架
 - `OmegaID/README.md` — SDK — 维护态 — 起始 2025-06 — 基于 CuPy 的高性能 ΦID 计算工具，用于量化神经网络中的协同信息
 - `SigmaPI/README.md` — SDK — 占位 — 起始 2025-06 — 预测完整性指标计算与训练时观测的工程实现
-- `ARS/README_CN.md` — Research Framework — 活跃核心 — 起始 2025-11 — 优化器实验室，实现 ARS2-Neo/ARS2C/ARS2D/AR-GSAM 及能量-几何解耦更新机制
+- `ARS/README_CN.md` — Research Framework — 活跃核心 — 起始 2025-11 — 优化器实验室，实现 ARS/ARS2-A-GSAM 及能量-几何解耦更新机制
 - `Tiny-Ouroboros/.roo/rules/0-background.md` — Research Framework — 暂停 — 起始 2025-07 — 原 Tiny-ONN，专注稀疏激活与自组织结构，当前优先级已转移至 ARS
 - `mental-sync-cli/README.md` — Engineering Tool — 维护态 — 起始 — — 智能体运行时环境，负责工具协议整合与安全拦截
 - `OSPU/README_ZH.md` — PoC — 早期 — 起始 — — 基于 FHE 的状态机，为数字主体提供加密审计与根信任
@@ -126,28 +126,23 @@ IPWT 的核心难点在于 Ω_t 的直接计算在工程上不可得，其涉及
 
 ### 优化器实验室：ARS（当前研究核心）
 
-ARS 家族在信息几何流形上实施结构化自然梯度更新。核心更新律如下：
+ARS 家族在信息几何流形上实施结构化自然梯度更新。核心更新律如下（仅记录稳定成员）：
 
 - `ARS (AdaRMSuon)` — 能量-几何解耦
-  - `m_t = β1·m_{t-1} + (1-β1)·g_t`；`v_t = β2·v_{t-1} + (1-β2)·g_t²`
-  - `ĝ = m̂_t / (√v̂_t + ε)` 预白化 → `E_t = ‖ĝ‖` 能量标量 → `S_t = NS(ĝ)` 正交化 → `Δθ_t = -η · E_t · S_t`
-- `ARS2` — + SAM 平坦度约束
-  - 在 `ĝ` 方向施加 `ρ` 邻域扰动，惩罚尖锐极小值
-- `ARS2C` — + Christoffel 动态 β
-  - `C = δ_g / (ρ·ĝ + ε)` → 行列对齐矩阵 → 逐元素 `β₁_t, β₂_t`（曲率决定遗忘速率）
-- `ARS2D` — + 双边正交化
-  - `U = NS(G_nat)` → `W = NS(Uᵀ)ᵀ`，模拟 K-FAC 行/列双等距更新
-- `AR-GSAM` — + 曲率对齐动态 ρ
-  - `c_norm = ‖C‖_F`，`cos_sim = |⟨c_ortho, s_unit⟩|` → `f_c = 1 + log(1 + c_norm/ν)`，`f_a = 1 + (1 - cos_sim)` → `ρ_target = ρ_min · f_c · f_a`
-- `ARS2E (Einsteinium)` — + 离散 EFE 联络保幅度
-  - `Γ_ij = Δv̂_ij / (v̂_ij + ε)`（Fisher 度量相对变化率）
-  - `alignment_preserved = |⟨Γ_norm, v̂_norm⟩| · σ(‖H_ab‖_F / MPS_tau)`
+  - `ĝ = m̂ / (√v̂ + ε)` 预白化 → `E = ‖ĝ‖` 能量标量 → `S = NS(ĝ)` 正交化 → `Δθ = -η · E · S`
+- `ARS2-A-GSAM (ARS2U)` — ARS + 自适应平坦度约束
+  - 全局干涉因子 `ϕ_t = ⟨g, v_flat⟩ / (‖g‖·‖v_flat‖)` 检测几何漂移，仅漂移时触发完整 SAM 同步，非同步步复用正交剪切力注入 `g += α·v_flat` 维持平坦度压强
+  - ARS2-Ultra 为 ARS2-Neo 的 torch `_foreach_*` 内核工程优化，算法等效仅加速
 
-`谱系`：`RMSuon → AdaRMSuon → ARS2-Neo → {ARS2C / ARS2D / AR-GSAM / ARS2E} → ARS2E-AGAM`
+`谱系`：`RMSuon → AdaRMSuon (ARS) → ARS2-Neo → ARS2-Ultra (ARS2-A-GSAM)`
 
-`实验成果`：CIFAR-10 (ResNet-18) 95.87% | Wikitext-2 (Qwen3 3-layer) 90.69 PPL | Grokking (Modular Addition) 99.00% @ 112ep
+`实验成果（含 AdamW/Muon 对照组）`：
 
-`理论意义`：能量-几何解耦 + 动态 β/ρ 使优化器沿 Fisher 测地线演化，每步隐式执行 MDL 先验。ARS2E 将 β 调度从 Christoffel 类比提升为离散 EFE 驱动的保幅度联络。
+- Grokking (Modular Addition, p=113, 1-Layer Transformer)：AdamW 600ep 未顿悟（最佳 15.65%）| Muon 400ep 未顿悟（最佳 36.83%）| ARS2-A-GSAM 79ep 顿悟、132ep 收敛 99.15%
+- CIFAR-10 (ResNet-18)：AdamW 94.60% | Muon 93.76% | ARS2-Neo (Sync) 95.87%
+- Wikitext-2 (Qwen3 3-layer)：AdamW 116.46 PPL | Muon 111.35 PPL | ARS2-Neo (Sync) 90.69 PPL
+
+`理论意义`：能量-几何解耦作为活动标架实现免求逆全秩NGD，A-GSAM 平坦度约束将轨迹从训练集最快下降改写为可泛化下降。
 
 ### 持续学习实验场：Tiny-Ouroboros（暂停中）
 
